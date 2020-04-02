@@ -1,5 +1,5 @@
 ---
-source-git-commit: 463470ba99cd3adfabb5ff00211757d1f97de12e
+source-git-commit: 26373450fd36a4d726190c0252f60c4d77bf8b7f
 translation-type: tm+mt
 
 ---
@@ -7,7 +7,7 @@ translation-type: tm+mt
 
 ## Vår redovisning
 
-För att främja en öppen och välkommen miljö garanterar vi att medverkande och underhållande personer engagerar sig i att delta i vårt projekt och vår community är en trakasserfri upplevelse för alla, oavsett ålder, kroppsstorlek, funktionshinder, etnicitet, könsidentitet och -uttryck, erfarenhetsnivå, nationalitet, personligt utseende, ras, religion eller sexuell identitet och läggning.
+I syfte att främja en öppen och välkommen miljö lovar vi som medverkande och underhållande att göra deltagande i vårt projekt och i vår community till en trakasserfri upplevelse för alla, oavsett ålder, kroppsstorlek, funktionshinder, etnicitet, könsidentitet och -uttryck, erfarenhetsnivå, nationalitet, personligt utseende, ras, religion, sexuell identitet och läggning.
 
 ## Våra standarder
 
@@ -35,15 +35,14 @@ Projektledare har rätt och ansvar att ta bort, redigera eller avvisa kommentare
 
 ## Omfång
 
-Denna uppförandekod gäller både inom projektutrymmen och i offentliga utrymmen när en person representerar projektet eller dess community. Exempel på hur du representerar ett projekt eller en community är att använda en officiell e-postadress för projektet, publicera via ett officiellt konto för sociala medier eller agera som utsedd representant vid ett online- eller offlineevenemang. Projektledarna kan definiera och förtydliga hur ett projekt ska visas.
+Denna uppförandekod gäller både inom projektutrymmen och på offentliga platser när en person representerar projektet eller dess community. Exempel på hur du representerar ett projekt eller en community är att använda en officiell e-postadress för projektet, publicera via ett officiellt konto för sociala medier eller agera som utsedd representant vid ett online- eller offlineevenemang. Projektledarna kan närmare definiera och klargöra hur ett projekt ska visas.
 
 ## Verkställande
 
-Fall av missbruk, trakasserier eller på annat sätt oacceptabelt beteende kan rapporteras genom att kontakta projektgruppen på Grp-opensourceoffice@adobe.com. Alla klagomål kommer att granskas och undersökas och resultera i ett svar som bedöms vara nödvändigt och lämpligt med hänsyn till omständigheterna. Projektgruppen är skyldig att upprätthålla sekretess med avseende på rapportören för en incident.
-Ytterligare information om specifika verkställighetsregler kan bokföras separat.
+Fall av missbruk, trakasserier eller på annat sätt oacceptabelt beteende kan rapporteras genom att kontakta projektgruppen på Grp-opensourceoffice@adobe.com. Alla klagomål kommer att granskas och utredas och kommer att resultera i ett svar som bedöms vara nödvändigt och lämpligt med hänsyn till omständigheterna. Projektgruppen är skyldig att upprätthålla sekretess med avseende på rapportören för en incident. Ytterligare information om specifika verkställighetsregler kan bokföras separat.
 
 Projektledare som inte följer eller tillämpar uppförandekoden i god tro kan drabbas av tillfälliga eller permanenta konsekvenser som fastställs av andra medlemmar i projektets ledarskap.
 
 ## Attribut
 
-Denna uppförandekod har anpassats från [Contributor-konventionen](https://contributor-covenant.org), version 1.4, som finns på [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Denna uppförandekod har anpassats från [Contributor-konventionen](https://contributor-covenant.org), version 1.4, som finns på [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
