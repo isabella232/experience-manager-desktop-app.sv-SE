@@ -5,15 +5,15 @@ translation-type: tm+mt
 ---
 # Riktlinjer för att bidra till Adobe Experience Manager-dokumentationen
 
-## AEM Documentation Philosophy
+## Dokumentationsfilosofi
 
 Vi vet att Adobe Experience Manager-användare arbetar i mycket konkurrensutsatta miljöer och strävar efter att skapa digitala upplevelser som skiljer dem från deras konkurrenter. Därför är det viktigt att när Adobe levererar avancerade nya verktyg i AEM, dessa verktyg kompletteras med korrekt och tydlig dokumentation som gör det möjligt för kunden att omedelbart utnyttja sin AEM-investering och maximera avkastningen.
 
 Målet med AEM-dokumentationen är att skicka dokumentation till AEM-användarna så snart som möjligt. Därför prioriterar vi korrekt, användbar dokumentation och strävar efter att kontinuerligt uppdatera och förbättra den.
 
-## AEM-dokumentationsbidrag
+## Dokumentationsbidrag
 
-För att kontinuerligt förbättra AEM-dokumentationen är hela användargruppen välkommen att bidra till dokumentationen. Vare sig det gäller förfrågningar eller frågor kan förbättringar av dokumentationen vara korrigeringar, förtydliganden, tillägg och ytterligare exempel.
+För att kontinuerligt förbättra AEM-dokumentationen är det välkommet att alla AEM-användare bidrar till dokumentationen. Vare sig det gäller förfrågningar eller frågor kan förbättringar av dokumentationen vara korrigeringar, förtydliganden, tillägg och ytterligare exempel.
 
 ## Dokumentationsstandarder
 
@@ -35,7 +35,7 @@ Undantag från den här regeln gäller versionsinformationen där kända problem
 
 Alla idéer du kan behöva för att förbättra AEM-dokumentationen är välkomna som bidrag. Kommentarer, frågor och förfrågningar är dock endast avsedda för *bidrag* . De är inte avsedda att användas för att besvara dina frågor om hur du använder AEM, implementerar ditt AEM-projekt eller löser tekniska problem.
 
-Frågor om hur du använder AEM eller tekniska fel som du kan ha gjort ska rapporteras via den normala supportprocessen via [Experience Manager Support Portal](https://daycare.day.com/home.html) eller diskuteras i [Experience Manager-communityn](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager/ct-p/adobe-experience-manager-community).
+Frågor om hur du använder AEM eller tekniska fel som du kan ha gjort ska rapporteras via den normala supportprocessen via [Experience Cloud Enterprise Support-portalen](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) eller diskuteras i [Experience Manager-communityn](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
 
 ***AEM-dokumentationsbidragen ersätter inte Adobes kundtjänst*** och eventuella bidrag som söker svar på supportrelaterade frågor kommer att refuseras.
 
