@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 75e7cbaaa23b441b5e3a6e55381cd5f548231537
+source-git-commit: f69ccbf7acaa277a7f4d07fabba2094459e4ea23
 
 ---
 
@@ -20,10 +20,10 @@ För datorprogram v1.x är följande hämtningslänkar och AEM-kompatibilitetsin
 
 | Produkter | Adobe Experience Manager (AEM) |
 |---------------|--------------------------------------------------------------------|
-| Version | 1.10 (1.10.0.3 i Mac och Windows) |
+| Version | 1.10 (1.10.0.6 för Mac och 1.10.0.3 för Windows) |
 | Typ | Mindre release |
-| Date | 31 augusti 2018 |
-| Hämta URL:er | [Mac OS X 64 bitar](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); 32-bitars [Windows](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); 64-bitars [Windows](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
+| Date | 1.10.0.6 (Mac): 15 april 2020; 1.10.0.3 (Win): 31 augusti 2018 |
+| Hämta URL:er | [Mac OS X 64 bitar](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.6.dmg); 32-bitars [Windows](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); 64-bitars [Windows](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
 | Kompatibilitet | AEM 6.5.x; AEM 6.4.x; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
@@ -46,6 +46,10 @@ Se den [detaljerade kompatibilitetsmatrisen](#compatibilitymatrix) i slutet av d
 ## Nyheter i AEM-skrivbordsapp 1.10 {#what-s-new-in-aem-desktop-app}
 
 AEM desktop app 1.10 fokuserar på att förbättra användarupplevelsen kring stora överföringar, information om bakgrundsåtgärder och optimerad upplevelse när resurser öppnas med länkade filer (som InDesign).
+
+>[!NOTE]
+>
+>Om du använder macOS 10.15.4 eller senare ska du använda minst version 1.10.0.6 av programmet. Den här korrigeringsversionen uppfyller kraven [för](https://developer.apple.com/news/?id=04102019a)Apples notarization.
 
 **Lokal redigering/utcheckning**: Automatiska överföringar av ändringar som sparats till resurser kan inaktiveras i statusfönstret. På så sätt kan användaren fortsätta arbeta med filer och spara ändringar och sedan, när de är klara, bestämma sig för att överföra alla ändringar.
 
