@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f69ccbf7acaa277a7f4d07fabba2094459e4ea23
+source-git-commit: f1ea381cc88b5382288b2479d26e976dc7289b88
 
 ---
 
@@ -49,7 +49,7 @@ AEM desktop app 1.10 fokuserar på att förbättra användarupplevelsen kring st
 
 >[!NOTE]
 >
->Om du använder macOS 10.15.4 eller senare ska du använda minst version 1.10.0.6 av programmet. Den här korrigeringsversionen uppfyller kraven [för](https://developer.apple.com/news/?id=04102019a)Apples notarization.
+>Om du använder macOS 10.15.4 eller senare ska du använda minst version 1.10.0.6 av programmet. Den här korrigeringsversionen uppfyller kraven för [Apples notarization](https://developer.apple.com/news/?id=04102019a).
 
 **Lokal redigering/utcheckning**: Automatiska överföringar av ändringar som sparats till resurser kan inaktiveras i statusfönstret. På så sätt kan användaren fortsätta arbeta med filer och spara ändringar och sedan, när de är klara, bestämma sig för att överföra alla ändringar.
 
