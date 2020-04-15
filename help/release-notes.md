@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager desktop app release notes
-description: Release details, enhancements, new features, compatibility, and download links for Adobe Experience Manager desktop app.
+title: Versionsinformation om Adobe Experience Manager-datorprogrammet
+description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och hämtningslänkar för Adobe Experience Manager-datorprogrammet.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -10,38 +10,39 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
+source-git-commit: aca68b0c2eb363e33c8a6edec2370758124a4b9e
 
 ---
 
 
-# Adobe Experience Manager desktop app release notes {#release-notes-v2}
+# Versionsinformation om Adobe Experience Manager-datorprogrammet {#release-notes-v2}
 
-| Produkter | Adobe Experience Manager (AEM) desktop app |
-|---------------|--------------------------------------------------------------------|
-| App version (Revision) | 2.0 (2.0.1.1) |
-| Supported AEM versions | AEM 6.5, AEM 6.4, AEM 6.3 (with compatibility package) |
+| Produkter | Adobe Experience Manager-datorprogram |
+|----|----|
+| Programversion (revision) | 2.0 (2.0.2.0) |
+| AEM-versioner som stöds | AEM som molntjänst; AEM 6.5; AEM 6.4; AEM 6.3 (med kompatibilitetspaket) |
 | Typ | Mindre release |
-| Releasedatum | Dec 12, 2019 (Mac and Win) |
-| Download URLs | [MacOS 64-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.1.1.dmg); 64-bitars [Windows](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.1.1.exe); 32-bitars [Windows](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.1.1.exe) |
+| Releasedatum | 15 april 2020 (Mac och Win) |
+| Hämta URL:er | [macOS 64-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); 64-bitars [Windows](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); 32-bitars [Windows](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
 
 ## Systemkrav och krav {#system-requirements-and-prerequisites-v2}
 
-Adobe Experience Manager desktop app is compatible with the following operating systems:
+Adobe Experience Manager är kompatibelt med följande operativsystem:
 
-* Mac OS X 10.10 or later, with latest bug fixes.
+* Mac OS X 10.10 eller senare, med de senaste felkorrigeringarna.
 * Windows 7 och Windows 10 med de senaste Service Pack och felkorrigeringarna.
 
-Appen fungerar med följande Experience Manager-versioner, oavsett om de körs lokalt eller på Adobe Managed Services (AMS):
+Appen fungerar med följande Experience Manager-versioner, oavsett om de distribueras som en molntjänst, på Adobe Managed Services (AMS) eller på plats:
 
-* [Experience Manager 6.5.0](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) eller senare
-* [Experience Manager 6.4.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) or later
+* [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html)
+* [Experience Manager 6.5.0+](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) eller senare
+* [Experience Manager 6.4.4+](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) eller senare
 * Experience Manager 6.4.0-6.4.3 med [kompatibilitetspaket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
 >
->Desktop app support for Experience Manager 6.3 is deprecated. Adobe rekommenderar att du uppgraderar till en nyare version av Adobe Experience Manager som stöds.
->Experience Manager 6.3.3.1 or later works with desktop app after installing the [compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). No such package is available for Experience Manager 6.3 as no [service packs are planned](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+>Stöd för datorprogram i Experience Manager 6.3 är föråldrat. Adobe rekommenderar att du uppgraderar till en nyare version av Adobe Experience Manager som stöds.
+>Experience Manager 6.3.3.1 eller senare fungerar med skrivbordsappen när [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)har installerats. Det finns inget sådant paket för Experience Manager 6.3 eftersom inga [servicepaket är planerade](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
 Den version av programmet som du tänker installera på den lokala datorn kräver en specifik version av Adobe Experience Manager-servern/ytterligare komponenter på serversidan (Service Pack, hot fixes eller funktionspaket). Kontakta Adobe Experience Manager-administratören om du behöver hjälp.
 
@@ -60,13 +61,25 @@ Funktionen stöds i Adobe Creative Cloud 2018- och Adobe Creative Cloud 2019-ver
 * Sökvägar till monterade filer i det ursprungliga programmet använder en global skrivbordssökväg (placerad från den lokala nätverksresursen som visas med [!UICONTROL Reveal] alternativet).
 * Sökvägar lagras i filens XMP-post av det ursprungliga programmet.
 * Experience Manager har extraherat XMP-posten med sökvägarna till resursens metadatapost.
-* Sökvägarna kan matchas mot resurser i Experience Manager, det vill säga de monterade filerna finns även i Experience Manager under en matchande sökväg).
+* Sökvägarna kan matchas mot resurser i Experience Manager, det vill säga de monterade filerna finns också i Experience Manager under en matchande sökväg.
 
 ## Nya funktioner och förbättringar {#whats-new-added}
 
 Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
-Felkorrigeringar och uppdateringar i version 2.0.1 är:
+**Uppdateringar i app v2.0.2**
+
+Felkorrigeringarna och uppdateringarna är:
+
+* Förbättra uppladdningsprestanda genom att öka uppladdningsaccelerationen i [!UICONTROL Preferences]. När den här inställningen är aktiverad används fler lokala CPU-trådar och programmet är mer resurskrävande.
+* Korrigerat problem med överföringar av resurser när filnamn eller sökvägar innehåller vissa GB18030-tecken. <!-- CQ-4283494 -->
+* Alternativet Sortera efter relevans är tillgängligt efter byte till en annan sorteringstyp i sökresultaten. <!-- CQ-4286874 -->
+* Datorprogrammet listar nu undermappar utan att behöva uppdatera explicit. <!-- CQ-4285711 -->
+* (Windows) Korrigerade ett sällsynt problem med oanvändbart appgränssnitt på vissa Windows-datorer. Användarna kan inte klicka på appgränssnittet eftersom det ser ut att vara förvrängt eftersom klickområdet för gränssnittselementen är&quot;skiftat&quot;. <!-- CQ-4280785 -->
+
+**Uppdateringar i app v2.0.1**
+
+Felkorrigeringarna och uppdateringarna är:
 
 * Tillåt alternativet att konfigurera `%Temp%` katalogen så att den matchar `%APPDATA%` sökvägen. <!-- CQ-4282665 -->
 * Tillåt användare att logga in på AEM Author via Okta SAML-autentisering. <!-- CQ-4278134 -->
@@ -117,8 +130,8 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 >[!MORELIKETHIS]
 >
->* [AEM 6.5 - dokumentation](https://helpx.adobe.com/support/experience-manager/6-5.html)
->* [AEM Assets 6.5 - dokumentation](https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html)
+>* [AEM som molntjänstdokumentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+>* [AEM som dokumentation för molntjänster](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
 >* [Så här använder du Experience Manager-datorprogrammet](using.md)
 >* [Installera och uppgradera datorprogrammet](install-upgrade.md)
 >* [Bästa praxis och felsökningstips](troubleshoot.md)
