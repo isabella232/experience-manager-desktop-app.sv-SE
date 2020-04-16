@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e706fe5fe148deff519cadc72b724572f11ddf3c
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
@@ -105,7 +105,7 @@ Klicka på ikonen ![](assets/do-not-localize/more2_da2.png) Fler alternativ för
 >
 >När du hämtar eller överför en stor fil eller många filer, inaktiveras åtgärderna för resurser och mappar. Åtgärderna är tillgängliga när hämtningen eller överföringen är klar.
 
-Hämtning av flera resurser kan leda till sämre prestanda om köstorleken är stor eller om du har problem med nätverket. När du hämtar en mapp kan du dessutom ovetande köa många resurser för hämtning. För att undvika långa väntetider begränsar appen antalet resurser som hämtas på en gång. Mer information om hur du konfigurerar den finns i [Ange inställningar](install-upgrade.md#set-preferences). Även under denna gräns kan programmet ibland behöva be om en bekräftelse innan en till synes stor mapp hämtas.
+Hämtning av flera resurser kan leda till sämre prestanda om köstorleken är stor eller om du har problem med nätverket. Du kan också ovetande köa många resurser för hämtning när du hämtar en mapp. För att undvika långa väntetider begränsar appen antalet resurser som hämtas på en gång. Mer information om hur du konfigurerar den finns i [Ange inställningar](install-upgrade.md#set-preferences). Även under denna gräns kan programmet ibland behöva be om en bekräftelse innan en till synes stor mapp hämtas.
 
 ![Appen bekräftar hämtning av ett relativt stort antal](assets/download_confirmation_da2.png "resurserAppen bekräftar hämtning av ett relativt stort antal resurser")
 
@@ -183,6 +183,8 @@ Du kan överföra mappar eller enskilda filer från det lokala filsystemet. En m
 Om du vill visa en lista över resurser som överförts under en viss session klickar du på **[!UICONTROL View]** > **[!UICONTROL Assets transfers]**. I listan kan du visa och snabbt verifiera filöverföringar för den aktuella sessionen.
 
 ![Lista över överförda tillgångar i en viss](assets/assets_transfered_da2.png "sessionLista över överförda tillgångar i en viss session")
+
+Du kan styra samtidighet för överföring (acceleration) i **[!UICONTROL Preferences]** > **[!UICONTROL Upload acceleration]** . Mer samtidighet ger vanligtvis snabbare överföringar, men kan vara resurskrävande och förbrukar mer processorkraft på den lokala datorn. Om du upplever ett långsamt system försöker du överföra igen med ett lägre värde av samtidighet.
 
 >[!NOTE]
 >
