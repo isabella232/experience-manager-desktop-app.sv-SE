@@ -9,22 +9,25 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
 
 # Installera Adobe Experience Manager-datorprogrammet {#install-app-v2}
 
-Med Adobe Experience Managers skrivbordsapp är resurserna i Experience Manager lättillgängliga på din lokala dator och kan användas i alla datorprogram. Resurser kan enkelt visas i Finder eller Utforskaren i Windows, öppnas i skrivbordsprogram och ändras lokalt. Ändringarna sparas sedan i Experience Manager när du överför och en ny version skapas i databasen.
+Med Adobe Experience Managers skrivbordsapp är resurserna i Experience Manager enkelt tillgängliga på din lokala dator och kan användas i alla datorprogram. Resurser kan förhandsgranskas, öppnas i datorprogram som skapats i Mac Finder eller Utforskaren i Windows för montering i andra dokument och ändras lokalt. Ändringarna sparas sedan i Experience Manager när du överför och en ny version skapas i databasen.
 
-Tack vare en sådan integrering kan olika roller i organisationen hantera resurser centralt i Adobe Experience Manager Assets och få tillgång till dem i Creative Cloud och andra program, samtidigt som det är enkelt att följa de olika standarderna, inklusive branding.
+En sådan integrering gör att olika roller i organisationen kan
+
+* Hantera resurserna centralt i Experience Manager Assets.
+* Få tillgång till resurserna i alla datorprogram, inklusive program från tredje part och i Adobe Creative Cloud. När man gör det kan man enkelt följa de olika standarderna, inklusive branding.
 
 Om du vill använda datorprogrammet Experience Manager
 
-* Kontrollera att Experience Manager-serverversionen stöds av Experience Manager-datorprogrammet. Se [kompatibilitetsmatrisen](release-notes-of-v1.md#compatibilitymatrix).
-* Hämta och installera programmet.
-* Testa anslutningen med några resurser. Se [Åtkomst och öppna resurser på skrivbordet](use-app-v1.md#openondesktop).
+* Kontrollera att Experience Manager-versionen stöds av Experience Manager-datorprogrammet. Se [systemkraven](release-notes.md#system-requirements-and-prerequisites-v2) nedan.
+* Hämta och installera programmet. Se [Installera skrivbordsappen](#install-v2) nedan.
+* Testa anslutningen med några resurser. Se [hur du söker efter resurser](using.md#browse-search-preview-assets).
 
 ## Systemkrav, krav och nedladdningslänkar {#tech-specs-v2}
 
@@ -32,7 +35,7 @@ Mer information finns i versionsinformationen för [Experience Manager-datorprog
 
 ## Uppgradera från app v1.x till app v2 {#upgrade-from-previous-version}
 
-Om du är en befintlig användare av appen måste du förstå skillnaderna och likheterna mellan den tidigare och den senaste versionen av appen. Följ även riktlinjerna nedan för att gå över från v1.x till den senaste versionen.
+Om du är en befintlig användare av appen måste du förstå skillnaderna och likheterna mellan den tidigare och den senaste versionen av appen. Följ även dessa riktlinjer för att gå över från v1.x till den senaste versionen.
 
 >[!NOTE]
 >
@@ -49,11 +52,11 @@ Följ dessa anvisningar för att uppgradera från v1.x till den senaste versione
 
 Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befintliga Adobe Experience Manager-datorprogram v1.x innan du installerar den senaste appen. Mer information finns ovan.
 
-1. Ha URL:en och autentiseringsuppgifterna för din AEM-distribution till hands.
-1. Hoppa över det här steget om du använder AEM 6.4.4 och senare eller AEM 6.5.0 eller senare. Kontrollera att din AEM-konfiguration uppfyller kompatibilitetskraven som anges i versionsinformationen. Hämta vid behov [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installera det med AEM Package Manager som AEM-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+1. Ha URL:en och autentiseringsuppgifterna för Experience Manager-distributionen till hands.
+1. Hoppa över det här steget om du använder Experience Manager som en molntjänst, Experience Manager 6.4.4 eller senare eller Experience Manager 6.5.0 eller senare. Kontrollera att Experience Manager-installationen uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med Experience Manager Package Manager som Experience Manager-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
 1. Kör installationsprogrammets binärfil och följ instruktionerna på skärmen.
 1. I Windows kan installationsprogrammet uppmana dig att installera `Visual Studio C++ Redistributable 2015`. Installera den genom att följa instruktionerna på skärmen. Om installationen misslyckas installerar du den manuellt. Hämta installationsprogrammet [här](https://www.microsoft.com/en-us/download/details.aspx?id=52685) och installera både `vc_redist.x64.exe` och `vc_redist.x86.exe` filer. Kör installationsprogrammet för AEM-skrivbordsappen igen.
-1. Starta om datorn enligt anvisningarna. Starta skrivbordsappen för att konfigurera den.
+1. Starta om datorn enligt anvisningarna. Starta och konfigurera skrivbordsappen.
 1. Om du vill ansluta programmet till en AEM-databas klickar du på programikonen i fältet för att starta programmet. Ange adressen till AEM-instansen. Klicka på **[!UICONTROL Connect]** och ange autentiseringsuppgifterna.
 
    ![Anslutningsskärmen för skrivbordsprogrammet till](assets/connect_da2.png "inmatningsserverns adressAnslutningsskärmen till inmatningsserveradressen")
@@ -66,7 +69,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
    ![När du loggar in visas DAM-](assets/firstview_da2.png "innehållet i appen. När du loggar in visas DAM-innehållet i appen")
 
-1. (AEM 6.5.1 eller senare) Om du använder datorprogrammet med AEM 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure Connector](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AzureDataStore) eller [S3 Connector](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AmazonS3DataStore).
+1. (Experience Manager 6.5.1 eller senare) Om du använder datorprogrammet med Experience Manager 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure Connector](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AzureDataStore) eller [S3 Connector](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AmazonS3DataStore).
 
    Om du är Adobe Managed Services-kund (AMS) kontaktar du Adobes kundtjänst.
 
@@ -82,6 +85,7 @@ Om du vill ändra inställningarna klickar du på ikonen ![](assets/do-not-local
 * **[!UICONTROL Current cache size]**: Lagringsstorlek för lokalt hämtade resurser. Informationen visas först när resurserna har hämtats med appen.
 * **[!UICONTROL Automatically download linked assets]**: Resurserna som placeras i de Creative Cloud-program som stöds hämtas automatiskt om du hämtar originalfilen.
 * **[!UICONTROL Maximum number of downloads]**: När du hämtar resurser för första gången (via Visa, Öppna, Redigera, Hämta eller liknande) hämtas resurserna endast om gruppen innehåller mindre än det här antalet. Standardvärdet är 50. Ändra inte om du är osäker. Om du ökar värdet kan det leda till längre väntetider och om du minskar värdet kanske du inte kan hämta nödvändiga resurser eller mappar på en gång.
+* **[!UICONTROL Upload Acceleration]**: När du överför resurser kan programmet använda samtidiga överföringar för att förbättra överföringshastigheten. Du kan öka samtidigheten för överföringen genom att flytta reglaget åt höger. Skjutreglaget längst till vänster betyder ingen samtidighet (enkeltrådad överföring), mittpositionen motsvarar 10 samtidiga trådar och maxgränsen längst till höger motsvarar 20 samtidiga trådar. En högre samtidighetsgräns kräver större resursförbrukning för den lokala datorns processor.
 
 Logga ut från AEM-servern om du vill uppdatera inställningarna som inte är tillgängliga. När du har uppdaterat inställningarna klickar du på ![Spara inställningar](assets/do-not-localize/save_preferences_da2.png) för att spara ändringarna.
 
