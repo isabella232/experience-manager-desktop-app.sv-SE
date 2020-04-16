@@ -9,22 +9,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
 
 # Felsöka Adobe Experience Manager-datorprogrammet {#troubleshoot-v2}
 
-Adobe Experience Manager-datorprogrammet (AEM) ansluter till en fjärransluten Experience Manager-distributionsdatabas för digital resurshantering (DAM). The app fetches repository information and search results on your machine, downloads and uploads files and folders, and includes capabilities to manage conflicts with AEM Assets user interface.
+Adobe Experience Manager-datorprogrammet (AEM) ansluter till en fjärransluten Experience Manager-distributionsdatabas för digital resurshantering (DAM). Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar och innehåller funktioner för att hantera konflikter med användargränssnittet i AEM Assets.
 
-Read on to troubleshoot the app, learn the best practices, and find out the limitations.
+Läs vidare för att felsöka appen, lära dig de bästa metoderna och ta reda på begränsningarna.
 
-## Best practices {#best-practices-to-prevent-troubles}
+## God praxis {#best-practices-to-prevent-troubles}
 
-Adhere to the following best practices to prevent some common issues and troubleshooting.
+Följ följande metodtips för att förebygga vissa vanliga problem och felsökning.
 
-* **Understand how the desktop app works**: Before starting to use the application, spend a few minutes knowing how the app works. Know about linking between Web UI and desktop, repository mapping, asset caching, saving locally and uploading in background. Se [hur det fungerar](release-notes.md#how-app-works).
+* **Lär dig hur datorprogrammet fungerar**: Innan du börjar använda programmet bör du ägna några minuter åt att veta hur programmet fungerar. Lär dig hur du länkar mellan webbgränssnitt och datorer, databasmappning, resurscachning, sparar lokalt och överför i bakgrunden. Se [hur det fungerar](release-notes.md#how-app-works).
 
 * **Undvik tecken som inte stöds i mappnamn**: Använd inte blanksteg och ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders). Vissa användningsfall i Adobe Experience Manager kan påverkas av tecken i mappnamnet som inte stöds.
 
@@ -56,15 +56,15 @@ Om du vill felsöka kan du aktivera felsökningsläget och få mer information i
 
 ### Plats för loggfiler {#check-log-files-v2}
 
-Du hittar loggfilerna för AEM-skrivbordsappen på följande platser. När du överför många resurser och vissa filer inte kan överföras kan du se filen på `backend.log` ovanstående plats för att identifiera misslyckade överföringar.
+Du hittar loggfilerna för AEM-skrivbordsappen på följande platser. När du överför många resurser, och vissa filer inte kan överföras, ska du läsa filen för att identifiera de misslyckade överföringarna `backend.log` .
 
-* I Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+* Sökväg i Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
-* Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+* Bana i Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
 
 >[!NOTE]
 >
->När du arbetar med Adobes kundtjänst på en supportförfrågan/anmälan kan du bli ombedd att dela loggfilerna för att hjälpa supportteamet att förstå problemet. Arkivera hela `Logs` mappen och dela den med kundtjänst.
+>När du arbetar med Adobes kundtjänst på en supportförfrågan/anmälan kan du bli ombedd att dela loggfilerna för att hjälpa kundtjänstteamet att förstå problemet. Arkivera hela `Logs` mappen och dela den med kundtjänst.
 
 ### Rensa cache {#clear-cache-v2}
 
@@ -74,15 +74,15 @@ Att rensa cacheminnet för AEM-skrivbordsappen är en preliminär felsökningsup
 
 * Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
-However, the location can change depending on AEM desktop&#39;s configured AEM endpoint. Värdet är en kodad version av mål-URL:en. For example, if the application is targeting `http://localhost:4502`, the directory name is `http%3A%2F%2Flocalhost%3A4502%2F`. To clear the cache, delete the appropriate folder. Another reason to clear cache is to free disk space when you are running low on disk space.
+Platsen kan dock ändras beroende på AEM-datorns konfigurerade AEM-slutpunkt. Värdet är en kodad version av mål-URL:en. Om programmet till exempel har som mål `http://localhost:4502`är katalognamnet `http%3A%2F%2Flocalhost%3A4502%2F`. Ta bort lämplig mapp för att rensa cachen. Ett annat skäl till att rensa cacheminnet är att frigöra diskutrymme när diskutrymmet börjar ta slut.
 
 >[!CAUTION]
 >
->If you clear AEM desktop cache, local asset modifications that are not synced to AEM server, are irrevocably lost.
+>Om du rensar bort AEM-skrivbordscachen går ändringar av lokala resurser som inte synkroniseras till AEM-servern oåterkalleligen förlorade.
 
-### Know the AEM desktop app version {#know-app-version-v2}
+### Känn till AEM-versionen {#know-app-version-v2}
 
-Click ![App menu](assets/do-not-localize/more_options_da2.png) to open the app&#39;s menu and click **[!UICONTROL Help]** > **[!UICONTROL About]**.
+Klicka på ![App-menyn](assets/do-not-localize/more_options_da2.png) för att öppna appens meny och klicka på **[!UICONTROL Help]** > **[!UICONTROL About]**.
 
 ## Kan inte se placerade resurser {#placed-assets-missing}
 
@@ -110,7 +110,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ## Kan inte överföra filer {#upload-fails}
 
-Om du använder datorprogrammet med AEM 6.5.1 eller senare uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. It resolves file upload failure issue related to [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
+Om du använder datorprogrammet med AEM 6.5.1 eller senare uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Det åtgärdar ett filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
 
 ## SSL-konfigurationsproblem {#ssl-config-v2}
 
