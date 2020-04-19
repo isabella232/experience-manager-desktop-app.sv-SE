@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: 9ae1580475569538838c58f642a7df43f2526d16
 
 ---
 
@@ -48,11 +48,25 @@ Om du vill felsöka problem med skrivbordsprogram bör du känna till följande 
 
 ### Aktivera felsökningsläge {#enable-debug-mode}
 
-Om du vill felsöka kan du aktivera felsökningsläget och få mer information i loggarna. Om du vill köra programmet i felsökningsläge använder du följande kommandoradsalternativ i en terminal eller i kommandotolken.
+Om du vill felsöka kan du aktivera felsökningsläget och få mer information i loggarna. Om du vill använda programmet i felsökningsläge på Mac använder du följande kommandoradsalternativ i en terminal eller i kommandotolken: `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`.
 
-* I Windows: `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
+Så här aktiverar du felsökningsläget i Windows:
 
-* Mac: `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`
+1. Leta reda på `Adobe Experience Manager Desktop.exe.config` filen i installationsmappen för skrivbordsappen. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop`. Spara och stäng filen.
+
+1. Leta `<level value="INFO"/>` mot slutet av filen. Ändra värdet till `DEBUG`, det vill säga, `<level value="DEBUG"/>`.
+
+1. Leta reda på `logging.json` filen i installationsmappen för skrivbordsappen. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`.
+
+1. Leta reda på alla instanser av `logging.json` parametern i `level` filen. Ändra värdena från `info` till `debug`. Spara och stäng filen.
+
+1. Rensa de cachelagrade kataloger som finns på den plats som anges i programinställningarna.
+
+1. Starta om datorprogrammet.
+
+<!-- The Windows command doesn't work for now.
+* On Windows: `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
+-->
 
 ### Plats för loggfiler {#check-log-files-v2}
 
@@ -114,7 +128,7 @@ Om du använder datorprogrammet med AEM 6.5.1 eller senare uppgraderar du S3- el
 
 ## SSL-konfigurationsproblem {#ssl-config-v2}
 
-De bibliotek som används av AEM-datorprogrammet för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda AEM-skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
+Biblioteken som används av AEM-datorprogrammet för HTTP-kommunikation utnyttjar strikt SSL-tillämpning. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda AEM-skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
 ## Appen svarar inte {#unresponsive}
 
