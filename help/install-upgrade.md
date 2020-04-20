@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: 0301538b5cc00a187709b484bed8f0ca7b799f03
 
 ---
 
@@ -33,26 +33,28 @@ Om du vill använda datorprogrammet Experience Manager
 
 Mer information finns i versionsinformationen för [Experience Manager-datorprogrammet](release-notes.md).
 
-## Uppgradera från app v1.x till app v2 {#upgrade-from-previous-version}
+## Uppgradera från en tidigare version {#upgrade-from-previous-version}
 
-Om du är en befintlig användare av appen måste du förstå skillnaderna och likheterna mellan den tidigare och den senaste versionen av appen. Följ även dessa riktlinjer för att gå över från v1.x till den senaste versionen.
+Om du använder v1.x av skrivbordsappen måste du förstå skillnaderna och likheterna mellan den tidigare och den senaste versionen av appen. Se [vad som är nytt i datorprogrammet](introduction.md#whats-new-v2) och [hur appen fungerar](release-notes.md#how-app-works)
 
 >[!NOTE]
 >
->Skrivbordsappen v1.x och v2 kan inte finnas samtidigt på en dator. Avinstallera den andra versionen innan du installerar en version.
+>Två versioner av skrivbordsprogrammet kan inte finnas samtidigt på en dator. Avinstallera den andra versionen innan du installerar en version.
 
-Följ dessa anvisningar för att uppgradera från v1.x till den senaste versionen av programmet:
+Följ dessa anvisningar om du vill uppgradera från en tidigare version av programmet:
 
-1. Synkronisera alla resurser innan du uppgraderar. Överför alla ändringar med appen v1.x. Detta för att undvika att ändringar går förlorade när appen v1.x avinstalleras.
-1. Avinstallera app v1.x. Rensa cachen när v1.x avinstalleras.
+1. Synkronisera alla resurser innan du uppgraderar och överför ändringarna till Experience Manager. Detta för att undvika att ändringar går förlorade när programmet avinstalleras.
+1. Avinstallera den tidigare versionen av programmet. När du avinstallerar markerar du alternativet att rensa cachen.
 1. Starta om datorn.
-1. Hämta och installera den senaste appen. Följ instruktionerna nedan.
+1. [Hämta](release-notes.md) och [installera](#install-v2) det senaste programmet. Följ instruktionerna nedan.
 
 ## Installera {#install-v2}
 
 Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befintliga Adobe Experience Manager-datorprogram v1.x innan du installerar den senaste appen. Mer information finns ovan.
 
+1. Hämta det senaste installationsprogrammet från sidan [Versionsinformation](release-notes.md) .
 1. Ha URL:en och autentiseringsuppgifterna för Experience Manager-distributionen till hands.
+1. Om du uppgraderar från en annan version av programmet läser du [Uppgradera datorprogrammet](#upgrade-from-previous-version).
 1. Hoppa över det här steget om du använder Experience Manager som en molntjänst, Experience Manager 6.4.4 eller senare eller Experience Manager 6.5.0 eller senare. Kontrollera att Experience Manager-installationen uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med Experience Manager Package Manager som Experience Manager-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
 1. Kör installationsprogrammets binärfil och följ instruktionerna på skärmen.
 1. I Windows kan installationsprogrammet uppmana dig att installera `Visual Studio C++ Redistributable 2015`. Installera den genom att följa instruktionerna på skärmen. Om installationen misslyckas installerar du den manuellt. Hämta installationsprogrammet [här](https://www.microsoft.com/en-us/download/details.aspx?id=52685) och installera både `vc_redist.x64.exe` och `vc_redist.x86.exe` filer. Kör installationsprogrammet för AEM-skrivbordsappen igen.
