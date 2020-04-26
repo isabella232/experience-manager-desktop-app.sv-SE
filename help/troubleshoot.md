@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9ae1580475569538838c58f642a7df43f2526d16
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -26,7 +26,7 @@ Följ följande metodtips för att förebygga vissa vanliga problem och felsökn
 
 * **Lär dig hur datorprogrammet fungerar**: Innan du börjar använda programmet bör du ägna några minuter åt att veta hur programmet fungerar. Lär dig hur du länkar mellan webbgränssnitt och datorer, databasmappning, resurscachning, sparar lokalt och överför i bakgrunden. Se [hur det fungerar](release-notes.md#how-app-works).
 
-* **Undvik tecken som inte stöds i mappnamn**: Använd inte blanksteg och ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders). Vissa användningsfall i Adobe Experience Manager kan påverkas av tecken i mappnamnet som inte stöds.
+* **Undvik tecken som inte stöds i mappnamn**: Använd inte blanksteg och ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders). Vissa användningsfall i Adobe Experience Manager kan påverkas av tecken i mappnamnet som inte stöds.
 
 * **Bästa tillvägagångssätt för att undvika konflikter**: Information om hur du undviker potentiella konflikter när du samarbetar med flera resurser finns i [Undvik redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
 
@@ -128,7 +128,7 @@ Om du använder datorprogrammet med AEM 6.5.1 eller senare uppgraderar du S3- el
 
 ## SSL-konfigurationsproblem {#ssl-config-v2}
 
-Biblioteken som används av AEM-datorprogrammet för HTTP-kommunikation utnyttjar strikt SSL-tillämpning. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda AEM-skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
+De bibliotek som används av AEM-datorprogrammet för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda AEM-skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
 ## Appen svarar inte {#unresponsive}
 
