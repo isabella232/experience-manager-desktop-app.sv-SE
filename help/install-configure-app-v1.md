@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
 
 ---
 
@@ -118,11 +118,10 @@ Om du vill peka programmet mot en annan mapp eller enhet redigerar du programmet
    >
    >Appen skapar automatiskt en *&lt;Encoded AEM Endpoint>* underkatalog; det här beteendet kan inte konfigureras.
 
-## Ytterligare resurser {#additional-resources}
-
+>[!MORELIKETHIS]
 * [Introduktion till AEM-datorprogrammet](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [Använd AEM-skrivbordsapp](use-app-v1.md)
-
 * [Förstå in- och utcheckning med AEM-datorprogrammet](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Använda datorprogrammet med AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Felsökning av AEM-skrivbordsprogram](troubleshoot-app-v1.md)
+
