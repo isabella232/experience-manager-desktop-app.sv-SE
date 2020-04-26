@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -56,7 +56,7 @@ Bland huvudfunktionerna i AEM-datorprogrammet finns:
 
 * Behandla inte AEM-datorprogrammet som en&quot;datorsynkroniseringsklient&quot; för AEM Assets. Den största fördelen med AEM-datorprogrammet här är att det ger&quot;virtuell&quot; åtkomst till hela databasen, och program för datorsynkronisering synkroniserar vanligtvis bara resurser som tillhör en användare. AEM-skrivbordsappen erbjuder viss nivå av cachelagring och bakgrundsuppladdning; fungerar det fortfarande på ett helt annat sätt än vanliga synkroniseringsprogram, som Adobe Creative Cloud-datorprogrammet eller Microsoft OneDrive.
 * Använd inte nätverksenheter för AEM-skrivbordsappar för att spara resurser ofta. Alla sparåtgärder överförs till AEM Resurser. Därför är det opraktiskt att utföra intensiva redigeringsåtgärder direkt i den monterade AEM Resurser-databasen. När du redigerar en resurs direkt i den monterade databasen krymper resursens tidslinje med irrelevanta versioner och lägger till ytterligare omkostnader på servern.
-* Använd inte AEM-datorprogrammet för att migrera stora mängder data från en AEM-instans till en annan. Se [Migreringshandboken](https://helpx.adobe.com/experience-manager/6-4/assets/using/assets-migration-guide.html) för att planera och utföra resursmigreringar. Datorprogrammet [stöder däremot massöverföring](use-app-v1.md#bulkupload) av ett stort antal resurser för första gången i AEM.
+* Använd inte AEM-datorprogrammet för att migrera stora mängder data från en AEM-instans till en annan. Se [Migreringshandboken](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) för att planera och utföra resursmigreringar. Datorprogrammet [stöder däremot massöverföring](use-app-v1.md#bulkupload) av ett stort antal resurser för första gången i AEM.
 
 ## Rekommendationer för valda användningsfall {#recommendations-for-selected-use-cases}
 
@@ -103,9 +103,9 @@ En bra upplevelse för användare som använder AEM-skrivbordsappen är i hög g
 
 ### Nätverkshändelser {#network-considerations}
 
-Information om de effektivaste strategierna för AEM Assets-nätverkskonfiguration finns i dokumentet [AEM Assets Network Considerations](https://helpx.adobe.com/experience-manager/6-4/assets/using/assets-network-considerations.html) . Några av de viktiga aspekter som hjälper användarna att optimera upplevelsen av AEM-skrivbordsappen är:
+Information om de effektivaste strategierna för AEM Assets-nätverkskonfiguration finns i dokumentet [AEM Assets Network Considerations](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) . Några av de viktiga aspekter som hjälper användarna att optimera upplevelsen av AEM-skrivbordsappen är:
 
-* **Använd korrekt konfigurerad Dispatcher:** Använd AEM Dispatcher för ytterligare säkerhet och se till att den är konfigurerad för [AEM-skrivbordsappsanslutning till AEM bakom en dispatcher](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#ConnectingtoAEMBehindaDispatcher)
+* **Använd korrekt konfigurerad Dispatcher:** Använd AEM Dispatcher för ytterligare säkerhet och se till att den är konfigurerad för [AEM-skrivbordsappsanslutning till AEM bakom en dispatcher](using.md)
 
 * **Spara bandbredd:** Överväg att inaktivera förhandsvisning av ikoner i Finder på Mac - när du bläddrar i den monterade databasen med Finder. Finder begär att varje fil ska generera en förhandsgranskning och gör att skrivbordsappen hämtar och cachelagrar resursen lokalt. Observera att när du sparar bandbredd försämras även användarupplevelsen för användarna på skrivbordet, så det bör göras när du arbetar med databaser med stora resurser och/eller begränsad bandbredd.
 
@@ -115,8 +115,8 @@ Information om de effektivaste strategierna för AEM Assets-nätverkskonfigurati
 
 ### Optimera serverprestanda {#optimizing-server-performance}
 
-Mer information om hur AEM Assets-servern ska optimeras för prestanda finns i [Prestandajusteringsguiden](https://helpx.adobe.com/in/experience-manager/6-4/assets/using/performance-tuning-guidelines.html)för AEM Assets. Några av de viktiga aspekterna av serverprestanda för AEM-skrivbordsappen är att optimera arbetsflödeskonfigurationen så att den fungerar bra för överföringar av resurser:
+Mer information om hur AEM Assets-servern ska optimeras för prestanda finns i [Prestandajusteringsguiden](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)för AEM Assets. Några av de viktiga aspekterna av serverprestanda för AEM-skrivbordsappen är att optimera arbetsflödeskonfigurationen så att den fungerar bra för överföringar av resurser:
 
-* **Uppladdning av resurser med högre prestanda:** Konfigurera arbetsflödesmodellen [AEM Asset Update så att den blir tillfällig](https://helpx.adobe.com/experience-manager/6-4/assets/using/performance-tuning-guidelines.html#Workflows).
+* **Uppladdning av resurser med högre prestanda:** Konfigurera arbetsflödesmodellen [AEM Asset Update så att den blir tillfällig](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows).
 
 * **Begränsa serverprocessor för överföringar:** Se till att parametern för maximala parallella arbetsflödesjobb är korrekt inställd så att överföringar inte tar bort hela processorn.
