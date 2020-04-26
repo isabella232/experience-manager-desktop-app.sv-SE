@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0301538b5cc00a187709b484bed8f0ca7b799f03
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -55,7 +55,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 1. Hämta det senaste installationsprogrammet från sidan [Versionsinformation](release-notes.md) .
 1. Ha URL:en och autentiseringsuppgifterna för Experience Manager-distributionen till hands.
 1. Om du uppgraderar från en annan version av programmet läser du [Uppgradera datorprogrammet](#upgrade-from-previous-version).
-1. Hoppa över det här steget om du använder Experience Manager som en molntjänst, Experience Manager 6.4.4 eller senare eller Experience Manager 6.5.0 eller senare. Kontrollera att Experience Manager-installationen uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med Experience Manager Package Manager som Experience Manager-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+1. Hoppa över det här steget om du använder Experience Manager som en molntjänst, Experience Manager 6.4.4 eller senare eller Experience Manager 6.5.0 eller senare. Kontrollera att Experience Manager-installationen uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med Experience Manager Package Manager som Experience Manager-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
 1. Kör installationsprogrammets binärfil och följ instruktionerna på skärmen.
 1. I Windows kan installationsprogrammet uppmana dig att installera `Visual Studio C++ Redistributable 2015`. Installera den genom att följa instruktionerna på skärmen. Om installationen misslyckas installerar du den manuellt. Hämta installationsprogrammet [här](https://www.microsoft.com/en-us/download/details.aspx?id=52685) och installera både `vc_redist.x64.exe` och `vc_redist.x86.exe` filer. Kör installationsprogrammet för AEM-skrivbordsappen igen.
 1. Starta om datorn enligt anvisningarna. Starta och konfigurera skrivbordsappen.
@@ -71,7 +71,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
    ![När du loggar in visas DAM-](assets/firstview_da2.png "innehållet i appen. När du loggar in visas DAM-innehållet i appen")
 
-1. (Experience Manager 6.5.1 eller senare) Om du använder datorprogrammet med Experience Manager 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure Connector](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AzureDataStore) eller [S3 Connector](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AmazonS3DataStore).
+1. (Experience Manager 6.5.1 eller senare) Om du använder datorprogrammet med Experience Manager 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure Connector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AzureDataStore) eller [S3 Connector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AmazonS3DataStore).
 
    Om du är Adobe Managed Services-kund (AMS) kontaktar du Adobes kundtjänst.
 
