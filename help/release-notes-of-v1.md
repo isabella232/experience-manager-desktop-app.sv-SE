@@ -9,12 +9,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f1ea381cc88b5382288b2479d26e976dc7289b88
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
 
-# Versionsinformation om AEM-datorprogrammet v1.x{#aem-desktop-app-release-notes}
+# Versionsinformation om AEM-datorprogrammet v1.x {#aem-desktop-app-release-notes}
 
 För datorprogram v1.x är följande hämtningslänkar och AEM-kompatibilitetsinformation.
 
@@ -120,7 +120,7 @@ Massöverföring: Om du överför stora mapphierarkier via Skapa > Överför map
 **Förhämtning av länkade resurser**För att förbättra användarupplevelsen när du arbetar med InDesign-dokument som innehåller länkade resurser lagrade i AEM försöker skrivbordsappen hämta dessa länkade filer i förväg till det lokala cacheminnet innan InDesign-dokumentet hämtas och öppnas. På så sätt kommer användaren att ha de länkade filerna tillgängliga lokalt och behöver inte vänta längre när de öppnas i InDesign (på länkpanelen).
 Observera att förhämtning bara fungerar om AEM känner igen länkarna på serversidan. En resurs med kända länkar kommer att ha en lista med &quot;referenser&quot; i egenskapsvyn för InDesign-resursen.
 
-### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.8.x{#enhancements-available-since-aem-desktop-app-18x}
+### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.8.x {#enhancements-available-since-aem-desktop-app-18x}
 
 AEM desktop app 1.8.1 fast-follow release added improvements when opening multiple files at once from AEM UI to the 1.8 release (CQ-4237747, CQ-4238780). Förbättringar i AEM-skrivbordsappen 1.8 är:
 
@@ -138,7 +138,7 @@ AEM desktop app 1.8.1 fast-follow release added improvements when opening multip
    * Dialogrutan Mer resursinformation: ibland var åtgärdsfältet inte synligt (CQ-4208540)
    * (Win) Filen kan nu synkroniseras efter att en tidigare version har återställts från användargränssnittet för AEM Resurser (CQ-4216411)
 
-### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.7{#Enhancements-Available-Since-AEM-Desktop-App-17}
+### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
 * Stabilitet:
    * Förbättrad stabilitet när AEM-datorprogrammet ansluter till en överlagrad AEM-server (CQ-4224803)
@@ -156,9 +156,9 @@ AEM desktop app 1.8.1 fast-follow release added improvements when opening multip
 
 >[!NOTE]
 >
->Problem som påträffas i AEM desktop app 1.7-betaversioner (som inte fanns i version 1.6 rapporteras inte i versionsinformationen).
+>Problem som påträffas i AEM desktop app 1.7 beta-inläsningar (som inte fanns i version 1.6 rapporteras inte i versionsinformationen).
 
-### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.6{#Enhancements-Available-Since-AEM-Desktop-App-16}
+### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
 * Dokumentation: Ny [metodpraxis för programdokumentation för](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html) v1.x.
 * Förbättrad inloggningsprocess för AEM:
@@ -182,7 +182,7 @@ AEM desktop app 1.8.1 fast-follow release added improvements when opening multip
    * Hög processoranvändning (CQ-4218070).
    * Dra och släpp-filer genererar fel vid överföring till AEM (CQ-4217006).
 
-### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.5{#Enhancements-Available-Since-AEM-Desktop-App-15}
+### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.5 {#Enhancements-Available-Since-AEM-Desktop-App-15}
 
 **Version 1.5.1.5 för Mac OS X:** Version 1.5.1.5 ger följande fördelar:
 
@@ -201,7 +201,7 @@ Kommentarer om länkvarningar: Creative Cloud-program (t.ex. InDesign) tar en ö
 
 Detta beteende är detsamma för resurser på den lokala hårddisken och resurser i en katalog som är monterad på AEM Desktop, med följande undantag:
 
-* Om en placerad resurs ändras av en annan användare visas varningsikonen första gången som andra användare öppnar ett dokument som innehåller den placerade resursen. Detta händer bara om den placerade resursen redan har cache-lagrats lokalt.
+* Om en placerad resurs ändras av en annan användare visas varningsikonen första gången som andra användare öppnar ett dokument som innehåller den placerade resursen. Detta händer bara om den placerade resursen redan har cachelagrats lokalt.
 * Om en användare ändrar en placerad resurs via AEM-datorns monterade katalog och sedan rensar sitt lokala cacheminne, kommer den placerade resursen att rapporteras som inaktuell.
 
 Båda dessa fall förväntas och är biverkningar av den&quot;fördröjda synkroniseringsarkitekturen&quot; i AEM Desktop.
@@ -223,7 +223,7 @@ Båda dessa fall förväntas och är biverkningar av den&quot;fördröjda synkro
    * Olika stabilitetsförbättringar (CQ-4207539, CQ-4200378)
    * Bättre hantering av AEM Assets URL i Inställningar (CQ-97388)
 
-### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.4{#Enhancements-Available-Since-AEM-Desktop-App-14}
+### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
 * Förenklad överföring av hierarkiska mappar via den nya åtgärden Skapa > Överför mapp i Touch-gränssnittet
    * Åtgärden initierar en mappöverföring som utförs av skrivbordsprogrammet
@@ -235,7 +235,7 @@ Båda dessa fall förväntas och är biverkningar av den&quot;fördröjda synkro
 * Förbättrad kompatibilitet med de senaste operativsystemsversionerna
 * Kundrapporterade korrigeringar
 
-### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.3{#Enhancements-Available-Since-AEM-Desktop-App-13}
+### Förbättringar som är tillgängliga sedan AEM-datorprogrammet 1.3 {#Enhancements-Available-Since-AEM-Desktop-App-13}
 
 * Ökad effektivitet. Användarna slipper vänta på att nätverksoperationerna ska slutföras.
 * Förbättrad integrering med Finder, som ger bättre stabilitet och åtkomst till funktioner som miniatyrbilder.
