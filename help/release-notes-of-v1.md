@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
 
 ---
 
@@ -115,7 +115,7 @@ Massöverföring: Om du överför stora mapphierarkier via Skapa > Överför map
 * Misslyckade överföringsprocesser visas med ett felmeddelande (endast om hela överföringen misslyckas)
 * Om en enskild fil inte överförs visas den på fliken som ett fel. Annars visas inte enskilda filer på fliken * bara en post för hela överföringen.
 
-**Ikoner som anger status för bakgrundsåtgärder** Programikonen visar läget för bakgrundsåtgärderna för att ge användarna bättre visuella referenser. Om programmet till exempel inte är anslutet till AEM kommer ikonen att bli nedtonad och om det finns en aktiv överföring visas en&quot;synkroniseringsövertäckning&quot; osv.
+**Ikoner som anger status för bakgrundsåtgärder** Programikonen visar läget för bakgrundsåtgärderna för att ge användarna bättre visuella referenser. Om programmet till exempel inte är anslutet till AEM kommer ikonen att bli nedtonad och när en aktiv överföring görs visas en&quot;synkroniseringsövertäckning&quot; osv.
 
 **Förhämtning av länkade resurser**För att förbättra användarupplevelsen när du arbetar med InDesign-dokument som innehåller länkade resurser lagrade i AEM försöker skrivbordsappen hämta dessa länkade filer i förväg till det lokala cacheminnet innan InDesign-dokumentet hämtas och öppnas. På så sätt kommer användaren att ha de länkade filerna tillgängliga lokalt och behöver inte vänta längre när de öppnas i InDesign (på länkpanelen).
 Observera att förhämtning bara fungerar om AEM känner igen länkarna på serversidan. En resurs med kända länkar kommer att ha en lista med &quot;referenser&quot; i egenskapsvyn för InDesign-resursen.
@@ -201,7 +201,7 @@ Kommentarer om länkvarningar: Creative Cloud-program (t.ex. InDesign) tar en ö
 
 Detta beteende är detsamma för resurser på den lokala hårddisken och resurser i en katalog som är monterad på AEM Desktop, med följande undantag:
 
-* Om en placerad resurs ändras av en annan användare visas varningsikonen första gången som andra användare öppnar ett dokument som innehåller den placerade resursen. Detta händer bara om den placerade resursen redan har cachelagrats lokalt.
+* Om en placerad resurs ändras av en annan användare visas varningsikonen första gången som andra användare öppnar ett dokument som innehåller den placerade resursen. Detta händer bara om den placerade resursen redan har cache-lagrats lokalt.
 * Om en användare ändrar en placerad resurs via AEM-datorns monterade katalog och sedan rensar sitt lokala cacheminne, kommer den placerade resursen att rapporteras som inaktuell.
 
 Båda dessa fall förväntas och är biverkningar av den&quot;fördröjda synkroniseringsarkitekturen&quot; i AEM Desktop.
@@ -333,7 +333,7 @@ Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återst
 AEM fungerar med olika versioner av AEM. Se kompatibilitetsmatrisen för de versioner som stöds.
 
 | Version | Revision | Releasedatum | Kompatibilitet |
-|---------|------------------------|--------------|-------------------------------------------------------------|
+|---|---|---|---|
 | 1.10 | 1.10.0.3 (Mac och Win) | 31 aug 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.9 | 1.9.1.1 (Mac och Win) | 21 juni 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.8 | 1.8.1.0 (Mac och Win) | 28 mars 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
