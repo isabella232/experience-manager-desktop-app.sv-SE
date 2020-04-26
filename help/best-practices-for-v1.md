@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 52f70e5b95318d8b3b3930be1233cc51aa997914
 
 ---
 
@@ -105,7 +105,7 @@ En bra upplevelse för användare som använder AEM-skrivbordsappen är i hög g
 
 Information om de effektivaste strategierna för AEM Assets-nätverkskonfiguration finns i dokumentet [AEM Assets Network Considerations](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) . Några av de viktiga aspekter som hjälper användarna att optimera upplevelsen av AEM-skrivbordsappen är:
 
-* **Använd korrekt konfigurerad Dispatcher:** Använd AEM Dispatcher för ytterligare säkerhet och se till att den är konfigurerad för [AEM-skrivbordsappsanslutning till AEM bakom en dispatcher](using.md)
+* **Använd korrekt konfigurerad Dispatcher:** Använd AEM Dispatcher för ytterligare säkerhet och se till att den är konfigurerad för [AEM-skrivbordsappsanslutning till AEM bakom en dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
 * **Spara bandbredd:** Överväg att inaktivera förhandsvisning av ikoner i Finder på Mac - när du bläddrar i den monterade databasen med Finder. Finder begär att varje fil ska generera en förhandsgranskning och gör att skrivbordsappen hämtar och cachelagrar resursen lokalt. Observera att när du sparar bandbredd försämras även användarupplevelsen för användarna på skrivbordet, så det bör göras när du arbetar med databaser med stora resurser och/eller begränsad bandbredd.
 
