@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -159,7 +159,7 @@ Alternativ på snabbmenyn för att komma åt och öppna resurser med hjälp av A
 
 Med AEM Resurser kan du checka ut resurser för redigering och checka in dem igen när du är klar med ändringarna. När du har checkat ut en resurs kan bara du redigera, kommentera, publicera, flytta eller ta bort resursen. När du checkar ut en resurs låses resursen och andra användare hindras från att utföra någon av dessa åtgärder. Om du vill kunna checka ut/in resurser måste du ha skrivbehörighet för dem.
 
-Det finns två sätt att checka ut resurser från AEM-webbgränssnittet. Detaljerad information om den första metoden finns i [Checka in och checka ut filer från Assets-gränssnittet](https://helpx.adobe.com/in/experience-manager/6-4/assets/using/check-out-and-submit-assets.html). Följ de här stegen för de andra metoderna för att checka ut och öppna resursen när AEM-datorprogrammet är installerat.
+Det finns två sätt att checka ut resurser från AEM-webbgränssnittet. Detaljerad information om den första metoden finns i [Checka in och checka ut filer från Assets-gränssnittet](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html). Följ de här stegen för de andra metoderna för att checka ut och öppna resursen när AEM-datorprogrammet är installerat.
 
 1. Öppna gränssnittet för AEM Resurser och för pekaren över en mapp eller en resurs för att visa skrivbordsåtgärderna som snabbåtgärder i kortvyn.
 
@@ -256,7 +256,7 @@ Ett annat alternativ om du föredrar att arbeta på skrivbordet är att välja f
 
 >[!MORELIKETHIS]
 >
->* [Introduktion till AEM-datorprogrammet](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
->* [Förstå in- och utcheckning med AEM-datorprogrammet](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
+>* [Introduktion till AEM-datorprogrammet](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
+>* [Förstå in- och utcheckning med AEM-datorprogrammet](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 >* [Felsöka AEM-skrivbordsprogram](troubleshoot-app-v1.md)
 
