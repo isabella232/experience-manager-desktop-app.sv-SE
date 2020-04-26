@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -22,9 +22,9 @@ Tack vare en sådan integrering kan olika roller i organisationen hantera resurs
 
 Om du vill använda AEM-datorprogrammet
 
-* Ensure that your AEM server version is supported by AEM desktop app. See the [compatibility matrix](release-notes-of-v1.md#compatibilitymatrix).
-* Download and install the application.
-* Test the connection using a few assets. See [Access and open assets on your desktop](use-app-v1.md#openondesktop).
+* Kontrollera att din AEM-serverversion stöds av AEM-datorprogrammet. Se [kompatibilitetsmatrisen](release-notes-of-v1.md#compatibilitymatrix).
+* Hämta och installera programmet.
+* Testa anslutningen med några resurser. Se [Åtkomst och öppna resurser på skrivbordet](use-app-v1.md#openondesktop).
 
 ## Systemkrav, krav och nedladdningslänkar {#system-requirements-prerequisites-and-download-links}
 
@@ -120,9 +120,9 @@ Om du vill peka programmet mot en annan mapp eller enhet redigerar du programmet
 
 ## Ytterligare resurser {#additional-resources}
 
-* [Introduktion till AEM-datorprogrammet](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
+* [Introduktion till AEM-datorprogrammet](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [Använd AEM-skrivbordsapp](use-app-v1.md)
 
-* [Förstå in- och utcheckning med AEM-datorprogrammet](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
-* [Använda datorprogrammet med AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
+* [Förstå in- och utcheckning med AEM-datorprogrammet](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+* [Använda datorprogrammet med AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Felsökning av AEM-skrivbordsprogram](troubleshoot-app-v1.md)
