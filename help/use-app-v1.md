@@ -1,15 +1,9 @@
 ---
-title: Använd AEM-skrivbordsapp version 1.x
+title: Använd version 1.x av AEM-skrivbordsappen.
 description: Lär dig hur du använder Adobe Experience Manager-datorprogrammet version 1.x och optimerar ditt arbete med resurser på datorn.
-uuid: 55057617-89de-43cd-8419-1252a42ab2fb
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 ---
 
@@ -22,16 +16,15 @@ Tack vare en sådan integrering kan olika roller i organisationen hantera resurs
 
 De viktigaste uppgifterna du gör med AEM-datorprogrammet v1 är:
 
-* [Anslut till en AEM-server](#installandconnect)
+1. [Anslut till en AEM-server](#installandconnect)
+1. [Öppna resurser direkt på skrivbordet](#openondesktop)
+1. [Redigera och checka ut resurser från datorn](#workonassets)
+1. [Överför resurser och mappar i grupp](#bulkupload)
 
-* [Öppna resurser direkt på skrivbordet](#openondesktop)
-* [Redigera och checka ut resurser från datorn](#workonassets)
-
-* [Överför resurser och mappar i grupp](#bulkupload)
-
-Information om de olika rekommenderade åtgärderna och inte finns i [Bästa metoderna för att använda programmet](best-practices-for-v1.md). Om du har problem med appen kan du läsa om hur du [felsöker AEM Desktop](troubleshoot-app-v1.md).
+Information om de olika rekommenderade åtgärderna och inte finns i [Bästa metoderna för att använda programmet](best-practices-for-v1.md). Om du har problem med appen kan du läsa om hur du [felsöker AEM-skrivbordet](troubleshoot-app-v1.md).
 
 >[!NOTE]
+>
 >AEM-datorprogrammet introducerades i AEM 6.1-versionen och kallades AEM Assets Companion App.
 
 ## AEM-kontaktytor i det kreativa arbetsflödet {#aem-desktop-app-touch-points-in-the-creative-workflow}
@@ -78,7 +71,7 @@ Programmet tillåter inställningar för att ansluta och koppla från AEM-servra
 
 **Alternativ** Klicka/tryck på Alternativ i AEM-appfältet för datorer för att komma åt inställningar för att starta programmet när datorn startas; ansluta till AEM-servern när appen startas, och ändra den lokala enhetsbokstaven där AEM Resurser är tillgängliga efter montering.
 
-**Avancerat > Hantera cache** Du kan styra hur mycket diskutrymme som är tillgängligt för lokal cachelagring. Artefakterna från AEM Resurser-servern cachas lokalt för en smidigare upplevelse. Du kan ändra standardinställningarna så att de passar dina behov. Du kan även rensa cachen för att hämta alla resurser på nytt. När du rensar cachen bevaras ändringarna som inte sparats. Resurser som inte har checkats in på AEM-servern behålls och tas inte bort.
+**Avancerat > Hantera cacheminne** Du kan styra hur mycket diskutrymme som är tillgängligt för lokal cachning. Artefakterna från AEM Resurser-servern cachas lokalt för en smidigare upplevelse. Du kan ändra standardinställningarna så att de passar dina behov. Du kan även rensa cachen för att hämta alla resurser på nytt. När du rensar cachen bevaras ändringarna som inte sparats. Resurser som inte har checkats in på AEM-servern behålls och tas inte bort.
 
 ### Ansluta till en AEM-server {#connect}
 
@@ -98,22 +91,39 @@ Programmet har stöd för proxykonfiguration i Mac och Windows. Konfigurationen 
 
 ### Aktivera skrivbordsåtgärder i AEM-webbgränssnittet {#desktopactions}
 
-I resursgränssnittet i en webbläsare kan du utforska resursplatserna eller checka ut och öppna resursen för redigering i ditt skrivbordsprogram. Dessa alternativ kallas skrivbordsåtgärder och är inte aktiverade som standard. Följ de här stegen för att aktivera den.
+I Assets-användargränssnittet kan du utforska resursplatserna eller checka ut och öppna resursen för redigering i ditt skrivbordsprogram. Dessa alternativ kallas skrivbordsåtgärder och är inte aktiverade som standard. Följ de här stegen för att aktivera den.
 
-1. Klicka på/tryck på ikonen **Användare** i verktygsfältet i resurskonsolen.
-1. Klicka på/tryck på för **[!UICONTROL My Preferences]** att visa **[!UICONTROL Preferences]** dialogrutan.
-1. I dialogrutan Användarinställningar väljer du **[!UICONTROL Show Desktop Actions For Assets]**. Klicka/tryck på **[!UICONTROL Accept]**.
+1. Klicka/tryck på ikonen Användare i det övre högra hörnet av verktygsfältet i gränssnittet Resurser.
+1. Klicka **[!UICONTROL My Preferences]** för att visa **[!UICONTROL Preferences]** dialogrutan.
+
+   ![AEM-gränssnitt med användarinställningar](assets/aem_ui_user_preferences.png)
+
+1. I dialogrutan Användarinställningar väljer du **[!UICONTROL Show Desktop Actions For Assets]**. Klicka på **[!UICONTROL Accept]**.
 
    ![Markera Visa skrivbordsåtgärder för resurser för att aktivera skrivbordsåtgärder](assets/chlimage_1-3.png)
 
-   Markera Visa skrivbordsåtgärder för resurser för att aktivera skrivbordsåtgärder
+   *Bild: Markera Visa skrivbordsåtgärder för resurser om du vill aktivera skrivbordsåtgärder.*
 
 ## Få åtkomst till och öppna resurser på datorn {#openondesktop}
+
+När du klickar på **Öppna** för att öppna en resurs på den lokala datorn hämtas resursen till dess interna cache. Programmet startar det inbyggda skrivbordsprogrammet som är associerat med filtypen för den hämtade resursen.
+
+På Mac väljer du **Öppna** på snabbmenyn för att öppna en resurs via AEM-datorprogrammet. I Windows väljer du Öppna på webben på snabbmenyn för att öppna resursen. Öppna resursen genom att klicka/trycka på ikonen ![](assets/aemassets_icon_openondesktop.png) Öppna på skrivbordet i fönstret Resursstatus.
+
+För Adobe InDesign-filer (INDD) väljer du **[!UICONTROL Open]** på snabbmenyn. När du klickar på det här alternativet hämtar appen de länkade resurserna till det lokala filsystemet och öppnar sedan INDD-filen i Adobe InDesign. Den här metoden ser till att nödvändiga resurser är lokalt tillgängliga när du redigerar INDD-filen.
+
+![Alternativ på snabbmenyn för att komma åt och öppna resurser med hjälp av AEM-skrivbordsappen](assets/aem_desktopapp_mac_context_menu.png)
+
+*Bild: Alternativ på snabbmenyn för att komma åt och öppna resurser med hjälp av AEM-skrivbordsappen.*
 
 >[!NOTE]
 >I Windows förhindrar [standardinställningen](https://support.microsoft.com/en-us/kb/2668751) för Windows 7 att AEM-skrivbordsappen hanterar resurser som är större än 50 MB.
 
-### Visa platsen för mappade resurser från AEM-webbgränssnittet {#reveal-the-location-of-mapped-assets-from-aem-web-interface}
+>[!NOTE]
+>
+>Adobe rekommenderar att du går till Visningsalternativ i Finder på Mac och inaktiverar alternativen **Visa objektinformation**, **Visa objektförhandsgranskning** och **Visa förhandsgranskningskolumn** för den monterade AEM Resurser-mappen. Det förbättrar prestandan.
+
+### Ytterligare alternativ i AEM-gränssnittet {#additional-options-in-aem-assets}
 
 När du har mappat AEM Resurser-databasen till din lokala enhet kan du aktivera ytterligare ikoner och funktionen Mappöverföring visas för mappade resurser och mappar.
 
@@ -121,31 +131,17 @@ När du har mappat AEM Resurser-databasen till din lokala enhet kan du aktivera 
 
    ![I resursgränssnittet öppnar du snabbåtgärdsmenyn för att se skrivbordsåtgärder](assets/chlimage_1-4.png)
 
-   I resursgränssnittet öppnar du snabbåtgärdsmenyn för att se skrivbordsåtgärder
+   *Bild: I resursgränssnittet öppnar du snabbåtgärdsmenyn för att se skrivbordsåtgärder.*
 
-   Dessa skrivbordsåtgärder är också tillgängliga när du klickar/trycker på ikonen **Skrivbordsåtgärder** i verktygsfältet efter att du har valt resursen eller i verktygsfältet på resurssidan.
+   Dessa skrivbordsåtgärder är också tillgängliga när du klickar på ikonen **Skrivbordsåtgärder** i verktygsfältet efter att du har valt resursen eller från verktygsfältet på resurssidan.
 
 1. Om du vill öppna resursen i skrivbordsprogrammet som är associerat med det specifika filtillägget klickar/trycker du på snabbåtgärden **Öppna på skrivbordet** och ![Öppna på skrivbordet](assets/aemassets_icon_openondesktop.png).
 
    Du kan också välja **Öppna** på menyn **Skrivbordsåtgärder** i verktygsfältet.
 
-1. Klicka på/tryck på ikonen **Visa** snabbåtgärd ![Visa](assets/aemassets_reveal_icon.png) för att leta reda på resursen i det lokala filsystemet.
+Om du vill hitta en viss resurs i det lokala filsystemet klickar du på **Visa** snabbredigeringsikonen ![Visa](assets/aemassets_reveal_icon.png). Du kan också välja **Visa** på menyn **Skrivbordsåtgärder** i verktygsfältet.
 
-   Du kan också välja **Visa** på menyn **Skrivbordsåtgärder** i verktygsfältet.
-
-### Öppna AEM-resurser från Finder eller Utforskaren {#open-aem-assets-from-the-finder-or-the-explorer}
-
-På Mac väljer du Öppna på snabbmenyn för att öppna en resurs via AEM Desktop.
-
-För Adobe InDesign-filer (INDD) väljer du **[!UICONTROL Open]** på snabbmenyn. När du klickar på det här alternativet hämtar appen de länkade resurserna till det lokala filsystemet och öppnar sedan INDD-filen i Adobe InDesign. Den här metoden ser till att nödvändiga resurser är lokalt tillgängliga när du redigerar INDD-filen.
-
-I Windows väljer du Öppna på webben på snabbmenyn för att öppna resursen. Öppna resursen genom att klicka/trycka på ikonen ![](assets/aemassets_icon_openondesktop.png) Öppna på skrivbordet i fönstret Resursstatus.
-
-![Alternativ på snabbmenyn för att komma åt och öppna resurser med hjälp av AEM-skrivbordsappen](assets/aem_desktopapp_mac_context_menu.png)
-
-Alternativ på snabbmenyn för att komma åt och öppna resurser med hjälp av AEM-skrivbordsappen
-
-### Förstå tillgångsstatusarna {#understand-the-asset-statuses}
+## Förstå tillgångsstatusarna {#understand-the-asset-statuses}
 
 | ![Ikon för Windows-standardprogram](assets/win_default.png) | Appen är ansluten till servern och alla resurser synkroniseras. |
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -181,7 +177,7 @@ Det finns två sätt att checka ut resurser från AEM-webbgränssnittet. Detalje
 1. Välj menyalternativet Öppna. De valda resurserna öppnas i förhandsgranskningsläge.
 1. Om du vill redigera resurserna väljer du alternativet Redigera. Resurserna öppnas i redigeringsläge.
 
-### Kolla in material på Mac {#check-out-assets-on-mac}
+### Ta en titt på resurser från Finder i Mac OS {#check-out-assets-on-mac}
 
 Med appen kan du checka ut resursfiler för att förhindra att andra användare ändrar de filer som du arbetar med.
 
@@ -219,19 +215,17 @@ Med appen kan du checka ut resursfiler för att förhindra att andra användare 
 1. Granska resursen i Utforskaren. Låsikonen på ![tillgångslåsikonen](assets/aemassets_icon_lockcheckout.png) anger att du har checkat ut resursen.
 
    >[!NOTE]
-   >Låsikonen kan visas efter några minuters fördröjning. AEM-skrivbordsappen cachelagrar resurserna för snabb åtkomst så det kan ta en stund att uppdatera den låsta statusen.
+   >Låsikonen kan visas efter en fördröjning. AEM-skrivbordsappen cachelagrar resurserna för snabb åtkomst så det kan ta en stund att uppdatera den låsta statusen.
 
 1. Om du vill checka in resursen så att den är tillgänglig för andra användare klickar du på/trycker på ikonen för incheckning i dialogrutan **Resursinformation** .
 
 ### Checka in en resurs med Finder eller Utforskaren och med webbgränssnittet {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
-När du är klar med redigeringen av resurserna sparar du resurserna i skrivbordsprogrammet. Välj Mer information på snabbmenyn och klicka/tryck på incheckning.
+När du är klar med redigeringen av resurserna sparar du resurserna i skrivbordsprogrammet. På snabbmenyn väljer du **Mer resursinformation** och klickar på incheckning.
 
-Resurserna överförs till AEM-servern. Du kan också kontrollera överföringsstatus genom att välja Visa resursstatus från ikonen i fältet.
+Resurserna överförs till AEM-servern. Du kan också kontrollera överföringsstatus genom att välja **Visa resursstatus** från systemfältsikonen. Du kan också checka in en resurs från AEM-webbgränssnittet. Klicka på de utcheckade resurserna eller markera dem. Klicka på ikonen för ![incheckning](assets/aemassets_icon_checkin.png)i verktygsfältet.
 
-![Filöverföring och överföringsstatus för AEM-skrivbordsappar](assets/aem_desktopapp_upload_status.png)
-
-Du kan också checka in en resurs från AEM-webbgränssnittet. Klicka/tryck på de utcheckade resurserna eller markera dem. Klicka/tryck på ikonen för ![incheckning](assets/aemassets_icon_checkin.png)i verktygsfältet.
+En resurs överförs automatiskt till AEM efter att eventuella ändringar har sparats lokalt. Incheckningen gör resursen tillgänglig för andra AEM-användare för redigering.
 
 ### Massöverföra resurser och mappar till AEM-servern {#bulkupload}
 
@@ -250,9 +244,9 @@ Med AEM Desktop kan du överföra en hel mapp med resurser från din lokala filk
 
 1. När mappen har överförts stänger du dialogrutan och navigerar till resursgränssnittet. Den överförda mappen visas i webbgränssnittet.
 
-Observera att du *inte bör* kopiera och klistra in eller dra och släppa fler filer/kapslade mappar från den lokala hårddisken i Finder eller Utforskaren till det nätverksresursområde som mappas av AEM-datorprogrammet. Den är mycket mindre tillförlitlig än funktionen Överför mapp som beskrivs ovan.
+Adobe rekommenderar inte att du kopierar och klistrar in eller drar ett större antal filer eller kapslade mappar från det lokala filsystemet till nätverksresursområdet. Programmet kan inte styra överföringsprocessen på grund av tekniska begränsningar och prestandan är dålig.
 
-Ett annat alternativ om du föredrar att arbeta på skrivbordet är att välja filer/mappar som du vill överföra till AEM i Finder eller Utforskaren, kopiera dem till systemets Urklipp, sedan navigera till målmappen i nätverksresursområdet och välj Klistra in resurser på snabbmenyn för AEM-skrivbordsappen. På så sätt börjar AEM-skrivbordsappen överföra de inklistrade resurserna som liknar den Upload Folder som beskrivs ovan.
+Du kan också välja filer/mappar som du vill överföra till AEM i Finder eller Utforskaren, kopiera dem till systemets Urklipp, navigera till målmappen i nätverksresursområdet och välja **Klistra in resurser** på snabbmenyn för AEM-skrivbordsappen. På så sätt börjar AEM-skrivbordsappen överföra inklistrade resurser som liknar alternativet **Överför mapp** som finns i AEM-webbgränssnittet.
 
 >[!MORELIKETHIS]
 >
