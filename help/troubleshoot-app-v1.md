@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab63bfd7eea356be924e1ed62eef387796913e6c
+source-git-commit: a18aa9c3dad8802c3de929ba4ebb1a1583b47165
 
 ---
 
@@ -76,6 +76,10 @@ AEM-skrivbordsappen har interna cachnings- och bakgrundsuppladdningsfunktioner s
 Till skillnad från Creative Cloud-datorprogrammet eller andra filsynkroniseringslösningar, som Microsoft One Drive, är AEM-datorprogrammet inte en fullständig synkroniseringsklient. Orsaken till detta är att det ger tillgång till hela AEM Resurser-databasen, som kan vara mycket stor (hundratals gigabyte eller terabyte) för en fullständig synkronisering.
 
 Cachelagring ger möjlighet att begränsa nätverks-/lagringskostnaderna till endast en delmängd av resurserna som är relevanta för användaren.
+
+>[!CAUTION]
+>
+>Adobe rekommenderar att du stänger av genereringen av miniatyrbilder för snabbare bläddring. Om du aktiverar förhandsvisning av ikoner cachelagras de digitala resurserna när du navigerar genom den monterade mappen. Programmet hämtar också resurser som användaren kanske inte bryr sig om, vilket lägger till belastning på servern, förbrukar användarens bandbredd och använder mer av användarens diskutrymme.
 
 Så här utför AEM-datorprogrammet cachelagring:
 
