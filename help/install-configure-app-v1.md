@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
+source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 ---
 
@@ -38,14 +38,6 @@ Mer information finns i [Installera och ansluta AEM-datorprogrammet till AEM-ser
 >
 >Endast en instans av AEM-datorprogrammet kan installeras och vara aktiv åt gången.
 
-## Stöd för proxy {#proxy-support}
-
-AEM-skrivbordsappen använder systemets fördefinierade proxy för att ansluta till Internet via HTTPS. Appen kan bara ansluta med en nätverksproxy som inte kräver extra autentisering.
-
-Om du konfigurerar eller ändrar proxyserverinställningarna för Windows (Internetalternativ > LAN-inställningar) startar du om AEM-datorprogrammet så att ändringarna börjar gälla.
-
-Om din proxy kräver autentisering kan IT-teamet vitlista URL:en för AEM-resurser i proxyserverinställningarna så att programtrafiken kan passera igenom.
-
 ## Filhantering {#file-handling}
 
 När du ändrar en fil från en nätverksresursplats som monterats av skrivbordsprogrammet, sparas filerna på den platsen i två faser. I den första fasen sparas en fil lokalt. Användaren kan spara filen och fortsätta arbeta med den utan att vänta på att överföringen ska slutföras.
@@ -69,9 +61,21 @@ Metoderna copy och move i Assets API kräver att följande ytterligare rubriker 
 * X-djup
 * X-Overwrite
 
-AEM Desktop ansluter till AEM via en URL som innehåller standardporten. Inställningen i `virtualhosts` dispatcherns konfiguration bör därför innehålla standardportnumret. Mer information om `virtualhosts` konfiguration finns i [Identifiera virtuella värdar](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts).
+AEM-skrivbordet ansluter till AEM via en URL som innehåller standardporten. Inställningen i `virtualhosts` dispatcherns konfiguration bör därför innehålla standardportnumret. Mer information om `virtualhosts` konfiguration finns i [Identifiera virtuella värdar](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts).
 
 Mer information om hur du konfigurerar dispatchern att skicka genom dessa ytterligare rubriker finns i [Ange HTTP-rubriker](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
+
+### Stöd för proxy {#proxy-support}
+
+AEM-skrivbordsappen använder systemets fördefinierade proxy för att ansluta till Internet via HTTPS. Appen kan bara ansluta med en nätverksproxy som inte kräver extra autentisering.
+
+Om du konfigurerar eller ändrar proxyserverinställningarna för Windows (Internetalternativ > LAN-inställningar) startar du om AEM-datorprogrammet så att ändringarna börjar gälla.
+
+>[!NOTE]
+>
+>Proxykonfigurationen används bara när du startar skrivbordsprogrammet. Stäng och starta om programmet för att ändringarna ska börja gälla.
+
+Om din proxy kräver autentisering kan IT-teamet vitlista URL:en för AEM-resurser i proxyserverinställningarna så att programtrafiken kan passera igenom.
 
 ## Anpassa dialogrutan Resursinformation {#customize-the-asset-info-dialog}
 
