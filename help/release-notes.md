@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: aca68b0c2eb363e33c8a6edec2370758124a4b9e
+source-git-commit: 63cb82b6bdafeb87d296a895d68cb3912045839a
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: aca68b0c2eb363e33c8a6edec2370758124a4b9e
 | AEM-versioner som stöds | AEM som molntjänst; AEM 6.5; AEM 6.4; AEM 6.3 (med kompatibilitetspaket) |
 | Typ | Mindre release |
 | Releasedatum | 15 april 2020 (Mac och Win) |
-| Hämta URL:er | [macOS 64-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); 64-bitars [Windows](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); 32-bitars [Windows](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
+| Hämta URL:er | [macOS 64-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows 64-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows 32-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
 
 ## Systemkrav och krav {#system-requirements-and-prerequisites-v2}
 
@@ -75,7 +75,7 @@ Felkorrigeringarna och uppdateringarna är:
 * Korrigerat problem med överföringar av resurser när filnamn eller sökvägar innehåller vissa GB18030-tecken. <!-- CQ-4283494 -->
 * Alternativet Sortera efter relevans är tillgängligt efter byte till en annan sorteringstyp i sökresultaten. <!-- CQ-4286874 -->
 * Datorprogrammet listar nu undermappar utan att behöva uppdatera explicit. <!-- CQ-4285711 -->
-* (Windows) Korrigerade ett sällsynt problem med oanvändbart appgränssnitt på vissa Windows-datorer. Användarna kan inte klicka på appgränssnittet eftersom det ser ut att vara förvrängt eftersom klickområdet för gränssnittselementen är&quot;skiftat&quot;. <!-- CQ-4280785 -->
+* (Windows) Korrigerade ett sällsynt problem med oanvändbart appgränssnitt på vissa Windows-datorer. Användarna kan inte klicka på appgränssnittet eftersom det ser ut att vara förvrängt av klickområdet för gränssnittselementen &quot;shifts&quot;. <!-- CQ-4280785 -->
 
 **Uppdateringar i app v2.0.1**
 
