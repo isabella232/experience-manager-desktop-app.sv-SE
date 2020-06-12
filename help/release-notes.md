@@ -10,9 +10,9 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2e634c13ef1bcb0cd1868100f5a2d7cb20c189be
+source-git-commit: a7a803edce0b6300b4a4142dcdc2f61d8347acea
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1319'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 Adobe Experience Manager är kompatibelt med följande operativsystem:
 
-* Mac OS X 10.10 eller senare, med de senaste felkorrigeringarna.
+* Mac OS X 10.14 eller senare, med de senaste felkorrigeringarna.
 * Windows 7 och Windows 10 med de senaste Service Pack och felkorrigeringarna.
 
 Appen fungerar med följande Experience Manager-versioner, oavsett om de distribueras som en molntjänst, på Adobe Managed Services (AMS) eller på plats:
