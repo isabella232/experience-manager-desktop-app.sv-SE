@@ -9,7 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
+source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 Med hjälp av AEM-skrivbordsappen är resurserna i AEM lättillgängliga på din lokala dator och kan användas i alla datorprogram. Resurser kan enkelt visas i Finder eller Utforskaren i Windows, öppnas i skrivbordsprogram och ändras lokalt. Ändringarna sparas sedan i AEM när du överför och en ny version skapas i databasen.
 
-Tack vare en sådan integrering kan olika roller i organisationen hantera resurser centralt i AEM Assets och få tillgång till dem i Creative Cloud och andra program, samtidigt som det blir enkelt att följa de olika standarderna, inklusive branding.
+Tack vare en sådan integrering kan olika roller i organisationen hantera mediefilerna centralt i AEM Assets och få tillgång till dem i Creative Cloud och andra program, samtidigt som det är enkelt att följa de olika standarderna, inklusive branding.
 
 Om du vill använda AEM-datorprogrammet
 
@@ -44,7 +47,7 @@ När du ändrar en fil från en nätverksresursplats som monterats av skrivbords
 
 I den andra fasen överför skrivbordsappen den uppdaterade filen till AEM-servern efter en fördefinierad fördröjning (till exempel 30-tal). Den här åtgärden utförs i bakgrunden. Använd alternativet Visa resursstatus för att visa överföringsåtgärdens status.
 
-1. Överför en resurs till AEM Resurser.
+1. Överför en resurs till AEM Assets.
 1. Klicka på/tryck på ikonen för AEM-skrivbordsappen i verktygsfältet.
 1. Välj alternativet Visa resursstatus på menyn.
 1. Granska överföringsåtgärdens status i dialogrutan.
@@ -75,7 +78,7 @@ Om du konfigurerar eller ändrar proxyserverinställningarna för Windows (Inter
 >
 >Proxykonfigurationen används bara när du startar skrivbordsprogrammet. Stäng och starta om programmet för att ändringarna ska börja gälla.
 
-Om din proxy kräver autentisering kan IT-teamet vitlista URL:en för AEM-resurser i proxyserverinställningarna så att programtrafiken kan passera igenom.
+Om din proxy kräver autentisering kan IT-teamet tillåta att Experience Manager Assets-URL:en i proxyserverinställningarna tillåter att programtrafiken passerar igenom.
 
 ## Anpassa dialogrutan Resursinformation {#customize-the-asset-info-dialog}
 
@@ -94,7 +97,7 @@ I Mac OS X finns en liknande katalog i `~/Library/Group Containers/group.com.ado
 
 ### Alternativ i appen för att hantera cache {#in-app-option-to-manage-cache}
 
-Du kan styra hur mycket diskutrymme som finns tillgängligt för lokal cachelagring. Artefakterna från AEM Resurser-servern cachas lokalt för en smidigare upplevelse. Du kan ändra standardinställningarna så att de passar dina behov. Du kan även rensa cachen för att hämta alla resurser på nytt. Om du vill ange önskade alternativ klickar du på programikonen och sedan på **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
+Du kan styra hur mycket diskutrymme som finns tillgängligt för lokal cachelagring. Artefakterna från AEM Assets-servern cachelagras lokalt för en smidigare upplevelse. Du kan ändra standardinställningarna så att de passar dina behov. Du kan även rensa cachen för att hämta alla resurser på nytt. Om du vill ange önskade alternativ klickar du på programikonen och sedan på **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
 
 >[!NOTE]
 >
