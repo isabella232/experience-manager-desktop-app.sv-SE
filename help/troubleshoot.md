@@ -1,5 +1,5 @@
 ---
-title: Bästa tillvägagångssätt för och felsökning av Adobe Experience Manager-datorprogrammet
+title: Bästa tillvägagångssätt för och felsökning av datorprogrammet Adobe Experience Manager
 description: Följ bästa praxis och felsök för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
@@ -9,14 +9,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a18aa9c3dad8802c3de929ba4ebb1a1583b47165
+source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 0%
 
 ---
 
 
-# Felsöka Adobe Experience Manager-datorprogrammet {#troubleshoot-v2}
+# Felsöka datorprogrammet Adobe Experience Manager {#troubleshoot-v2}
 
-Adobe Experience Manager-datorprogrammet (AEM) ansluter till en fjärransluten Experience Manager-distributionsdatabas för digital resurshantering (DAM). Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar och innehåller funktioner för att hantera konflikter med användargränssnittet i AEM Assets.
+Skrivbordsappen Adobe Experience Manager (AEM) ansluter till Experience Manager-distributionsprogrammets DAM-databas (Digital Asset Management). Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar och innehåller funktioner för att hantera konflikter med användargränssnittet i AEM Assets.
 
 Läs vidare för att felsöka appen, lära dig de bästa metoderna och ta reda på begränsningarna.
 
@@ -24,23 +27,23 @@ Läs vidare för att felsöka appen, lära dig de bästa metoderna och ta reda p
 
 Följ följande metodtips för att förebygga vissa vanliga problem och felsökning.
 
-* **Lär dig hur datorprogrammet fungerar**: Innan du börjar använda programmet bör du ägna en stund åt att veta hur programmet fungerar. Lär dig mer om att länka mellan Experience Manager-webbgränssnittet och skrivbordet, mappning av databaser, cachelagring av resurser, spara lokalt och överföra i bakgrunden. Se [hur det fungerar](release-notes.md#how-app-works).
+* **Lär dig hur datorprogrammet fungerar**: Innan du börjar använda programmet bör du ägna en stund åt att veta hur programmet fungerar. Lär dig mer om länkning mellan Experience Manager webbgränssnitt och stationära datorer, mappning av databaser, cachelagring av resurser, spara lokalt och ladda upp i bakgrunden. Se [hur det fungerar](release-notes.md#how-app-works).
 
-* **Undvik tecken som inte stöds i mappnamn**: Använd inte blanksteg och ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders). Vissa användningsfall i Adobe Experience Manager kan påverkas av tecken i mappnamnet som inte stöds.
+* **Undvik tecken som inte stöds i mappnamn**: Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i Experience Manager Resurser](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders). Vissa Adobe Experience Manager-fall kan påverkas av tecken i mappnamnet som inte stöds.
 
 * **Bästa tillvägagångssätt för att undvika konflikter**: Information om hur du undviker potentiella konflikter när du samarbetar med flera resurser finns i [Undvik redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
 
-* **Använd mappöverföring för stora, hierarkiska mappar**: Använd Experience Manager-skrivbordsappen för att överföra stora mappar i stället för att använda Assets-webbgränssnittet eller andra metoder. Programmet överför resurserna i bakgrunden med loggning och övervakning. Se [Massöverföring av resurser](using.md#bulk-upload-assets).
+* **Använd mappöverföring för stora, hierarkiska mappar**: I stället för att använda webbgränssnittet Resurser eller andra metoder kan du överföra stora mappar med datorprogrammet Experience Manager. Programmet överför resurserna i bakgrunden med loggning och övervakning. Se [Massöverföring av resurser](using.md#bulk-upload-assets).
 
-* **Använd den senaste versionen**: Använd den senaste programversionen och kontrollera alltid om den är kompatibel innan du installerar en ny programversion eller innan du uppgraderar till en nyare version av Adobe Experience Manager. Se [versionsinformation](release-notes.md).
+* **Använd den senaste versionen**: Använd den senaste programversionen och kontrollera alltid om den är kompatibel innan du installerar en ny programversion eller innan du uppgraderar till en nyare Adobe Experience Manager-version. Se [versionsinformation](release-notes.md).
 
-* **Använd samma enhetsbeteckning**: Använd samma enhetsbeteckning i hela organisationen för att mappa till Adobe Experience Manager DAM. Om du vill visa resurser som placerats av andra användare måste sökvägarna vara desamma. Om du använder samma enhetsbeteckning säkerställs en konstant sökväg till DAM-resurser. Resurserna förblir placerade och tas inte bort även om olika enhetsbeteckningar används av olika användare.
+* **Använd samma enhetsbeteckning**: Använd samma enhetsbeteckning i en organisation för att mappa till Adobe Experience Manager DAM. Om du vill visa resurser som placerats av andra användare måste sökvägarna vara desamma. Om du använder samma enhetsbeteckning säkerställs en konstant sökväg till DAM-resurser. Resurserna förblir placerade och tas inte bort även om olika enhetsbeteckningar används av olika användare.
 
-* **Lägg märke till nätverket**: Nätverksprestanda är avgörande för prestandan i datorprogrammet Experience Manager. Om du får ett långsammare svar på filöverföringar eller större åtgärder inaktiverar du de funktioner eller program som kan orsaka mycket nätverkstrafik.
+* **Lägg märke till nätverket**: Nätverksprestanda är avgörande för prestandan i Experience Manager-datorprogrammet. Om du får ett långsammare svar på filöverföringar eller större åtgärder inaktiverar du de funktioner eller program som kan orsaka mycket nätverkstrafik.
 
 * **Användningsexempel som inte stöds för datorprogrammet**: Använd inte appen för Assets&#39; migrering (den kräver planering och andra verktyg). för krävande DAM-åtgärder (som att flytta stora mappar, stora överföringar, hitta filer med avancerade metadatasökningar), och som en synkroniseringsklient (designprinciper och användningsmönster skiljer sig från synkroniserade klienter som Microsoft OneDrive eller Adobe Creative Cloud-synkronisering).
 
-* **Timeout**: För närvarande har skrivbordsappen inte ett konfigurerbart timeout-värde som kopplar från anslutningen mellan Experience Manager-servern och skrivbordsappen efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
+* **Timeout**: För närvarande har skrivbordsprogrammet inte något konfigurerbart timeout-värde som kopplar från anslutningen mellan Experience Manager-servern och skrivbordsappen efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
 
 ## Felsöka {#troubleshooting-prep}
 
@@ -128,7 +131,7 @@ Om du använder datorprogrammet med AEM 6.5.1 eller senare uppgraderar du S3- el
 
 ## SSL-konfigurationsproblem {#ssl-config-v2}
 
-Biblioteken som används av AEM-datorprogrammet för HTTP-kommunikation utnyttjar strikt SSL-tillämpning. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda AEM-skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
+De bibliotek som används av AEM-datorprogrammet för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda AEM-skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
 ## Appen svarar inte {#unresponsive}
 
