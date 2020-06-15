@@ -8,10 +8,13 @@ getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
 tutorials-title: Självstudiekurser
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 1
-git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-desktop-app.sv-SE
 index: y
 translation-type: tm+mt
-source-git-commit: e5e7f60d97bfb24bb4c668cd074430218a657db4
+source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +31,7 @@ Filen metadata.md innehåller metadata på postnivå som skickas till TOC.md-fil
 | getting-started-url | Länk till sidan Komma igång |
 | tutorials-url | Länka till videosjälvstudiekurser - antingen hjälpstudiekurser eller självstudiekurser på engelska |
 | mini-toc-nivåer | Anger antalet rubriknivåer som visas i den högra listen. standard är 2 |
-| git-repo | Anger platsen för huvudrapporten för intern användning |
+| git-repo | Anger platsen för den primära rapporten för intern användning |
 
 I filen TOC.md
 
