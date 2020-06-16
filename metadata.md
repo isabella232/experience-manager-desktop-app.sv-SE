@@ -11,10 +11,10 @@ mini-toc-levels: 1
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-desktop-app.sv-SE
 index: y
 translation-type: tm+mt
-source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+source-git-commit: e9a59807d48ea2d8619d3b03255c4291fca85138
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 5%
+source-wordcount: '155'
+ht-degree: 8%
 
 ---
 
@@ -25,17 +25,17 @@ Filen metadata.md innehåller metadata på postnivå som skickas till TOC.md-fil
 
 | metadata | vad den gör |
 |--- |--- |
-| solution-title | Används i artikelrubriken som länk |
-| solution-hub-url | Öppnar hubbsida för stöd |
-| solution-icon | Visar lösningsikonen bredvid lösningsrubriken. Inte implementerat ännu |
-| getting-started-url | Länk till sidan Komma igång |
-| tutorials-url | Länka till videosjälvstudiekurser - antingen hjälpstudiekurser eller självstudiekurser på engelska |
-| mini-toc-nivåer | Anger antalet rubriknivåer som visas i den högra listen. standard är 2 |
-| git-repo | Anger platsen för den primära rapporten för intern användning |
+| solution-title | Används i artikelrubriken som länk. |
+| solution-hub-url | Öppnar navet för utbildning och support. |
+| solution-icon | Visar lösningsikonen bredvid lösningsrubriken. Inte implementerat ännu. |
+| getting-started-url | Länk till startsidan. |
+| tutorials-url | Länka till videosjälvstudiekurserna. |
+| mini-toc-nivåer | Anger antalet rubriknivåer som visas i den högra listen. Standardvärdet är 2. |
+| git-repo | Anger platsen för huvudrapporten för intern användning. |
 
 I filen TOC.md
 
 | metadata | vad den gör |
 |--- |--- |
-| user-guide-title | Används i artikelrubriken som länk |
-| user-guide-url | Öppnar navet för hjälpfunktioner |
+| user-guide-title | Används i artikelrubriken som länk. |
+| user-guide-url | Öppnar navet för utbildning och support. |
