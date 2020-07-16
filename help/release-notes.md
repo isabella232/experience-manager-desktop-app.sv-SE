@@ -1,6 +1,6 @@
 ---
-title: Versionsinformation om Adobe Experience Manager-datorprogrammet
-description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och hämtningslänkar för Adobe Experience Manager-datorprogrammet.
+title: Versionsinformation för Adobe Experience Manager-datorprogrammet
+description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och nedladdningslänkar för Adobe Experience Manager-datorprogrammet.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -10,20 +10,20 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7a803edce0b6300b4a4142dcdc2f61d8347acea
+source-git-commit: eda366b969edb3c266ae8a5900ea7c0409846db0
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1326'
 ht-degree: 3%
 
 ---
 
 
-# Versionsinformation om Adobe Experience Manager-datorprogrammet {#release-notes-v2}
+# Versionsinformation för Adobe Experience Manager-datorprogrammet {#release-notes-v2}
 
-| Produkter | Adobe Experience Manager-datorprogram |
+| Produkter | Adobe Experience Manager |
 |----|----|
 | Programversion (revision) | 2.0 (2.0.2.0) |
-| AEM-versioner som stöds | AEM som molntjänst; AEM 6.5; AEM 6.4; AEM 6.3 (med kompatibilitetspaket) |
+| AEM-versioner som stöds | AEM som Cloud Service, AEM 6.5; AEM 6.4; AEM 6.3 (med kompatibilitetspaket) |
 | Typ | Mindre release |
 | Releasedatum | 15 april 2020 (Mac och Win) |
 | Hämta URL:er | [macOS 64-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows 64-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows 32-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
@@ -35,19 +35,19 @@ Adobe Experience Manager är kompatibelt med följande operativsystem:
 * Mac OS X 10.14 eller senare, med de senaste felkorrigeringarna.
 * Windows 7 och Windows 10 med de senaste Service Pack och felkorrigeringarna.
 
-Appen fungerar med följande Experience Manager-versioner, oavsett om de distribueras som en molntjänst, på Adobe Managed Services (AMS) eller på plats:
+Appen fungerar med följande Experience Manager-versioner, oavsett om de distribueras som en Cloud Service, på Adobe Managed Services (AMS) eller lokalt:
 
 * [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html)
 * [Experience Manager 6.5.0](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) eller senare
 * [Experience Manager 6.4.4](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) eller senare
-* Experience Manager 6.4.0-6.4.3 med [kompatibilitetspaket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
+* Experience Manager 6.4.0-6.4.3 med [kompatibilitetspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
 >
->Stöd för datorprogram i Experience Manager 6.3 är föråldrat. Adobe rekommenderar att du uppgraderar till en nyare version av Adobe Experience Manager som stöds.
->Experience Manager 6.3.3.1 eller senare fungerar med skrivbordsappen när [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)har installerats. Det finns inget sådant paket för Experience Manager 6.3 eftersom inga [servicepaket är planerade](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+>Stöd för skrivbordsappar i Experience Manager 6.3 är föråldrat. Adobe rekommenderar att du uppgraderar till en nyare version av Adobe Experience Manager som stöds.
+>Experience Manager 6.3.3.1 eller senare fungerar med skrivbordsappen när [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)har installerats. Inget sådant paket finns för Experience Manager 6.3 eftersom inga [servicepaket är planerade](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
-Den version av programmet som du tänker installera på den lokala datorn kräver en specifik version av Adobe Experience Manager-servern/ytterligare komponenter på serversidan (Service Pack, hot fixes eller funktionspaket). Kontakta Adobe Experience Manager-administratören om du behöver hjälp.
+Den version av programmet som du tänker installera på den lokala datorn kräver en specifik version av Adobe Experience Manager eller ytterligare komponenter på serversidan (Service Pack, hot fixes eller feature packs). Kontakta Adobe Experience Manager-administratören om du behöver hjälp.
 
 ### Stöd för olika resurser och filtyper {#support-for-file-types}
 
@@ -91,7 +91,7 @@ Felkorrigeringarna och uppdateringarna är:
 
 Mer information om hur du installerar och konfigurerar programmet finns i [Installera Experience Manager-datorprogrammet](install-upgrade.md).
 
-Om du uppgraderar från ett tidigare Experience Manager-datorprogram måste du följa de bästa metoderna för övergångar som listas vid [uppgradering från en tidigare version](install-upgrade.md#upgrade-from-previous-version).
+Om du uppgraderar från ett tidigare Experience Manager-program måste du följa de bästa metoderna för övergångar som listas vid [uppgradering från en tidigare version](install-upgrade.md#upgrade-from-previous-version).
 
 ## Viktiga anteckningar om hur appen fungerar {#how-app-works}
 
@@ -102,7 +102,7 @@ Det är viktigt att du förstår följande om programmet och hur det fungerar.
    * Om du vill få lokala ändringar av resurser överförda till AEM måste du välja [!UICONTROL Upload Changes], antingen individuellt eller via flerval.
    * Programmet är inte en synkroniseringsklient som synkroniserar resurser på skrivbordet och AEM.
    * Programmet tillhandahåller inte någon nätverksresurs som mappar AEM-databasen till en virtuell mappstruktur.
-* Den lista över resurser som visas av programmet baseras på statusen för AEM Resurser-databasen. Filer som laddas ned lokalt och som sedan byter namn i de lokala filerna eller cachemappen visas eller hanteras inte av programmet.
+* Den lista över resurser som visas av programmet baseras på AEM Assets status. Filer som laddas ned lokalt och som sedan byter namn i de lokala filerna eller cachemappen visas eller hanteras inte av programmet.
 * Om programmet inte visar det förväntade resultatet klickar du på ikonen Uppdatera i det övre fältet.
 * Den lokala nätverksresursen, som visas när du använder [!UICONTROL Reveal File] åtgärden, visar bara filer (och mappar) som är tillgängliga lokalt. [!UICONTROL Reveal File] och [!UICONTROL Reveal Folder] hämtar resurser i förväg för att få rätt resurser att visas i den lokala nätverksresursen.
 * Den lokala nätverksresursen SMB (Mac) /WebDAV (Win) används när en Adobe Creative Cloud-app läser resursfilerna som är länkade/placerade i en intern fil i Creative Cloud-programmet.
@@ -127,15 +127,15 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 * När du överför ändringar till en resurs med kommentarer lagras kommentarerna tillsammans med resursen i AEM, men de visas inte som versionskommentarer. Problemet åtgärdas i AEM 6.4.5 och AEM 6.5.1. Adobe rekommenderar starkt att du installerar de senaste servicepaketen. <!-- CQ-4268990 -->
 * Resursöverföringar kan inte avbrytas av användaren. Om du utlöste en oavsiktlig stor överföring avslutar du programmet och startar det igen. <!-- CQ-4278940 -->
 
-**Plattformsproblem:**
+**Problem med Platform:**
 
 * I Windows kan en medias status ändras direkt till [!UICONTROL Edited Locally] efter att den har öppnats, även om du inte har redigerat den. Klicka [!UICONTROL Refresh] för att uppdatera.
 
 >[!MORELIKETHIS]
 >
->* [AEM som molntjänstdokumentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
->* [AEM som dokumentation för molntjänster](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
->* [Så här använder du Experience Manager-datorprogrammet](using.md)
+>* [AEM som Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+>* [AEM som Cloud Service Assets-dokumentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
+>* [Så här använder du datorprogrammet Experience Manager](using.md)
 >* [Installera och uppgradera datorprogrammet](install-upgrade.md)
 >* [Bästa praxis och felsökningstips](troubleshoot.md)
 
