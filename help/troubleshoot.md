@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4e2926adfe46265c78f85b63696c98859f895134
+source-git-commit: 9954d0b290c4e1071a6068be4f858b29d26dc712
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Så här aktiverar du felsökningsläget i Windows:
 
 1. Leta reda på `logging.json` filen i installationsmappen för skrivbordsappen. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`.
 
-1. Leta reda på alla förekomster av `logging.json` filen `"level": "info"`. Ändra värdena från `info` till `debug`. Spara och stäng filen.
+1. Leta reda på alla förekomster av `logging.json` filen `"level": "info"`. Ändra värdena från `info` till `debug`, vilket är `"level": "debug"`. Spara och stäng filen.
 
 1. Rensa de cachelagrade kataloger som finns på den plats som anges i [programinställningarna](/help/install-upgrade.md#set-preferences).
 
