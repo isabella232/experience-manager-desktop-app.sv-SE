@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+source-git-commit: 4e2926adfe46265c78f85b63696c98859f895134
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Skrivbordsappen Adobe Experience Manager (AEM) ansluter till Experience Manager-
 
 Läs vidare för att felsöka appen, lära dig de bästa metoderna och ta reda på begränsningarna.
 
-## God praxis {#best-practices-to-prevent-troubles}
+## Best practices {#best-practices-to-prevent-troubles}
 
 Följ följande metodtips för att förebygga vissa vanliga problem och felsökning.
 
@@ -55,15 +55,15 @@ Om du vill felsöka kan du aktivera felsökningsläget och få mer information i
 
 Så här aktiverar du felsökningsläget i Windows:
 
-1. Leta reda på `Adobe Experience Manager Desktop.exe.config` filen i installationsmappen för skrivbordsappen. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop`. Spara och stäng filen.
+1. Leta reda på `Adobe Experience Manager Desktop.exe.config` filen i installationsmappen för skrivbordsappen. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop`.
 
-1. Leta `<level value="INFO"/>` mot slutet av filen. Ändra värdet till `DEBUG`, det vill säga, `<level value="DEBUG"/>`.
+1. Leta `<level value="INFO"/>` mot slutet av filen. Ändra värdet från `INFO` till `DEBUG`, vilket är `<level value="DEBUG"/>`. Spara och stäng filen.
 
 1. Leta reda på `logging.json` filen i installationsmappen för skrivbordsappen. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`.
 
-1. Leta reda på alla instanser av `logging.json` parametern i `level` filen. Ändra värdena från `info` till `debug`. Spara och stäng filen.
+1. Leta reda på alla förekomster av `logging.json` filen `"level": "info"`. Ändra värdena från `info` till `debug`. Spara och stäng filen.
 
-1. Rensa de cachelagrade kataloger som finns på den plats som anges i programinställningarna.
+1. Rensa de cachelagrade kataloger som finns på den plats som anges i [programinställningarna](/help/install-upgrade.md#set-preferences).
 
 1. Starta om datorprogrammet.
 
