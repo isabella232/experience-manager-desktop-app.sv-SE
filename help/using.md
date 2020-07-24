@@ -1,28 +1,31 @@
 ---
 title: Använd datorprogrammet Adobe Experience Manager
-description: Lär dig hur du installerar och använder Adobe Experience Manager-skrivbordsappen för att arbeta med Adobe Experience Manager DAM-resurser direkt från Win- eller Mac-datorn. Lär dig bästa praxis och felsökningsinformation.
+description: Lär dig hur du installerar och använder Adobe Experience Manager-datorprogrammet för att arbeta med Adobe Experience Manager DAM-resurser direkt från Win- eller Mac-datorn. Lär dig bästa praxis och felsökningsinformation.
 uuid: 55057617-89de-43cd-8419-1252a42ab2fb
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 27cc0ba26622016ce82b758fb0607652176f6992
+workflow-type: tm+mt
+source-wordcount: '3995'
+ht-degree: 0%
 
 ---
 
 
 # Använd datorprogrammet Adobe Experience Manager {#use-aem-desktop-app-v2}
 
-Använd Adobe Experience Manager (AEM) för att enkelt få tillgång till Adobe Experience Manager DAM-resurser på din lokala dator och använda dessa resurser i alla datorprogram. Du kan öppna resurserna i skrivbordsprogram och redigera resurserna lokalt - överföra ändringarna tillbaka till Experience Manager med versionskontroll och dela uppdateringarna med andra användare. Du kan också överföra nya filer och mapphierarkier till Experience Manager, skapa mappar och ta bort resurser och mappar från Experience Manager DAM.
+Använd datorprogrammet Adobe Experience Manager (AEM) för att enkelt få åtkomst till Adobe Experience Manager DAM-resurser på din lokala dator och använda dessa resurser i alla datorprogram. Du kan öppna resurserna i skrivbordsprogram och redigera resurserna lokalt - överföra ändringarna tillbaka till Experience Manager med versionskontroll och dela uppdateringarna med andra användare. Du kan också överföra nya filer och mapphierarkier till Experience Manager, skapa mappar och ta bort resurser och mappar från Experience Manager DAM.
 
-Tack vare integreringen kan olika roller i organisationen hantera resurser centralt i Experience Manager Assets och få tillgång till resurserna på den lokala datorn i de program de skapats i i Windows eller Mac OS.
+Tack vare integreringen kan olika roller i organisationen hantera resurser centralt i Experience Manager Assets och komma åt resurserna på den lokala datorn i de program de skapats i i Windows eller Mac OS.
 
-När du öppnar programmet efter utloggning eller för första gången anger du URL:en till Experience Manager-servern. Klicka på Anslut. Ange dina autentiseringsuppgifter för att ansluta programmet till servern.
+När du öppnar programmet efter utloggning eller för första gången anger du URL-adressen till Experience Manager-servern. Klicka på Anslut. Ange dina autentiseringsuppgifter för att ansluta programmet till servern.
 
-De viktigaste uppgifterna du utför med Experience Manager-datorprogrammet är:
+De viktigaste uppgifterna du gör med datorprogrammet Experience Manager är:
 
-![Arbetsflöden och uppgifter du kan utföra med Experience Manager](assets/aem_desktop_app_usecases_v2.png "som datorprogramArbetsflöden och uppgifter du kan utföra med Adobe Experience Manager som skrivbordsapp")Ladda ned [den här](assets/aem_desktop_app_usecases_print.pdf) tryckfärdiga PDF-filen.
+![Arbetsflöden och uppgifter du kan utföra med [!DNL Experience Manager] datorprogramArbetsflöden och](assets/aem_desktop_app_usecases_v2.png "uppgifter du kan utföra med Adobe Experience Manager-datorprogrammet")Ladda ned [den här](assets/aem_desktop_app_usecases_print.pdf) utskriftsklara PDF-filen.
 
 ## Så fungerar skrivbordsappen {#how-app-works2}
 
@@ -34,11 +37,11 @@ Innan du börjar använda programmet bör du förstå [hur programmet fungerar](
 
 * Filstatus är **[!UICONTROL Available locally]**: Resurserna hämtas och är tillgängliga på den lokala datorn i befintligt skick. Resurserna ändras inte.
 
-* Filstatus är **[!UICONTROL Edited locally]**: Sådana resurser ändras lokalt och ändringarna finns kvar på den överförda Experience Manager-servern. När du har överfört filen ändras statusen till [!UICONTROL Available locally]. Se [Redigera resurser](using.md#edit-assets-upload-updated-assets).
+* Filstatus är **[!UICONTROL Edited locally]**: Sådana resurser ändras lokalt och ändringarna finns kvar på den överförda servern Experience Manager. När du har överfört filen ändras statusen till [!UICONTROL Available locally]. Se [Redigera resurser](using.md#edit-assets-upload-updated-assets).
 
 * Filstatus är **[!UICONTROL Editing conflict]**: Om du och andra användare ändrar en resurs samtidigt indikerar programmet att en redigeringskonflikt har inträffat. Programmet innehåller även alternativ för att behålla eller ignorera ändringarna. Se [hur du undviker redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
 
-* Filstatus är **[!UICONTROL Modified remotely]**: Appen anger om en resurs som du har hämtat ändras på Experience Manager-servern. Programmet har också möjlighet att hämta den senaste versionen och uppdatera din lokala kopia. Se [hur du undviker redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
+* Filstatus är **[!UICONTROL Modified remotely]**: Programmet anger om en resurs som du har hämtat ändras på Experience Manager-servern. Programmet har också möjlighet att hämta den senaste versionen och uppdatera din lokala kopia. Se [hur du undviker redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
 
 * **[!UICONTROL Check-out]**: Om du redigerar en fil eller har för avsikt att redigera en fil, kan du växla status för att checka ut. Den lägger till en låsikon på resursen i appen och i AEM-webbgränssnittet. Låsikonen anger för andra användare att de inte behöver redigera samma resurs samtidigt eftersom den leder till en redigeringskonflikt.
 
@@ -155,7 +158,7 @@ Använd **[!UICONTROL Toggle Check-out]** för att låsa resursen för att förh
 * Du har börjat redigera en resurs utan att först checka ut den (till exempel genom att öppna den).
 * Du har för avsikt att börja redigera en resurs inom kort och vill inte att andra ska kunna redigera den.
 
-När du är klar med redigeringarna visas de ändrade resursernas **[!UICONTROL Edited Locally]** status. Alla ändringar som sparas i resurserna är bara lokala tills du överför ändringarna till AEM. Om du vill överföra en enskild resurs eller ett fåtal resurser klickar du på **[!UICONTROL Upload Changes]** något av alternativen för en resurs. Den skapar en version av resursen i AEM. I webbgränssnittet för AEM Resurser kan du se resurshistorik i [tidslinjevyn](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html).
+När du är klar med redigeringarna visas de ändrade resursernas **[!UICONTROL Edited Locally]** status. Alla ändringar som sparas i resurserna är bara lokala tills du överför ändringarna till AEM. Om du vill överföra en enskild resurs eller ett fåtal resurser klickar du på **[!UICONTROL Upload Changes]** något av alternativen för en resurs. Den skapar en version av resursen i AEM. Med webbgränssnittet i AEM Assets kan du se resurshistorik i [tidslinjevyn](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html).
 
 ![Alternativet Överför ändringar i](assets/upload_changes_single1_da2.png "appenÖverför ändringar i appen")
 
@@ -173,7 +176,7 @@ Om det behövs kan du växla utcheckning. Den uppdaterade resursen tas bort frå
 
 ## Överför och lägg till nya resurser till AEM {#upload-and-add-new-assets-to-aem}
 
-Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering i AEM-arkivet. Om du vill lägga till nytt innehåll i AEM klickar du på ikonen ![](assets/do-not-localize/upload_to_cloud_da2.png) Överför till molnet i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Programmet börjar överföra resursen och visar en förloppsindikator längst ned om det tar längre tid att överföra resursen. Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i AEM Resurser](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders).
+Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering i AEM-arkivet. Om du vill lägga till nytt innehåll i AEM klickar du på ikonen ![](assets/do-not-localize/upload_to_cloud_da2.png) Överför till molnet i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Programmet börjar överföra resursen och visar en förloppsindikator längst ned om det tar längre tid att överföra resursen. Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -220,7 +223,7 @@ Programmet innehåller en vy, som kallas **[!UICONTROL Edited locally]**, som ge
 
 ### Överför resurser gruppvis {#bulk-upload-assets}
 
-Användare eller organisation, t.ex. fotografer och byråer, kan skapa olika lokala resurser i scenarier som fotografering, retuschering eller urval från en större uppsättning som gjorts utanför AEM. De kan överföra dessa stora lokala mappar till AEM Resurser direkt från skrivbordsappen. Mapphierarkierna bevaras och alla kapslade undermappar och inkluderade resurser överförs. De överförda resurserna är omedelbart tillgängliga för andra användare på samma server för användning. Resurser överförs i bakgrunden, så åtgärden är inte kopplad till en webbläsarsession.
+Användare eller organisation, t.ex. fotografer och byråer, kan skapa olika lokala resurser i scenarier som fotografering, retuschering eller urval från en större uppsättning som gjorts utanför AEM. De kan överföra dessa stora lokala mappar till AEM Assets direkt från skrivbordsappen. Mapphierarkierna bevaras och alla kapslade undermappar och inkluderade resurser överförs. De överförda resurserna är omedelbart tillgängliga för andra användare på samma server för användning. Resurser överförs i bakgrunden, så åtgärden är inte kopplad till en webbläsarsession.
 
 ![Ladda upp flera lokala mappar från skrivbordet till](assets/upload_local_folders_da2.png "AEMBulk ladda upp flera lokala mappar från skrivbordet till AEM")
 
@@ -234,9 +237,9 @@ Om de förväntade ändringarna inte visas i programmet när du har överfört d
 
 Du kan visa en lista över resurser som överförts under en viss session i [Överför resurser till AEM](#upload-and-add-new-assets-to-aem).
 
-## Avancerat arbetsflöde: börja från webbgränssnittet för AEM Resurser {#adv-workflow-start-from-aem-ui}
+## Avancerat arbetsflöde: starta från webbgränssnittet i AEM Assets {#adv-workflow-start-from-aem-ui}
 
-Om det behövs startar du arbetsflödet från webbgränssnittet för AEM Resurser. Datorprogrammet integreras med AEM för att ta över när det efterfrågas med skrivbordsåtgärder.
+Om det behövs startar du arbetsflödet från webbgränssnittet i AEM Assets. Datorprogrammet integreras med AEM för att ta över när det efterfrågas med skrivbordsåtgärder.
 
 Ett särskilt exempel på hur du startar arbetsflödet från webbgränssnittet är tillgångsidentifiering. Omnissearch bar in Assets-användargränssnittet ger en omfattande och avancerad sökfunktion. Du kanske först vill hitta en resurs på webben och sedan starta arbetsflödet i programmet med [!UICONTROL Desktop Actions]. I vissa exempelfall kan du filtrera sökresultat med hjälp av ansikten, hitta en specifik resurs som licensierats från Adobe Stock eller en anpassning som implementerats av din organisation som gör att du kan identifiera bättre från webbgränssnittet.
 
