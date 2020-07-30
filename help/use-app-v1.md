@@ -3,7 +3,7 @@ title: Använd AEM version 1.x.
 description: Lär dig hur du använder Adobe Experience Manager-datorprogrammet version 1.x och optimerar ditt arbete med resurser på datorn.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1bd50a439059ac66e0368eeefc6af67ff160d9b
+source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
 workflow-type: tm+mt
 source-wordcount: '2516'
 ht-degree: 0%
@@ -113,7 +113,7 @@ I Assets-användargränssnittet kan du utforska resursplatserna eller checka ut 
 
 När du klickar på **Öppna** för att öppna en resurs på den lokala datorn hämtas resursen till dess interna cache. Programmet startar det inbyggda skrivbordsprogrammet som är associerat med filtypen för den hämtade resursen.
 
-På Mac väljer du **Öppna** på snabbmenyn för att öppna en resurs via AEM datorprogram. I Windows väljer du Öppna på webben på snabbmenyn för att öppna resursen. Öppna resursen genom att klicka/trycka på ikonen ![](assets/aemassets_icon_openondesktop.png) Öppna på skrivbordet i fönstret Resursstatus.
+På Mac väljer du **Öppna** på snabbmenyn för att öppna en resurs via AEM datorprogram. I Windows väljer du Öppna på webben på snabbmenyn för att öppna resursen. Öppna resursen genom att klicka/trycka på ikonen ![](assets/do-not-localize/aemassets_icon_openondesktop.png) Öppna på skrivbordet i fönstret Resursstatus.
 
 För Adobe InDesign-filer (INDD) väljer du **[!UICONTROL Open]** på snabbmenyn. När du klickar på det här alternativet hämtar appen de länkade resurserna till ditt lokala filsystem och öppnar sedan INDD-filen i Adobe InDesign. Den här metoden ser till att nödvändiga resurser är lokalt tillgängliga när du redigerar INDD-filen.
 
@@ -141,19 +141,19 @@ När du har mappat AEM Assets-databasen till den lokala hårddisken kan du aktiv
 
    Dessa skrivbordsåtgärder är också tillgängliga när du klickar på ikonen **Skrivbordsåtgärder** i verktygsfältet efter att du har valt resursen eller från verktygsfältet på resurssidan.
 
-1. Om du vill öppna resursen i skrivbordsprogrammet som är associerat med det specifika filtillägget klickar/trycker du på snabbåtgärden **Öppna på skrivbordet** och ![Öppna på skrivbordet](assets/aemassets_icon_openondesktop.png).
+1. Om du vill öppna resursen i skrivbordsprogrammet som är associerat med det specifika filtillägget klickar/trycker du på snabbåtgärden **Öppna på skrivbordet** och ![Öppna på skrivbordet](assets/do-not-localize/aemassets_icon_openondesktop.png).
 
    Du kan också välja **Öppna** på menyn **Skrivbordsåtgärder** i verktygsfältet.
 
-Om du vill hitta en viss resurs i det lokala filsystemet klickar du på **Visa** snabbredigeringsikonen ![Visa](assets/aemassets_reveal_icon.png). Du kan också välja **Visa** på menyn **Skrivbordsåtgärder** i verktygsfältet.
+Om du vill hitta en viss resurs i det lokala filsystemet klickar du på **Visa** snabbredigeringsikonen ![Visa](assets/do-not-localize/aemassets_reveal_icon.png). Du kan också välja **Visa** på menyn **Skrivbordsåtgärder** i verktygsfältet.
 
 ## Förstå tillgångsstatusarna {#understand-the-asset-statuses}
 
-| ![Ikon för Windows-standardprogram](assets/win_default.png) | Appen är ansluten till servern och alla resurser synkroniseras. |
-|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Ikon för inaktiverad Windows](assets/win_disabled.png) | Appen startas men är inte ansluten till servern. Vissa resurser kanske väntar på synkronisering. |
-| ![Synkroniseringsikon för Windows-fil](assets/win_sync.png) | Resurserna synkroniseras. Filerna överförs eller hämtas. Du kan se exakta statusvärden och pausa överföringar från fönstret Resursstatus. |
-| ![Ikon för återanslutning av Windows](assets/win_refresh.png) | Appen försöker återansluta. Nätverksproblemen kan leda till att den kopplas från. |
+| ![Ikon för Windows-standardprogram](assets/do-not-localize/win_default.png) | Appen är ansluten till servern och alla resurser synkroniseras. |
+--- |--- |
+| ![Ikon för inaktiverad Windows](assets/do-not-localize/win_disabled.png) | Appen startas men är inte ansluten till servern. Vissa resurser kanske väntar på synkronisering. |
+| ![Synkroniseringsikon för Windows-fil](assets/do-not-localize/win_sync.png) | Resurserna synkroniseras. Filerna överförs eller hämtas. Du kan se exakta statusvärden och pausa överföringar från fönstret Resursstatus. |
+| ![Ikon för återanslutning av Windows](assets/do-not-localize/win_refresh.png) | Appen försöker återansluta. Nätverksproblemen kan leda till att den kopplas från. |
 
 ## Arbeta med dina resurser {#workonassets}
 
@@ -169,7 +169,7 @@ Det finns två sätt att checka ut resurser från AEM webbgränssnitt. Detaljera
 
    Dessa skrivbordsåtgärder är också tillgängliga när du klickar/trycker på ikonen Skrivbordsåtgärder i verktygsfältet efter att du har valt resursen eller i verktygsfältet på resurssidan.
 
-1. Om du vill öppna resursen klickar du på/trycker på snabbåtgärden Öppna på skrivbordet ![på ikonen](assets/aemassets_icon_openondesktop.png).
+1. Om du vill öppna resursen klickar du på/trycker på snabbåtgärden Öppna på skrivbordet ![på ikonen](assets/do-not-localize/aemassets_icon_openondesktop.png).
 
    Du kan också välja Öppna på menyn Skrivbordsåtgärder i verktygsfältet.
 
@@ -177,7 +177,7 @@ Det finns två sätt att checka ut resurser från AEM webbgränssnitt. Detaljera
    >
    >När du redigerar en fil som just har öppnats och inte är utcheckad, kommer andra användare inte att veta att en resurs uppdateras av dig.
 
-1. Om du vill öppna en resurs för redigering i ett Adobe Creative Cloud-program klickar/trycker du på ikonen ![](assets/aemassets_icon_editdesktop.png)Redigera skrivbord för snabbåtgärden Redigera skrivbord. Då checkas även resursen ut för redigering. När du är klar med redigeringen checkar du in resursen för att uppdatera ändringarna i AEM Assets.
+1. Om du vill öppna en resurs för redigering i ett Adobe Creative Cloud-program klickar/trycker du på ikonen ![](assets/do-not-localize/aemassets_icon_editdesktop.png)Redigera skrivbord för snabbåtgärden Redigera skrivbord. Då checkas även resursen ut för redigering. När du är klar med redigeringen checkar du in resursen för att uppdatera ändringarna i AEM Assets.
 
    Du kan också välja Redigera på menyn Skrivbordsåtgärder i verktygsfältet.
 
@@ -219,7 +219,7 @@ Med appen kan du checka ut resursfiler för att förhindra att andra användare 
 
    ![Ikonen Checka ut växlar](assets/chlimage_1-8.png)
 
-1. Granska resursen i Utforskaren. Låsikonen på ![tillgångslåsikonen](assets/aemassets_icon_lockcheckout.png) anger att du har checkat ut resursen.
+1. Granska resursen i Utforskaren. Låsikonen på ![tillgångslåsikonen](assets/do-not-localize/aemassets_icon_lockcheckout.png) anger att du har checkat ut resursen.
 
    >[!NOTE]
    >
@@ -231,7 +231,7 @@ Med appen kan du checka ut resursfiler för att förhindra att andra användare 
 
 När du är klar med redigeringen av resurserna sparar du resurserna i skrivbordsprogrammet. På snabbmenyn väljer du **Mer resursinformation** och klickar på incheckning.
 
-Resurserna överförs till AEM. Du kan också kontrollera överföringsstatus genom att välja **Visa resursstatus** från systemfältsikonen. Du kan också checka in en resurs från AEM webbgränssnitt. Klicka på de utcheckade resurserna eller markera dem. Klicka på ikonen för ![incheckning](assets/aemassets_icon_checkin.png)i verktygsfältet.
+Resurserna överförs till AEM. Du kan också kontrollera överföringsstatus genom att välja **Visa resursstatus** från systemfältsikonen. Du kan också checka in en resurs från AEM webbgränssnitt. Klicka på de utcheckade resurserna eller markera dem. Klicka på ikonen för ![incheckning](assets/do-not-localize/aemassets_icon_checkin.png)i verktygsfältet.
 
 En resurs överförs automatiskt till AEM efter att eventuella ändringar har sparats lokalt. Incheckningen gör resursen tillgänglig för andra AEM användare för redigering.
 
