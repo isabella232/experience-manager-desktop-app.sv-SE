@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9954d0b290c4e1071a6068be4f858b29d26dc712
+source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Felsöka datorprogrammet Adobe Experience Manager {#troubleshoot-v2}
 
-Skrivbordsappen Adobe Experience Manager (AEM) ansluter till Experience Manager-distributionsprogrammets DAM-databas (Digital Asset Management). Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar och innehåller funktioner för att hantera konflikter med användargränssnittet i AEM Assets.
+Skrivbordsappen Adobe Experience Manager (AEM) ansluts till en fjärransluten Experience Manager-driftsättnings DAM-databas (Digital Asset Management). Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar och innehåller funktioner för att hantera konflikter med användargränssnittet i AEM Assets.
 
 Läs vidare för att felsöka appen, lära dig de bästa metoderna och ta reda på begränsningarna.
 
@@ -41,13 +41,13 @@ Följ följande metodtips för att förebygga vissa vanliga problem och felsökn
 
 * **Lägg märke till nätverket**: Nätverksprestanda är avgörande för prestandan i Experience Manager-datorprogrammet. Om du får ett långsammare svar på filöverföringar eller större åtgärder inaktiverar du de funktioner eller program som kan orsaka mycket nätverkstrafik.
 
-* **Användningsexempel som inte stöds för datorprogrammet**: Använd inte appen för Assets&#39; migrering (den kräver planering och andra verktyg). för krävande DAM-åtgärder (som att flytta stora mappar, stora överföringar, hitta filer med avancerade metadatasökningar), och som en synkroniseringsklient (designprinciper och användningsmönster skiljer sig från synkroniserade klienter som Microsoft OneDrive eller Adobe Creative Cloud-synkronisering).
+* **Användningsexempel som inte stöds för datorprogrammet**: Använd inte appen för Assets&#39; migrering (den kräver planering och andra verktyg). för krävande DAM-åtgärder (som att flytta stora mappar, stora överföringar, hitta filer med avancerade metadatasökningar), och som en synkroniseringsklient (designprinciper och användningsmönster skiljer sig från synkroniserade klienter som Microsoft OneDrive eller Adobe Creative Cloud desktop sync).
 
 * **Timeout**: För närvarande har skrivbordsprogrammet inte något konfigurerbart timeout-värde som kopplar från anslutningen mellan Experience Manager-servern och skrivbordsappen efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
 
 ## Felsöka {#troubleshooting-prep}
 
-Om du vill felsöka problem med skrivbordsprogram bör du känna till följande information. Där kan du också bättre förmedla problemen till Adobes kundtjänst om du väljer att söka support.
+Om du vill felsöka problem med skrivbordsprogram bör du känna till följande information. Dessutom får du hjälp att förmedla problemen bättre till Adobe kundtjänst om du väljer att söka support.
 
 ### Aktivera felsökningsläge {#enable-debug-mode}
 
@@ -73,7 +73,7 @@ Så här aktiverar du felsökningsläget i Windows:
 
 ### Plats för loggfiler {#check-log-files-v2}
 
-Du hittar loggfilerna för AEM-skrivbordsappen på följande platser. När du överför många resurser, och vissa filer inte kan överföras, ska du läsa filen för att identifiera de misslyckade överföringarna `backend.log` .
+Loggfilerna för AEM skrivbordsappen finns på följande platser. När du överför många resurser, och vissa filer inte kan överföras, ska du läsa filen för att identifiera de misslyckade överföringarna `backend.log` .
 
 * Sökväg i Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
@@ -81,23 +81,23 @@ Du hittar loggfilerna för AEM-skrivbordsappen på följande platser. När du ö
 
 >[!NOTE]
 >
->När du arbetar med Adobes kundtjänst på en supportförfrågan/anmälan kan du bli ombedd att dela loggfilerna för att hjälpa kundtjänstteamet att förstå problemet. Arkivera hela `Logs` mappen och dela den med kundtjänst.
+>När du arbetar med kundtjänst på Adobe på en supportförfrågan/anmälan kan du bli ombedd att dela loggfilerna för att hjälpa kundtjänstteamet att förstå problemet. Arkivera hela `Logs` mappen och dela den med kundtjänst.
 
 ### Rensa cache {#clear-cache-v2}
 
-Att rensa cacheminnet för AEM-skrivbordsappen är en preliminär felsökningsuppgift som kan lösa flera problem. Rensa cacheminnet från appinställningarna. Se [Ange inställningar](install-upgrade.md#set-preferences). Standardplatsen för cachemappen är:
+Att radera AEM cacheminne är en preliminär felsökningsåtgärd som kan lösa flera problem. Rensa cacheminnet från appinställningarna. Se [Ange inställningar](install-upgrade.md#set-preferences). Standardplatsen för cachemappen är:
 
 * I Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
 * Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
-Platsen kan dock ändras beroende på AEM-datorns konfigurerade AEM-slutpunkt. Värdet är en kodad version av mål-URL:en. Om programmet till exempel har som mål `http://localhost:4502`är katalognamnet `http%3A%2F%2Flocalhost%3A4502%2F`. Ta bort lämplig mapp för att rensa cachen. Ett annat skäl till att rensa cacheminnet är att frigöra diskutrymme när diskutrymmet börjar ta slut.
+Platsen kan dock ändras beroende på AEM datorns konfigurerade AEM. Värdet är en kodad version av mål-URL:en. Om programmet till exempel har som mål `http://localhost:4502`är katalognamnet `http%3A%2F%2Flocalhost%3A4502%2F`. Ta bort lämplig mapp för att rensa cachen. Ett annat skäl till att rensa cacheminnet är att frigöra diskutrymme när diskutrymmet börjar ta slut.
 
 >[!CAUTION]
 >
->Om du rensar bort AEM-skrivbordscachen går ändringar av lokala resurser som inte synkroniseras till AEM-servern oåterkalleligen förlorade.
+>Om du rensar AEM skrivbordscachen försvinner oåterkalleligt ändringar av lokala resurser som inte synkroniseras med AEM.
 
-### Känn till AEM-versionen {#know-app-version-v2}
+### Lär känna AEM version {#know-app-version-v2}
 
 Klicka på ![App-menyn](assets/do-not-localize/more_options_da2.png) för att öppna appens meny och klicka på **[!UICONTROL Help]** > **[!UICONTROL About]**.
 
@@ -108,11 +108,11 @@ Om du inte kan se de resurser som du eller andra kreatörer har placerat i suppo
 * Anslutning till servern. Smidig nätverksanslutning kan stoppa hämtningar av resurser.
 * Filstorlek. Stora resurser tar längre tid att hämta och visa.
 * Enhetliga brev. Om du eller någon annan medarbetare placerade resurserna när du mappade AEM DAM till en annan enhetsbeteckning visas inte de placerade resurserna.
-* Behörigheter. Kontakta AEM-administratören om du har behörighet att hämta de placerade resurserna.
+* Behörigheter. Kontakta AEM om du har behörighet att hämta de placerade resurserna.
 
 ## Problem vid uppgradering på macOS {#issues-when-upgrading-on-macos}
 
-Ibland kan problem uppstå när du uppgraderar AEM-datorprogrammet på macOS. Detta orsakas av att det inte går att läsa in nya versioner av AEM-skrivbordsappen korrekt i en äldre systemmapp för AEM-skrivbordsappen. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
+Ibland kan problem uppstå när du uppgraderar AEM datorprogram på macOS. Detta beror på att det inte går att läsa in nya versioner av AEM datorprogram korrekt i en äldre systemmapp AEM datorprogrammet. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
 
 Innan du utför följande steg drar du programmet `Adobe Experience Manager Desktop` från mappen macOS-program till papperskorgen. Öppna sedan terminalen, kör följande kommando och ange ditt lösenord när du uppmanas till det.
 
@@ -127,11 +127,11 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ## Kan inte överföra filer {#upload-fails}
 
-Om du använder datorprogrammet med AEM 6.5.1 eller senare uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Det åtgärdar ett filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
+Om du använder skrivbordsappen med AEM 6.5.1 eller senare uppgraderar du S3- eller Azure-kopplingen till version 1.10.4 eller senare. Det åtgärdar ett filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
 
 ## SSL-konfigurationsproblem {#ssl-config-v2}
 
-De bibliotek som används av AEM-datorprogrammet för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda AEM-skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
+De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda AEM datorprogram. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
 ## Appen svarar inte {#unresponsive}
 
@@ -146,3 +146,4 @@ I båda metoderna startar programmet i rotmappen DAM.
 >
 >* [Kända fel](release-notes.md#known-issues-v2)
 >* [Undvik redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts)
+
