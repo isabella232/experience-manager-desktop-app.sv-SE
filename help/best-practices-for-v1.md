@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 3e10be1fd9dd1ff5293e96b46565825e6be1fc4f
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1705'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 ## Översikt {#overview}
 
-Skrivbordsappen Adobe Experience Manager (AEM) länkar din DAM-lösning (Digital Asset Management) till skrivbordet så att du kan öppna de filer som finns i det AEM webbgränssnittet direkt på skrivbordet. Om du sparar en resurs från skrivbordet överförs den till AEM på lämplig plats.
+Adobe Experience Manager (AEM)-datorprogrammet länkar din DAM-lösning (Digital Asset Management) till skrivbordet så att du kan öppna de filer som finns i det AEM webbgränssnittet direkt på skrivbordet. Om du sparar en resurs från skrivbordet överförs den till AEM på lämplig plats.
 
 AEM program eliminerar risken att du uppdaterar felaktiga lokala kopior eller uppdaterar fel resurs i AEM. datorappens lättanvända arbetsflöde aktiveras med hjälp av nätverksdelningsteknik som finns i operativsystemen.
 
-Datorprogrammet monterar AEM Assets-databasen som en nätverksresurs på skrivbordet. Därför ser mapparna och filerna ut som om de var lokala. Vi rekommenderar dock inte att du utför digitala resurshanteringsåtgärder direkt från skrivbordet i den monterade nätverksresursen i Finder eller Utforskaren. I stället rekommenderar Adobe att du använder webbgränssnittet i AEM Assets för att utföra åtgärder, som att kopiera eller flytta ett stort antal resurser.
+Datorprogrammet monterar AEM Assets-databasen som en nätverksresurs på skrivbordet. Därför ser mapparna och filerna ut som om de var lokala. Vi rekommenderar dock inte att du utför digitala resurshanteringsåtgärder direkt från skrivbordet i den monterade nätverksresursen i Finder eller Utforskaren. I stället rekommenderar Adobe att du använder AEM Assets webbgränssnitt för att utföra åtgärder, som att kopiera eller flytta ett stort antal resurser.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Datorprogrammet monterar AEM Assets-databasen som en nätverksresurs på skrivbo
 
 ## AEM {#aem-desktop-app-architecture}
 
-AEM använder nätverksresurser för WebDAV (Windows) eller SMB (Mac) för att montera nätverksresurser. Den monterade nätverksresursen är endast lokal. AEM datorprogrammet fångar upp anropen (öppna, läsa, skriva) och erbjuder ytterligare lokal cachelagring. Det översätter fjärranrop till AEM Assets-servern till optimerade AEM HTTP-begäranden. I följande diagram visas arkitekturen för AEM datorprogram.
+AEM använder nätverksresurser för WebDAV (Windows) eller SMB (Mac) för att montera nätverksresurser. Den monterade nätverksresursen är endast lokal. AEM datorprogrammet fångar upp anropen (öppna, läsa, skriva) och erbjuder ytterligare lokal cachelagring. Det översätter fjärranrop till AEM Assets-servern för att optimera AEM HTTP-begäranden. I följande diagram visas arkitekturen för AEM datorprogram.
 
 ![AEM](assets/chlimage_1.png)
 
@@ -45,7 +45,7 @@ Den extra cachelagringen vid skrivning när en fil sparas gör att filen sparas 
 
 Viktiga funktioner i AEM program:
 
-* **Öppna filer från AEM Assets webbgränssnitt på skrivbordet**. I webbgränssnittet kan du visa resurser på skrivbordet (i Finder, Utforskaren) eller öppna en resurs med ett skrivbordsprogram.
+* **Öppna filer från AEM Assets webbgränssnitt på datorn**. I webbgränssnittet kan du visa resurser på skrivbordet (i Finder, Utforskaren) eller öppna en resurs med ett skrivbordsprogram.
 
 * **Checka ut och checka in**. Resurser kan checkas ut för redigering och markeras som låsta för användaren i AEM Assets. Efter redigeringen kan resursen checkas in för att låsa upp den.
 
@@ -79,7 +79,7 @@ Viktiga funktioner i AEM program:
 
 AEM datorprogram ger virtuell åtkomst till hela DAM-databasen - och det kan vara komplicerat för de kreativa användarna på skrivbordet att hitta och komma åt rätt resurser på skrivbordet. Använd de här bästa sätten för att förenkla för dem.
 
-* Använd samarbetsfunktionerna i användargränssnittet i AEM Assets för att ge mer direkt åtkomst till rätt material för den kreativa användaren. Några av dem är att dela mappar eller samlingar, tillhandahålla smarta samlingar (sparade sökningar) eller skicka meddelanden med pekare till rätt resurser. Den kreativa användaren kan sedan använda skrivbordsåtgärder i webbgränssnittet för att snabbt få tillgång till dessa resurser på sin dator.
+* Använd samarbetsfunktionerna i AEM Assets webbgränssnitt för att ge mer direkt åtkomst till rätt material för den kreativa användaren. Några av dem är att dela mappar eller samlingar, tillhandahålla smarta samlingar (sparade sökningar) eller skicka meddelanden med pekare till rätt resurser. Den kreativa användaren kan sedan använda skrivbordsåtgärder i webbgränssnittet för att snabbt få tillgång till dessa resurser på sin dator.
 
 * Tänk på rätt behörigheter för materialet (åtkomstkontroll) för att förenkla visningen av DAM-databasen för de kreativa användarna, och begränsa i princip åtkomsten till endast de resurser de behöver eller är intresserade av:
 
@@ -93,7 +93,7 @@ AEM datorprogram ger virtuell åtkomst till hela DAM-databasen - och det kan var
 
 Så här söker du efter en fil som du vill öppna på skrivbordet:
 
-* Använd webbgränssnittet för AEM Assets för att hitta resursen. Det är inte bara att söka i kraftfulla AEM Assets (sökfaktorer, sparade sökningar), det innehåller också ytterligare funktioner för att hitta rätt resurs. Detta inkluderar ytterligare filter, som möjligheten att söka efter resurser baserat på status (godkännande, förfallodatum), samlingar, uppgifter, meddelanden och att dela mappar/samlingar med andra användare/grupper.
+* Använd AEM Assets webbgränssnitt för att hitta resursen. Det är inte bara sökning i AEM Assets kraftfulla funktioner (sökfaktorer, sparade sökningar), utan även andra funktioner för att hitta rätt resurs. Detta inkluderar ytterligare filter, som möjligheten att söka efter resurser baserat på status (godkännande, förfallodatum), samlingar, uppgifter, meddelanden och att dela mappar/samlingar med andra användare/grupper.
 
 * När du har hittat resursen kan du använda Skrivbordsåtgärder i AEM för att komma åt resursen på skrivbordet.
 
@@ -127,9 +127,9 @@ En bra upplevelse för användare som använder det AEM datorprogrammet beror i 
 
 ### Nätverkshändelser {#network-considerations}
 
-Mer information om de effektivaste strategierna för konfiguration av AEM Assets-nätverk finns i dokumentet Viktigt om [AEM Assets-nätverk](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) . Några av de viktiga aspekter som hjälper användarna att optimera AEM appupplevelsen är:
+Information om de effektivaste strategierna för AEM Assets-nätverkskonfiguration finns i [AEM Assets Network Considerations](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) document. Några av de viktiga aspekter som hjälper användarna att optimera AEM appupplevelsen är:
 
-* **Använd rätt konfigurerade Dispatcher**. Använd AEM Dispatcher för ytterligare säkerhet och se till att den är konfigurerad för anslutning till [AEM datorprogram så att den AEM bakom en dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
+* **Använd korrekt konfigurerad Dispatcher**. Använd AEM Dispatcher för ytterligare säkerhet och se till att den är konfigurerad för anslutning till [AEM datorprogram så att den AEM bakom en dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
 * **Spara bandbredd**. Överväg att inaktivera förhandsvisning av ikoner i Finder på Mac - när du bläddrar i den monterade databasen med Finder. Finder begär att varje fil ska generera en förhandsgranskning och gör att skrivbordsappen hämtar och cachelagrar resursen lokalt. Observera att när du sparar bandbredd försämras även användarupplevelsen för användarna på skrivbordet, så det bör göras när du arbetar med databaser med stora resurser och/eller begränsad bandbredd.
 
@@ -139,7 +139,7 @@ Mer information om de effektivaste strategierna för konfiguration av AEM Assets
 
 ### Optimera serverprestanda {#optimizing-server-performance}
 
-Mer information om hur AEM Assets-servern ska optimeras för prestanda finns i [AEM Assets Performance Tuning Guide](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html). Några av de viktiga aspekterna av serverprestanda för AEM datorprogram är att optimera arbetsflödeskonfigurationen så att den fungerar bra för överföringar av resurser:
+Mer information om hur AEM Assets-servern ska optimeras för prestanda finns i [AEM Assets guide](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)för prestandajustering. Några av de viktiga aspekterna av serverprestanda för AEM datorprogram är att optimera arbetsflödeskonfigurationen så att den fungerar bra för överföringar av resurser:
 
 * **Mer prestanda för överföring** av resurser. Konfigurera arbetsflödesmodellen [AEM tillgångsuppdatering så att den blir övergående](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows).
 
