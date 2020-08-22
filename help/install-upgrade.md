@@ -1,6 +1,6 @@
 ---
-title: Installera och konfigurera datorprogrammet Adobe Experience Manager
-description: Installera och konfigurera skrivbordsappen Adobe Experience Manager så att den fungerar med Adobe Experience Manager Assets-servrar och hämta resurserna i det lokala filsystemet.
+title: Installera och konfigurera Adobe Experience Manager datorprogram
+description: Installera och konfigurera Adobe Experience Manager datorprogram så att det fungerar med Adobe Experience Manager Assets-servrar och hämta resurserna i det lokala filsystemet.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,19 +9,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1238'
 ht-degree: 0%
 
 ---
 
 
-# Installera Adobe Experience Manager-datorprogrammet {#install-app-v2}
+# Installera Adobe Experience Manager datorprogram {#install-app-v2}
 
-Med hjälp av datorprogrammet Adobe Experience Manager är resurserna i Experience Manager enkelt tillgängliga på din lokala dator och kan användas i alla datorprogram. Resurser kan förhandsgranskas, öppnas i datorprogram, visas i Finder i Mac eller Utforskaren i Windows för montering i andra dokument och ändras lokalt. Ändringarna sparas sedan i Experience Manager när du överför och en ny version skapas i databasen.
+Med Adobe Experience Manager-datorprogrammet är materialet i Experience Manager enkelt tillgängligt på din dator och kan användas i alla datorprogram. Resurser kan förhandsgranskas, öppnas i datorprogram, visas i Finder i Mac eller Utforskaren i Windows för montering i andra dokument och ändras lokalt. Ändringarna sparas sedan i Experience Manager när du överför och en ny version skapas i databasen.
 
-En sådan integrering gör att olika roller i organisationen kan
+Tack vare en sådan integrering kan olika roller i organisationen
 
 * Hantera materialet centralt i Experience Manager Assets.
 
@@ -81,7 +81,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
    *Bild: Anslutningsskärmen till inmatningsserveradressen*
 
-   >[!Cauktion]
+   >[!CAUTION]
    >
    >Kontrollera att det inte finns några inledande eller avslutande blanksteg före eller efter adressen till AEM. Annars kan programmet inte ansluta till AEM.
 
