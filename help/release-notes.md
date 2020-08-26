@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 519fe85e5642eb88dd45515948e898185e262003
+source-git-commit: 6763474c278ab8d8f52a0a466657e66a08b0748b
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 2%
@@ -32,9 +32,9 @@ ht-degree: 2%
 
 Adobe Experience Manager-datorprogrammet är kompatibelt med följande operativsystem:
 
-Mac OS X 10.14 eller senare, med de senaste felkorrigeringarna.
+* Mac OS X 10.14 eller senare, med de senaste felkorrigeringarna.
 
-Windows 10 med de senaste servicepaketen och felkorrigeringarna.
+* Windows 10 med de senaste servicepaketen och felkorrigeringarna.
 
 >[!NOTE]
 >
