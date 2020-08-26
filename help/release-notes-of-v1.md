@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 9de9d086be4c0eccda7a60bd3dcbe68735394fad
 workflow-type: tm+mt
-source-wordcount: '3857'
+source-wordcount: '3869'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,15 @@ För datorprogram v1.x är följande hämtningslänkar och AEM kompatibilitetsin
 
 ## Systemkrav och krav {#system-requirements-and-prerequisites}
 
-AEM Desktop är kompatibelt med följande operativsystem:
+[!DNL Adobe Experience Manager] skrivbordsappen är kompatibel med följande operativsystem:
 
 * Mac OS X 10.10 eller senare, med de senaste felkorrigeringarna.
-* Windows 7 och Windows 10 med de senaste Service Pack och felkorrigeringarna.
+
+* Windows 10 med de senaste servicepaketen och felkorrigeringarna.
+
+>[!NOTE]
+>
+>Windows 7 stöds inte längre av leverantören (https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
 
 Adobe rekommenderar starkt att du använder den senaste versionen av AEM för att få tillgång till de senaste funktionerna, de senaste felkorrigeringarna och bästa möjliga prestanda.
 
@@ -88,7 +93,7 @@ Den här versionen utökar och ersätter tidigare versioner av skrivbordsappen E
 
 ### Förbättringar har gjorts sedan AEM datorprogram 1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
-Adobe Experience Manager (AEM) skrivbordsapp 1.9.1 var en korrigeringsversion som åtgärdade några viktiga kundproblem kring utcheckning av resurser och kopiering av filer från nätverksresurs till en lokal katalog.
+Adobe Experience Manager (AEM) desktop app 1.9.1 var en patch-release som åtgärdar några viktiga kundproblem kring utcheckning av resurser och kopiering av filer från nätverksresurs till en lokal katalog.
 
 * Resurser som checkats ut av en användare bör inte vara tillgängliga för ändring för andra användare (CQ-4246009)
 
@@ -126,7 +131,7 @@ AEM program 1.9 fokuserar på att förbättra användarupplevelsen kring stora �
 
 * Misslyckade hämtningar visas med ett felmeddelande och överföringsinformation, om sådan finns.
 
-* Sidfoten visar det totala antalet hämtade filer och den genomsnittliga överföringshastigheten.
+* Sidfoten visar det totala antalet nedladdade filer och den genomsnittliga överföringshastigheten.
 
 * Om en användare väljer att öppna eller redigera flera filer från webbgränssnittet för Experience Manager Assets, grupperas de tillsammans. Exempel: myasset.jpeg och ytterligare fyra filer.
 
@@ -181,7 +186,7 @@ AEM program 1.8.1 snabbspolning tillkom förbättringar när flera filer öppnas
 
    * Dialogrutan Mer resursinformation: ibland var åtgärdsfältet inte synligt (CQ-4208540).
 
-   * (Win) Det går nu att synkronisera filen efter att ha återgått till en tidigare version från användargränssnittet i AEM Assets (CQ-4216411).
+   * (Win) Filen kan nu synkroniseras efter återställning till en tidigare version från AEM Assets UI (CQ-4216411).
 
 ### Förbättringar som är tillgängliga sedan AEM datorprogram 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
@@ -318,7 +323,7 @@ Båda dessa fall förväntas och är biverkningar av arkitekturen&quot;fördröj
 
    * Olika stabilitetsförbättringar (CQ-4207539, CQ-4200378).
 
-   * Bättre hantering av AEM Assets-URL i Inställningar (CQ-97388).
+   * Bättre hantering av AEM Assets URL i Inställningar (CQ-97388).
 
 ### Förbättringar som är tillgängliga sedan AEM datorprogram 1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
@@ -350,7 +355,7 @@ Båda dessa fall förväntas och är biverkningar av arkitekturen&quot;fördröj
 
 Sedan MacOS 10.12 (Sierra) har Apple ändrat behörigheterna för mappen /Volumes som används för att montera nätverksenheter och enheter till mer restriktiva. Det krävs administratörsbehörighet för att skapa en ny monteringspunkt. Problemet har åtgärdats i Mac OS 10.12.5.
 
-Eftersom AEM skrivbordsappen ska köras för användare som inte har administratörsbehörighet på den lokala datorn ändrades monteringspunkten för AEM Assets-databasen i 1.4 och 1.5 till en DAM-undermapp i användarens lokala mapp på MacOS (CQ-104183).
+Eftersom AEM datorprogrammet ska köras för användare som inte har administratörsbehörighet på den lokala datorn ändrades monteringspunkten för AEM Assets-databasen i 1.4 och 1.5 till en DAM-undermapp i användarens lokala mapp på MacOS (CQ-104183).
 
 Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återställs den här ändringen i 1.5.1. Detta gör det även möjligt att dela InDesign-dokument som har placerat AEM resurser mellan MacOS-användare.
 
@@ -380,11 +385,11 @@ Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återst
 
 **Mappöverföring.** Vi rekommenderar att du använder den nya funktionen för mappöverföring för att överföra större, hierarkiska mappar till AEM, i stället för att använda en kopia/dra och släpp i en monterad AEM från Finder-/Utforskarnivå. När du använder funktionen för mappöverföring kommunicerar skrivbordsappen direkt med AEM och har därför bättre kontroll över hela processen.
 
-**Håll AEM session tillgänglig.** AEM datorprogrammet är beroende av en session som är öppen för AEM Assets-servern för att säkerställa att den fungerar som den ska. För användare som arbetar med skrivbordsappar varje dag rekommenderar vi att du avmonterar AEM Assets i slutet av dagen för att tvinga fram utloggning och sedan&quot;Mount AEM Assets&quot; på morgonen för att säkerställa att de är inloggade och att nätverksresursen fungerar.
+**Håll AEM session tillgänglig.** AEM datorprogram är beroende av en session som är öppen för AEM Assets-servern för att säkerställa att den fungerar som den ska. För användare som arbetar med datorprogram varje dag rekommenderar vi att du avmonterar AEM Assets i slutet av dagen för att tvinga fram utloggning och sedan &quot;Montera AEM Assets&quot; på morgonen för att säkerställa att de är inloggade och att nätverksresursen fungerar.
 
 **Stäng av&quot;Ikonförhandsvisning&quot; i Finder.** Om du vill kunna bläddra i stora mappar med Finder, särskilt om nätverksanslutningen är dålig, måste du se till att både Icon och Icon Preview är inaktiverade. I annat fall börjar Finder hämta varje resurs i en mapp för att generera en liten förhandsvisning, vilket kan leda till sämre prestanda och hög bandbreddsanvändning (CQ-4219779)
 
-* Gå till AEM Assets delad nätverksmapp i Finder
+* Gå till AEM Assets delade nätverksmapp i Finder
 * Högerklicka på DAM-monteringspunkten
 * Välj Visa visningsalternativ
 * Avmarkera Visa ikonförhandsvisning
@@ -411,7 +416,7 @@ Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återst
    * När du drar/släpper stora filer kan det hända att Finder gör timeout medan filer överförs i bakgrunden. Detta resulterar i en `Error - 36`bild. Du kan lösa problemet genom att dra/släppa eller öppna resursen igen (CQ-4219628)
    * Manuell mappinläsning fungerar inte alltid. Tillfällig lösning:  vänta i 30 sekunder på att mappen uppdateras automatiskt. (CQ-97389)
    * Mer resursinformation... begränsas till val av enstaka filer (CQ-89542, CQ-87656)
-   * Öppna i AEM Assets.. begränsas till enstaka fil- och mappval (CQ-83382)
+   * Öppna i AEM Assets... begränsas till enstaka fil- och mappval (CQ-83382)
    * Ett fel uppstod vid namnbyte av resurser som inte har något tillägg (CQ-4218971)
 * Funktionen Kopiera/Klistra in: Klistra in är tillgängligt när ingen resurs har kopierats till Urklipp
 * Windows:
