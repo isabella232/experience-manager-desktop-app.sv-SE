@@ -1,5 +1,5 @@
 ---
-title: Versionsinformation för Adobe Experience Manager-datorprogrammet
+title: Versionsinformation för Adobe Experience Manager-datorprogram
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och nedladdningslänkar för Adobe Experience Manager-datorprogrammet.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
@@ -10,33 +10,37 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 519fe85e5642eb88dd45515948e898185e262003
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 3%
+source-wordcount: '1364'
+ht-degree: 2%
 
 ---
 
 
-# Versionsinformation för Adobe Experience Manager-datorprogrammet {#release-notes-v2}
+# Versionsinformation för Adobe Experience Manager-datorprogram {#release-notes-v2}
 
-| Produkter | Adobe Experience Manager |
+| Produkter | Adobe Experience Manager-datorprogram |
 |--- |--- |
-| Programversion (revision) | 2.0 (2.0.2.0) |
+| Programversion (revision) | 2.0 (2.0.3.0) |
 | AEM | AEM som Cloud Service, AEM 6.5, AEM 6.4; AEM 6.3 (med kompatibilitetspaket) |
 | Typ | Mindre release |
-| Releasedatum | 15 april 2020 (Mac och Win) |
-| Hämta URL:er | [macOS 64-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows 64-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows 32-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
+| Releasedatum | 27 aug 2020 (Mac och Win) |
+| Hämta URL:er | [macOS 64-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.3.2.dmg); [Windows 64-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.3.2.exe); [Windows 32-bitars](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.3.2.exe) |
 
 ## Systemkrav och krav {#system-requirements-and-prerequisites-v2}
 
-Adobe Experience Manager är kompatibelt med följande operativsystem:
+Adobe Experience Manager-datorprogrammet är kompatibelt med följande operativsystem:
 
-* Mac OS X 10.14 eller senare, med de senaste felkorrigeringarna.
+Mac OS X 10.14 eller senare, med de senaste felkorrigeringarna.
 
-* Windows 7 och Windows 10 med de senaste Service Pack och felkorrigeringarna.
+Windows 10 med de senaste servicepaketen och felkorrigeringarna.
 
-Appen fungerar med följande Experience Manager-versioner, oavsett om de distribueras som en Cloud Service, på Adobe Managed Services (AMS) eller lokalt:
+>[!NOTE]
+>
+>Windows 7 stöds inte längre av leverantören (https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
+
+Appen fungerar med följande Experience Manager-versioner, oavsett om de distribueras som en Cloud Service, på Adobe Managed Services (AMS) eller på plats:
 
 * [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html).
 
@@ -55,7 +59,7 @@ Den version av programmet som du tänker installera på den lokala datorn kräve
 
 ### Stöd för olika resurser och filtyper {#support-for-file-types}
 
-Programmet har stöd för resurser som lagras i Adobe Experience Manager som representerar binära filer för de grundläggande åtgärderna. När du öppnar filer i det inbyggda skrivbordsprogrammet måste operativsystemet associera specifika filtyper som PNG eller JPG med specifika program som Mac Preview eller Adobe Photoshop.
+Programmet har stöd för resurser som lagras i Adobe Experience Manager och som representerar binära filer för de grundläggande åtgärderna. När du öppnar filer i det inbyggda skrivbordsprogrammet måste operativsystemet associera specifika filtyper som PNG eller JPG med specifika program som Mac Preview eller Adobe Photoshop.
 
 Några filtyper har stöd för att placera länkade resurser i binärfilen. Programmet hämtar de länkade resurserna i förväg om resursen finns i Experience Manager-databasen när sådana binära filer öppnas med skrivbordsappen. Filtyper som stöds för närvarande är:
 
@@ -76,6 +80,12 @@ Funktionen stöds i Adobe Creative Cloud 2018- och Adobe Creative Cloud 2019-ver
 ## Nya funktioner och förbättringar {#whats-new-added}
 
 Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
+
+**Uppdateringar i app v2.0.3**
+
+Felet som har åtgärdats i den aktuella versionen är:
+
+* Ett inloggningsproblem som Windows-användare som försöker få åtkomst till DAM-databasen på [!DNL Adobe Experience Manager] 6.5.5.0-instansen med programmet har korrigerats.
 
 **Uppdateringar i app v2.0.2**
 
@@ -119,7 +129,7 @@ Det är viktigt att du förstår följande om programmet och hur det fungerar.
 
    * Programmet tillhandahåller inte någon nätverksresurs som mappar AEM som en virtuell mappstruktur.
 
-* Den lista över resurser som visas av programmet baseras på AEM Assets status. Filer som laddas ned lokalt och som sedan byter namn i de lokala filerna eller cachemappen visas eller hanteras inte av programmet.
+* Den lista över resurser som visas av programmet baseras på statusen för AEM Assets-databasen. Filer som laddas ned lokalt och som sedan byter namn i de lokala filerna eller cachemappen visas eller hanteras inte av programmet.
 
 * Om programmet inte visar det förväntade resultatet klickar du på ikonen Uppdatera i det övre fältet.
 
@@ -129,7 +139,7 @@ Det är viktigt att du förstår följande om programmet och hur det fungerar.
 
 I följande diagram visas flödet av resurser och filer från molnet till det lokala filsystemet och vice versa, vilket initierats av användaråtgärder.
 
-![Flöde för resurser från AEM till datorprogram via skrivbordsappen](assets/da20_flow_diagram.png)
+![Flöde för resurser från AEM server till datorprogram via datorprogrammet](assets/da20_flow_diagram.png)
 
 ## Known issues {#known-issues-v2}
 
@@ -153,7 +163,7 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 * Resursöverföringar kan inte avbrytas av användaren. Om du utlöste en oavsiktlig stor överföring avslutar du programmet och startar det igen. <!-- CQ-4278940 -->
 
-**Problem med Platform:**
+**Plattformsproblem:**
 
 * I Windows kan en medias status ändras direkt till [!UICONTROL Edited Locally] efter att den har öppnats, även om du inte har redigerat den. Klicka [!UICONTROL Refresh] för att uppdatera.
 
