@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6763474c278ab8d8f52a0a466657e66a08b0748b
+source-git-commit: 91de08ba317de97a1d1900dc2351efcb4d6cf95f
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 | Produkter | Adobe Experience Manager-datorprogram |
 |--- |--- |
-| Programversion (revision) | 2.0 (2.0.3.0) |
+| Programversion (revision) | 2.0 (2.0.3.2) |
 | AEM | AEM som Cloud Service, AEM 6.5, AEM 6.4; AEM 6.3 (med kompatibilitetspaket) |
 | Typ | Mindre release |
 | Releasedatum | 27 aug 2020 (Mac och Win) |
