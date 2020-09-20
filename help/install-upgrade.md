@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
+source-git-commit: 29bbcc21f01dd0c1338fdbf3e979ef363a93533c
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,9 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
 1. Starta om datorn enligt anvisningarna. Starta och konfigurera skrivbordsappen.
 
-1. Om du vill ansluta programmet till en AEM databas klickar du på programikonen i fältet för att starta programmet. Ange adressen till AEM. Klicka på **[!UICONTROL Connect]** och ange autentiseringsuppgifterna.
+1. Om du vill ansluta programmet till en AEM databas klickar du på programikonen i fältet och startar programmet. Ange adressen till AEM i formatet `https://[aem-server-url]:[port]/`.
+
+   Klicka på **[!UICONTROL Connect]** och ange autentiseringsuppgifterna.
 
    ![Anslutningsskärmen för skrivbordsprogrammet till serveradressen för indata](assets/connect_da2.png)
 
