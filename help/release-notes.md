@@ -3,14 +3,14 @@ title: Versionsinformation för Adobe Experience Manager-datorprogram
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och nedladdningslänkar för Adobe Experience Manager-datorprogrammet.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
 index: y
 internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91de08ba317de97a1d1900dc2351efcb4d6cf95f
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 2%
