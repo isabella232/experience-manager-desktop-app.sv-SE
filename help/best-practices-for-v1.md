@@ -3,13 +3,13 @@ title: AEM praxis för datorprogram version 1.x
 description: Viktiga funktioner och rekommenderad användning av Adobe Experience Manager program version 1.x.
 uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3e10be1fd9dd1ff5293e96b46565825e6be1fc4f
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -69,11 +69,11 @@ Viktiga funktioner i AEM program:
 
 * Behandla inte AEM datorprogram som en&quot;datorsynkroniseringsklient&quot; för AEM Assets. Den största fördelen med AEM datorprogram här är att det ger&quot;virtuell&quot; åtkomst till hela databasen, och program för datorsynkronisering synkroniserar vanligtvis bara resurser som tillhör en användare. AEM datorprogram erbjuder viss nivå av cachelagring och bakgrundsuppladdning. fungerar det fortfarande på ett helt annat sätt än vanliga&quot;Synkroniseringsprogram&quot;, till exempel Adobe Creative Cloud-datorprogram eller Microsoft OneDrive.
 
-* Använd inte nätverksenheter AEM skrivbordsappen för att spara resurser ofta. Alla sparåtgärder överförs till AEM Assets. Därför är det opraktiskt att utföra intensiva redigeringsåtgärder direkt i den monterade AEM Assets-databasen. När du redigerar en resurs direkt i den monterade databasen krymper resursens tidslinje med irrelevanta versioner och lägger till ytterligare omkostnader på servern.
+* Använd inte AEM nätverksenheter för skrivbordsappar för att spara resurser ofta. Alla sparåtgärder överförs till AEM Assets. Därför är det opraktiskt att utföra intensiva redigeringsåtgärder direkt i den monterade AEM Assets-databasen. När du redigerar en resurs direkt i den monterade databasen krymper resursens tidslinje med irrelevanta versioner och lägger till ytterligare omkostnader på servern.
 
 * Använd inte AEM datorprogram för att migrera stora mängder data från en AEM till en annan. Se [Migreringshandboken](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) för att planera och utföra resursmigreringar. Datorprogrammet [stöder däremot massöverföring](use-app-v1.md#bulkupload) av ett stort antal resurser för första gången i [!DNL Adobe Experience Manager].
 
-## Recommendations för utvalda användningsområden {#recommendations-for-selected-use-cases}
+## Recommendations för vissa användningsområden {#recommendations-for-selected-use-cases}
 
 ### Tillgång till material för kreativa användare {#access-to-assets-for-creative-users}
 
