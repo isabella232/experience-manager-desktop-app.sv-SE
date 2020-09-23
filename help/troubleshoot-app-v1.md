@@ -3,13 +3,13 @@ title: Felsök AEM version 1.x
 description: Felsök AEM version 1.x av skrivbordsappen för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '3374'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Felsök AEM datorprogram för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 
-Skrivbordsappen Adobe Experience Manager (AEM) innehåller verktyg som hjälper dig att mappa AEM Assets databas som en nätverksresurs på en stationär dator (SMB-resurs på Mac OS). Nätverksresursen är en operativsystemsteknik som gör att fjärrkällor kan hanteras som om de var en del av en dators lokala filsystem. När det gäller skrivbordsprogram är AEM DAM-databasstrukturen (Digital Asset Management) avsedd som fjärrfilskälla. I följande diagram beskrivs skrivbordsappens topologi:
+Adobe Experience Manager (AEM) innehåller verktyg som du kan använda för att mappa AEM Assets-databasen till en nätverksresurs på en stationär dator (SMB-resurs på Mac OS). Nätverksresursen är en operativsystemsteknik som gör att fjärrkällor kan hanteras som om de var en del av en dators lokala filsystem. När det gäller skrivbordsprogram är AEM DAM-databasstrukturen (Digital Asset Management) avsedd som fjärrfilskälla. I följande diagram beskrivs skrivbordsappens topologi:
 
 ![skrivbordsappsdiagram](assets/aem-desktopapp-architecture.png)
 
@@ -37,7 +37,7 @@ datorprogrammet innehåller följande komponenter:
 
 ## Användningsexempel för AEM datorprogram {#intended-use-cases-for-aem-desktop-app}
 
-AEM datorprogram använder nätverksdelningstekniken för att mappa en AEM till ett lokalt skrivbord. Den är dock inte avsedd som ersättning för en nätverksresurs som innehåller resurser, där användarna utför digitala resurshanteringsåtgärder direkt från sin lokala dator. Det kan vara att flytta eller kopiera flera filer eller dra stora mappstrukturer till AEM Assets nätverksresurs direkt i Finder/Utforskaren.
+AEM datorprogram använder nätverksdelningstekniken för att mappa en AEM till ett lokalt skrivbord. Den är dock inte avsedd som ersättning för en nätverksresurs som innehåller resurser, där användarna utför digitala resurshanteringsåtgärder direkt från sin lokala dator. Det kan vara att flytta eller kopiera flera filer eller dra stora mappstrukturer till AEM Assets-nätverksresursen direkt i Finder/Utforskaren.
 
 AEM är ett bekvämt sätt att komma åt (öppna) och redigera (spara) DAM-resurser mellan AEM Assets Touch-gränssnittet och det lokala skrivbordet. Den länkar resurser på AEM Assets-servern till skrivbordsbaserade arbetsflöden.
 
@@ -76,7 +76,7 @@ Skrivbordsappen Experience Manager har inget konfigurerbart timeout-värde som k
 
 AEM datorprogram har funktioner för intern cachelagring och bakgrundsuppladdning för att förbättra slutanvändarens upplevelse. När du sparar en stor fil sparas den först lokalt så att du kan fortsätta arbeta. Efter en stund (för närvarande 30 sekunder) skickas filen sedan till AEM i bakgrunden.
 
-Till skillnad från Creative Cloud Desktop eller andra filsynkroniseringslösningar, som Microsoft One Drive, är AEM inte en fullständig klient för synkronisering av stationära datorer. Orsaken till detta är att det ger tillgång till hela AEM Assets, som kan vara mycket stor (hundratals gigabyte eller terabyte) för en fullständig synkronisering.
+Till skillnad från Creative Cloud Desktop eller andra filsynkroniseringslösningar, som Microsoft One Drive, är AEM inte en fullständig klient för synkronisering av stationära datorer. Orsaken till detta är att det ger tillgång till hela AEM Assets-databasen, som kan vara mycket stor (hundratals gigabyte eller terabyte) för en fullständig synkronisering.
 
 Cachelagring ger möjlighet att begränsa nätverks-/lagringskostnaderna till endast en delmängd av resurserna som är relevanta för användaren.
 
@@ -224,7 +224,7 @@ Att radera AEM Skrivbordscache är en preliminär felsökningsåtgärd som kan l
 Du kan rensa cacheminnet genom att ta bort programmets cachekatalog på följande platser.
 I Windows `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
-Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
+I Mac `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
 Platsen kan dock ändras beroende på AEM datorns konfigurerade AEM. Värdet är en kodad version av mål-URL:en. Om programmet till exempel har som mål `http://localhost:4502`är katalognamnet `http%3A%2F%2Flocalhost%3A4502%2F`.
 
@@ -248,7 +248,7 @@ Klicka på ikonen AEM Skrivbord och välj sedan **Om**. Versionsnumret visas på
 
 Ibland kan problem uppstå när du uppgraderar AEM datorprogram på macOS. Detta beror på att det inte går att läsa in nya versioner av AEM som de är i AEM för datorprogrammet. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
 
-Innan du utför stegen nedan drar du programmet &quot;Adobe Experience Manager Desktop&quot; från mappen macOS Applications till Papperskorgen. Öppna sedan terminalen och kör följande kommando för att ange ditt lösenord när du uppmanas till det.
+Innan du utför stegen nedan drar du programmet Adobe Experience Manager Desktop från mappen macOS Applications till Papperskorgen. Öppna sedan terminalen och kör följande kommando för att ange ditt lösenord när du uppmanas till det.
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
@@ -271,7 +271,7 @@ Oavsett hur filen fungerar ändras den inte när du checkar in den. Även om en 
 
 Server-API:t kräver att ytterligare rubriker, X-Destination, X-Depth och X-Overwrite, skickas för att flytt- och kopieringsåtgärderna ska fungera. Avsändaren skickar inte dessa huvuden som standard, vilket gör att dessa åtgärder misslyckas. Mer information finns i [Ansluta till AEM bakom en Dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
 
-## Felsökning AEM anslutningsproblem {#troubleshooting-aem-desktop-connection-issues}
+## Felsökning AEM anslutningsproblem med stationära datorer {#troubleshooting-aem-desktop-connection-issues}
 
 ### Omdirigeringsproblem för SAML {#saml-redirect-issue}
 
@@ -279,14 +279,14 @@ Den vanligaste orsaken till problem med AEM Skrivbord som ansluter till en SAML-
 
 1. Öppna en webbläsare.
 1. Ange URL-adressen i adressfältet `/content/dam.json`.
-1. Ersätt till exempel URL:en med AEM som mål `http://localhost:4502/content/dam.json`.
+1. Ersätt till exempel URL:en med AEM `http://localhost:4502/content/dam.json`.
 1. Logga in på AEM.
 1. När du har loggat in kontrollerar du webbläsarens aktuella adress i adressfältet. Den ska matcha den URL som du ursprungligen angav.
 1. Kontrollera att allt före `/content/dam.json` matchar det AEM som är konfigurerat AEM skrivbordet.
 
 ### SSL-konfigurationsproblem {#ssl-configuration-issue}
 
-De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda AEM datorprogram. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
+De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas AEM skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
 ## Använda AEM Desktop med dispatcher {#using-aem-desktop-with-dispatcher}
 
