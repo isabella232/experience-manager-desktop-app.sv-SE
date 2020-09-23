@@ -1,15 +1,15 @@
 ---
 title: Installera och konfigurera AEM version 1.x
-description: Installera och konfigurera AEM version 1.x för datorprogrammet så att det fungerar med AEM Assets-servrar och mappa resurserna som ska monteras som en enhet på skrivbordet.
+description: Installera och konfigurera AEM version 1.x för datorprogrammet så att det fungerar med AEM Assets-servrar och mappa materialet till en enhet på skrivbordet.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS,SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f6365302-1690-4719-9b8c-035719422740
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -49,7 +49,7 @@ När du ändrar en fil från en nätverksresursplats som monterats av skrivbords
 
 I den andra fasen överförs den uppdaterade filen till AEM efter en fördefinierad fördröjning (till exempel 30-tal). Den här åtgärden utförs i bakgrunden. Använd alternativet Visa resursstatus för att visa överföringsåtgärdens status.
 
-1. Överför en resurs till AEM Assets.
+1. Överför en mediefil till AEM Assets.
 
 1. Klicka på/tryck på ikonen AEM datorprogrammet i verktygsfältet.
 
@@ -137,6 +137,6 @@ Om du vill peka programmet mot en annan mapp eller enhet redigerar du programmet
 * [Introduktion till AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [Använd AEM datorprogram](use-app-v1.md)
 * [Förstå in- och utcheckning med AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [Använda datorprogrammet med AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+* [Använda datorprogram med AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Felsökning AEM datorprogram](troubleshoot-app-v1.md)
 
