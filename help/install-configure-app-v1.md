@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: ef87dc011297fda181a9a7643a261e8a42e35a8b
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Standardplatsen för cacheminnet för AEM är följande:
 
 * I Mac, `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/EncodedAEMEndpoint`.
 
-`EncodedAEMEndpoint` är AEM datorprogrammets konfigurerade URL för AEM. Värdet är en kodad version av mål-URL:en för AEM server. Om programmet till exempel har som mål `http://localhost:4502`är katalognamnet `http%3A%2F%2Flocalhost%3A4502`. Windows-sökvägen till cachekatalogen i det här exemplet är %LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502.
+`EncodedAEMEndpoint` är AEM datorprogrammets konfigurerade URL för AEM. Värdet är en kodad version av mål-URL:en för AEM server. Om programmet till exempel har som mål `http://localhost:4502`är katalognamnet `http%3A%2F%2Flocalhost%3A4502`. Windows-sökvägen till cachekatalogen i det här exemplet är `%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502`.
 
 Om du vill peka programmet mot en annan mapp eller enhet redigerar du programmets konfigurationsfil.
 
@@ -127,7 +127,7 @@ Om du vill peka programmet mot en annan mapp eller enhet redigerar du programmet
 
    Administratörsbehörighet krävs för att spara ändringar i den här filen.
 
-1. Sök efter strängen ProxyCacheRoot. Du ser att dess värde är inställt på cacheplatsen &quot;%LocalAppData%\Adobe\AssetsCompanion\Cache&quot;. Ändra bara det här värdet till en giltig sökväg.
+1. Sök efter strängen ProxyCacheRoot. Du ser att dess värde är inställt på cacheplatsen `%LocalAppData%\Adobe\AssetsCompanion\Cache`. Ändra bara det här värdet till en giltig sökväg.
 
    >[!NOTE]
    >
