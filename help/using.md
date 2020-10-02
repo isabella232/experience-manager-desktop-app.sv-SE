@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: f5f65fa8ddceae62f2e046f2d20e853aef572f2c
 workflow-type: tm+mt
-source-wordcount: '3997'
+source-wordcount: '3999'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Använd Adobe Experience Manager (AEM)-datorprogrammet för att enkelt få tillg
 
 Tack vare integreringen kan olika roller i organisationen hantera resurser centralt i Experience Manager Assets och komma åt resurserna på den lokala datorn i de program de skapats i i Windows eller Mac OS.
 
-När du öppnar programmet efter utloggning eller för första gången anger du URL-adressen till Experience Manager-servern i formatet `https://[aem-server-url]:[port]/`. Klicka på Anslut. Ange autentiseringsuppgifter för att ansluta programmet till servern.
+När du öppnar programmet efter utloggning eller för första gången anger du URL-adressen till Experience Manager-servern i formatet `https://[aem-server-url]:[port]/`. Välj sedan [!UICONTROL Connect] alternativet. Ange autentiseringsuppgifter för att ansluta programmet till servern.
 
 De viktigaste uppgifterna du gör med datorprogrammet Experience Manager är:
 
