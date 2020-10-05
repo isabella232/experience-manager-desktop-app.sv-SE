@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 381e586077c7db63dd57a468b1c6abc60c63e34e
+source-git-commit: b4add64df21991495d5cc01e6250bbc9fc444ff0
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1880'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Platsen kan dock ändras beroende på AEM datorns konfigurerade AEM. Värdet är
 
 Klicka på ![App-menyn](assets/do-not-localize/more_options_da2.png) för att öppna appens meny och klicka på **[!UICONTROL Help]** > **[!UICONTROL About]**.
 
-## Kan inte se placerade resurser {#placed-assets-missing}
+### Kan inte se placerade resurser {#placed-assets-missing}
 
 Om du inte kan se de resurser som du eller andra kreatörer har placerat i supportfilerna (till exempel INDD-filer) ska du kontrollera följande:
 
@@ -114,7 +114,7 @@ Om du inte kan se de resurser som du eller andra kreatörer har placerat i suppo
 * Enhetliga brev. Om du eller någon annan medarbetare placerade resurserna när du mappade AEM DAM till en annan enhetsbeteckning visas inte de placerade resurserna.
 * Behörigheter. Kontakta AEM om du har behörighet att hämta de placerade resurserna.
 
-## Problem vid uppgradering på macOS {#issues-when-upgrading-on-macos}
+### Problem vid uppgradering på macOS {#issues-when-upgrading-on-macos}
 
 Ibland kan problem uppstå när du uppgraderar AEM datorprogram på macOS. Detta beror på att det inte går att läsa in nya versioner av AEM datorprogram korrekt i en äldre systemmapp AEM datorprogrammet. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
 
@@ -129,13 +129,28 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-## Kan inte överföra filer {#upload-fails}
+### Kan inte överföra filer {#upload-fails}
 
 Om du använder skrivbordsappen med AEM 6.5.1 eller senare uppgraderar du S3- eller Azure-kopplingen till version 1.10.4 eller senare. Det åtgärdar ett filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
 
-## [!DNL Experience Manager] anslutningsproblem för skrivbordsprogram {#connection-issues}
+### [!DNL Experience Manager] anslutningsproblem för skrivbordsprogram {#connection-issues}
 
-### SAML-inloggningsautentisering fungerar inte {#da-connection-issue-with-saml-aem}
+Om du får problem med anslutningen finns det några sätt att få mer information om vad [!DNL Experience Manager] skrivbordsappen gör.
+
+**Kontrollera begärandeloggen**
+
+[!DNL Experience Manager] skrivbordsappen loggar alla begäranden som skickas, tillsammans med varje begärandes svarskod, i en dedikerad loggfil.
+
+1. Öppna `request.log` i programmets loggkatalog för att se dessa begäranden.
+
+1. Varje rad i loggen representerar antingen en begäran eller ett svar. Begäranden kommer att ha ett `>` tecken följt av den URL som begärdes. Svaren kommer att ha ett `<` tecken följt av svarskoden och den URL som begärdes. Begäranden och svar kan matchas med varje rads GUID.
+
+**Kontrollera förfrågningar som lästs in av programmets inbäddade webbläsare**
+
+En majoritet av programmets begäranden finns i begärandeloggen. Men om det inte finns någon användbar information där kan det vara användbart att undersöka de förfrågningar som skickas av programmets inbäddade webbläsare.
+Se [SAML-avsnittet](#da-connection-issue-with-saml-aem) för instruktioner om hur du visar dessa förfrågningar.
+
+#### SAML-inloggningsautentisering fungerar inte {#da-connection-issue-with-saml-aem}
 
 Om [!DNL Experience Manager] datorprogrammet inte ansluter till din SSO-aktiverade (SAML) [!DNL Adobe Experience Manager] instans kan du felsöka i det här avsnittet. SSO-processer är olika, ibland komplexa, och programmets design gör sitt bästa för att hantera den här typen av anslutningar. Vissa inställningar kräver dock ytterligare felsökning.
 
@@ -186,11 +201,45 @@ Om du vill felsöka ytterligare kan du visa de exakta URL:er som webbläsaren f�
 
 Om du tittar på den URL-sekvens som läses in kan det hjälpa till att felsöka i SAML:s slut för att avgöra vad som är fel.
 
-### SSL-konfigurationsproblem {#ssl-config-v2}
+#### SSL-konfigurationsproblem {#ssl-config-v2}
 
 De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas AEM skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
-## Appen svarar inte {#unresponsive}
+
+De bibliotek som AEM Desktop använder för HTTP-kommunikation använder strikt SSL-tillämpning. Det kan alltså finnas tillfällen då SSL-anslutningar som lyckas via en webbläsare misslyckas med [!DNL Adobe Experience Manager] skrivbordsappen. Detta är bra eftersom det uppmuntrar till korrekt konfigurering av SSL och ökar säkerheten, men det kan vara frustrerande när programmet inte kan ansluta.
+
+I det här fallet rekommenderar vi att du använder ett verktyg för att analysera serverns SSL-certifikat och identifiera problem så att de kan korrigeras. Det finns webbplatser som inspekterar serverns certifikat när de tillhandahåller URL:en.
+
+Som en tillfällig åtgärd är det möjligt att inaktivera strikt SSL-tillämpning i [!DNL Adobe Experience Manager] skrivbordsappen. Detta är inte en rekommenderad långsiktig lösning eftersom den minskar säkerheten genom att dölja grundorsaken till felaktigt konfigurerad SSL. Så här inaktiverar du strikt tvingande:
+
+1. Använd valfri redigerare för att redigera programmets JavaScript-konfigurationsfil, som finns (som standard) på följande platser (beroende på operativsystem):
+
+   Mac: `/Applications/Adobe Experience Manager Desktop.app/Contents/Resources/javascript/lib-smb/config.json`
+
+   I Windows: `C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop\javascript\config.json`
+
+1. Leta reda på följande avsnitt i filen:
+
+   ```shell
+   ...
+   "assetRepository": {
+       "options": {
+   ...
+   ```
+
+1. Ändra avsnittet genom att lägga till `"strictSSL": false` följande:
+
+   ```shell
+   ...
+   "assetRepository": {
+       "options": {
+           "strictSSL": false,
+   ...
+   ```
+
+1. Spara filen och starta om [!DNL Adobe Experience Manager] datorprogrammet.
+
+### Appen svarar inte {#unresponsive}
 
 I vissa fall kan programmet inte svara, bara visa en vit skärm eller visa ett fel längst ned i gränssnittet utan några alternativ i gränssnittet. Prova följande i den ordning du vill:
 
