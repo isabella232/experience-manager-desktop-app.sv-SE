@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 381e586077c7db63dd57a468b1c6abc60c63e34e
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1537'
 ht-degree: 0%
 
 ---
@@ -51,37 +51,41 @@ Om du vill felsöka problem med skrivbordsprogram bör du känna till följande 
 
 ### Aktivera felsökningsläge {#enable-debug-mode}
 
-Om du vill felsöka kan du aktivera felsökningsläget och få mer information i loggarna. Om du vill använda programmet i felsökningsläge på Mac använder du följande kommandoradsalternativ i en terminal eller i kommandotolken: `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`.
-
-Så här aktiverar du felsökningsläget i Windows:
-
-1. Leta reda på `Adobe Experience Manager Desktop.exe.config` filen i installationsmappen för skrivbordsappen. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop`.
-
-1. Leta `<level value="INFO"/>` mot slutet av filen. Ändra värdet från `INFO` till `DEBUG`, vilket är `<level value="DEBUG"/>`. Spara och stäng filen.
-
-1. Leta reda på `logging.json` filen i installationsmappen för skrivbordsappen. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`.
-
-1. Leta reda på alla förekomster av `logging.json` filen `"level": "info"`. Ändra värdena från `info` till `debug`, vilket är `"level": "debug"`. Spara och stäng filen.
-
-1. Rensa de cachelagrade kataloger som finns på den plats som anges i [programinställningarna](/help/install-upgrade.md#set-preferences).
-
-1. Starta om datorprogrammet.
-
-<!-- The Windows command doesn't work for now.
-* On Windows: `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
--->
-
-### Plats för loggfiler {#check-log-files-v2}
-
-Loggfilerna för AEM skrivbordsappen finns på följande platser. När du överför många resurser, och vissa filer inte kan överföras, ska du läsa filen för att identifiera de misslyckade överföringarna `backend.log` .
-
-* Sökväg i Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
-
-* Bana i Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+Om du vill felsöka kan du aktivera felsökningsläget och få mer information i loggarna.
 
 >[!NOTE]
 >
->När du arbetar med kundtjänst på Adobe på en supportförfrågan/anmälan kan du bli ombedd att dela loggfilerna för att hjälpa kundtjänstteamet att förstå problemet. Arkivera hela `Logs` mappen och dela den med kundtjänst.
+>Giltiga loggnivåer är DEBUG, INFO, WARN och ERROR. Loggarnas utförlighet är högst i DEBUG och lägst i FEL.
+
+Så här använder du programmet i felsökningsläge på Mac:
+
+1. Öppna ett terminalfönster eller en kommandotolk.
+
+1. Starta skrivbordsappen genom att köra följande kommando: [!DNL Experience Manager]
+
+   `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`.
+
+Så här aktiverar du felsökningsläge i Windows:
+
+1. Öppna ett kommandofönster.
+
+1. Starta [!DNL Experience Manager] skrivbordsprogrammet genom att köra följande kommando:
+
+`AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
+
+### Plats för loggfiler {#check-log-files-v2}
+
+[!DNL Experience Manager] loggfilerna sparas på följande platser beroende på operativsystemet:
+
+I Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+
+Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+
+När du överför många resurser, och vissa filer inte kan överföras, ska du läsa filen för att identifiera de misslyckade överföringarna `backend.log` .
+
+>[!NOTE]
+>
+>När du arbetar med kundtjänst på Adobe på en supportförfrågan eller ett supportärende kan du bli ombedd att dela loggfilerna för att hjälpa kundtjänstteamet att förstå problemet. Arkivera hela `Logs` mappen och dela den med kundtjänst.
 
 ### Rensa cache {#clear-cache-v2}
 
@@ -129,7 +133,60 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 Om du använder skrivbordsappen med AEM 6.5.1 eller senare uppgraderar du S3- eller Azure-kopplingen till version 1.10.4 eller senare. Det åtgärdar ett filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
 
-## SSL-konfigurationsproblem {#ssl-config-v2}
+## [!DNL Experience Manager] anslutningsproblem för skrivbordsprogram {#connection-issues}
+
+### SAML-inloggningsautentisering fungerar inte {#da-connection-issue-with-saml-aem}
+
+Om [!DNL Experience Manager] datorprogrammet inte ansluter till din SSO-aktiverade (SAML) [!DNL Adobe Experience Manager] instans kan du felsöka i det här avsnittet. SSO-processer är olika, ibland komplexa, och programmets design gör sitt bästa för att hantera den här typen av anslutningar. Vissa inställningar kräver dock ytterligare felsökning.
+
+Ibland dirigeras SAML-processen inte tillbaka till den ursprungligen begärda sökvägen eller så dirigeras den slutliga omdirigeringen till en annan värd än den som är konfigurerad i [!DNL Adobe Experience Manager] datorprogrammet. Så här kontrollerar du att så inte är fallet:
+
+1. Öppna en webbläsare.
+
+1. Ange URL-adressen `<AEM host>/content/dam.json` i adressfältet.
+
+   Ersätt `<AEM host>` med [!DNL Adobe Experience Manager] målinstansen, till exempel `http://localhost:4502/content/dam.json`.
+
+1. Logga in på [!DNL Adobe Experience Manager] instansen.
+
+1. När inloggningen är klar tittar du på webbläsarens aktuella adress i adressfältet. Den ska exakt matcha den URL som ursprungligen angavs.
+
+1. Kontrollera också att allt före `/content/dam.json` matchar det [!DNL Adobe Experience Manager] målvärde som konfigurerats i inställningarna för [!DNL Adobe Experience Manager] skrivbordsappen.
+
+**SAML-inloggningsprocessen fungerar korrekt enligt ovanstående steg, men användarna kan fortfarande inte logga in**
+
+Fönstret i [!DNL Adobe Experience Manager] skrivbordsappen som visar inloggningsprocessen är helt enkelt en webbläsare som visar [!DNL Adobe Experience Manager] målinstansens webbanvändargränssnitt:
+
+* Mac-versionen använder en [WebView](https://developer.apple.com/documentation/webkit/webview).
+
+* I Windows-versionen används Chromium-baserad [CefSharp](https://cefsharp.github.io/).
+
+Kontrollera att SAML-processen har stöd för dessa webbläsare.
+
+Om du vill felsöka ytterligare kan du visa de exakta URL:er som webbläsaren försöker läsa in. Om du vill se den här informationen:
+
+1. Följ instruktionerna för att starta programmet i [felsökningsläge](#enable-debug-mode).
+
+1. Återskapa inloggningsförsöket.
+
+1. Navigera till programmets [loggkatalog](#check-log-files-v2)
+
+1. För Windows:
+
+   1. Öppna&quot;aemcompanionlog.txt&quot;.
+
+   1. Sök efter meddelanden som börjar med &quot;Inloggningsläsarens adress ändrad till&quot;. Dessa poster innehåller även den URL som programmet har läst in.
+
+   För Mac:
+
+   1. `com.adobe.aem.desktop-nnnnnnnn-nnnnnn.log`, där **n** ersätts med de tal som finns i det senaste filnamnet.
+
+   1. Sök efter meddelanden som börjar med&quot;inläst bildruta&quot;. Dessa poster innehåller även den URL som programmet har läst in.
+
+
+Om du tittar på den URL-sekvens som läses in kan det hjälpa till att felsöka i SAML:s slut för att avgöra vad som är fel.
+
+### SSL-konfigurationsproblem {#ssl-config-v2}
 
 De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas AEM skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
