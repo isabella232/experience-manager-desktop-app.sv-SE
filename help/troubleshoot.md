@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a7a334df5eaa2b8a8d0412bff1ed2a47d39ca1a2
+source-git-commit: 540821ad10f14ad855c66a2b93d356ba118515c7
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 0%
@@ -143,7 +143,7 @@ Cacheminnet rensas genom att programmets cachekatalog, som finns i programmets i
 
 Om du vill rensa cachen tar du bort den kodade [!DNL Adobe Experience Manager] slutpunktskatalogen. Om du tar bort hela katalogen som anges i inställningarna rensas cachen för alla instanser som har använts av programmet.
 
-Att rensa [!DNL Adobe Experience Manager]]-datorprogrammets cache är en preliminär felsökningsåtgärd som kan lösa flera problem. Rensa cacheminnet från appinställningarna. Se [Ange inställningar](install-upgrade.md#set-preferences). Standardplatsen för cachemappen är:
+Att rensa [!DNL Adobe Experience Manager] datorprogrammets cache är en preliminär felsökningsåtgärd som kan lösa flera problem. Rensa cacheminnet från appinställningarna. Se [Ange inställningar](install-upgrade.md#set-preferences). Standardplatsen för cachemappen är:
 
 ### Känn till [!DNL Adobe Experience Manager] datorprogramversionen {#know-app-version-v2}
 
