@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b4add64df21991495d5cc01e6250bbc9fc444ff0
+source-git-commit: a7a334df5eaa2b8a8d0412bff1ed2a47d39ca1a2
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '2230'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,48 @@ Följ följande metodtips för att förebygga vissa vanliga problem och felsökn
 
 Om du vill felsöka problem med skrivbordsprogram bör du känna till följande information. Dessutom får du hjälp att förmedla problemen bättre till Adobe kundtjänst om du väljer att söka support.
 
+### Plats för loggfiler {#check-log-files-v2}
+
+[!DNL Experience Manager] loggfilerna sparas på följande platser beroende på operativsystemet:
+
+I Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+
+Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+
+När du överför många resurser, och vissa filer inte kan överföras, ska du läsa filen för att identifiera de misslyckade överföringarna `backend.log` .
+
+>[!NOTE]
+>
+>När du arbetar med kundtjänst på Adobe på en supportförfrågan eller ett supportärende kan du bli ombedd att dela loggfilerna för att hjälpa kundtjänstteamet att förstå problemet. Arkivera hela `Logs` mappen och dela den med kundtjänst.
+
+### Ändra detaljnivå i loggfiler {#level-of-details-in-log}
+
+Så här ändrar du detaljnivån i loggfiler:
+
+1. Kontrollera att programmet inte körs.
+
+1. I Windows:
+
+   1. Öppna ett kommandofönster.
+
+   1. Starta [!DNL Adobe Experience Manager] skrivbordsprogrammet genom att köra kommandot:
+
+   ```shell
+   set AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe
+   ```
+
+   På Mac:
+
+   1. Öppna ett terminalfönster.
+
+   1. Starta [!DNL Adobe Experience Manager] skrivbordsprogrammet genom att köra kommandot:
+
+   ```shell
+   AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app
+   ```
+
+Giltiga loggnivåer är DEBUG, INFO, WARN eller ERROR. Loggarnas utförlighet är högst i DEBUG och lägst i FEL.
+
 ### Aktivera felsökningsläge {#enable-debug-mode}
 
 Om du vill felsöka kan du aktivera felsökningsläget och få mer information i loggarna.
@@ -73,46 +115,61 @@ Så här aktiverar du felsökningsläge i Windows:
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
 
-### Plats för loggfiler {#check-log-files-v2}
-
-[!DNL Experience Manager] loggfilerna sparas på följande platser beroende på operativsystemet:
-
-I Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
-
-Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
-
-När du överför många resurser, och vissa filer inte kan överföras, ska du läsa filen för att identifiera de misslyckade överföringarna `backend.log` .
-
->[!NOTE]
->
->När du arbetar med kundtjänst på Adobe på en supportförfrågan eller ett supportärende kan du bli ombedd att dela loggfilerna för att hjälpa kundtjänstteamet att förstå problemet. Arkivera hela `Logs` mappen och dela den med kundtjänst.
-
 ### Rensa cache {#clear-cache-v2}
 
-Att radera AEM cacheminne är en preliminär felsökningsåtgärd som kan lösa flera problem. Rensa cacheminnet från appinställningarna. Se [Ange inställningar](install-upgrade.md#set-preferences). Standardplatsen för cachemappen är:
+Utför följande steg:
 
-* I Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
+1. Starta programmet och anslut en AEM.
 
-* Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
+1. Öppna programmets inställningar genom att klicka på ellipserna i det övre högra hörnet och markera [!UICONTROL Preferences].
 
-Platsen kan dock ändras beroende på AEM datorns konfigurerade AEM. Värdet är en kodad version av mål-URL:en. Om programmet till exempel har som mål `http://localhost:4502`är katalognamnet `http%3A%2F%2Flocalhost%3A4502%2F`. Ta bort lämplig mapp för att rensa cachen. Ett annat skäl till att rensa cacheminnet är att frigöra diskutrymme när diskutrymmet börjar ta slut.
+1. Leta reda på den post som visar [!UICONTROL Current Cache Size]. Klicka på papperskorgsikonen bredvid det här elementet.
+
+Om du vill rensa cachen manuellt fortsätter du med stegen nedan.
 
 >[!CAUTION]
 >
->Om du rensar AEM skrivbordscachen försvinner oåterkalleligt ändringar av lokala resurser som inte synkroniseras med AEM.
+>Detta kan vara en destruktiv åtgärd. Om det finns lokala filändringar som inte har överförts till [!DNL Adobe Experience Manager]kommer dessa ändringar att gå förlorade genom att fortsätta.
 
-### Lär känna AEM version {#know-app-version-v2}
+Cacheminnet rensas genom att programmets cachekatalog, som finns i programmets inställningar, tas bort.
 
-Klicka på ![App-menyn](assets/do-not-localize/more_options_da2.png) för att öppna appens meny och klicka på **[!UICONTROL Help]** > **[!UICONTROL About]**.
+1. Starta programmet.
+
+1. Öppna programmets inställningar genom att markera ellipserna i det övre högra hörnet och markera [!UICONTROL Preferences].
+
+1. Notera [!UICONTROL Cache Directory] värdet.
+
+   I den här katalogen finns det underkataloger som heter efter de kodade [!DNL Adobe Experience Manager] slutpunkterna. Namnen är en kodad version av mål- [!DNL Adobe Experience Manager] URL:en. Om programmet till exempel har som mål `localhost:4502` blir katalognamnet `localhost_4502`.
+
+Om du vill rensa cachen tar du bort den kodade [!DNL Adobe Experience Manager] slutpunktskatalogen. Om du tar bort hela katalogen som anges i inställningarna rensas cachen för alla instanser som har använts av programmet.
+
+Att rensa [!DNL Adobe Experience Manager]]-datorprogrammets cache är en preliminär felsökningsåtgärd som kan lösa flera problem. Rensa cacheminnet från appinställningarna. Se [Ange inställningar](install-upgrade.md#set-preferences). Standardplatsen för cachemappen är:
+
+### Känn till [!DNL Adobe Experience Manager] datorprogramversionen {#know-app-version-v2}
+
+Så här ser du versionsnumret:
+
+1. Starta programmet.
+
+1. Klicka på ellipserna i det övre högra hörnet, hovra över [!UICONTROL Help]och klicka sedan på [!UICONTROL About].
+
+   Versionsnumret visas på den här skärmen.
 
 ### Kan inte se placerade resurser {#placed-assets-missing}
 
 Om du inte kan se de resurser som du eller andra kreatörer har placerat i supportfilerna (till exempel INDD-filer) ska du kontrollera följande:
 
 * Anslutning till servern. Smidig nätverksanslutning kan stoppa hämtningar av resurser.
+
 * Filstorlek. Stora resurser tar längre tid att hämta och visa.
+
 * Enhetliga brev. Om du eller någon annan medarbetare placerade resurserna när du mappade AEM DAM till en annan enhetsbeteckning visas inte de placerade resurserna.
+
 * Behörigheter. Kontakta AEM om du har behörighet att hämta de placerade resurserna.
+
+### Redigeringar av filer i skrivbordsappens användargränssnitt återspeglas inte direkt i [!DNL Adobe Experience Manager] {#changes-on-da-not-visible-on-aem}
+
+[!DNL Adobe Experience Manager] när alla redigeringar av en fil är slutförda. Beroende på filens storlek och komplexitet tar det lång tid att överföra den nya versionen av filen tillbaka till [!DNL Adobe Experience Manager]. Programdesignen kräver att så många gånger som en fil överförs fram och tillbaka ska minimeras, i stället för att gissa när redigeringarna är klara och överförs automatiskt. Vi rekommenderar att användaren initierar överföringen av filen tillbaka till [!DNL Adobe Experience Manager] genom att välja att överföra en fils ändringar.
 
 ### Problem vid uppgradering på macOS {#issues-when-upgrading-on-macos}
 
@@ -247,6 +304,22 @@ I vissa fall kan programmet inte svara, bara visa en vit skärm eller visa ett f
 * Avsluta programmet och öppna det igen.
 
 I båda metoderna startar programmet i rotmappen DAM.
+
+### Behöver du mer hjälp med [!DNL Experience Manager] datorprogrammet {#additional-help}
+
+Skapa Jira-biljett med följande information:
+
+* Använd `DAM - Companion App` som [!UICONTROL Component].
+
+* Detaljerade steg för att återskapa problemet i [!UICONTROL Description].
+
+* Loggar på DEBUG-nivå som hämtades när felet återskapades.
+
+* AEM.
+
+* Operativsystemversion.
+
+* [!DNL Adobe Experience Manager] datorprogramversion. Om du vill veta vilken version du har går du till [Hitta versionen](#know-app-version-v2)av skrivbordsappen.
 
 >[!MORELIKETHIS]
 >
