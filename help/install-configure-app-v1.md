@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ef87dc011297fda181a9a7643a261e8a42e35a8b
+source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -134,9 +134,7 @@ Om du vill peka programmet mot en annan mapp eller enhet redigerar du programmet
    >Programmet skapar automatiskt en *&lt;Encoded AEM Endpoint>* -underkatalog. Det går inte att konfigurera det här beteendet.
 
 >[!MORELIKETHIS]
-* [Introduktion till AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
-* [Använd AEM datorprogram](use-app-v1.md)
-* [Förstå in- och utcheckning med AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [Använda datorprogram med AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [Felsökning AEM datorprogram](troubleshoot-app-v1.md)
+* [Introduktion till AEM program](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [Använd AEM datorprogram](use-app-v1.md).
+* [Felsökning AEM datorprogram](troubleshoot-app-v1.md).
 
