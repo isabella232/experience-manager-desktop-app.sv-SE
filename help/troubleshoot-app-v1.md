@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
 workflow-type: tm+mt
 source-wordcount: '3374'
 ht-degree: 0%
@@ -144,7 +144,7 @@ Du kan förbättra prestandan AEM sidan genom att aktivera tillfälliga arbetsfl
 
 En annan metod för att förbättra AEM prestanda är att konfigurera värdet för det maximala antalet parallella jobb för jobbet Beviljit Transient Workflow Queue. Det rekommenderade värdet är ungefär hälften av antalet processorer som är tillgängliga på servern. Så här justerar du värdet:
 
-1. Navigera till */system/console/configMgr* i AEM som ska konfigureras (till exempel <http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr>).
+1. Navigera till */system/console/configMgr* i AEM som ska konfigureras (till exempel `http://[aem_server]:[port]/system/console/configMgr`).
 1. Sök efter **QueueConfiguration** och klicka för att öppna varje jobb tills du hittar jobbet **Bevilja tillfällig arbetsflödeskö** . Klicka på Redigera bredvid den.
 1. Ändra värdet för **maximalt antal parallella jobb** och klicka på **Spara**.
 
