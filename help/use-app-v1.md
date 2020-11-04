@@ -3,9 +3,9 @@ title: Använd AEM version 1.x.
 description: Lär dig hur du använder Adobe Experience Manager-datorprogram version 1.x och optimerar ditt arbete med resurser på datorn.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
 workflow-type: tm+mt
-source-wordcount: '2500'
+source-wordcount: '2474'
 ht-degree: 0%
 
 ---
@@ -253,7 +253,5 @@ Du kan också välja filer/mappar som du vill överföra till AEM i Finder eller
 
 >[!MORELIKETHIS]
 >
->* [Introduktion till AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
->* [Förstå in- och utcheckning med AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 >* [Felsöka AEM datorprogram](troubleshoot-app-v1.md)
 
