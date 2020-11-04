@@ -1,11 +1,11 @@
 ---
 title: Använd AEM version 1.x.
-description: Lär dig hur du använder Adobe Experience Manager-datorprogrammet version 1.x och optimerar ditt arbete med resurser på datorn.
+description: Lär dig hur du använder Adobe Experience Manager-datorprogram version 1.x och optimerar ditt arbete med resurser på datorn.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
-source-wordcount: '2516'
+source-wordcount: '2500'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Programmet har stöd för proxykonfiguration i Mac och Windows. Konfigurationen 
 
 1. Ange användarnamn och lösenord för instansen på inloggningsskärmen. Om du vill ange en alternativ AEM väljer du **[!UICONTROL Alternate Login URL]** alternativet.
 
-   ![Ange AEM serverautentiseringsuppgifter på inloggningsskärmen på AEM skrivbordet](assets/chlimage_1-2.png)
+   ![Ange AEM serverautentiseringsuppgifter på inloggningsskärmen AEM datorprogrammet](assets/login_screen_v1.png)
 
 ### Aktivera skrivbordsåtgärder i AEM webbgränssnitt {#desktopactions}
 
@@ -105,9 +105,9 @@ I Assets-användargränssnittet kan du utforska resursplatserna eller checka ut 
 
 1. I dialogrutan Användarinställningar väljer du **[!UICONTROL Show Desktop Actions For Assets]**. Klicka på **[!UICONTROL Accept]**.
 
-   ![Markera Visa skrivbordsåtgärder för resurser för att aktivera skrivbordsåtgärder](assets/chlimage_1-3.png)
+   ![Markera [!UICONTROL Show Desktop Actions For Assets] för att aktivera skrivbordsåtgärder](assets/enable_desktop_actions.png)
 
-   *Bild: Markera Visa skrivbordsåtgärder för resurser om du vill aktivera skrivbordsåtgärder.*
+   *Bild: Markera Visa skrivbordsåtgärder för resurser för att aktivera skrivbordsåtgärder.*
 
 ## Få åtkomst till och öppna resurser på datorn {#openondesktop}
 
@@ -127,21 +127,21 @@ För Adobe InDesign-filer (INDD) väljer du **[!UICONTROL Open]** på snabbmenyn
 
 >[!NOTE]
 >
->Adobe rekommenderar att du går till Visningsalternativ i Finder på Mac och avaktiverar alternativen **Visa objektinformation**, **Visa förhandsgranskning** av objekt och **Visa förhandsgranskningskolumn** för den monterade AEM Assets. Det förbättrar prestandan.
+>Adobe rekommenderar att du går till Visningsalternativ i Finder på Mac och avaktiverar alternativen **Visa objektinformation**, **Visa förhandsgranskning** av objekt och **Visa förhandsgranskningskolumn** för den monterade AEM Assets-mappen. Det förbättrar prestandan.
 
 ### Ytterligare alternativ i AEM {#additional-options-in-aem-assets}
 
-När du har mappat AEM Assets-databasen till den lokala hårddisken kan du aktivera ytterligare ikoner och funktionen Mappöverföring visas för mappade resurser och mappar.
+När du har mappat AEM Assets-databasen till din lokala enhet kan du aktivera ytterligare ikoner och funktionen Mappöverföring som visas för mappade resurser och mappar.
 
-1. Öppna gränssnittet AEM Assets och för pekaren över en  eller en resurs för att visa skrivbordsåtgärderna som snabbåtgärder i kortvyn.
+1. Öppna AEM Assets-gränssnittet och för pekaren över en mapp eller en resurs för att visa skrivbordsåtgärderna som snabbåtgärder i kortvyn.
 
-   ![I resursgränssnittet öppnar du snabbåtgärdsmenyn för att se skrivbordsåtgärder](assets/chlimage_1-4.png)
+   ![I resursgränssnittet öppnar du snabbåtgärdsmenyn för att se skrivbordsåtgärder](assets/desktop_actions_in_card_view.png)
 
    *Bild: I resursgränssnittet öppnar du snabbåtgärdsmenyn för att se skrivbordsåtgärder.*
 
-   Dessa skrivbordsåtgärder är också tillgängliga när du klickar på ikonen **Skrivbordsåtgärder** i verktygsfältet efter att du har valt resursen eller från verktygsfältet på resurssidan.
+   Dessa skrivbordsåtgärder är också tillgängliga när du klickar på alternativet **Skrivbordsåtgärder** i verktygsfältet efter att du har valt resursen eller från verktygsfältet på resurssidan.
 
-1. Om du vill öppna resursen i skrivbordsprogrammet som är associerat med det specifika filtillägget klickar/trycker du på snabbåtgärden **Öppna på skrivbordet** och ![Öppna på skrivbordet](assets/do-not-localize/aemassets_icon_openondesktop.png).
+1. Om du vill öppna resursen i skrivbordsprogrammet som är associerat med det specifika filtillägget klickar du på snabbåtgärden **Öppna på skrivbordet** och ![Öppna på skrivbordet](assets/do-not-localize/aemassets_icon_openondesktop.png).
 
    Du kan också välja **Öppna** på menyn **Skrivbordsåtgärder** i verktygsfältet.
 
@@ -153,19 +153,19 @@ Om du vill hitta en viss resurs i det lokala filsystemet klickar du på **Visa**
 --- |--- |
 | ![Ikon för inaktiverad Windows](assets/do-not-localize/win_disabled.png) | Appen startas men är inte ansluten till servern. Vissa resurser kanske väntar på synkronisering. |
 | ![Synkroniseringsikon för Windows-fil](assets/do-not-localize/win_sync.png) | Resurserna synkroniseras. Filerna överförs eller hämtas. Du kan se exakta statusvärden och pausa överföringar från fönstret Resursstatus. |
-| ![Ikon för återanslutning av Windows](assets/do-not-localize/win_refresh.png) | Appen försöker återansluta. Nätverksproblemen kan leda till att den kopplas från. |
+| ![Ikon för återanslutning av Windows](assets/do-not-localize/win_refresh.png) | Programmet försöker återansluta. Nätverksproblemen kan leda till att den kopplas från. |
 
 ## Arbeta med dina resurser {#workonassets}
 
 ### Ta en titt på resurser från AEM webbgränssnitt {#check-out-assets-from-the-aem-web-interface}
 
-Med AEM Assets kan du checka ut resurser för redigering och checka in dem igen när du är klar med ändringarna. När du har checkat ut en resurs kan bara du redigera, kommentera, publicera, flytta eller ta bort resursen. När du checkar ut en resurs låses resursen och andra användare hindras från att utföra någon av dessa åtgärder. Om du vill kunna checka ut/in resurser måste du ha skrivbehörighet för dem.
+Med AEM Assets kan du checka ut resurser för redigering och checka in dem igen när du är klar med ändringarna. När du har checkat ut en resurs kan bara du redigera, kommentera, publicera, flytta eller ta bort resursen. När du checkar ut en resurs låses den och andra användare kan inte utföra någon av dessa åtgärder. Om du vill kunna checka ut/in resurser måste du ha skrivbehörighet för dem.
 
 Det finns två sätt att checka ut resurser från AEM webbgränssnitt. Detaljerad information om den första metoden finns i [Checka in och checka ut filer från Assets-gränssnittet](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html). Följ de här stegen för de andra metoderna för att checka ut och öppna resursen när AEM är installerad.
 
-1. Öppna gränssnittet AEM Assets och för pekaren över en  eller en resurs för att visa skrivbordsåtgärderna som snabbåtgärder i kortvyn.
+1. Öppna AEM Assets-gränssnittet och för pekaren över en mapp eller en resurs för att visa skrivbordsåtgärderna som snabbåtgärder i kortvyn.
 
-   ![Alternativet Egenskaper i kortvyn](assets/chlimage_1-4.png)
+   ![Alternativet Egenskaper i kortvyn](assets/desktop_actions_in_card_view.png)
 
    Dessa skrivbordsåtgärder är också tillgängliga när du klickar/trycker på ikonen Skrivbordsåtgärder i verktygsfältet efter att du har valt resursen eller i verktygsfältet på resurssidan.
 
@@ -195,13 +195,10 @@ Med appen kan du checka ut resursfiler för att förhindra att andra användare 
    Alternativ på snabbmenyn för att komma åt och öppna resurser med AEM skrivbordsapp
 
 1. Navigera till resursen som du vill checka ut.
-
-   ![Öppna i snabbmenyn AEM Assets på Mac](assets/chlimage_1-5.png)
-
 1. Högerklicka på resursen och välj Mer resursinformation på snabbmenyn.
 1. I dialogrutan Resursinformation klickar/trycker du på ikonen Checka ut för att checka ut resursen. Ikonen Checka ut växlar till ikonen för incheckning när du har klickat/tryckt på den.
 
-   ![Bläddra till resurs att checka ut](assets/chlimage_1-6.png)
+   ![Bläddra till resurs att checka ut](assets/browse_assets_to_checkout.png)
 
 1. Om du vill checka in resursen så att den är tillgänglig för andra användare klickar du på/trycker på incheckningsikonen i dialogrutan Resursinformation.
 
@@ -211,13 +208,10 @@ Med appen kan du checka ut resursfiler för att förhindra att andra användare 
 
 1. Välj Utforska resurser på snabbmenyn för att öppna Utforskaren.
 1. I Utforskaren navigerar du till platsen för resursen som du vill checka ut.
-
-   ![Ikonen Checka ut växlar](assets/chlimage_1-7.png)
-
 1. Högerklicka på resursen och välj Öppna på webben på snabbmenyn.
 1. Klicka/tryck på ikonen Checka ut i dialogrutan Resursinformation. Ikonen Checka ut växlar till ikonen Checka in.
 
-   ![Ikonen Checka ut växlar](assets/chlimage_1-8.png)
+   ![Ikonen Checka ut växlar](assets/checkout_icon_toggles.png)
 
 1. Granska resursen i Utforskaren. Låsikonen på ![tillgångslåsikonen](assets/do-not-localize/aemassets_icon_lockcheckout.png) anger att du har checkat ut resursen.
 
@@ -237,7 +231,7 @@ En resurs överförs automatiskt till AEM efter att eventuella ändringar har sp
 
 ### Överför resurser och mappar till AEM server gruppvis {#bulkupload}
 
-Med AEM Desktop kan du överföra en hel mapp med resurser från den lokala filkatalogen till AEM Assets. På så sätt överförs alla resurser i mappen gruppvis i stället för att behöva överföra dem en åt gången.
+Med AEM Desktop kan du överföra en hel mapp med resurser från din lokala filkatalog till AEM Assets. På så sätt överförs alla resurser i mappen gruppvis i stället för att behöva överföra dem en åt gången.
 
 1. I resursgränssnittet klickar/trycker du på **Skapa** i verktygsfältet och väljer **Överför mapp** på menyn.
 1. Bläddra till mappen som du vill överföra och markera den.
@@ -255,7 +249,7 @@ Med AEM Desktop kan du överföra en hel mapp med resurser från den lokala filk
 
 Adobe rekommenderar inte att du kopierar och klistrar in eller drar ett större antal filer eller kapslade mappar från det lokala filsystemet till nätverksresursområdet. Programmet kan inte styra överföringsprocessen på grund av tekniska begränsningar och prestandan är dålig.
 
-Du kan också välja filer/mappar som du vill överföra till AEM i Finder eller Utforskaren, kopiera dem till systemets Urklipp, navigera till målmappen i nätverksresursområdet och välja **Klistra in resurser** på snabbmenyn i AEM skrivbordsappen. På så sätt börjar AEM att överföra inklistrade resurser som liknar alternativet **Överför mapp** i det AEM webbgränssnittet.
+Du kan också välja filer/mappar som du vill överföra till AEM i Finder eller Utforskaren, kopiera dem till systemets Urklipp, navigera till målmappen i nätverksresursområdet och välja **Klistra in resurser** på snabbmenyn i AEM skrivbordsappen. På så sätt börjar AEM att ladda upp inklistrade resurser som liknar alternativet **Överför mapp** i det AEM webbgränssnittet.
 
 >[!MORELIKETHIS]
 >
