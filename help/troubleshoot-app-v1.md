@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
+source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
 workflow-type: tm+mt
-source-wordcount: '3374'
+source-wordcount: '3379'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Adobe rekommenderar att en enskild användares överföringshastighet är nästa
 
 Om du kör AEM i Windows kan du konfigurera Windows för att förbättra WebDAV-klientens prestanda. Mer information finns på [https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570).
 
-I Windows 7 kan prestandan för WebDAV förbättras om IE-inställningarna ändras. Mer information finns på [http://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/](http://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/).
+I Windows 7 kan prestandan för WebDAV förbättras om IE-inställningarna ändras. Mer information finns i [Korrigera långsamma WebDAV-prestanda i Windows 7](https://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/).
 
 ## Samtidiga åtgärder {#concurrent-operations}
 
