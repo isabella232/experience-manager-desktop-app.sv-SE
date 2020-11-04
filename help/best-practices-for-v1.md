@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Datorprogrammet monterar AEM Assets-databasen som en nätverksresurs på skrivbo
 
 AEM använder nätverksresurser för WebDAV (Windows) eller SMB (Mac) för att montera nätverksresurser. Den monterade nätverksresursen är endast lokal. AEM datorprogrammet fångar upp anropen (öppna, läsa, skriva) och erbjuder ytterligare lokal cachelagring. Det översätter fjärranrop till AEM Assets-servern för att optimera AEM HTTP-begäranden. I följande diagram visas arkitekturen för AEM datorprogram.
 
-![AEM](assets/chlimage_1.png)
+![AEM](assets/arch_v1.png)
 
 *Bild: arkitektur för datorprogram*
 
