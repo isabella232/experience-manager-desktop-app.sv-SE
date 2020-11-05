@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f5f65fa8ddceae62f2e046f2d20e853aef572f2c
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
 source-wordcount: '3999'
 ht-degree: 0%
@@ -69,7 +69,7 @@ I Assets-användargränssnittet i en webbläsare kan du utforska resursplatserna
 1. Klicka på/tryck på för **[!UICONTROL My Preferences]** att visa **[!UICONTROL Preferences]** dialogrutan.
 1. I dialogrutan Användarinställningar väljer du **[!UICONTROL Show Desktop Actions For Assets]**. Klicka/tryck på **[!UICONTROL Accept]**.
 
-   ![Markera Visa skrivbordsåtgärder för resurser för att aktivera skrivbordsåtgärder](assets/chlimage_1-3.png)
+   ![Markera Visa skrivbordsåtgärder för resurser för att aktivera skrivbordsåtgärder](assets/enable_desktop_actions.png)
 
    Markera [!UICONTROL Show Desktop Actions For Assets] för att aktivera skrivbordsåtgärder
 
