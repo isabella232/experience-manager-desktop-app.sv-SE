@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
+source-git-commit: 9c11f0b8ace17e7f596bcfe26e69f4ca649e0126
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -69,9 +69,9 @@ Metoderna copy och move i Assets API kräver att följande ytterligare rubriker 
 * X-djup
 * X-Overwrite
 
-AEM ansluter till AEM via en URL som innehåller standardporten. Inställningen i `virtualhosts` dispatcherns konfiguration bör därför innehålla standardportnumret. Mer information om `virtualhosts` konfiguration finns i [Identifiera virtuella värdar](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts).
+AEM ansluter till AEM via en URL som innehåller standardporten. Inställningen i `virtualhosts` dispatcherns konfiguration bör därför innehålla standardportnumret. Mer information om `virtualhosts` konfiguration finns i [Identifiera virtuella värdar](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts).
 
-Mer information om hur du konfigurerar dispatchern att skicka genom dessa ytterligare rubriker finns i [Ange HTTP-rubriker](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
+Mer information om hur du konfigurerar dispatchern att skicka genom dessa ytterligare rubriker finns i [Ange HTTP-rubriker](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 
 ### Stöd för proxy {#proxy-support}
 
@@ -134,7 +134,7 @@ Om du vill peka programmet mot en annan mapp eller enhet redigerar du programmet
    >Programmet skapar automatiskt en *&lt;Encoded AEM Endpoint>* -underkatalog. Det går inte att konfigurera det här beteendet.
 
 >[!MORELIKETHIS]
-* [Introduktion till AEM program](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [Introduktion till AEM program](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
 * [Använd AEM datorprogram](use-app-v1.md).
 * [Felsökning AEM datorprogram](troubleshoot-app-v1.md).
 
