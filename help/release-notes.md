@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 1%
+source-wordcount: '1406'
+ht-degree: 0%
 
 ---
 
@@ -42,11 +42,11 @@ Adobe Experience Manager-datorprogrammet är kompatibelt med följande operativs
 
 Appen fungerar med följande Experience Manager-versioner, oavsett om de distribueras som en Cloud Service, på Adobe Managed Services (AMS) eller på plats:
 
-* [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html).
+* [Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
 
-* [Experience Manager 6.5.0](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) eller senare.
+* [Experience Manager 6.5.0](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) eller senare.
 
-* [Experience Manager 6.4.4](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) eller senare.
+* [Experience Manager 6.4.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) eller senare.
 
 * Experience Manager 6.4.0-6.4.3 med [kompatibilitetspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support).
 
@@ -169,8 +169,8 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 >[!MORELIKETHIS]
 >
->* [AEM som Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
->* [AEM som dokumentation för Cloud Service Assets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
+>* [AEM som Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+>* [AEM som dokumentation för Cloud Service Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
 >* [Så här använder du datorprogrammet Experience Manager](using.md)
 >* [Installera och uppgradera datorprogrammet](install-upgrade.md)
 >* [Bästa praxis och felsökningstips](troubleshoot.md)
