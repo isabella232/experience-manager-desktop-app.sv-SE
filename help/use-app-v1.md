@@ -3,9 +3,9 @@ title: Använd AEM version 1.x.
 description: Lär dig hur du använder Adobe Experience Manager-datorprogram version 1.x och optimerar ditt arbete med resurser på datorn.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2472'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ Om du vill hitta en viss resurs i det lokala filsystemet klickar du på **Visa**
 
 Med AEM Assets kan du checka ut resurser för redigering och checka in dem igen när du är klar med ändringarna. När du har checkat ut en resurs kan bara du redigera, kommentera, publicera, flytta eller ta bort resursen. När du checkar ut en resurs låses den och andra användare kan inte utföra någon av dessa åtgärder. Om du vill kunna checka ut/in resurser måste du ha skrivbehörighet för dem.
 
-Det finns två sätt att checka ut resurser från AEM webbgränssnitt. Detaljerad information om den första metoden finns i [Checka in och checka ut filer från Assets-gränssnittet](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html). Följ de här stegen för de andra metoderna för att checka ut och öppna resursen när AEM är installerad.
+Det finns två sätt att checka ut resurser från AEM webbgränssnitt. Detaljerad information om den första metoden finns i [Checka in och checka ut filer från Assets-gränssnittet](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html). Följ de här stegen för de andra metoderna för att checka ut och öppna resursen när AEM är installerad.
 
 1. Öppna AEM Assets-gränssnittet och för pekaren över en mapp eller en resurs för att visa skrivbordsåtgärderna som snabbåtgärder i kortvyn.
 
