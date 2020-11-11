@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
 1. Om du uppgraderar från en annan version av programmet läser du [Uppgradera datorprogrammet](#upgrade-from-previous-version).
 
-1. Hoppa över det här steget om du använder Experience Manager som Cloud Service, Experience Manager 6.4.4 eller senare eller Experience Manager 6.5.0 eller senare. Kontrollera att Experience Manager-installationen uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Hämta vid behov [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installera det med Experience Manager Package Manager som administratör för Experience Manager. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. Hoppa över det här steget om du använder Experience Manager som Cloud Service, Experience Manager 6.4.4 eller senare eller Experience Manager 6.5.0 eller senare. Kontrollera att Experience Manager-installationen uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Hämta vid behov [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installera det med Experience Manager Package Manager som administratör för Experience Manager. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Kör installationsprogrammets binärfil och följ instruktionerna på skärmen.
 
@@ -93,7 +93,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
    *Bild: Programmet visar DAM-innehållet efter inloggning*
 
-1. (Experience Manager 6.5.1 eller senare) Om du använder datorprogrammet med Experience Manager 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure Connector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AzureDataStore) eller [S3 Connector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AmazonS3DataStore).
+1. (Experience Manager 6.5.1 eller senare) Om du använder datorprogrammet med Experience Manager 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure Connector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) eller [S3 Connector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
 
    Om du är Adobe Managed Services-kund (AMS) kontaktar du Adobe kundtjänst.
 
