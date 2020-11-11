@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '3993'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ Använd **[!UICONTROL Toggle Check-out]** för att låsa resursen för att förh
 * Du har börjat redigera en resurs utan att först checka ut den (till exempel genom att öppna den).
 * Du har för avsikt att börja redigera en resurs inom kort och vill inte att andra ska kunna redigera den.
 
-När du är klar med redigeringarna visas de ändrade resursernas **[!UICONTROL Edited Locally]** status. Alla ändringar som sparas i resurserna är bara lokala tills du överför ändringarna till AEM. Om du vill överföra en enskild resurs eller ett fåtal resurser klickar du på **[!UICONTROL Upload Changes]** något av alternativen för en resurs. Den skapar en version av resursen i AEM. I AEM Assets webbgränssnitt kan du se resurshistorik i [tidslinjevyn](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html).
+När du är klar med redigeringarna visas de ändrade resursernas **[!UICONTROL Edited Locally]** status. Alla ändringar som sparas i resurserna är bara lokala tills du överför ändringarna till AEM. Om du vill överföra en enskild resurs eller ett fåtal resurser klickar du på **[!UICONTROL Upload Changes]** något av alternativen för en resurs. Den skapar en version av resursen i AEM. I AEM Assets webbgränssnitt kan du se resurshistorik i [tidslinjevyn](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html).
 
 ![Alternativet Överför ändringar i](assets/upload_changes_single1_da2.png "appenÖverför ändringar i appen")
 
@@ -176,7 +176,7 @@ Om det behövs kan du växla utcheckning. Den uppdaterade resursen tas bort frå
 
 ## Överför och lägg till nya resurser till AEM {#upload-and-add-new-assets-to-aem}
 
-Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering till AEM. Om du vill lägga till nytt innehåll i AEM klickar du på ikonen ![](assets/do-not-localize/upload_to_cloud_da2.png) Överför till molnet i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Programmet börjar överföra resursen och visar en förloppsindikator längst ned om det tar längre tid att överföra resursen. Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders).
+Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering till AEM. Om du vill lägga till nytt innehåll i AEM klickar du på ikonen ![](assets/do-not-localize/upload_to_cloud_da2.png) Överför till molnet i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Programmet börjar överföra resursen och visar en förloppsindikator längst ned om det tar längre tid att överföra resursen. Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -231,7 +231,7 @@ Om de förväntade ändringarna inte visas i programmet när du har överfört d
 
 >[!NOTE]
 >
->Använd inte överföringsfunktionalitet för att migrera resurser över två AEM distributioner. Se i stället [migreringsguiden](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html).
+>Använd inte överföringsfunktionalitet för att migrera resurser över två AEM distributioner. Se i stället [migreringsguiden](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html).
 
 ### Lista över överförda tillgångar {#list-of-transferred-assets}
 
