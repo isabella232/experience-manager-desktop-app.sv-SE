@@ -10,9 +10,9 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 | Produkter | Adobe Experience Manager-datorprogram |
 |--- |--- |
 | Programversion (revision) | 2.0 (2.0.3.2) |
-| AEM | AEM som Cloud Service, AEM 6.5, AEM 6.4; AEM 6.3 (med kompatibilitetspaket) |
+| Experience Manager-versioner som stöds | Experience Manager som Cloud Service, Experience Manager 6.5, Experience Manager 6.4 Experience Manager 6.3 (med kompatibilitetspaket) |
 | Typ | Mindre release |
 | Releasedatum | 27 aug 2020 (Mac och Win) |
 | Hämta URL:er | [macOS 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg); [Windows 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe); [Windows 32-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
@@ -107,7 +107,7 @@ Felkorrigeringarna och uppdateringarna är:
 
 * Tillåt alternativet att konfigurera `%Temp%` katalogen så att den matchar `%APPDATA%` sökvägen. <!-- CQ-4282665 -->
 
-* Tillåt användare att logga in på AEM Author via Okta SAML-autentisering. <!-- CQ-4278134 -->
+* Tillåt användare att logga in på Experience Manager Author via Okta SAML-autentisering. <!-- CQ-4278134 -->
 
 ## Installationsanvisningar {#installation-instructions-v2}
 
@@ -119,17 +119,17 @@ Om du uppgraderar från ett tidigare Experience Manager-program måste du följa
 
 Det är viktigt att du förstår följande om programmet och hur det fungerar.
 
-* Programmet ger fullständig kontroll över åtgärder som kräver fullständig överföring av resurbinärfiler från och till AEM (öppna, redigera, överföra ändringar och överföra resurser).
+* Programmet ger fullständig kontroll över åtgärder som kräver fullständig överföring av resurbinärfiler från och till Experience Manager (öppna, redigera, överföra ändringar och överföra resurser).
 
    * Om du vill arbeta med resursen på skrivbordet måste du uttryckligen öppna, redigera eller hämta till skrivbordet, antingen individuellt, i en mapp eller genom att markera flera.
 
-   * Om du vill få lokala ändringar av resurser överförda till AEM måste du välja [!UICONTROL Upload Changes], antingen individuellt eller via flerval.
+   * Om du vill få lokala ändringar av resurser överförda till Experience Manager måste du välja [!UICONTROL Upload Changes], antingen individuellt eller via flera val.
 
-   * Programmet är inte en synkroniseringsklient som synkroniserar resurser på skrivbordet och AEM.
+   * Programmet är inte en synkroniseringsklient som synkroniserar resurser på skrivbordet och Experience Manager.
 
-   * Programmet tillhandahåller inte någon nätverksresurs som mappar AEM som en virtuell mappstruktur.
+   * Programmet tillhandahåller inte någon nätverksresurs som mappar Experience Manager-databasen som en virtuell mappstruktur.
 
-* Den lista över resurser som visas av programmet baseras på statusen för AEM Assets-databasen. Filer som laddas ned lokalt och som sedan byter namn i de lokala filerna eller cachemappen visas eller hanteras inte av programmet.
+* Den lista över resurser som visas av programmet baseras på statusen för resurskatalogen. Filer som laddas ned lokalt och som sedan byter namn i de lokala filerna eller cachemappen visas eller hanteras inte av programmet.
 
 * Om programmet inte visar det förväntade resultatet klickar du på ikonen Uppdatera i det övre fältet.
 
@@ -139,7 +139,7 @@ Det är viktigt att du förstår följande om programmet och hur det fungerar.
 
 I följande diagram visas flödet av resurser och filer från molnet till det lokala filsystemet och vice versa, vilket initierats av användaråtgärder.
 
-![Flöde för resurser från AEM server till datorprogram via datorprogrammet](assets/da20_flow_diagram.png)
+![Flöde för resurser från Experience Manager-server till datorprogram via skrivbordsapp](assets/da20_flow_diagram.png)
 
 ## Known issues {#known-issues-v2}
 
@@ -153,13 +153,13 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 * När du har tillämpat och tagit bort filtret för att hitta alla lokalt redigerade resurser tar programmet inte användarna till sökresultaten eller mappvyn som användarna började med. Appen visar rotmappen för DAM-databasen.
 
-* Ibland slutar anslutningsskärmen att svara när du ansluter till en URL som inte har AEM server igång. Avsluta programmet och starta det igen.
+* Ibland slutar anslutningsskärmen att svara när du ansluter till en URL som inte har en Experience Manager-server igång. Avsluta programmet och starta det igen.
 
 **CRUD-problem (Skapa, Läs, Uppdatera och Ta bort):**
 
 * Programmet försöker ladda upp filer även med ogiltiga tecken, vilket kan orsaka överföringsfel på serversidan. <!-- CQ-4273652 -->
 
-* När du överför ändringar till en resurs med kommentarer lagras kommentarerna tillsammans med resursen i AEM, men de visas inte som versionskommentarer. Problemet åtgärdas i AEM 6.4.5 och AEM 6.5.1. Adobe rekommenderar starkt att du installerar de senaste servicepaketen. <!-- CQ-4268990 -->
+* När du överför ändringar till en resurs med kommentarer lagras kommentarerna tillsammans med resursen i Experience Manager, men de visas inte som versionskommentarer. Problemet är löst i Experience Manager 6.4.5 och Experience Manager 6.5.1. Adobe rekommenderar starkt att du installerar de senaste servicepaketen. <!-- CQ-4268990 -->
 
 * Resursöverföringar kan inte avbrytas av användaren. Om du utlöste en oavsiktlig stor överföring avslutar du programmet och startar det igen. <!-- CQ-4278940 -->
 
@@ -169,8 +169,8 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 >[!MORELIKETHIS]
 >
->* [AEM som Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
->* [AEM som dokumentation för Cloud Service Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
+>* [Experience Manager som Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+>* [Experience Manager som Cloud Service Assets-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
 >* [Så här använder du datorprogrammet Experience Manager](using.md)
 >* [Installera och uppgradera datorprogrammet](install-upgrade.md)
 >* [Bästa praxis och felsökningstips](troubleshoot.md)
