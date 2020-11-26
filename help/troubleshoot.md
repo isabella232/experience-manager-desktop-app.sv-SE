@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Felsöka Adobe Experience Manager-datorprogrammet {#troubleshoot-v2}
 
-Adobe Experience Manager (AEM) datorprogram ansluter till en fjärransluten Experience Manager-driftsättnings DAM-databas (Digital Asset Management). Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar samt innehåller funktioner för att hantera konflikter med AEM Assets användargränssnitt.
+Adobe Experience Manager-datorprogrammet ansluter till en DAM-databas (Digital Asset Management) för en fjärrdistribution i Experience Manager. Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar och innehåller funktioner för att hantera konflikter med Assets-användargränssnittet.
 
 Läs vidare för att felsöka appen, lära dig de bästa metoderna och ta reda på begränsningarna.
 
@@ -119,7 +119,7 @@ Så här aktiverar du felsökningsläge i Windows:
 
 Utför följande steg:
 
-1. Starta programmet och anslut en AEM.
+1. Starta programmet och anslut en Experience Manager-instans.
 
 1. Öppna programmets inställningar genom att klicka på ellipserna i det övre högra hörnet och markera [!UICONTROL Preferences].
 
@@ -163,9 +163,9 @@ Om du inte kan se de resurser som du eller andra kreatörer har placerat i suppo
 
 * Filstorlek. Stora resurser tar längre tid att hämta och visa.
 
-* Enhetliga brev. Om du eller någon annan medarbetare placerade resurserna när du mappade AEM DAM till en annan enhetsbeteckning visas inte de placerade resurserna.
+* Enhetliga brev. Om du eller någon annan medarbetare placerade resurserna när du mappade Experience Manager DAM till en annan enhetsbeteckning visas inte de placerade resurserna.
 
-* Behörigheter. Kontakta AEM om du har behörighet att hämta de placerade resurserna.
+* Behörigheter. Kontakta Experience Manager-administratören om du har behörighet att hämta de placerade resurserna.
 
 ### Redigeringar av filer i skrivbordsappens användargränssnitt återspeglas inte direkt i [!DNL Adobe Experience Manager] {#changes-on-da-not-visible-on-aem}
 
@@ -173,7 +173,7 @@ Om du inte kan se de resurser som du eller andra kreatörer har placerat i suppo
 
 ### Problem vid uppgradering på macOS {#issues-when-upgrading-on-macos}
 
-Ibland kan problem uppstå när du uppgraderar AEM datorprogram på macOS. Detta beror på att det inte går att läsa in nya versioner av AEM datorprogram korrekt i en äldre systemmapp AEM datorprogrammet. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
+Ibland kan problem uppstå när du uppgraderar datorprogrammet Experience Manager på macOS. Detta orsakas av att det inte går att läsa in nya versioner av datorprogrammet Experience Manager korrekt i en äldre systemmapp för Experience Manager. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
 
 Innan du utför följande steg drar du programmet `Adobe Experience Manager Desktop` från mappen macOS-program till papperskorgen. Öppna sedan terminalen, kör följande kommando och ange ditt lösenord när du uppmanas till det.
 
@@ -188,7 +188,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ### Kan inte överföra filer {#upload-fails}
 
-Om du använder skrivbordsappen med AEM 6.5.1 eller senare uppgraderar du S3- eller Azure-kopplingen till version 1.10.4 eller senare. Det åtgärdar ett filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
+Om du använder datorprogrammet med Experience Manager 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Det åtgärdar ett filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
 
 ### [!DNL Experience Manager] anslutningsproblem för skrivbordsprogram {#connection-issues}
 
@@ -213,13 +213,9 @@ Om [!DNL Experience Manager] datorprogrammet inte ansluter till din SSO-aktivera
 
 Ibland dirigeras SAML-processen inte tillbaka till den ursprungligen begärda sökvägen eller så dirigeras den slutliga omdirigeringen till en annan värd än den som är konfigurerad i [!DNL Adobe Experience Manager] datorprogrammet. Så här kontrollerar du att så inte är fallet:
 
-1. Öppna en webbläsare.
+1. Öppna en webbläsare. Åtkomst till `https://[aem_server]:[port]/content/dam.json` URL.
 
-1. Ange URL-adressen `<AEM host>/content/dam.json` i adressfältet.
-
-   Ersätt `<AEM host>` med [!DNL Adobe Experience Manager] målinstansen, till exempel `http://localhost:4502/content/dam.json`.
-
-1. Logga in på [!DNL Adobe Experience Manager] instansen.
+1. Logga in på [!DNL Adobe Experience Manager] distributionen.
 
 1. När inloggningen är klar tittar du på webbläsarens aktuella adress i adressfältet. Den ska exakt matcha den URL som ursprungligen angavs.
 
@@ -260,10 +256,9 @@ Om du tittar på den URL-sekvens som läses in kan det hjälpa till att felsöka
 
 #### SSL-konfigurationsproblem {#ssl-config-v2}
 
-De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas AEM skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
+Biblioteken som Experience Manager datorprogram använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda datorprogrammet Experience Manager. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
-
-De bibliotek som AEM Desktop använder för HTTP-kommunikation använder strikt SSL-tillämpning. Det kan alltså finnas tillfällen då SSL-anslutningar som lyckas via en webbläsare misslyckas med [!DNL Adobe Experience Manager] skrivbordsappen. Detta är bra eftersom det uppmuntrar till korrekt konfigurering av SSL och ökar säkerheten, men det kan vara frustrerande när programmet inte kan ansluta.
+De bibliotek som används för HTTP-kommunikation i Experience Manager Desktop använder strikt SSL-tillämpning. Det kan alltså finnas tillfällen då SSL-anslutningar som lyckas via en webbläsare misslyckas med [!DNL Adobe Experience Manager] skrivbordsappen. Detta är bra eftersom det uppmuntrar till korrekt konfigurering av SSL och ökar säkerheten, men det kan vara frustrerande när programmet inte kan ansluta.
 
 I det här fallet rekommenderar vi att du använder ett verktyg för att analysera serverns SSL-certifikat och identifiera problem så att de kan korrigeras. Det finns webbplatser som inspekterar serverns certifikat när de tillhandahåller URL:en.
 
@@ -305,21 +300,23 @@ I vissa fall kan programmet inte svara, bara visa en vit skärm eller visa ett f
 
 I båda metoderna startar programmet i rotmappen DAM.
 
-### Behöver du mer hjälp med [!DNL Experience Manager] datorprogrammet {#additional-help}
+<!--
+### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
 
-Skapa Jira-biljett med följande information:
+Create Jira ticket with the following information:
 
-* Använd `DAM - Companion App` som [!UICONTROL Component].
+* Use `DAM - Companion App` as the [!UICONTROL Component].
 
-* Detaljerade steg för att återskapa problemet i [!UICONTROL Description].
+* Detailed steps to reproduce the issue in [!UICONTROL Description].
 
-* Loggar på DEBUG-nivå som hämtades när felet återskapades.
+* DEBUG level logs that were captured while reproducing the issue.
 
-* AEM.
+* Target Experience Manager version.
 
-* Operativsystemversion.
+* Operating system version.
 
-* [!DNL Adobe Experience Manager] datorprogramversion. Om du vill veta vilken version du har går du till [Hitta versionen](#know-app-version-v2)av skrivbordsappen.
+* [!DNL Adobe Experience Manager] desktop app version. To know your app version, see [finding the desktop app version](#know-app-version-v2).
+-->
 
 >[!MORELIKETHIS]
 >
