@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---
@@ -65,29 +65,29 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
 1. Ha URL:en och autentiseringsuppgifterna för din distribution av Experience Manager till hands.
 
-1. Om du uppgraderar från en annan version av programmet läser du [Uppgradera datorprogrammet](#upgrade-from-previous-version).
+1. Om du uppgraderar från en annan version av programmet ska du läsa [Uppgradera datorprogrammet](#upgrade-from-previous-version).
 
 1. Hoppa över det här steget om du använder Experience Manager som Cloud Service, Experience Manager 6.4.4 eller senare eller Experience Manager 6.5.0 eller senare. Kontrollera att Experience Manager-installationen uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Hämta vid behov [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installera det med Experience Manager Package Manager som administratör för Experience Manager. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Kör installationsprogrammets binärfil och följ instruktionerna på skärmen.
 
-1. I Windows kan installationsprogrammet uppmana dig att installera `Visual Studio C++ Redistributable 2015`. Installera den genom att följa instruktionerna på skärmen. Om installationen misslyckas installerar du den manuellt. Hämta installationsprogrammet [här](https://www.microsoft.com/en-us/download/details.aspx?id=52685) och installera både `vc_redist.x64.exe` och `vc_redist.x86.exe` filer. Kör installationsprogrammet för AEM program igen.
+1. I Windows kan installationsprogrammet uppmana dig att installera `Visual Studio C++ Redistributable 2015`. Installera den genom att följa instruktionerna på skärmen. Om installationen misslyckas installerar du den manuellt. Hämta installationsprogrammet [här](https://www.microsoft.com/en-us/download/details.aspx?id=52685) och installera både `vc_redist.x64.exe` och `vc_redist.x86.exe` filer. Kör installationsprogrammet för [!DNL Experience Manager] skrivbordsappen igen.
 
 1. Starta om datorn enligt anvisningarna. Starta och konfigurera skrivbordsappen.
 
-1. Om du vill ansluta programmet till en AEM databas klickar du på programikonen i fältet och startar programmet. Ange adressen till AEM i formatet `https://[aem-server-url]:[port]/`.
+1. Om du vill ansluta programmet till en [!DNL Experience Manager] databas klickar du på programikonen i fältet och startar programmet. Ange adressen till [!DNL Experience Manager] servern i formatet `https://[aem_server]:[port]/`.
 
    Klicka på **[!UICONTROL Connect]** och ange autentiseringsuppgifterna.
 
    ![Anslutningsskärmen för skrivbordsprogrammet till serveradressen för indata](assets/connect_da2.png)
 
-   *Bild: Anslutningsskärmen till inmatningsserveradressen*
+   *Bild: Anslutningsskärmen till inmatningsserveradressen.*
 
    >[!CAUTION]
    >
-   >Kontrollera att det inte finns några inledande eller avslutande blanksteg före eller efter adressen till AEM. Annars kan programmet inte ansluta till AEM.
+   >Kontrollera att det inte finns några inledande eller avslutande blanksteg före eller efter [!DNL Experience Manager] serveradressen. Annars kan programmet inte ansluta till [!DNL Experience Manager] servern.
 
-1. När anslutningen lyckades kan du visa listan över mappar och resurser som är tillgängliga i rotmappen för AEM DAM. Du kan bläddra bland mapparna inifrån programmet.
+1. När anslutningen lyckades kan du visa listan över mappar och resurser som är tillgängliga i rotmappen för [!DNL Experience Manager] DAM. Du kan bläddra bland mapparna inifrån programmet.
 
    ![När du loggar in visas DAM-innehållet](assets/firstview_da2.png)
 
@@ -107,7 +107,7 @@ Om du vill ändra inställningarna klickar du på ikonen ![](assets/do-not-local
 
 * **[!UICONTROL Cache Directory]**: Plats för appens lokala cache (den innehåller de lokalt hämtade resurserna).
 
-* **[!UICONTROL Network Drive Letter]**: Enhetsbokstaven som används för att mappa till AEM DAM. Ändra inte detta om du inte är säker. Appen kan mappas till valfri enhetsbeteckning i Windows. Om två användare placerar resurser från olika enhetsbokstäver kan de inte se de resurser som placerats ut av varandra. Resursernas sökväg ändras. Resurserna förblir placerade i den binära filen (till exempel INDD) och tas inte bort. Appen visar alla tillgängliga enhetsbokstäver och som standard använder den senast tillgängliga bokstaven som vanligtvis är `Z`.
+* **[!UICONTROL Network Drive Letter]**: Enhetsbokstaven som används för att mappa till [!DNL Experience Manager] DAM. Ändra inte detta om du inte är säker. Appen kan mappas till valfri enhetsbeteckning i Windows. Om två användare placerar resurser från olika enhetsbokstäver kan de inte se de resurser som placerats ut av varandra. Resursernas sökväg ändras. Resurserna förblir placerade i den binära filen (till exempel INDD) och tas inte bort. Appen visar alla tillgängliga enhetsbokstäver och som standard använder den senast tillgängliga bokstaven som vanligtvis är `Z`.
 
 * **[!UICONTROL Maximum Cache Size]**: Tillåten cache på hårddisken i GB som används för att lagra lokalt hämtade resurser.
 
@@ -119,29 +119,29 @@ Om du vill ändra inställningarna klickar du på ikonen ![](assets/do-not-local
 
 * **[!UICONTROL Upload Acceleration]**: När du överför resurser kan programmet använda samtidiga överföringar för att förbättra överföringshastigheten. Du kan öka samtidigheten för överföringen genom att flytta reglaget åt höger. Skjutreglaget längst till vänster betyder ingen samtidighet (enkeltrådad överföring), mittpositionen motsvarar 10 samtidiga trådar och maxgränsen längst till höger motsvarar 20 samtidiga trådar. En högre samtidighetsgräns kräver större resursförbrukning för den lokala datorns processor.
 
-Om du vill uppdatera inställningarna som inte är tillgängliga loggar du ut från AEM. När du har uppdaterat inställningarna klickar du på ![Spara inställningar](assets/do-not-localize/save_preferences_da2.png) för att spara ändringarna.
+Om du vill uppdatera inställningarna som inte är tillgängliga loggar du ut från [!DNL Experience Manager] servern. När du har uppdaterat inställningarna klickar du på ![Spara inställningar](assets/do-not-localize/save_preferences_da2.png) för att spara ändringarna.
 
 ![Inställningar och inställningar för skrivbordsprogram](assets/preferences_da2.png)
 
-*Bild: Inställningar för skrivbordsprogram*
+*Bild: Inställningar för skrivbordsprogram.*
 
 ## Avinstallera appen {#uninstall-the-app}
 
 Så här avinstallerar du programmet i Windows:
 
-1. Överför alla ändringar till AEM för att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till AEM](using.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
+1. Överför alla ändringar för [!DNL Experience Manager] att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
 
 1. Ta bort appen när du tar bort andra operativsystemsprogram. Avinstallera det från Lägg till och ta bort program i Windows.
 
 1. Markera kryssrutan om du vill ta bort cachen och loggarna.
 
-   ![Avinstallationsdialogrutan för att ta bort loggar och cacheminne](assets/uninstall_da2.png)
+   ![Avinstallera dialogrutan för att ta bort loggar och cacheminne](assets/uninstall_da2.png)
 
 1. Följ instruktionerna på skärmen. Starta om datorn när du är klar.
 
 Så här avinstallerar du programmet på Mac:
 
-1. Överför alla ändringar till AEM för att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till AEM](using.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
+1. Överför alla ändringar för [!DNL Experience Manager] att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
 
 1. Ta bort `Adobe Experience Manager Desktop.app` från `/Applications`.
 
