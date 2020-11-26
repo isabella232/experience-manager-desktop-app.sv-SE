@@ -1,8 +1,8 @@
 ---
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '529'
 ht-degree: 2%
 
 ---
@@ -14,11 +14,11 @@ I den här filen beskrivs hur du kan bidra samt vilka riktlinjer du ska följa n
 
 ## Adobe uppförandekod med öppen källkod
 
-Detta projekt har antagit uppförandekoden [för öppen källkod i](code-of-conduct.md)Adobe. Genom att bidra till AEM dokumentation samtycker du till att följa denna uppförandekod. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+Detta projekt har antagit uppförandekoden [för öppen källkod i](code-of-conduct.md)Adobe. Genom att bidra till [!DNL Adobe Experience Manager] dokumentationen samtycker du till att följa denna uppförandekod. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Riktlinjer för bidrag
 
-Vi välkomnar alla bidrag för att förbättra AEM dokumentation, men vi kräver att bidragen följer vissa riktlinjer och standarder där det är möjligt. Mer information finns i [](guidelines.md) Riktlinjerna för AEM.
+Vi välkomnar alla bidrag för att förbättra [!DNL Experience Manager] dokumentationen, men vi kräver att bidragen följer vissa riktlinjer och standarder där det är möjligt. Mer information finns i [Riktlinjerna [!DNL Experience Manager] för att bidra till dokumentationen](guidelines.md) .
 
 ## Använda Contribute
 
@@ -37,11 +37,11 @@ Vilken metod du väljer beror på hur bekväm du själv redigerar dokumentatione
 
 Har du ett förslag, synpunkter på aktuella dokument eller frågor om hur något beskrivs? Skapa sedan ett problem. Problem är också bra om du har något att bidra med, men inte känner dig bekväm med att redigera dokumenten eller göra en pull-förfrågan själv.
 
-Med hjälp av olika problem kan du enkelt beskriva din idé om hur du kan förbättra dokumenten, och en AEM Docs Team-medlem kan granska den. Klicka bara på länken **Logga ett problem** längst upp i den högra navigeringspanelen på en sida för att skapa ett problem.
+Med hjälp av olika problem kan du enkelt beskriva din idé om hur du ska förbättra dokumenten, och en medlem i Docs Team kan då granska den. [!DNL Experience Manager] Klicka bara på länken **Logga ett problem** längst upp i den högra navigeringspanelen på en sida för att skapa ett problem.
 
 ### Skapa en pull-begäran {#create-a-pull-request}
 
-Om du ser ett problem och vet exakt hur du löser det kan du skapa en pull-begäran. Dragningsbegäranden gör att du kan göra egna ändringar i dokumentationen, som sedan granskas för att inkluderas av en AEM Docs Team-medlem. Klicka bara på länken **Redigera den här sidan** högst upp i den högra navigeringspanelen på en sida för att göra de föreslagna ändringarna och skapa en pull-begäran.
+Om du ser ett problem och vet exakt hur du löser det kan du skapa en pull-begäran. Dragningsbegäranden gör att du kan göra egna ändringar i dokumentationen, som sedan granskas för att inkluderas av en [!DNL Experience Manager] Docs Team-medlem. Klicka bara på länken **Redigera den här sidan** högst upp i den högra navigeringspanelen på en sida för att göra de föreslagna ändringarna och skapa en pull-begäran.
 
 Alla pull-begäranden måste åtföljas av ett signerat [bidragsgivarlicensavtal eller CLA.](https://opensource.adobe.com/cla.html)  Detta ger Adobe tillstånd att återdistribuera dina bidrag som en del av projektet. Du behöver bara skicka ett Adobe CLA en gång, så om du har skickat ett tidigare är du redo att gå!
 
