@@ -11,13 +11,13 @@ snippet: y
 translation-type: tm+mt
 source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Installera Adobe Experience Manager datorprogram {#install-app-v2}
+# Installera Adobe Experience Manager-datorprogrammet {#install-app-v2}
 
 Med Adobe Experience Manager-datorprogrammet är materialet i Experience Manager enkelt tillgängligt på din dator och kan användas i alla datorprogram. Resurser kan förhandsgranskas, öppnas i datorprogram, visas i Finder i Mac eller Utforskaren i Windows för montering i andra dokument och ändras lokalt. Ändringarna sparas sedan i Experience Manager när du överför och en ny version skapas i databasen.
 
@@ -31,17 +31,17 @@ Om du vill använda datorprogrammet Experience Manager
 
 * Kontrollera att din version av Experience Manager stöds av Experience Manager-datorprogrammet. Se [systemkraven](release-notes.md#system-requirements-and-prerequisites-v2) nedan.
 
-* Hämta och installera programmet. Se [Installera skrivbordsappen](#install-v2) nedan.
+* Hämta och installera programmet. Se [installera datorprogrammet](#install-v2) nedan.
 
-* Testa anslutningen med några resurser. Se [hur du söker efter resurser](using.md#browse-search-preview-assets).
+* Testa anslutningen med några resurser. Se [hur du bläddrar bland och söker efter resurser](using.md#browse-search-preview-assets).
 
 ## Systemkrav, krav och nedladdningslänkar {#tech-specs-v2}
 
-Mer information finns i versionsinformationen för [Experience Manager-datorprogrammet](release-notes.md).
+Mer information finns i [versionsinformationen för Experience Manager-datorprogrammet](release-notes.md).
 
 ## Uppgradera från en tidigare version {#upgrade-from-previous-version}
 
-Om du använder v1.x av skrivbordsappen måste du förstå skillnaderna och likheterna mellan den tidigare och den senaste versionen av appen. Se [vad som är nytt i datorprogrammet](introduction.md#whats-new-v2) och [hur appen fungerar](release-notes.md#how-app-works)
+Om du använder v1.x av skrivbordsappen måste du förstå skillnaderna och likheterna mellan den tidigare och den senaste versionen av appen. Se [vad som är nytt i skrivbordsappen](introduction.md#whats-new-v2) och [hur appen fungerar](release-notes.md#how-app-works)
 
 >[!NOTE]
 >
@@ -55,27 +55,27 @@ Följ dessa anvisningar om du vill uppgradera från en tidigare version av progr
 
 1. Starta om datorn.
 
-1. [Hämta](release-notes.md) och [installera](#install-v2) det senaste programmet. Följ instruktionerna nedan.
+1. [Ladda ](release-notes.md) ned och  [](#install-v2) installera det senaste programmet. Följ instruktionerna nedan.
 
 ## Installera {#install-v2}
 
 Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befintliga Adobe Experience Manager-program v1.x innan du installerar den senaste appen. Mer information finns ovan.
 
-1. Hämta det senaste installationsprogrammet från sidan [Versionsinformation](release-notes.md) .
+1. Hämta det senaste installationsprogrammet från [versionsinformationen](release-notes.md)-sidan.
 
 1. Ha URL:en och autentiseringsuppgifterna för din distribution av Experience Manager till hands.
 
-1. Om du uppgraderar från en annan version av programmet ska du läsa [Uppgradera datorprogrammet](#upgrade-from-previous-version).
+1. Om du uppgraderar från en annan version av programmet kan du läsa [uppgradera skrivbordsprogrammet](#upgrade-from-previous-version).
 
-1. Hoppa över det här steget om du använder Experience Manager som Cloud Service, Experience Manager 6.4.4 eller senare eller Experience Manager 6.5.0 eller senare. Kontrollera att Experience Manager-installationen uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Hämta vid behov [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installera det med Experience Manager Package Manager som administratör för Experience Manager. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. Hoppa över det här steget om du använder Experience Manager som Cloud Service, Experience Manager 6.4.4 eller senare eller Experience Manager 6.5.0 eller senare. Kontrollera att Experience Manager-installationen uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med Experience Manager Package Manager som administratör för Experience Manager. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Kör installationsprogrammets binärfil och följ instruktionerna på skärmen.
 
-1. I Windows kan installationsprogrammet uppmana dig att installera `Visual Studio C++ Redistributable 2015`. Installera den genom att följa instruktionerna på skärmen. Om installationen misslyckas installerar du den manuellt. Hämta installationsprogrammet [här](https://www.microsoft.com/en-us/download/details.aspx?id=52685) och installera både `vc_redist.x64.exe` och `vc_redist.x86.exe` filer. Kör installationsprogrammet för [!DNL Experience Manager] skrivbordsappen igen.
+1. I Windows kan installationsprogrammet uppmana dig att installera `Visual Studio C++ Redistributable 2015`. Installera den genom att följa instruktionerna på skärmen. Om installationen misslyckas installerar du den manuellt. Hämta installationsprogrammet från [här](https://www.microsoft.com/en-us/download/details.aspx?id=52685) och installera både `vc_redist.x64.exe`- och `vc_redist.x86.exe`-filer. Kör installationsprogrammet för [!DNL Experience Manager]-skrivbordsappen igen.
 
 1. Starta om datorn enligt anvisningarna. Starta och konfigurera skrivbordsappen.
 
-1. Om du vill ansluta programmet till en [!DNL Experience Manager] databas klickar du på programikonen i fältet och startar programmet. Ange adressen till [!DNL Experience Manager] servern i formatet `https://[aem_server]:[port]/`.
+1. Om du vill ansluta programmet till en [!DNL Experience Manager]-databas klickar du på programikonen i fältet och startar programmet. Ange adressen till [!DNL Experience Manager]-servern i formatet `https://[aem_server]:[port]/`.
 
    Klicka på **[!UICONTROL Connect]** och ange autentiseringsuppgifterna.
 
@@ -85,21 +85,21 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
    >[!CAUTION]
    >
-   >Kontrollera att det inte finns några inledande eller avslutande blanksteg före eller efter [!DNL Experience Manager] serveradressen. Annars kan programmet inte ansluta till [!DNL Experience Manager] servern.
+   >Kontrollera att det inte finns några inledande eller avslutande blanksteg före eller efter adressen till [!DNL Experience Manager]-servern. Annars kan programmet inte ansluta till [!DNL Experience Manager]-servern.
 
-1. När anslutningen lyckades kan du visa listan över mappar och resurser som är tillgängliga i rotmappen för [!DNL Experience Manager] DAM. Du kan bläddra bland mapparna inifrån programmet.
+1. När anslutningen lyckades kan du visa listan över mappar och resurser som är tillgängliga i rotmappen för DAM-resursen [!DNL Experience Manager]. Du kan bläddra bland mapparna inifrån programmet.
 
    ![När du loggar in visas DAM-innehållet](assets/firstview_da2.png)
 
    *Bild: Programmet visar DAM-innehållet efter inloggning*
 
-1. (Experience Manager 6.5.1 eller senare) Om du använder datorprogrammet med Experience Manager 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure Connector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) eller [S3 Connector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
+1. (Experience Manager 6.5.1 eller senare) Om du använder datorprogrammet med Experience Manager 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure-koppling](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) eller [S3-anslutning](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
 
    Om du är Adobe Managed Services-kund (AMS) kontaktar du Adobe kundtjänst.
 
 ## Ange inställningar {#set-preferences}
 
-Om du vill ändra inställningarna klickar du på ikonen ![](assets/do-not-localize/more_options_da2.png) Fler alternativ och **[!UICONTROL Preference]** ikonen ![](assets/do-not-localize/preferences_icon_da2.png)Inställningar. Justera värdena för följande i **[!UICONTROL Preferences]** fönstret:
+Om du vill ändra inställningarna klickar du på ![Fler alternativ-ikoner](assets/do-not-localize/more_options_da2.png) och **[!UICONTROL Preference]** ![Inställningsikonen](assets/do-not-localize/preferences_icon_da2.png). Justera värdena för följande i fönstret **[!UICONTROL Preferences]**:
 
 * [!UICONTROL Launch application on login].
 
@@ -107,7 +107,7 @@ Om du vill ändra inställningarna klickar du på ikonen ![](assets/do-not-local
 
 * **[!UICONTROL Cache Directory]**: Plats för appens lokala cache (den innehåller de lokalt hämtade resurserna).
 
-* **[!UICONTROL Network Drive Letter]**: Enhetsbokstaven som används för att mappa till [!DNL Experience Manager] DAM. Ändra inte detta om du inte är säker. Appen kan mappas till valfri enhetsbeteckning i Windows. Om två användare placerar resurser från olika enhetsbokstäver kan de inte se de resurser som placerats ut av varandra. Resursernas sökväg ändras. Resurserna förblir placerade i den binära filen (till exempel INDD) och tas inte bort. Appen visar alla tillgängliga enhetsbokstäver och som standard använder den senast tillgängliga bokstaven som vanligtvis är `Z`.
+* **[!UICONTROL Network Drive Letter]**: Den enhetsbeteckning som används för att mappa till  [!DNL Experience Manager] DAM. Ändra inte detta om du inte är säker. Appen kan mappas till valfri enhetsbeteckning i Windows. Om två användare placerar resurser från olika enhetsbokstäver kan de inte se de resurser som placerats ut av varandra. Resursernas sökväg ändras. Resurserna förblir placerade i den binära filen (till exempel INDD) och tas inte bort. Appen visar alla tillgängliga enhetsbokstäver och som standard använder den senast tillgängliga bokstaven som vanligtvis är `Z`.
 
 * **[!UICONTROL Maximum Cache Size]**: Tillåten cache på hårddisken i GB som används för att lagra lokalt hämtade resurser.
 
@@ -119,17 +119,17 @@ Om du vill ändra inställningarna klickar du på ikonen ![](assets/do-not-local
 
 * **[!UICONTROL Upload Acceleration]**: När du överför resurser kan programmet använda samtidiga överföringar för att förbättra överföringshastigheten. Du kan öka samtidigheten för överföringen genom att flytta reglaget åt höger. Skjutreglaget längst till vänster betyder ingen samtidighet (enkeltrådad överföring), mittpositionen motsvarar 10 samtidiga trådar och maxgränsen längst till höger motsvarar 20 samtidiga trådar. En högre samtidighetsgräns kräver större resursförbrukning för den lokala datorns processor.
 
-Om du vill uppdatera inställningarna som inte är tillgängliga loggar du ut från [!DNL Experience Manager] servern. När du har uppdaterat inställningarna klickar du på ![Spara inställningar](assets/do-not-localize/save_preferences_da2.png) för att spara ändringarna.
+Om du vill uppdatera inställningarna som inte är tillgängliga loggar du ut från [!DNL Experience Manager]-servern. När du har uppdaterat inställningarna klickar du på ![Spara inställningar](assets/do-not-localize/save_preferences_da2.png) för att spara ändringarna.
 
 ![Inställningar och inställningar för skrivbordsprogram](assets/preferences_da2.png)
 
 *Bild: Inställningar för skrivbordsprogram.*
 
-## Avinstallera appen {#uninstall-the-app}
+## Avinstallera programmet {#uninstall-the-app}
 
 Så här avinstallerar du programmet i Windows:
 
-1. Överför alla ändringar för [!DNL Experience Manager] att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
+1. Överför alla ändringar till [!DNL Experience Manager] för att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
 
 1. Ta bort appen när du tar bort andra operativsystemsprogram. Avinstallera det från Lägg till och ta bort program i Windows.
 
@@ -141,7 +141,7 @@ Så här avinstallerar du programmet i Windows:
 
 Så här avinstallerar du programmet på Mac:
 
-1. Överför alla ändringar för [!DNL Experience Manager] att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
+1. Överför alla ändringar till [!DNL Experience Manager] för att undvika att förlora redigeringar. Se [Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Logga ut och [!UICONTROL Exit] appen.
 
 1. Ta bort `Adobe Experience Manager Desktop.app` från `/Applications`.
 
