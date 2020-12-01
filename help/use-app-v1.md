@@ -1,84 +1,84 @@
 ---
-title: Använda [!DNL Experience Manager] datorprogrammet version 1.x.
+title: Använd [!DNL Experience Manager] datorprogrammet version 1.x.
 description: Lär dig hur du använder Adobe Experience Manager-datorprogram version 1.x och optimerar ditt arbete med resurser på datorn.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Använd [!DNL Experience Manager] datorprogrammet v1.x {#use-aem-desktop-app-v1x}
+# Använd [!DNL Experience Manager] skrivbordsapp v1.x {#use-aem-desktop-app-v1x}
 
-Med appen är resurserna i [!DNL Experience Manager] lättillgängliga på din lokala dator och kan användas i alla datorprogram. Resurser kan enkelt visas i Finder eller Utforskaren i Windows, öppnas i skrivbordsprogram och ändras lokalt - ändringarna sparas tillbaka till [!DNL Experience Manager] en ny version som skapas i databasen.
+Med appen är resurserna i [!DNL Experience Manager] enkelt tillgängliga på din lokala dator och kan användas i alla datorprogram. Resurser kan enkelt visas i Finder eller Utforskaren i Windows, öppnas i skrivbordsprogram och ändras lokalt - ändringarna sparas tillbaka till [!DNL Experience Manager] med en ny version som skapas i databasen.
 
 Tack vare en sådan integrering kan olika roller i organisationen hantera mediefilerna centralt i Assets och få tillgång till dem i Creative Cloud och andra program, samtidigt som det är enkelt att följa de olika standarderna, inklusive branding.
 
-De viktigaste uppgifterna du utför med [!DNL Experience Manager] skrivbordsappen v1 är:
+De viktigaste uppgifterna du gör med [!DNL Experience Manager]-datorprogrammet v1 är:
 
-1. [Anslut till [!DNL Experience Manager] en server](#installandconnect)
+1. [Anslut till  [!DNL Experience Manager] en server](#installandconnect)
 1. [Öppna resurser direkt på skrivbordet](#openondesktop)
 1. [Redigera och checka ut resurser från datorn](#workonassets)
 1. [Överför resurser och mappar i grupp](#bulkupload)
 
-Information om de olika rekommenderade åtgärderna och inte finns i [Bästa metoderna för att använda programmet](best-practices-for-v1.md). Om du får problem med appen ska du läsa om hur du [ [!DNL Experience Manager] felsöker skrivbordet](troubleshoot-app-v1.md).
+Information om olika rekommenderade åtgärder och inte finns i [metodtips för att använda app](best-practices-for-v1.md). Om du har problem med appen kan du läsa om hur du [felsöker [!DNL Experience Manager] skrivbordet](troubleshoot-app-v1.md).
 
 >[!NOTE]
 >
->[!DNL Experience Manager] datorprogrammet introducerades i version [!DNL Experience Manager] 6.1 och anropades [!DNL Experience Manager Assets Companion App].
+>[!DNL Experience Manager] datorprogrammet introducerades i version  [!DNL Experience Manager] 6.1 och anropades  [!DNL Experience Manager Assets Companion App].
 
-## [!DNL Experience Manager] pekpunkter i datorprogrammet i det kreativa arbetsflödet {#aem-desktop-app-touch-points-in-the-creative-workflow}
+## [!DNL Experience Manager] pekpunkter i datorprogrammet i det kreativa arbetsflödet  {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
-[!DNL Experience Manager] skrivbordsappen, tillsammans med [!DNL Assets], integreras i ditt kreativa arbetsflöde och erbjuder följande kontaktytor.
+[!DNL Experience Manager] skrivbordsappen, tillsammans med  [!DNL Assets], integreras i ditt kreativa arbetsflöde och erbjuder följande kontaktytor.
 
 ![[!DNL Experience Manager] pekpunkter i datorprogrammet i det kreativa arbetsflödet](assets/aem_desktopapp_workflow.png)
 
 [!DNL Experience Manager] pekpunkter i datorprogrammet i det kreativa arbetsflödet
 
-## Installera och ansluta programmet till [!DNL Experience Manager] servern {#installandconnect}
+## Installera och anslut appen till [!DNL Experience Manager]-servern {#installandconnect}
 
-Innan du kan börja skapa eller redigera de kreativa resurserna måste du ansluta datorprogrammet till [!DNL Assets] servern för att hämta och överföra resurser i databasen. Utför följande uppgifter:
+Innan du kan börja skapa eller redigera de kreativa resurserna måste du ansluta datorprogrammet till [!DNL Assets]-servern för att hämta och överföra resurser i databasen. Utför följande uppgifter:
 
 1. [Installera programmet](#installapp).
-1. [Ange inställningar](#inapppref) och anslutningsinformation.
-1. [Anslut till en [!DNL Experience Manager] server](#connect) och montera resurskatalogen som en lokal enhet.
-1. [Aktivera skrivbordsåtgärder](#desktopactions) på [!DNL Experience Manager] servern.
+1. [Ange dina ](#inapppref) inställningar och anslutningsinformation.
+1. [Anslut till  [!DNL Experience Manager] ](#connect) en server och montera resurskatalogen som lokal enhet.
+1. [Aktivera skrivbordsåtgärd ](#desktopactions) på  [!DNL Experience Manager] servern.
 
-[!DNL Experience Manager] skrivbordsappen använder en HTTPS-anslutning för att ansluta till [!DNL Experience Manager] servern för att överföra dina resurser på ett säkert och robust sätt.
+[!DNL Experience Manager] skrivbordsappen använder en HTTPS-anslutning för att ansluta till  [!DNL Experience Manager] servern för att överföra dina resurser på ett säkert och robust sätt.
 
 >[!NOTE]
 >
->För en del av eller alla installations- och konfigurationssteg kan du behöva hjälp av din [!DNL Experience Manager] administratör eller systemadministratör.
+>För en del av eller alla installations- och konfigurationssteg kan du behöva hjälp av [!DNL Experience Manager]-administratören eller systemadministratören.
 
 ### Installera programmet {#installapp}
 
-Om du vill använda [!DNL Experience Manager] datorprogrammet måste du se till att din [!DNL Experience Manager] serverversion stöds av programmet. Hämta lämplig installationsfil (binär) för operativsystemet (Mac eller Windows) och installera programmet.
+Om du vill använda [!DNL Experience Manager]-datorprogrammet kontrollerar du att din [!DNL Experience Manager]-serverversion stöds av programmet. Hämta lämplig installationsfil (binär) för operativsystemet (Mac eller Windows) och installera programmet.
 
-Det kan vara nödvändigt att göra en detaljerad konfiguration beroende på ditt nätverk och dina systeminställningar. Mer information finns i [Installera och [!DNL Experience Manager] konfigurera skrivbordsappen](install-configure-app-v1.md) .
+Det kan vara nödvändigt att göra en detaljerad konfiguration beroende på ditt nätverk och dina systeminställningar. Mer information finns i [Installera och konfigurera [!DNL Experience Manager] datorprogrammet](install-configure-app-v1.md).
 
-1. Gå till nedladdningssidan [[!DNL Experience Manager] för](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html) datorprogrammet och ladda ned en binärfil för ditt operativsystem.
+1. Gå till [[!DNL Experience Manager] nedladdningssidan för skrivbordsappen](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html) och hämta den binära filen för ditt operativsystem.
 1. Starta den hämtade installationsfilen och följ instruktionerna på skärmen för att installera programmet.
 
    >[!NOTE]
    >
-   >Endast en instans av [!DNL Experience Manager] skrivbordsappen kan installeras och vara aktiv åt gången.
+   >Endast en instans av [!DNL Experience Manager]-datorprogrammet kan installeras och vara aktiv åt gången.
 
 ### Förstå alternativen och inställningarna i appen {#inapppref}
 
-Programmet tillåter inställningar för att ansluta och koppla från [!DNL Experience Manager] servrar, visa status för överföringar, hantera lokal cache och så vidare. Standardinställningarna fungerar för en typisk användare av programmet. Du kan ändra inställningarna för att få ut mer av programmet och av integrationen med [!DNL Experience Manager] servern. De olika inställningarna beskrivs nedan i detalj.
+Programmet tillåter inställningar för att ansluta och koppla från [!DNL Experience Manager]-servrar, visa status för överföringar, hantera lokal cache och så vidare. Standardinställningarna fungerar för en typisk användare av programmet. Du kan ändra inställningarna för att få ut mer av programmet och av integreringen med [!DNL Experience Manager]-servern. De olika inställningarna beskrivs nedan i detalj.
 
-**Utforska resurser** Öppna den lokala enheten där [!DNL Assets] databasen är monterad. Du kan med andra ord utforska de resurser som nu finns tillgängliga på din lokala dator.
+**Utforska** resurserÖppna den lokala enheten där  [!DNL Assets] databasen är monterad. Du kan med andra ord utforska de resurser som nu finns tillgängliga på din lokala dator.
 
-**Visa resursstatus** När ändrade resurser överförs eller nya resurser läggs till i [!DNL Assets] databasen, överförs resurserna i bakgrunden. Bakgrundsuppladdningen möjliggör smidiga åtgärder utan att du behöver vänta tills överföringen är klar, särskilt för stora resurser. Du kan spara ändringarna lokalt och glömma det. Det tar ett tag att skicka resurserna till servern, beroende på den tillgängliga bandbredden. Du kan kontrollera överföringsstatus tillsammans med mer grundläggande information.
+**Visa** resursstatusNär ändrade resurser överförs eller nya resurser läggs till i  [!DNL Assets] databasen, överförs resurserna i bakgrunden. Bakgrundsuppladdningen möjliggör smidiga åtgärder utan att du behöver vänta tills överföringen är klar, särskilt för stora resurser. Du kan spara ändringarna lokalt och glömma det. Det tar ett tag att skicka resurserna till servern, beroende på den tillgängliga bandbredden. Du kan kontrollera överföringsstatus tillsammans med mer grundläggande information.
 
-**Alternativ** Klicka på alternativen i skrivbordsappen för att komma åt inställningarna för att starta programmet när datorn startas; ansluta till [!DNL Experience Manager] servern när appen startas, och för att ändra den lokala enhetsbokstaven där [!DNL Assets] är tillgänglig efter montering.
+**** AlternativKlicka på alternativen i skrivbordsappen för att komma åt inställningarna för att starta programmet när datorn startas; ansluta till  [!DNL Experience Manager] servern när appen startas, och för att ändra den lokala enhetsbokstaven där  [!DNL Assets] är tillgänglig efter montering.
 
-**Avancerat > Hantera cache** Du kan styra hur mycket diskutrymme som är tillgängligt för lokal cachelagring. Artefakterna från [!DNL Assets] servern cachelagras lokalt för en smidigare upplevelse. Du kan ändra standardinställningarna så att de passar dina behov. Du kan även rensa cachen för att hämta alla resurser på nytt. När du rensar cachen bevaras ändringarna som inte sparats. Resurser som inte har checkats in på [!DNL Experience Manager] servern behålls och tas inte bort.
+**Avancerat > Hantera** cacheDu kan styra hur mycket diskutrymme som är tillgängligt för lokal cachelagring. Artefakterna från [!DNL Assets]-servern cachelagras lokalt för en smidigare upplevelse. Du kan ändra standardinställningarna så att de passar dina behov. Du kan även rensa cachen för att hämta alla resurser på nytt. När du rensar cachen bevaras ändringarna som inte sparats. Alla resurser som inte har checkats in på [!DNL Experience Manager]-servern behålls och tas inte bort.
 
-### Ansluta till en [!DNL Experience Manager] server {#connect}
+### Anslut till en [!DNL Experience Manager]-server {#connect}
 
 Programmet har stöd för proxykonfiguration i Mac och Windows. Konfigurationen läses när appen startas. Om du ändrar proxyinställningarna startar du om programmet så att ändringarna börjar gälla.
 
@@ -86,66 +86,66 @@ Programmet har stöd för proxykonfiguration i Mac och Windows. Konfigurationen 
 >
 >Om du ändrar proxyinställningarna startar du om programmet så att ändringarna börjar gälla. Annars fortsätter programmet att använda den tidigare konfigurerade proxyservern.
 
-1. Starta [!DNL Experience Manager] skrivbordsappen. Om du vill mappa din [!DNL Experience Manager] instans med programmet anger du [!DNL Experience Manager] servern i formatet `https://[aem-server-url]:[port]`.
+1. Starta [!DNL Experience Manager]-datorprogrammet. Om du vill mappa din [!DNL Experience Manager]-instans med programmet anger du din [!DNL Experience Manager]-server i formatet `https://[aem-server-url]:[port]`.
 
-   ![Autentisera på Mac och ange [!DNL Experience Manager] server-URL](assets/aem_desktop_app_server_url.png)
+   ![Autentisera på Mac och ange  [!DNL Experience Manager] server-URL](assets/aem_desktop_app_server_url.png)
 
-1. Ange användarnamn och lösenord för instansen på inloggningsskärmen. Om du vill ange en alternativ [!DNL Experience Manager] instans markerar du **[!UICONTROL Alternate Login URL]** alternativet.
+1. Ange användarnamn och lösenord för instansen på inloggningsskärmen. Om du vill ange en alternativ [!DNL Experience Manager]-instans väljer du alternativet **[!UICONTROL Alternate Login URL]**.
 
-   ![Ange [!DNL Experience Manager] serverautentiseringsuppgifter på inloggningsskärmen i [!DNL Experience Manager] skrivbordsappen](assets/login_screen_v1.png)
+   ![Ange  [!DNL Experience Manager] serverautentiseringsuppgifter på inloggningsskärmen i  [!DNL Experience Manager] skrivbordsappen](assets/login_screen_v1.png)
 
-### Aktivera skrivbordsåtgärder i [!DNL Experience Manager] webbgränssnittet {#desktopactions}
+### Aktivera skrivbordsåtgärder i [!DNL Experience Manager]-webbgränssnittet {#desktopactions}
 
 I Assets-användargränssnittet kan du utforska resursplatserna eller checka ut och öppna resursen för redigering i ditt skrivbordsprogram. Dessa alternativ kallas skrivbordsåtgärder och är inte aktiverade som standard. Följ de här stegen för att aktivera den.
 
 1. Klicka/tryck på ikonen Användare i det övre högra hörnet av verktygsfältet i gränssnittet Resurser.
-1. Klicka **[!UICONTROL My Preferences]** för att visa **[!UICONTROL Preferences]** dialogrutan.
+1. Klicka på **[!UICONTROL My Preferences]** för att visa dialogrutan **[!UICONTROL Preferences]**.
 
    ![[!DNL Experience Manager] gränssnitt med användarinställningar](assets/aem_ui_user_preferences.png)
 
-1. I dialogrutan Användarinställningar väljer du **[!UICONTROL Show Desktop Actions For Assets]**. Klicka på **[!UICONTROL Accept]**.
+1. Välj **[!UICONTROL Show Desktop Actions For Assets]** i dialogrutan Användarinställningar. Klicka på **[!UICONTROL Accept]**.
 
-   ![Markera [!UICONTROL Show Desktop Actions For Assets] för att aktivera skrivbordsåtgärder](assets/enable_desktop_actions.png)
+   ![Markera  [!UICONTROL Show Desktop Actions For Assets] för att aktivera skrivbordsåtgärder](assets/enable_desktop_actions.png)
 
    *Bild: Markera Visa skrivbordsåtgärder för resurser för att aktivera skrivbordsåtgärder.*
 
-## Få åtkomst till och öppna resurser på datorn {#openondesktop}
+## Få åtkomst till och öppna resurser på skrivbordet {#openondesktop}
 
-När du klickar på **Öppna** för att öppna en resurs på den lokala datorn hämtas resursen till dess interna cache. Programmet startar det inbyggda skrivbordsprogrammet som är associerat med filtypen för den hämtade resursen.
+När du klickar på **Öppna** för att öppna en resurs på den lokala datorn hämtar programmet resursen till dess interna cache. Programmet startar det inbyggda skrivbordsprogrammet som är associerat med filtypen för den hämtade resursen.
 
-På Mac väljer du **Öppna** på snabbmenyn för att öppna en resurs via [!DNL Experience Manager] skrivbordsappen. I Windows väljer du Öppna på webben på snabbmenyn för att öppna resursen. Öppna resursen genom att klicka/trycka på ikonen ![](assets/do-not-localize/aemassets_icon_openondesktop.png) Öppna på skrivbordet i fönstret Resursstatus.
+På Mac väljer du **Öppna** på snabbmenyn för att öppna en resurs via [!DNL Experience Manager]-datorprogrammet. I Windows väljer du Öppna på webben på snabbmenyn för att öppna resursen. Öppna resursen genom att klicka/trycka på ![ikonen Öppna på skrivbordet](assets/do-not-localize/aemassets_icon_openondesktop.png) i fönstret Resursstatus.
 
 För Adobe InDesign-filer (INDD) väljer du **[!UICONTROL Open]** på snabbmenyn. När du klickar på det här alternativet hämtar appen de länkade resurserna till ditt lokala filsystem och öppnar sedan INDD-filen i Adobe InDesign. Den här metoden ser till att nödvändiga resurser är lokalt tillgängliga när du redigerar INDD-filen.
 
-![Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen](assets/aem_desktopapp_mac_context_menu.png)
+![Alternativ på snabbmenyn för att komma åt och öppna resurser med  [!DNL Experience Manager] skrivbordsappen](assets/aem_desktopapp_mac_context_menu.png)
 
-*Bild: Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen.*
-
->[!NOTE]
->
->I Windows förhindrar [standardinställningen](https://support.microsoft.com/en-us/kb/2668751) för Windows 7 att [!DNL Experience Manager] skrivbordsappen hanterar resurser som är större än 50 MB.
+*Bild: Alternativ på snabbmenyn för att komma åt och öppna resurser med  [!DNL Experience Manager] skrivbordsappen.*
 
 >[!NOTE]
 >
->Adobe rekommenderar att du går till Visningsalternativ i Finder på Mac och avaktiverar alternativen **Visa objektinformation**, **Visa förhandsgranskning** av objekt och **Visa förhandsgranskningskolumn** för den monterade [!DNL Assets] mappen. Det förbättrar prestandan.
+>I Windows förhindrar [standardinställningen för Windows 7](https://support.microsoft.com/en-us/kb/2668751) att [!DNL Experience Manager]-datorprogrammet hanterar resurser som är större än 50 MB.
 
-### Ytterligare alternativ i [!DNL Experience Manager] gränssnittet {#additional-options-in-aem-assets}
+>[!NOTE]
+>
+>Adobe rekommenderar att du går till Visningsalternativ i Finder på Mac och avaktiverar alternativen **Visa objektinformation**, **Visa förhandsgranskning av objekt** och **Visa förhandsgranskningskolumn** för den monterade [!DNL Assets]-mappen. Det förbättrar prestandan.
 
-När du har mappat databasen till den lokala enheten kan du aktivera ytterligare ikoner och funktionen Mappöverföring som visas för mappade resurser och mappar. [!DNL Assets]
+### Ytterligare alternativ i [!DNL Experience Manager]-gränssnittet {#additional-options-in-aem-assets}
 
-1. Öppna [!DNL Assets] gränssnittet och för pekaren över en mapp eller en resurs för att visa skrivbordsåtgärderna som snabbåtgärder i kortvyn.
+När du har mappat [!DNL Assets]-databasen till den lokala enheten kan du aktivera ytterligare ikoner och funktionen Mappöverföring visas för mappade resurser och mappar.
+
+1. Öppna gränssnittet [!DNL Assets] och för pekaren över en mapp eller en resurs för att visa skrivbordsåtgärderna som snabbåtgärder i kortvyn.
 
    ![I resursgränssnittet öppnar du snabbåtgärdsmenyn för att se skrivbordsåtgärder](assets/desktop_actions_in_card_view.png)
 
    *Bild: I resursgränssnittet öppnar du snabbåtgärdsmenyn för att se skrivbordsåtgärder.*
 
-   Dessa skrivbordsåtgärder är också tillgängliga när du klickar på alternativet **Skrivbordsåtgärder** i verktygsfältet efter att du har valt resursen eller från verktygsfältet på resurssidan.
+   Dessa skrivbordsåtgärder är också tillgängliga när du klickar på alternativet **Skrivbordsåtgärder** i verktygsfältet efter att du har valt resursen eller från verktygsfältet på sidan med resursen.
 
-1. Om du vill öppna resursen i skrivbordsprogrammet som är associerat med det specifika filtillägget klickar du på snabbåtgärden **Öppna på skrivbordet** och ![Öppna på skrivbordet](assets/do-not-localize/aemassets_icon_openondesktop.png).
+1. Om du vill öppna resursen i skrivbordsprogrammet som är associerat med det specifika filtillägget klickar du på snabbåtgärden **Öppna på skrivbordet** ![Öppna på skrivbordet](assets/do-not-localize/aemassets_icon_openondesktop.png).
 
    Du kan också välja **Öppna** på menyn **Skrivbordsåtgärder** i verktygsfältet.
 
-Om du vill hitta en viss resurs i det lokala filsystemet klickar du på **Visa** snabbredigeringsikonen ![Visa](assets/do-not-localize/aemassets_reveal_icon.png). Du kan också välja **Visa** på menyn **Skrivbordsåtgärder** i verktygsfältet.
+Om du vill hitta en viss resurs i det lokala filsystemet klickar du på **Visa** snabbåtgärd ![Visa ikon](assets/do-not-localize/aemassets_reveal_icon.png). Du kan också välja **Visa** på menyn **Skrivbordsåtgärder** i verktygsfältet.
 
 ## Förstå tillgångsstatusarna {#understand-the-asset-statuses}
 
@@ -157,19 +157,19 @@ Om du vill hitta en viss resurs i det lokala filsystemet klickar du på **Visa**
 
 ## Arbeta med dina resurser {#workonassets}
 
-### Ta en titt på resurser från [!DNL Experience Manager] webbgränssnittet {#check-out-assets-from-the-aem-web-interface}
+### Ta en titt på resurser från webbgränssnittet [!DNL Experience Manager] {#check-out-assets-from-the-aem-web-interface}
 
 [!DNL Assets] Med kan du checka ut resurser för redigering och checka in dem igen när du har gjort ändringarna. När du har checkat ut en resurs kan bara du redigera, kommentera, publicera, flytta eller ta bort resursen. När du checkar ut en resurs låses den och andra användare kan inte utföra någon av dessa åtgärder. Om du vill kunna checka ut/in resurser måste du ha skrivbehörighet för dem.
 
-Det finns två sätt att checka ut resurser från [!DNL Experience Manager] webbgränssnittet. Detaljerad information om den första metoden finns i [Checka in och checka ut filer från Assets-gränssnittet](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html). Följ de här stegen för de andra metoderna för att checka ut och öppna resursen när [!DNL Experience Manager] datorprogrammet är installerat.
+Det finns två sätt att checka ut resurser från webbgränssnittet [!DNL Experience Manager]. Mer information om den första metoden finns i [checka in och ut filer från Assets UI](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html). Följ de här stegen för de andra metoderna för att checka ut och öppna resursen när [!DNL Experience Manager]-datorprogrammet är installerat.
 
-1. Öppna [!DNL Assets] gränssnittet och för pekaren över en mapp eller en resurs för att visa skrivbordsåtgärderna som snabbåtgärder i kortvyn.
+1. Öppna gränssnittet [!DNL Assets] och för pekaren över en mapp eller en resurs för att visa skrivbordsåtgärderna som snabbåtgärder i kortvyn.
 
    ![Alternativet Egenskaper i kortvyn](assets/desktop_actions_in_card_view.png)
 
    Dessa skrivbordsåtgärder är också tillgängliga när du klickar/trycker på ikonen Skrivbordsåtgärder i verktygsfältet efter att du har valt resursen eller i verktygsfältet på resurssidan.
 
-1. Om du vill öppna resursen klickar du på/trycker på snabbåtgärden Öppna på skrivbordet ![på ikonen](assets/do-not-localize/aemassets_icon_openondesktop.png).
+1. Om du vill öppna resursen klickar/trycker du på snabbåtgärden Öppna på skrivbordet ![Ikonen Öppna på skrivbordet](assets/do-not-localize/aemassets_icon_openondesktop.png).
 
    Du kan också välja Öppna på menyn Skrivbordsåtgärder i verktygsfältet.
 
@@ -177,7 +177,7 @@ Det finns två sätt att checka ut resurser från [!DNL Experience Manager] webb
    >
    >När du redigerar en fil som just har öppnats och inte är utcheckad, kommer andra användare inte att veta att en resurs uppdateras av dig.
 
-1. Om du vill öppna en resurs för redigering i ett Adobe Creative Cloud-program klickar/trycker du på ikonen ![](assets/do-not-localize/aemassets_icon_editdesktop.png)Redigera skrivbord för snabbåtgärden Redigera skrivbord. Då checkas även resursen ut för redigering. När du är klar med redigeringen checkar du in resursen för att uppdatera ändringarna i [!DNL Assets].
+1. Om du vill öppna en resurs för redigering i ett Adobe Creative Cloud-program klickar/trycker du på snabbåtgärden Redigera skrivbord ![Redigera skrivbord-ikon](assets/do-not-localize/aemassets_icon_editdesktop.png). Då checkas även resursen ut för redigering. När du är klar med redigeringen checkar du in resursen för att uppdatera ändringarna i [!DNL Assets].
 
    Du kan också välja Redigera på menyn Skrivbordsåtgärder i verktygsfältet.
 
@@ -190,9 +190,9 @@ Med appen kan du checka ut resursfiler för att förhindra att andra användare 
 
 1. På snabbmenyn i Mac väljer du Öppna AEM Assets-mapp för att öppna Finder.
 
-   ![Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen](assets/aem_desktopapp_mac_context_menu.png)
+   ![Alternativ på snabbmenyn för att komma åt och öppna resurser med  [!DNL Experience Manager] skrivbordsappen](assets/aem_desktopapp_mac_context_menu.png)
 
-   *Bild: Alternativ på snabbmenyn för att komma åt och öppna resurser med [!DNL Experience Manager] skrivbordsappen.*
+   *Bild: Alternativ på snabbmenyn för att komma åt och öppna resurser med  [!DNL Experience Manager] skrivbordsappen.*
 
 1. Navigera till resursen som du vill checka ut.
 1. Högerklicka på resursen och välj Mer resursinformation på snabbmenyn.
@@ -213,27 +213,27 @@ Med appen kan du checka ut resursfiler för att förhindra att andra användare 
 
    ![Ikonen Checka ut växlar](assets/checkout_icon_toggles.png)
 
-1. Granska resursen i Utforskaren. Låsikonen på ![tillgångslåsikonen](assets/do-not-localize/aemassets_icon_lockcheckout.png) anger att du har checkat ut resursen.
+1. Granska resursen i Utforskaren. Låsikonen på resursen ![Ikonen för tillgångslås](assets/do-not-localize/aemassets_icon_lockcheckout.png) anger att du har checkat ut resursen.
 
    >[!NOTE]
    >
    >Låsikonen kan visas efter en fördröjning. [!DNL Experience Manager] skrivbordsappen cachelagrar resurserna för snabb åtkomst så det kan ta en stund att uppdatera den låsta statusen.
 
-1. Om du vill checka in resursen så att den är tillgänglig för andra användare klickar du på/trycker på ikonen för incheckning i dialogrutan **Resursinformation** .
+1. Om du vill checka in resursen så att den är tillgänglig för andra användare klickar/trycker du på ikonen för incheckning i dialogrutan **Resursinformation**.
 
 ### Checka in en resurs med Finder eller Utforskaren och med webbgränssnittet {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
-När du är klar med redigeringen av resurserna sparar du resurserna i skrivbordsprogrammet. På snabbmenyn väljer du **Mer resursinformation** och klickar på incheckning.
+När du är klar med redigeringen av resurserna sparar du resurserna i skrivbordsprogrammet. Välj **Mer resursinformation** på snabbmenyn och klicka på incheckning.
 
-Resurserna överförs till [!DNL Experience Manager] servern. Du kan också kontrollera överföringsstatus genom att välja **Visa resursstatus** från systemfältsikonen. Du kan också checka in en resurs från [!DNL Experience Manager] webbgränssnittet. Klicka på de utcheckade resurserna eller markera dem. Klicka på ikonen för ![incheckning](assets/do-not-localize/aemassets_icon_checkin.png)i verktygsfältet.
+Resurserna överförs till [!DNL Experience Manager]-servern. Du kan också kontrollera överföringsstatus genom att välja **Visa resursstatus** från systemfältsikonen. Du kan också checka in en resurs från webbgränssnittet [!DNL Experience Manager]. Klicka på de utcheckade resurserna eller markera dem. Klicka på ikonen ![incheckning](assets/do-not-localize/aemassets_icon_checkin.png) i verktygsfältet.
 
-En resurs överförs [!DNL Experience Manager] automatiskt till efter att eventuella ändringar har sparats lokalt. Incheckningen gör resursen tillgänglig för andra [!DNL Experience Manager] användare för redigering.
+En resurs överförs automatiskt till [!DNL Experience Manager] efter att eventuella ändringar har sparats lokalt. Incheckningen gör resursen tillgänglig för andra [!DNL Experience Manager]-användare för redigering.
 
-### Överför resurser och mappar till [!DNL Experience Manager] servern gruppvis {#bulkupload}
+### Överför resurser och mappar gruppvis till [!DNL Experience Manager]-servern {#bulkupload}
 
-Med [!DNL Experience Manager] skrivbordsappen kan du överföra en hel mapp som innehåller resurser från den lokala filkatalogen till [!DNL Assets]. På så sätt överförs alla resurser i mappen gruppvis i stället för att behöva överföra dem en åt gången.
+Med [!DNL Experience Manager]-skrivbordsappen kan du överföra en hel mapp som innehåller resurser från den lokala filkatalogen till [!DNL Assets]. På så sätt överförs alla resurser i mappen gruppvis i stället för att behöva överföra dem en åt gången.
 
-1. I resursgränssnittet klickar/trycker du på **Skapa** i verktygsfältet och väljer **Överför mapp** på menyn.
+1. I resursgränssnittet klickar/trycker du på **Create** i verktygsfältet och väljer **Överför mapp** på menyn.
 1. Bläddra till mappen som du vill överföra och markera den.
 1. Klicka/tryck på OK. I dialogrutan Resursstatus visas status för överföringen.
 
@@ -249,7 +249,7 @@ Med [!DNL Experience Manager] skrivbordsappen kan du överföra en hel mapp som 
 
 Adobe rekommenderar inte att du kopierar och klistrar in eller drar ett större antal filer eller kapslade mappar från det lokala filsystemet till nätverksresursområdet. Programmet kan inte styra överföringsprocessen på grund av tekniska begränsningar och prestandan är dålig.
 
-Du kan också välja filer/mappar som du vill överföra till [!DNL Experience Manager] i Finder eller Utforskaren, kopiera dem till systemets Urklipp, navigera till målmappen i nätverksresursområdet och välja Klistra in resurser [!DNL Experience Manager] på snabbmenyn för **** skrivbordsappen. På så sätt börjar skrivbordsappen att överföra de inklistrade resurserna som liknar alternativet [!DNL Experience Manager] Överför mapp **som finns i** [!DNL Experience Manager] webbgränssnittet.
+Du kan också välja filer/mappar som du vill överföra till [!DNL Experience Manager] i Finder eller Utforskaren, kopiera dem till systemets Urklipp, navigera till målmappen i nätverksresursområdet och välja [!DNL Experience Manager] på snabbmenyn för skrivbordsappen **Klistra in resurser**. På så sätt börjar [!DNL Experience Manager]-skrivbordsappen överföra de inklistrade resurserna som liknar alternativet **Överför mapp** som är tillgängligt i webbgränssnittet [!DNL Experience Manager].
 
 >[!MORELIKETHIS]
 >
