@@ -1,6 +1,6 @@
 ---
-title: Installera och [!DNL Experience Manager] konfigurera datorprogrammet version 1.x
-description: Installera och [!DNL Experience Manager] desktop app version 1.x to work with [!DNL Assets] konfigurera reservoarer och mappa resurserna som ska monteras som en enhet på skrivbordet.
+title: Installera och konfigurera [!DNL Experience Manager] datorprogramversion 1.x
+description: Installera och konfigurera [!DNL Experience Manager] desktop app version 1.x to work with [!DNL Assets] servrar och mappa resurserna som ska monteras som en enhet på skrivbordet.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS,SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -11,47 +11,47 @@ snippet: y
 translation-type: tm+mt
 source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Installera och konfigurera [!DNL Experience Manager] datorprogrammet v1.x {#install-and-configure-aem-desktop-app}
+# Installera och konfigurera [!DNL Experience Manager]-datorprogrammet v1.x {#install-and-configure-aem-desktop-app}
 
-Med [!DNL Experience Manager] skrivbordsappen är resurserna i [!DNL Experience Manager] lättillgängliga på din lokala dator och kan användas i alla datorprogram. Resurser kan enkelt visas i Finder eller Utforskaren i Windows, öppnas i skrivbordsprogram och ändras lokalt. Ändringarna sparas sedan [!DNL Experience Manager] när du överför och en ny version skapas i databasen.
+Med [!DNL Experience Manager]-datorprogrammet är resurserna i [!DNL Experience Manager] enkelt tillgängliga på ditt lokala skrivbord och kan användas i alla skrivbordsprogram. Resurser kan enkelt visas i Finder eller Utforskaren i Windows, öppnas i skrivbordsprogram och ändras lokalt. Ändringarna sparas sedan i [!DNL Experience Manager] när du överför och en ny version skapas i databasen.
 
 Tack vare en sådan integrering kan olika roller i organisationen hantera mediefilerna centralt i Assets och få tillgång till dem i Creative Cloud och andra program, samtidigt som det är enkelt att följa de olika standarderna, inklusive branding.
 
-Om du vill använda [!DNL Experience Manager] datorprogrammet
+Om du vill använda [!DNL Experience Manager]-datorprogrammet
 
-* Kontrollera att din [!DNL Experience Manager] serverversion stöds av [!DNL Experience Manager] skrivbordsappen. Se [kompatibilitetsmatrisen](release-notes-of-v1.md#compatibilitymatrix).
+* Kontrollera att din [!DNL Experience Manager]-serverversion stöds av [!DNL Experience Manager]-datorprogrammet. Se [kompatibilitetsmatrisen](release-notes-of-v1.md#compatibilitymatrix).
 
 * Hämta och installera programmet.
 
-* Testa anslutningen med några resurser. Se [Åtkomst och öppna resurser på skrivbordet](use-app-v1.md#openondesktop).
+* Testa anslutningen med några resurser. Se [Få åtkomst till och öppna resurser på skrivbordet](use-app-v1.md#openondesktop).
 
 ## Systemkrav, krav och nedladdningslänkar {#system-requirements-prerequisites-and-download-links}
 
-Mer information finns i versionsinformationen för [[!DNL Experience Manager] skrivbordsappen](release-notes-of-v1.md).
+Mer information finns i [[!DNL Experience Manager] versionsinformationen för skrivbordsappen](release-notes-of-v1.md).
 
-## Installera och ansluta programmet till [!DNL Experience Manager] servern {#install-and-connect-aem-desktop-app-to-aem-server}
+## Installera och anslut appen till [!DNL Experience Manager]-servern {#install-and-connect-aem-desktop-app-to-aem-server}
 
-Mer information finns i [Installera och [!DNL Experience Manager] desktop app to [!DNL Experience Manager] ansluta till servern](use-app-v1.md#installandconnect).
+Mer information finns i [Installera och ansluta [!DNL Experience Manager] desktop app to [!DNL Experience Manager] server](use-app-v1.md#installandconnect).
 
 >[!NOTE]
 >
->Endast en instans av [!DNL Experience Manager] skrivbordsappen kan installeras och vara aktiv åt gången.
+>Endast en instans av [!DNL Experience Manager]-datorprogrammet kan installeras och vara aktiv åt gången.
 
 ## Filhantering {#file-handling}
 
 När du ändrar en fil från en nätverksresursplats som monterats av skrivbordsprogrammet, sparas filerna på den platsen i två faser. I den första fasen sparas en fil lokalt. Användaren kan spara filen och fortsätta arbeta med den utan att vänta på att överföringen ska slutföras.
 
-I den andra fasen överförs den uppdaterade filen till [!DNL Experience Manager] servern efter en fördefinierad fördröjning (till exempel 30-tal). Den här åtgärden utförs i bakgrunden. Använd alternativet Visa resursstatus för att visa överföringsåtgärdens status.
+I den andra fasen överför skrivbordsprogrammet den uppdaterade filen till [!DNL Experience Manager]-servern efter en fördefinierad fördröjning (till exempel 30s). Den här åtgärden utförs i bakgrunden. Använd alternativet Visa resursstatus för att visa överföringsåtgärdens status.
 
 1. Överför en resurs till Assets.
 
-1. Klicka på ikonen för [!DNL Experience Manager] skrivbordsappen i verktygsfältet.
+1. Klicka på ikonen [!DNL Experience Manager] för datorprogrammet i verktygsfältet.
 
 1. Välj alternativet Visa resursstatus på menyn.
 
@@ -61,7 +61,7 @@ I den andra fasen överförs den uppdaterade filen till [!DNL Experience Manager
 >
 >[!DNL Experience Manager] skrivbordsappen kan hantera resurser som är upp till 40 GB stora.
 
-## Ansluta till en [!DNL Experience Manager] instans bakom en dispatcher {#connect-to-an-aem-instance-behind-a-dispatcher}
+## Anslut till en [!DNL Experience Manager]-instans bakom en dispatcher {#connect-to-an-aem-instance-behind-a-dispatcher}
 
 Metoderna copy och move i Assets API kräver att följande ytterligare rubriker skickas till [!DNL Experience Manager]:
 
@@ -69,15 +69,15 @@ Metoderna copy och move i Assets API kräver att följande ytterligare rubriker 
 * X-djup
 * X-Overwrite
 
-[!DNL Experience Manager] Skrivbordet ansluts till [!DNL Experience Manager] med en URL som innehåller standardporten. Inställningen i `virtualhosts` dispatcherns konfiguration bör därför innehålla standardportnumret. Mer information om `virtualhosts` konfiguration finns i [Identifiera virtuella värdar](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts).
+[!DNL Experience Manager] Skrivbordet ansluts till  [!DNL Experience Manager] med en URL som innehåller standardporten. Därför bör inställningen `virtualhosts` i dispatcherkonfigurationen innehålla standardportnumret. Mer information om konfigurationen av `virtualhosts` finns i [identifiera virtuella värdar](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts).
 
 Mer information om hur du konfigurerar dispatchern att skicka genom dessa ytterligare rubriker finns i [Ange HTTP-rubriker](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 
-### Stöd för proxy {#proxy-support}
+### Proxystöd {#proxy-support}
 
 [!DNL Experience Manager] datorprogrammet använder systemets fördefinierade proxy för att ansluta till Internet via HTTPS. Appen kan bara ansluta med en nätverksproxy som inte kräver extra autentisering.
 
-Om du konfigurerar eller ändrar proxyserverinställningarna för Windows (Internetalternativ > LAN-inställningar) startar du om skrivbordsappen för att ändringarna ska börja gälla [!DNL Experience Manager] .
+Om du konfigurerar eller ändrar proxyserverinställningarna för Windows (Internetalternativ > LAN-inställningar) startar du om [!DNL Experience Manager]-datorprogrammet så att ändringarna börjar gälla.
 
 >[!NOTE]
 >
@@ -89,35 +89,35 @@ Om din proxy kräver autentisering kan IT-teamet tillåta att Experience Manager
 
 Du kan anpassa dialogrutan Resursinformation genom att täcka över en eller båda av dessa komponenter:
 
-* Användargränssnittssidan för Granite finns på `/libs/dam/gui/content/assets/moreinfo`.
+* Gränssnittssidan för Granite på `/libs/dam/gui/content/assets/moreinfo`.
 
-* HTL- `/css/javascript` komponenten vid `/libs/dam/gui/components/admin/moreinfo`.
+* HTL-komponenten `/css/javascript` vid `/libs/dam/gui/components/admin/moreinfo`.
 
 Vilken komponent som överlappas beror på typen av anpassning. Om du vill ändra vilka komponenter som visas som en del av dialogrutan Resursinformation ska du täcka över användargränssnittssidan för Granite. Om du vill ändra HTML-, CSS- eller JavaScript-innehållet i dialogrutan ska du täcka över HTML-komponenten.
 
 ## Hantera cache {#manage-cache}
 
-I Windows finns cacheminnet `%LOCALAPPDATA%\Adobe\AssetsCompanion\Cache\`, där är en kodad version av den [!DNL Experience Manager] värd som konfigurerats i skrivbordsappen. Visas till exempel `http://localhost:4502` som `http%3A%2F%2Flocalhost%3A4502%2F`.
+I Windows är cachen `%LOCALAPPDATA%\Adobe\AssetsCompanion\Cache\`, där är en kodad version av värddatorn [!DNL Experience Manager] som konfigurerats i skrivbordsprogrammet. `http://localhost:4502` visas till exempel som `http%3A%2F%2Flocalhost%3A4502%2F`.
 
-I Mac OS X finns en liknande katalog i `~/Library/Group Containers/group.com.adobe.aem.desktop/cache`.
+I Mac OS X är en liknande katalog `~/Library/Group Containers/group.com.adobe.aem.desktop/cache`.
 
 ### Alternativ i appen för att hantera cache {#in-app-option-to-manage-cache}
 
-Du kan styra hur mycket diskutrymme som finns tillgängligt för lokal cachelagring. Artefakterna från Assets-servern cachelagras lokalt för en smidigare upplevelse. Du kan ändra standardinställningarna så att de passar dina behov. Du kan även rensa cachen för att hämta alla resurser på nytt. Om du vill ange önskade alternativ klickar du på programikonen och sedan på **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
+Du kan styra hur mycket diskutrymme som finns tillgängligt för lokal cachelagring. Artefakterna från Assets-servern cachelagras lokalt för en smidigare upplevelse. Du kan ändra standardinställningarna så att de passar dina behov. Du kan även rensa cachen för att hämta alla resurser på nytt. Om du vill ange önskade alternativ klickar du på programmets ikon och sedan på **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
 
 >[!NOTE]
 >
->När du rensar cachen bevaras ändringarna som inte sparats. Resurser som inte har checkats in på [!DNL Experience Manager] servern behålls och tas inte bort.
+>När du rensar cachen bevaras ändringarna som inte sparats. Alla resurser som inte har checkats in på [!DNL Experience Manager]-servern behålls och tas inte bort.
 
 ### Ändra platsen för cachen i Windows {#change-location-of-cache-on-windows}
 
-Standardplatsen för cacheminnet för [!DNL Experience Manager] datorprogrammet är följande:
+Standardplatsen för cacheminnet för [!DNL Experience Manager]-datorprogrammet är följande:
 
-* I Windows, `%LocalAppData%\Adobe\AssetsCompanion\Cache\EncodedAEMEndpoint`.
+* I Windows `%LocalAppData%\Adobe\AssetsCompanion\Cache\EncodedAEMEndpoint`.
 
-* I Mac, `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/EncodedAEMEndpoint`.
+* I Mac `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/EncodedAEMEndpoint`.
 
-`EncodedAEMEndpoint` är appens konfigurerade [!DNL Experience Manager] slutpunkts-URL. Värdet är en kodad version av mål-URL:en för [!DNL Experience Manager] servern. Om programmet till exempel har som mål `http://localhost:4502`är katalognamnet `http%3A%2F%2Flocalhost%3A4502`. Windows-sökvägen till cachekatalogen i det här exemplet är `%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502`.
+`EncodedAEMEndpoint` är programmets konfigurerade  [!DNL Experience Manager] slutpunkts-URL. Värdet är en kodad version av mål-URL:en för [!DNL Experience Manager]-servern. Om programmet till exempel har `http://localhost:4502` som mål är katalognamnet `http%3A%2F%2Flocalhost%3A4502`. Windows-sökvägen till cachekatalogen i det här exemplet är `%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502`.
 
 Om du vill peka programmet mot en annan mapp eller enhet redigerar du programmets konfigurationsfil.
 
@@ -131,10 +131,10 @@ Om du vill peka programmet mot en annan mapp eller enhet redigerar du programmet
 
    >[!NOTE]
    >
-   >Programmet skapar automatiskt en *&lt;Encoded AEM Endpoint>* -underkatalog. Det går inte att konfigurera det här beteendet.
+   >Programmet skapar automatiskt en *&lt;Encoded AEM Endpoint>*-underkatalog. Det går inte att konfigurera det här beteendet.
 
 >[!MORELIKETHIS]
-* [Introduktion [!DNL Experience Manager] till datorprogrammet](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
-* [Använd [!DNL Experience Manager] datorprogrammet](use-app-v1.md).
+* [Introduktion  [!DNL Experience Manager] till datorprogrammet](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [Använd  [!DNL Experience Manager] datorprogrammet](use-app-v1.md).
 * [ [!DNL Experience Manager] Felsökning av skrivbordsprogram](troubleshoot-app-v1.md).
 
