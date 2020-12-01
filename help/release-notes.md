@@ -12,13 +12,13 @@ mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Versionsinformation för Adobe Experience Manager-datorprogram {#release-notes-v2}
+# Versionsinformation för Adobe Experience Manager-datorprogrammet {#release-notes-v2}
 
 | Produkter | Adobe Experience Manager-datorprogram |
 |--- |--- |
@@ -26,7 +26,7 @@ ht-degree: 0%
 | Experience Manager-versioner som stöds | Experience Manager som Cloud Service, Experience Manager 6.5, Experience Manager 6.4 Experience Manager 6.3 (med kompatibilitetspaket) |
 | Typ | Mindre release |
 | Releasedatum | 27 aug 2020 (Mac och Win) |
-| Hämta URL:er | [macOS 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg); [Windows 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe); [Windows 32-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
+| Hämta URL:er | [macOS 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg);  [Windows 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe);  [Windows 32-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
 
 ## Systemkrav och krav {#system-requirements-and-prerequisites-v2}
 
@@ -48,12 +48,12 @@ Appen fungerar med följande Experience Manager-versioner, oavsett om de distrib
 
 * [Experience Manager 6.4.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) eller senare.
 
-* Experience Manager 6.4.0-6.4.3 med [kompatibilitetspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support).
+* Experience Manager 6.4.0 - 6.4.3 med [kompatibilitetspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support).
 
 >[!NOTE]
 >
 >Stöd för skrivbordsappar i Experience Manager 6.3 är föråldrat. Adobe rekommenderar att du uppgraderar till en nyare version av Adobe Experience Manager som stöds.
->Experience Manager 6.3.3.1 eller senare fungerar med skrivbordsappen när [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)har installerats. Inget sådant paket finns för Experience Manager 6.3 eftersom inga [servicepaket är planerade](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+>Experience Manager 6.3.3.1 eller senare fungerar med skrivbordsappen efter installation av [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). Inget sådant paket är tillgängligt för Experience Manager 6.3 eftersom inga [servicepaket är planerade](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
 Den version av programmet som du tänker installera på den lokala datorn kräver en specifik version av Adobe Experience Manager eller ytterligare komponenter på serversidan (Service Pack, hot fixes eller feature packs). Kontakta Adobe Experience Manager-administratören om du behöver hjälp.
 
@@ -69,7 +69,7 @@ Några filtyper har stöd för att placera länkade resurser i binärfilen. Prog
 
 Funktionen stöds i Adobe Creative Cloud 2018- och Adobe Creative Cloud 2019-versionerna av ovanstående program. Appen använder en heuristisk, bäst matchande metod för att mappa lokala skrivbordssökvägar för länkade resurser till URL:er på Experience Manager-servern. Den bygger på några antaganden:
 
-* Sökvägar till monterade filer i det ursprungliga programmet använder en global skrivbordssökväg (placerad från den lokala nätverksresursen som visas med [!UICONTROL Reveal] alternativet).
+* Sökvägar till monterade filer i det ursprungliga programmet använder en global skrivbordssökväg (placerad från den lokala nätverksresursen som visas med alternativet [!UICONTROL Reveal]).
 
 * Sökvägar lagras i filens XMP-post av det ursprungliga programmet.
 
@@ -85,13 +85,13 @@ Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
 Felet som har åtgärdats i den aktuella versionen är:
 
-* Ett inloggningsproblem som Windows-användare som försöker få åtkomst till DAM-databasen på [!DNL Adobe Experience Manager] 6.5.5.0-instansen med programmet har korrigerats.
+* Ett inloggningsproblem som Windows-användare som försöker få åtkomst till DAM-databasen på instansen [!DNL Adobe Experience Manager] 6.5.5.0 har korrigerats med hjälp av programmet.
 
 **Uppdateringar i app v2.0.2**
 
 Felkorrigeringarna och uppdateringarna är:
 
-* Förbättra uppladdningsprestanda genom att öka uppladdningsaccelerationen i [!UICONTROL Preferences]. När den här inställningen är aktiverad används fler lokala CPU-trådar och programmet är mer resurskrävande.
+* Öka uppladdningsaccelerationen i [!UICONTROL Preferences] för att förbättra uppladdningsprestanda. När den här inställningen är aktiverad används fler lokala CPU-trådar och programmet är mer resurskrävande.
 
 * Korrigerat problem med överföringar av resurser när filnamn eller sökvägar innehåller vissa GB18030-tecken. <!-- CQ-4283494 -->
 
@@ -105,7 +105,7 @@ Felkorrigeringarna och uppdateringarna är:
 
 Felkorrigeringarna och uppdateringarna är:
 
-* Tillåt alternativet att konfigurera `%Temp%` katalogen så att den matchar `%APPDATA%` sökvägen. <!-- CQ-4282665 -->
+* Tillåt alternativet att konfigurera katalogen `%Temp%` så att den matchar sökvägen `%APPDATA%`. <!-- CQ-4282665 -->
 
 * Tillåt användare att logga in på Experience Manager Author via Okta SAML-autentisering. <!-- CQ-4278134 -->
 
@@ -113,7 +113,7 @@ Felkorrigeringarna och uppdateringarna är:
 
 Mer information om hur du installerar och konfigurerar programmet finns i [Installera Experience Manager-datorprogrammet](install-upgrade.md).
 
-Om du uppgraderar från ett tidigare Experience Manager-program måste du följa de bästa metoderna för övergångar som listas vid [uppgradering från en tidigare version](install-upgrade.md#upgrade-from-previous-version).
+Om du uppgraderar från ett tidigare Experience Manager-program måste du följa de bästa metoderna för övergångar som anges i [uppgraderingen från en tidigare version](install-upgrade.md#upgrade-from-previous-version).
 
 ## Viktiga anteckningar om hur appen fungerar {#how-app-works}
 
@@ -123,7 +123,7 @@ Det är viktigt att du förstår följande om programmet och hur det fungerar.
 
    * Om du vill arbeta med resursen på skrivbordet måste du uttryckligen öppna, redigera eller hämta till skrivbordet, antingen individuellt, i en mapp eller genom att markera flera.
 
-   * Om du vill få lokala ändringar av resurser överförda till Experience Manager måste du välja [!UICONTROL Upload Changes], antingen individuellt eller via flera val.
+   * Om du vill få lokala ändringar av resurser överförda till Experience Manager måste du välja [!UICONTROL Upload Changes], antingen individuellt eller via flerval.
 
    * Programmet är inte en synkroniseringsklient som synkroniserar resurser på skrivbordet och Experience Manager.
 
@@ -133,7 +133,7 @@ Det är viktigt att du förstår följande om programmet och hur det fungerar.
 
 * Om programmet inte visar det förväntade resultatet klickar du på ikonen Uppdatera i det övre fältet.
 
-* Den lokala nätverksresursen, som visas när du använder [!UICONTROL Reveal File] åtgärden, visar bara filer (och mappar) som är tillgängliga lokalt. [!UICONTROL Reveal File] och [!UICONTROL Reveal Folder] hämtar resurser i förväg för att få rätt resurser att visas i den lokala nätverksresursen.
+* Den lokala nätverksresursen, som visas när du använder åtgärden [!UICONTROL Reveal File], visar bara filer (och mappar) som är tillgängliga lokalt. [!UICONTROL Reveal File] och  [!UICONTROL Reveal Folder] hämtar resurser i förväg för att få rätt resurser att visas i den lokala nätverksresursen.
 
 * Den lokala nätverksresursen SMB (Mac) /WebDAV (Win) används när en Adobe Creative Cloud-app läser resursfilerna som är länkade/placerade i en systemspecifik fil i appen Creative Cloud.
 
@@ -141,11 +141,11 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 ![Flöde för resurser från Experience Manager-server till datorprogram via skrivbordsapp](assets/da20_flow_diagram.png)
 
-## Known issues {#known-issues-v2}
+## Kända fel {#known-issues-v2}
 
 **Problem med användargränssnittet:**
 
-* Ibland blir gränssnittet i skrivbordsappen tomt. Högerklicka och klicka [!UICONTROL Refresh] för att läsa in programmet igen. Efter en sådan uppdatering börjar du i DAM-databasens rot. Uppdateringar eller status för dina resurser behålls. <!-- CQ-4270267 -->
+* Ibland blir gränssnittet i skrivbordsappen tomt. Högerklicka och klicka på [!UICONTROL Refresh] för att läsa in programmet igen. Efter en sådan uppdatering börjar du i DAM-databasens rot. Uppdateringar eller status för dina resurser behålls. <!-- CQ-4270267 -->
 
 * Det är svårt att navigera i mappar/sökresultat utan en styrplatta eller muspekare. Rullningslisten kanske inte visas med musenheter utan mushjul. <!-- CQ-4269947 -->
 
@@ -165,7 +165,7 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 **Plattformsproblem:**
 
-* I Windows kan en medias status ändras direkt till [!UICONTROL Edited Locally] efter att den har öppnats, även om du inte har redigerat den. Klicka [!UICONTROL Refresh] för att uppdatera.
+* I Windows kan en medias status ändras direkt till [!UICONTROL Edited Locally] efter att den har öppnats, även om du inte har redigerat den. Klicka på [!UICONTROL Refresh] för att uppdatera.
 
 >[!MORELIKETHIS]
 >
