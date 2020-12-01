@@ -13,8 +13,8 @@ tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-tutorials
 translation-type: tm+mt
 source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 7%
 + [Installera eller uppgradera](install-upgrade.md)
 + [Använd app](using.md)
 + [Felsök](troubleshoot.md)
-+ Hjälp om föregående version {#archive}
++ Hjälp för föregående version {#archive}
    + [Versionsinformation v1](release-notes-of-v1.md)
    + [Installera och konfigurera v1](install-configure-app-v1.md)
    + [Använd app v1](use-app-v1.md)
