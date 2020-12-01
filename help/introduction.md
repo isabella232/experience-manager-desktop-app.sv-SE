@@ -8,19 +8,19 @@ snippet: y
 translation-type: tm+mt
 source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Experience Manager desktop app overview {#overview-v2}
+# Översikt över Adobe Experience Manager-datorprogrammet {#overview-v2}
 
 Adobe erbjuder sammankopplade arbetsflöden i alla sina lösningar för att ge produktivitet på nästa nivå för företagsanvändare och kreatörer. Adobe Experience Manager datorprogram kopplar samman databaser och datorprogram, inklusive Adobe och tredjepartsprogram, för att ge snabbare åtkomst till resurser och smidiga arbetsflöden. Denna tidsbesparing och en minskad insats förbättrar effektiviteten för användare som arbetar med material från Adobe Experience Manager i sina arbetsflöden.
 
 Med hjälp av appen är resurserna i Adobe Experience Manager Assets lättillgängliga på din lokala dator och kan användas i alla datorprogram. Du kan öppna och redigera resurserna i valfritt skrivbordsprogram. De lokala redigeringarna är bara tillgängliga i Adobe Experience Manager som en ny version av resursen när du väljer att överföra ändringarna, vilket gör att du kan hantera pågående redigering av resurser på ett effektivt sätt på datorn. Appen har stöd för överföring av resurser och kapslade mappar till Experience Manager, vilket gör det enklare att lägga till nytt innehåll i databasen.
 
-Tack vare en sådan integrering kan olika roller i organisationen hantera tillgångarna centralt i Experience Manager Assets. Marknadsförare och affärsanvändare kan följa de olika standarderna, inklusive varumärken och licenser. Creative-användare, som även har ett dedikerat [Adobe Asset Link](https://www.adobe.com/marketing/experience-manager-assets/adobe-asset-link.html) -verktyg för att arbeta med resurser i Adobe Photoshop, Illustrator och InDesign, har också tillgång till resurser på datorn i Creative Cloud och andra program.
+Tack vare en sådan integrering kan olika roller i organisationen hantera tillgångarna centralt i Experience Manager Assets. Marknadsförare och affärsanvändare kan följa de olika standarderna, inklusive varumärken och licenser. Creative-användare, som även har ett dedikerat [Adobe Asset Link](https://www.adobe.com/marketing/experience-manager-assets/adobe-asset-link.html)-verktyg för att arbeta med resurser i Adobe Photoshop, Illustrator och InDesign, kan även komma åt resurser på datorn i Creative Cloud och andra systemspecifika program.
 
 >[!NOTE]
 >
