@@ -11,13 +11,13 @@ snippet: y
 translation-type: tm+mt
 source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
 workflow-type: tm+mt
-source-wordcount: '3379'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Felsökning AEM datorprogram v1.x {#troubleshoot-aem-desktop-app}
+# Felsök AEM datorprogram v1.x {#troubleshoot-aem-desktop-app}
 
 Felsök AEM datorprogram för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 
@@ -25,9 +25,9 @@ Adobe Experience Manager (AEM) innehåller verktyg som du kan använda för att 
 
 ![skrivbordsappsdiagram](assets/aem-desktopapp-architecture.png)
 
-Med den här arkitekturen fångar skrivbordsappen upp filsystemanrop (öppna, stänga, läsa, skriva osv.) till den monterade nätverksresursen och översätter dem till interna AEM HTTP-anrop till AEM. Filerna cachelagras lokalt. Mer information finns i [Använda AEM datorprogram v1.x](use-app-v1.md).
+Med den här arkitekturen fångar skrivbordsappen upp filsystemanrop (öppna, stänga, läsa, skriva osv.) till den monterade nätverksresursen och översätter dem till interna AEM HTTP-anrop till AEM. Filerna cachelagras lokalt. Mer information finns i [Använd AEM datorprogram v1.x](use-app-v1.md).
 
-## Översikt över komponenten AEM datorprogram {#desktop-app-component-overview}
+## Översikt över komponenten AEM skrivbordsappen {#desktop-app-component-overview}
 
 datorprogrammet innehåller följande komponenter:
 
@@ -94,7 +94,7 @@ Alla åtgärder cachelagras inte lokalt. Följande överförs direkt till AEM Se
 * Åtgärder för mappar, till exempel skapa, ta bort och så vidare
 * Mappöverföringsfunktionen som introducerades i version 1.4 överför en lokal mapphierarki utan att cachelagra filerna lokalt
 
-## Individuella operationer {#individual-operations}
+## Enskilda åtgärder {#individual-operations}
 
 När du felsöker deloptimerade prestanda för enskilda användare ska du först granska [Begränsningar](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations). De följande avsnitten innehåller förslag på hur du kan förbättra prestandan för enskilda användare.
 
@@ -108,7 +108,7 @@ Adobe rekommenderar att en enskild användares överföringshastighet är nästa
 
 Om du kör AEM i Windows kan du konfigurera Windows för att förbättra WebDAV-klientens prestanda. Mer information finns på [https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570).
 
-I Windows 7 kan prestandan för WebDAV förbättras om IE-inställningarna ändras. Mer information finns i [Korrigera långsamma WebDAV-prestanda i Windows 7](https://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/).
+I Windows 7 kan prestandan för WebDAV förbättras om IE-inställningarna ändras. Mer information finns i [Åtgärda långsamma WebDAV-prestanda i Windows 7](https://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/).
 
 ## Samtidiga åtgärder {#concurrent-operations}
 
@@ -126,7 +126,7 @@ Du bör ta hänsyn till ytterligare faktorer när flera användare försöker ar
 * Om det finns en dispatcher före AEM
 * Aktuell inläsning på AEM
 
-## Ytterligare AEM {#additional-aem-configurations}
+## Ytterligare AEM konfigurationer {#additional-aem-configurations}
 
 Om WebDAV-/SMB-prestanda försämras drastiskt när flera användare arbetar samtidigt kan du konfigurera några saker i AEM, vilket kan förbättra prestandan.
 
@@ -134,19 +134,19 @@ Om WebDAV-/SMB-prestanda försämras drastiskt när flera användare arbetar sam
 
 Du kan förbättra prestandan AEM sidan genom att aktivera tillfälliga arbetsflöden för DAM Update Asset-arbetsflödet. Om du aktiverar tillfälliga arbetsflöden minskas den processorkraft som krävs för att uppdatera resurser när de skapas eller ändras i AEM.
 
-1. Navigera till `/miscadmin` i AEM som ska konfigureras (till exempel `http://[Server]:[Port]/miscadmin`).
+1. Navigera till `/miscadmin` i den AEM instansen som ska konfigureras (till exempel `http://[Server]:[Port]/miscadmin`).
 1. Expandera **Verktyg** > **Arbetsflöde** > **Modeller** > **dam** i navigeringsträdet.
 1. Dubbelklicka på **DAM Update Asset**.
-1. Gå till fliken **Sida** i den flytande verktygspanelen och klicka sedan på **Sidegenskaper**.
-1. Markera kryssrutan **Övergående arbetsflöde** och klicka på **OK**.
+1. Gå till fliken **Sida** på den flytande verktygspanelen och klicka sedan på **Sidegenskaper**.
+1. Markera kryssrutan **Transient Workflow** och klicka på **OK**.
 
 ### Justera kön för transient Granite-arbetsflöde {#adjust-granite-transient-workflow-queue}
 
 En annan metod för att förbättra AEM prestanda är att konfigurera värdet för det maximala antalet parallella jobb för jobbet Beviljit Transient Workflow Queue. Det rekommenderade värdet är ungefär hälften av antalet processorer som är tillgängliga på servern. Så här justerar du värdet:
 
-1. Navigera till */system/console/configMgr* i AEM som ska konfigureras (till exempel `http://[aem_server]:[port]/system/console/configMgr`).
-1. Sök efter **QueueConfiguration** och klicka för att öppna varje jobb tills du hittar jobbet **Bevilja tillfällig arbetsflödeskö** . Klicka på Redigera bredvid den.
-1. Ändra värdet för **maximalt antal parallella jobb** och klicka på **Spara**.
+1. Navigera till */system/console/configMgr* i den AEM instans som ska konfigureras (till exempel `http://[aem_server]:[port]/system/console/configMgr`).
+1. Sök efter **QueueConfiguration** och klicka för att öppna varje jobb tills du hittar jobbet **Bevilja tillfällig arbetsflödeskö**. Klicka på Redigera bredvid den.
+1. Ändra värdet **Maximalt antal parallella jobb** och klicka på **Spara**.
 
 ## AWS-konfiguration {#aws-configuration}
 
@@ -154,7 +154,7 @@ På grund av begränsningar i nätverkets bandbredd kan WebDAV/SMB-prestanda fö
 
 Den här åtgärden ökar specifikt mängden nätverksbandbredd som är tillgänglig för servern. Här är några detaljer:
 
-* Den mängd nätverksbandbredd som är dedikerad till en AWS-instans ökar när instansens storlek ökar. Mer information om hur mycket bandbredd som är tillgänglig för varje instansstorlek finns i [AWS-dokumentationen](https://aws.amazon.com/ec2/instance-types/).
+* Den mängd nätverksbandbredd som är dedikerad till en AWS-instans ökar när instansens storlek ökar. Mer information om hur mycket bandbredd som är tillgänglig för varje instansstorlek finns i [AWS-dokumentation](https://aws.amazon.com/ec2/instance-types/).
 * Vid felsökning för en stor klient konfigurerade Adobe storleken på sin AEM-instans till c4.8xlarge, främst för den dedikerade bandbredden på 4 000 Mbit/s som den erbjuder.
 * Om det ligger en dispatcher framför AEM ska den ha rätt storlek. Om AEM innehåller 4000 Mbit/s men dispatchern bara tillhandahåller 500 Mbit/s är den effektiva bandbredden bara 500 Mbit/s. Det beror på att avsändaren skapar en flaskhals i nätverket.
 
@@ -217,16 +217,16 @@ AEM försöker synkronisera en given fil tre gånger. Om filen inte kan synkroni
 
 Det enklaste sättet att åtgärda detta är att öppna filen som är i konflikt och spara den igen. Det tvingar AEM att försöka synkronisera ytterligare tre gånger. Om filen fortfarande inte kan synkroniseras finns mer hjälp i avsnitten nedan.
 
-## Rensar AEM Skrivbordscache {#clearing-aem-desktop-cache}
+## Rensar AEM skrivbordscache {#clearing-aem-desktop-cache}
 
 Att radera AEM Skrivbordscache är en preliminär felsökningsåtgärd som kan lösa flera AEM problem med skrivbordet.
 
 Du kan rensa cacheminnet genom att ta bort programmets cachekatalog på följande platser.
-I Windows `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
+I Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
-I Mac `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
+I Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
-Platsen kan dock ändras beroende på AEM datorns konfigurerade AEM. Värdet är en kodad version av mål-URL:en. Om programmet till exempel har som mål `http://localhost:4502`är katalognamnet `http%3A%2F%2Flocalhost%3A4502%2F`.
+Platsen kan dock ändras beroende på AEM datorns konfigurerade AEM. Värdet är en kodad version av mål-URL:en. Om programmet till exempel har `http://localhost:4502` som mål är katalognamnet `http%3A%2F%2Flocalhost%3A4502%2F`.
 
 Ta bort katalogen &lt;Encoded AEM Endpoint> om du vill rensa cacheminnet.
 
@@ -267,26 +267,26 @@ I så fall kan det hända att innehållet inte ändras när du stänger och öpp
 
 Oavsett hur filen fungerar ändras den inte när du checkar in den. Även om en annan version av filen visas synkroniseras inte ändringarna till AEM.
 
-## Felsöka problem med att flytta filer {#troubleshooting-problems-around-moving-files}
+## Felsökning av problem med att flytta filer {#troubleshooting-problems-around-moving-files}
 
 Server-API:t kräver att ytterligare rubriker, X-Destination, X-Depth och X-Overwrite, skickas för att flytt- och kopieringsåtgärderna ska fungera. Avsändaren skickar inte dessa huvuden som standard, vilket gör att dessa åtgärder misslyckas. Mer information finns i [Ansluta till AEM bakom en Dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
 
-## Felsökning AEM anslutningsproblem med stationära datorer {#troubleshooting-aem-desktop-connection-issues}
+## Felsökning AEM anslutningsproblem med skrivbordet {#troubleshooting-aem-desktop-connection-issues}
 
-### Omdirigeringsproblem för SAML {#saml-redirect-issue}
+### SAML-omdirigeringsproblem {#saml-redirect-issue}
 
 Den vanligaste orsaken till problem med AEM Skrivbord som ansluter till en SAML-AEM (SSO-enabled) är att SAML-processen inte dirigerar tillbaka till den ursprungligen begärda sökvägen. Alternativt kan anslutningen omdirigeras till en värd som inte konfigurerats i AEM skrivbord. Så här verifierar du inloggningsprocessen:
 
 1. Öppna en webbläsare.
-1. Ange URL-adressen i adressfältet `/content/dam.json`.
-1. Ersätt till exempel URL:en med AEM `http://localhost:4502/content/dam.json`.
+1. Ange URL:en `/content/dam.json` i adressfältet.
+1. Ersätt URL:en med AEM, till exempel `http://localhost:4502/content/dam.json`.
 1. Logga in på AEM.
 1. När du har loggat in kontrollerar du webbläsarens aktuella adress i adressfältet. Den ska matcha den URL som du ursprungligen angav.
-1. Kontrollera att allt före `/content/dam.json` matchar det AEM som är konfigurerat AEM skrivbordet.
+1. Kontrollera att allt före `/content/dam.json` matchar AEM som konfigurerats i AEM Desktop.
 
 ### SSL-konfigurationsproblem {#ssl-configuration-issue}
 
-De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas AEM skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Så här installerar du ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
+De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas AEM skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Installera ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
 ## Använda AEM Desktop med dispatcher {#using-aem-desktop-with-dispatcher}
 
