@@ -3,9 +3,9 @@ title: Använd Adobe Experience Manager datorprogram
 description: Lär dig hur du installerar och använder Adobe Experience Manager-datorprogrammet för att arbeta med Adobe Experience Manager DAM-resurser direkt från din Win- eller Mac-dator. Lär dig bästa praxis och felsökningsinformation.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: 41625c59df00b82ceda8a566b35341bc51c2a30f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '4028'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ Om det behövs kan du växla utcheckning. Den uppdaterade resursen tas bort frå
 
 ## Överför och lägg till nya resurser i Experience Manager {#upload-and-add-new-assets-to-aem}
 
-Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering till Experience Manager. Om du vill lägga till nytt innehåll i Experience Manager klickar du på ![Överför till molnikon](assets/do-not-localize/upload_to_cloud_da2.png) i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Programmet börjar överföra resursen och visar en förloppsindikator längst ned om det tar längre tid att överföra resursen. Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
+Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering i [!DNL Experience Manager]-databasen. Om du vill lägga till nytt innehåll i [!DNL Experience Manager] väljer du ![alternativet ](assets/do-not-localize/upload_to_cloud_da2.png) i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Du kan också dra filerna eller mapparna i programgränssnittet. Programmet börjar överföra resursen. Om överföringen tar längre tid visas en förloppsindikator längst ned i programmet. Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista över tillåtna tecken på [skapa mappar i [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
