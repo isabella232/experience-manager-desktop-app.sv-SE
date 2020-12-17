@@ -10,9 +10,9 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: 41625c59df00b82ceda8a566b35341bc51c2a30f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 | Produkter | Adobe Experience Manager-datorprogram |
 |--- |--- |
-| Programversion (revision) | 2.0 (2.0.3.2) |
-| Experience Manager-versioner som stöds | Experience Manager som Cloud Service, Experience Manager 6.5, Experience Manager 6.4 Experience Manager 6.3 (med kompatibilitetspaket) |
+| Programversion (revision) | 2.1 (2.1.0.0) |
+| [!DNL Adobe Experience Manager]-versioner som stöds | [!DNL Experience Manager] som en  [!DNL Cloud Service];  [!DNL Experience Manager] 6.5;  [!DNL Experience Manager] 6.4;  [!DNL Experience Manager] 6.3 (med kompatibilitetspaket) |
 | Typ | Mindre release |
 | Releasedatum | 27 aug 2020 (Mac och Win) |
-| Hämta URL:er | [macOS 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg);  [Windows 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe);  [Windows 32-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
+| Hämta URL:er | [macOS 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg);  [Windows 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe);  [Windows 32-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
 
 ## Systemkrav och krav {#system-requirements-and-prerequisites-v2}
 
@@ -42,18 +42,18 @@ Adobe Experience Manager-datorprogrammet är kompatibelt med följande operativs
 
 Appen fungerar med följande Experience Manager-versioner, oavsett om de distribueras som en Cloud Service, på Adobe Managed Services (AMS) eller på plats:
 
-* [Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
+* [[!DNL Experience Manager] som en [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
 
-* [Experience Manager 6.5.0](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) eller senare.
+* [[!DNL Experience Manager] 6.5.0](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)  eller senare.
 
-* [Experience Manager 6.4.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) eller senare.
+* [[!DNL Experience Manager] 6.4.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) eller senare.
 
-* Experience Manager 6.4.0 - 6.4.3 med [kompatibilitetspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support).
+* [!DNL Experience Manager] 6.4.0-6.4.3 med  [kompatibilitetspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support).
 
 >[!NOTE]
 >
->Stöd för skrivbordsappar i Experience Manager 6.3 är föråldrat. Adobe rekommenderar att du uppgraderar till en nyare version av Adobe Experience Manager som stöds.
->Experience Manager 6.3.3.1 eller senare fungerar med skrivbordsappen efter installation av [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). Inget sådant paket är tillgängligt för Experience Manager 6.3 eftersom inga [servicepaket är planerade](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+>Stöd för datorprogram för [!DNL Experience Manager] 6.3 är föråldrat. Adobe rekommenderar att du uppgraderar till en nyare version som stöds i [!DNL Adobe Experience Manager].
+>[!DNL Experience Manager] 6.3.3.1 eller senare fungerar med skrivbordsappen efter installation av [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). Inget sådant paket är tillgängligt för Experience Manager 6.3 eftersom inga [servicepaket är planerade](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
 Den version av programmet som du tänker installera på den lokala datorn kräver en specifik version av Adobe Experience Manager eller ytterligare komponenter på serversidan (Service Pack, hot fixes eller feature packs). Kontakta Adobe Experience Manager-administratören om du behöver hjälp.
 
@@ -80,6 +80,10 @@ Funktionen stöds i Adobe Creative Cloud 2018- och Adobe Creative Cloud 2019-ver
 ## Nya funktioner och förbättringar {#whats-new-added}
 
 Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
+
+**Uppdateringar i app v2.1.0.0**
+
+* Om du vill överföra resurser kan användare nu dra filer eller mappar i programmets gränssnitt, direkt från Utforskaren i Windows eller Finder i Mac. Detta fungerar utöver det överföringsalternativ som tidigare fanns i programmet.
 
 **Uppdateringar i app v2.0.3**
 
