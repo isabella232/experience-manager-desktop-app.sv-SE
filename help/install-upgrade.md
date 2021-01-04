@@ -1,35 +1,28 @@
 ---
-title: Installera och konfigurera Adobe Experience Manager datorprogram
-description: Installera och konfigurera Adobe Experience Manager datorprogram så att det fungerar med Adobe Experience Manager Assets-servrar och hämta resurserna i det lokala filsystemet.
-uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f6365302-1690-4719-9b8c-035719422740
-index: y
-internal: n
-snippet: y
+title: Installera och konfigurera [!DNL Adobe Experience Manager] datorprogrammet
+description: Installera och konfigurera [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servrar och hämta resurserna på det lokala filsystemet.
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1162'
 ht-degree: 0%
 
 ---
 
 
-# Installera Adobe Experience Manager-datorprogrammet {#install-app-v2}
+# Installera [!DNL Adobe Experience Manager]-datorprogrammet {#install-app-v2}
 
-Med Adobe Experience Manager-datorprogrammet är materialet i Experience Manager enkelt tillgängligt på din dator och kan användas i alla datorprogram. Resurser kan förhandsgranskas, öppnas i datorprogram, visas i Finder i Mac eller Utforskaren i Windows för montering i andra dokument och ändras lokalt. Ändringarna sparas sedan i Experience Manager när du överför och en ny version skapas i databasen.
+Med [!DNL Adobe Experience Manager]-datorprogrammet är resurserna i [!DNL Experience Manager] enkelt tillgängliga på ditt lokala skrivbord och kan användas i alla datorprogram. Resurser kan förhandsgranskas, öppnas i datorprogram som skapats i Mac Finder eller Utforskaren i Windows för montering i andra dokument och ändras lokalt. Ändringarna sparas sedan i [!DNL Experience Manager] när du överför och en ny version skapas i databasen.
 
 Tack vare en sådan integrering kan olika roller i organisationen
 
-* Hantera materialet centralt i Experience Manager Assets.
+* Hantera resurserna centralt i [!DNL Experience Manager Assets].
 
 * Få tillgång till materialet i alla datorprogram, inklusive program från tredje part och i Adobe Creative Cloud. När man gör det kan man enkelt följa de olika standarderna, inklusive branding.
 
-Om du vill använda datorprogrammet Experience Manager
+Om du vill använda [!DNL Experience Manager]-datorprogrammet
 
-* Kontrollera att din version av Experience Manager stöds av Experience Manager-datorprogrammet. Se [systemkraven](release-notes.md#system-requirements-and-prerequisites-v2) nedan.
+* Kontrollera att din [!DNL Experience Manager]-version stöds av [!DNL Experience Manager]-datorprogrammet. Se [systemkraven](release-notes.md#system-requirements-and-prerequisites-v2) nedan.
 
 * Hämta och installera programmet. Se [installera datorprogrammet](#install-v2) nedan.
 
@@ -37,7 +30,7 @@ Om du vill använda datorprogrammet Experience Manager
 
 ## Systemkrav, krav och nedladdningslänkar {#tech-specs-v2}
 
-Mer information finns i [versionsinformationen för Experience Manager-datorprogrammet](release-notes.md).
+Mer information finns i [[!DNL Experience Manager] versionsinformationen för skrivbordsappen](release-notes.md).
 
 ## Uppgradera från en tidigare version {#upgrade-from-previous-version}
 
@@ -49,7 +42,7 @@ Om du använder v1.x av skrivbordsappen måste du förstå skillnaderna och likh
 
 Följ dessa anvisningar om du vill uppgradera från en tidigare version av programmet:
 
-1. Synkronisera alla resurser och överför ändringarna till Experience Manager innan du uppgraderar. Detta för att undvika att ändringar går förlorade när programmet avinstalleras.
+1. Synkronisera alla dina resurser och överför dina ändringar till [!DNL Experience Manager] innan du uppgraderar. Detta för att undvika att ändringar går förlorade när programmet avinstalleras.
 
 1. Avinstallera den tidigare versionen av programmet. När du avinstallerar markerar du alternativet att rensa cachen.
 
@@ -59,15 +52,15 @@ Följ dessa anvisningar om du vill uppgradera från en tidigare version av progr
 
 ## Installera {#install-v2}
 
-Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befintliga Adobe Experience Manager-program v1.x innan du installerar den senaste appen. Mer information finns ovan.
+Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befintliga Adobe [!DNL Experience Manager]-datorprogram v1.x innan du installerar den senaste appen. Mer information finns ovan.
 
 1. Hämta det senaste installationsprogrammet från [versionsinformationen](release-notes.md)-sidan.
 
-1. Ha URL:en och autentiseringsuppgifterna för din distribution av Experience Manager till hands.
+1. Behåll URL:en och autentiseringsuppgifterna för din [!DNL Experience Manager]-distribution.
 
 1. Om du uppgraderar från en annan version av programmet kan du läsa [uppgradera skrivbordsprogrammet](#upgrade-from-previous-version).
 
-1. Hoppa över det här steget om du använder Experience Manager som Cloud Service, Experience Manager 6.4.4 eller senare eller Experience Manager 6.5.0 eller senare. Kontrollera att Experience Manager-installationen uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med Experience Manager Package Manager som administratör för Experience Manager. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. Hoppa över det här steget om du använder [!DNL Experience Manager] som [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 eller senare eller [!DNL Experience Manager] 6.5.0 eller senare. Kontrollera att din [!DNL Experience Manager]-konfiguration uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med pakethanteraren [!DNL Experience Manager] som en [!DNL Experience Manager]-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Kör installationsprogrammets binärfil och följ instruktionerna på skärmen.
 
@@ -93,7 +86,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
    *Bild: Programmet visar DAM-innehållet efter inloggning*
 
-1. (Experience Manager 6.5.1 eller senare) Om du använder datorprogrammet med Experience Manager 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Se [Azure-koppling](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) eller [S3-anslutning](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
+1. ([!DNL Experience Manager] 6.5.1 eller senare) Om du använder datorprogrammet med [!DNL Experience Manager] 6.5.1 eller senare, uppgraderar du S3- eller Azure-kopplingen till version 1.10.4 eller senare. Se [Azure-koppling](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) eller [S3-anslutning](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
 
    Om du är Adobe Managed Services-kund (AMS) kontaktar du Adobe kundtjänst.
 
