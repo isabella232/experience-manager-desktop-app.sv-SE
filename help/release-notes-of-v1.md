@@ -1,27 +1,20 @@
 ---
 title: Versionsinformation AEM datorprogrammet för version 1.x
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och nedladdningslänkar för AEM program version 1.x.
-uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3906'
 ht-degree: 0%
 
 ---
 
 
-# Versionsinformation om AEM v1.x-datorprogrammet {#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] versionsinformation för datorprogram v1.x  {#aem-desktop-app-release-notes}
 
 För datorprogram v1.x är följande hämtningslänkar och AEM kompatibilitetsinformation.
 
-| Produkter | Adobe Experience Manager (AEM) |
+| Produkter | [!DNL Adobe Experience Manager] datorprogram |
 |--- |--- |
 | Version | 1.10 (1.10.0.6 för Mac och 1.10.0.3 för Windows) |
 | Typ | Mindre release |
@@ -75,7 +68,7 @@ Detaljerade instruktioner finns i [Installera och konfigurera AEM datorprogram](
 
 ## Förbättringar i tidigare versioner {#enhancements-in-the-previous-versions}
 
-Den här versionen utökar och ersätter tidigare versioner av skrivbordsappen Experience Manager, som innehåller följande viktiga förbättringar:
+Den här versionen utökar och ersätter de tidigare versionerna av [!DNL Experience Manager]-skrivbordsappen som innehåller följande viktiga förbättringar:
 
 * **Version 1.9/1.9.1**: återuppta överföringar, förbättrat statusfönster, programikoner som anger status för programmet/anslutningen, förhämtning av länkade resurser för InDesign-filer.
 
@@ -93,7 +86,7 @@ Den här versionen utökar och ersätter tidigare versioner av skrivbordsappen E
 
 ### Förbättringar är tillgängliga sedan AEM datorprogram 1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
-Adobe Experience Manager (AEM) desktop app 1.9.1 var en patch-release som åtgärdar några viktiga kundproblem kring utcheckning av resurser och kopiering av filer från nätverksresurs till en lokal katalog.
+[!DNL Adobe Experience Manager] skrivbordsapp 1.9.1 var en korrigeringsrelease som åtgärdar några viktiga kundproblem kring utcheckning av resurser och kopiering av filer från nätverksresurs till en lokal katalog.
 
 * Resurser som checkats ut av en användare bör inte vara tillgängliga för ändring för andra användare (CQ-4246009)
 
@@ -135,7 +128,7 @@ fönster ResursstatusEtt förbättrat fönster med resursstatus innehåller föl
 
 * Sidfoten visar det totala antalet nedladdade filer och den genomsnittliga överföringshastigheten.
 
-* Om en användare väljer att öppna eller redigera flera filer från webbgränssnittet för Experience Manager Assets, grupperas de tillsammans. Exempel: myasset.jpeg och ytterligare fyra filer.
+* Om en användare väljer att öppna eller redigera flera filer från webbgränssnittet [!DNL Experience Manager Assets] grupperas de tillsammans. Exempel: myasset.jpeg och ytterligare fyra filer.
 
 * När du hämtar InDesign-dokument, inklusive länkade resurser som lagras i AEM Assets, hämtas alla länkade resurser först, innan du öppnar [!UICONTROL Adobe InDesign]-dokumentet och visar hämtningen av länkade resurser. Exempel: 5 av 24.
 
