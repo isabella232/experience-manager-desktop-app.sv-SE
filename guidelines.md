@@ -1,32 +1,32 @@
 ---
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '721'
 ht-degree: 5%
 
 ---
-# Riktlinjer för att bidra till Adobe Experience Manager-dokumentation
+# Riktlinjer för att bidra till [!DNL Adobe Experience Manager]-dokumentation
 
 ## Dokumentationsfilosofi
 
-Vi vet att Adobe Experience Manager-användare arbetar i mycket konkurrensutsatta miljöer och strävar efter att skapa digitala upplevelser som skiljer dem från deras konkurrenter. Därför är det viktigt att Adobe när de levererar avancerade nya verktyg i [!DNL Experience Manager]ska dessa verktyg kompletteras med korrekt och tydlig dokumentation som gör det möjligt för kunden att omedelbart utnyttja sin [!DNL Experience Manager] investering och maximera avkastningen.
+Vi vet att [!DNL Adobe Experience Manager]-användare arbetar i mycket konkurrensutsatta miljöer och strävar efter att skapa digitala upplevelser som skiljer dem från deras konkurrenter. Därför är det viktigt att när Adobe levererar avancerade nya verktyg i [!DNL Experience Manager], dessa verktyg kompletteras med korrekt och tydlig dokumentation som gör det möjligt för kunden att omedelbart utnyttja sin [!DNL Experience Manager]-investering och maximera avkastningen.
 
-Syftet med [!DNL Experience Manager] dokumentationen är att ge [!DNL Experience Manager] användarna tillgång till dokumentationen så snart som möjligt. Därför prioriterar vi korrekt, användbar dokumentation och strävar efter att kontinuerligt uppdatera och förbättra den.
+Målet med [!DNL Experience Manager]-dokumentationen är att skicka dokumentation till [!DNL Experience Manager]-användare så snart som möjligt. Därför prioriterar vi korrekt, användbar dokumentation och strävar efter att kontinuerligt uppdatera och förbättra den.
 
 ## Dokumentationsbidrag
 
-I syfte att kontinuerligt förbättra [!DNL Experience Manager] dokumentationen är det välkommet att hela [!DNL Experience Manager] användargruppen bidrar till dokumentationen. Vare sig det gäller förfrågningar eller frågor kan förbättringar av dokumentationen vara korrigeringar, förtydliganden, tillägg och ytterligare exempel.
+För att kontinuerligt förbättra [!DNL Experience Manager]-dokumentationen är det välkommet att alla [!DNL Experience Manager]-användare bidrar till dokumentationen. Vare sig det gäller förfrågningar eller frågor kan förbättringar av dokumentationen vara korrigeringar, förtydliganden, tillägg och ytterligare exempel.
 
 ## Dokumentationsstandarder
 
-Även om vi välkomnar bidrag till vår dokumentation bör alla bidrag till [!DNL Experience Manager] dokumentationen, antingen i form av en begäran om att tjänsten ska fyllas i eller i form av ett problem, överensstämma med våra standarder för bidrag och dokumentation.
+Vi välkomnar bidrag till vår dokumentation, men alla bidrag till [!DNL Experience Manager]-dokumentationen, antingen i form av en pull-begäran eller ett problem, bör överensstämma med våra bidrag- och dokumentationsstandarder.
 
 Bidrag som inte uppfyller dessa standarder kan avvisas.
 
 ### Standardanvändningsfall för dokument
 
-[!DNL Experience Manager] dokumentationen täcker standardanvändningsfall. Användningsfall som inte omfattas av standardinstallation och -användning ingår inte i [!DNL Experience Manager] dokumentationen.
+[!DNL Experience Manager] dokumentationen täcker standardanvändningsfall. Användningsfall som inte omfattas av standardinstallation och standardanvändning av produkten ingår inte i [!DNL Experience Manager]-dokumentationen.
 
 ### Vi dokumenterar vanligtvis inte buggar eller deras tillfälliga lösningar
 
@@ -36,11 +36,11 @@ Undantag från den här regeln gäller versionsinformationen där kända problem
 
 ### Dokumentationsbidragen är inte till för att besvara tekniska frågor
 
-Alla idéer du kan behöva förbättra [!DNL Experience Manager] dokumentationen är välkomna som bidrag. Kommentarer, frågor och förfrågningar är dock endast avsedda för *bidrag* . De är inte avsedda att användas för att besvara frågor om hur du använder [!DNL Experience Manager], implementerar [!DNL Experience Manager] projekt eller löser tekniska problem.
+Alla idéer du kan behöva förbättra [!DNL Experience Manager]-dokumentationen är välkomna som bidrag. Kommentarer, utgåvor och pull-begäranden är dock endast avsedda för *bidrag*. De är inte avsedda att användas för att besvara dina frågor om hur du använder [!DNL Experience Manager], implementerar ditt [!DNL Experience Manager]-projekt eller löser tekniska problem.
 
-Eventuella frågor om användningen av [!DNL Experience Manager] eller tekniska fel ska rapporteras via den normala supportprocessen via [Experience Cloud Enterprise Support-portalen](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) eller diskuteras i [Experience Manager-communityn](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
+Frågor om hur du använder [!DNL Experience Manager] eller tekniska fel som du kan ha gjort ska rapporteras via den normala supportprocessen via [Experience Cloud Enterprise Support-portalen](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) eller diskuteras i [Experience Manager-communityn](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
 
-***[!DNL Experience Manager]Dokumentationsavgifter ersätter inte Adobe kundtjänst*** och eventuella bidrag som söker svar på supportrelaterade frågor kommer att refuseras.
+***[!DNL Experience Manager]Dokumentationsbidragen ersätter inte Adobe Customer*** Careoch eventuella bidrag som söker svar på supportrelaterade frågor kommer att refuseras.
 
 ### Bidragen ska tydligt hänvisa till berörda dokumentationssidor.
 
@@ -62,11 +62,11 @@ Genom att följa dessa riktlinjer blir det enklare att granska ditt bidrag och d
 * Håll meningar så enkla som möjligt.
 * Se till att språket är klart och koncist.
 
-Kom ihåg att läsarna av [!DNL Experience Manager] dokumentation är från hela världen och inte kan förväntas vara inbyggda eller flytande engelska. Undvik kollokvialism och håll språket så tydligt och enkelt som möjligt.
+Kom ihåg att läsare av [!DNL Experience Manager]-dokumentation finns i hela världen och inte kan förväntas vara inbyggda eller flytande engelska högtalare. Undvik kollokvialism och håll språket så tydligt och enkelt som möjligt.
 
 #### Följ Microsoft-formathandboken
 
-[Microsoft Manual of Style](https://docs.microsoft.com/en-us/style-guide/welcome/) är en kostnadsfri handbok för dokumentationsformat som fokuserar på programvarudokumentation och - [!DNL Experience Manager] dokumentation som följer den här handboken när det är möjligt.
+[Microsoft Manual of ](https://docs.microsoft.com/en-us/style-guide/welcome/) Style är en kostnadsfri handbok för dokumentationsformat som fokuserar på programvarudokumentation och - [!DNL Experience Manager] dokumentation. Handboken följer den när det är möjligt.
 
 ### Formatering
 
@@ -86,8 +86,8 @@ Markörer eller andra anteckningar i skärmbilder (som röda ramar, pilar eller 
 
 Undvik om möjligt direkta referenser till en viss version i dokumentationsinnehållet. Detta gör dokumentationen mer flexibel och utbyggbar för framtida versioner.
 
-### Användning av dag, [!DNL Experience Manager]CQ, CRX
+### Användning av dag, [!DNL Experience Manager], CQ, CRX
 
-Produktens fullständiga namn ska alltid kallas **Adobe Experience Manager** för första gången i en artikel och kan därefter kallas **Experience Manager**.
+Använd det fullständiga namnet **Adobe Experience Manager** för att få information om hur produkten används första gången i en artikel och referera sedan till den som **Experience Manager**.
 
-Day, Day Software, CQ och CRX bör inte användas utom när det är oundvikligt, t.ex. i klassnamn eller med hänvisning till historiken för [!DNL Experience Manager].
+Använd inte termerna Day, Day Software, CQ och CRX, utom när det är oundvikligt, t.ex. i klassnamn eller som hänvisar till historiken för [!DNL Experience Manager].
