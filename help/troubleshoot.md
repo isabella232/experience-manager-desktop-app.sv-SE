@@ -1,25 +1,18 @@
 ---
-title: Bästa tillvägagångssätt för och felsökning av Adobe Experience Manager-datorprogram
+title: Bästa tillvägagångssätt för och felsökning [!DNL Adobe Experience Manager] datorprogram
 description: Följ bästa praxis och felsök för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2120'
 ht-degree: 0%
 
 ---
 
 
-# Felsök Adobe Experience Manager-datorprogrammet {#troubleshoot-v2}
+# Felsök [!DNL Adobe Experience Manager]-datorprogrammet {#troubleshoot-v2}
 
-Adobe Experience Manager-datorprogrammet ansluter till en DAM-databas (Digital Asset Management) för en fjärrdistribution i Experience Manager. Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar och innehåller funktioner för att hantera konflikter med Assets-användargränssnittet.
+[!DNL Adobe Experience Manager] datorprogrammet ansluter till en  [!DNL Experience Manager] distributionsdatabas för DAM (Digital Asset Management). Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar och innehåller funktioner för att hantera konflikter med Assets-användargränssnittet.
 
 Läs vidare för att felsöka appen, lära dig de bästa metoderna och ta reda på begränsningarna.
 
@@ -27,23 +20,23 @@ Läs vidare för att felsöka appen, lära dig de bästa metoderna och ta reda p
 
 Följ följande metodtips för att förebygga vissa vanliga problem och felsökning.
 
-* **Lär dig hur datorprogrammet fungerar**: Innan du börjar använda programmet bör du ägna en stund åt att veta hur programmet fungerar. Lär dig mer om att länka mellan Experience Manager webbgränssnitt och stationära datorer, mappning av databaser, cachelagring av resurser, spara lokalt och ladda upp i bakgrunden. Se [hur det fungerar](release-notes.md#how-app-works).
+* **Lär dig hur datorprogrammet fungerar**: Innan du börjar använda programmet bör du ägna en stund åt att veta hur programmet fungerar. Lär dig mer om att länka mellan [!DNL Experience Manager] webbgränssnitt och skrivbord, databasmappning, resurscachning, spara lokalt och överföra i bakgrunden. Se [hur det fungerar](release-notes.md#how-app-works).
 
-* **Undvik tecken som inte stöds i mappnamn**: Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i Experience Manager Resurser](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders). Vissa Adobe Experience Manager-exempel kan påverkas av tecken i mappnamnet som inte stöds.
+* **Undvik tecken som inte stöds i mappnamn**: Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista med tecken på [Skapa mappar i [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders). Vissa [!DNL Experience Manager]-användningsfall kan påverkas av tecken som inte stöds i mappnamnet.
 
 * **Bästa tillvägagångssätt för att undvika konflikter**: Information om hur du undviker potentiella konflikter när du samarbetar med flera resurser finns i  [Undvik redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
 
-* **Använd mappöverföring för stora, hierarkiska mappar**: I stället för att använda webbgränssnittet Resurser eller andra metoder kan du överföra stora mappar med datorprogrammet Experience Manager. Programmet överför resurserna i bakgrunden med loggning och övervakning. Se [massöverföring av resurser](using.md#bulk-upload-assets).
+* **Använd mappöverföring för stora, hierarkiska mappar**: Använd  [!DNL Experience Manager] skrivbordsappen för att överföra stora mappar i stället för att använda Assets-webbgränssnittet eller andra metoder. Programmet överför resurserna i bakgrunden med loggning och övervakning. Se [massöverföring av resurser](using.md#bulk-upload-assets).
 
-* **Använd den senaste versionen**: Använd den senaste programversionen och kontrollera alltid om den är kompatibel innan du installerar en ny programversion eller innan du uppgraderar till en nyare Adobe Experience Manager-version. Se [versionsinformation](release-notes.md).
+* **Använd den senaste versionen**: Använd den senaste programversionen och kontrollera alltid om den är kompatibel innan du installerar en ny programversion eller innan du uppgraderar till en nyare  [!DNL Experience Manager] version. Se [versionsinformation](release-notes.md).
 
-* **Använd samma enhetsbeteckning**: Använd samma enhetsbeteckning i en hel organisation för att mappa till Adobe Experience Manager DAM. Om du vill visa resurser som placerats av andra användare måste sökvägarna vara desamma. Om du använder samma enhetsbeteckning säkerställs en konstant sökväg till DAM-resurser. Resurserna förblir placerade och tas inte bort även om olika enhetsbeteckningar används av olika användare.
+* **Använd samma enhetsbeteckning**: Använd samma enhetsbeteckning i en organisation för att mappa till  [!DNL Experience Manager] DAM. Om du vill visa resurser som placerats av andra användare måste sökvägarna vara desamma. Om du använder samma enhetsbeteckning säkerställs en konstant sökväg till DAM-resurser. Resurserna förblir placerade och tas inte bort även om olika enhetsbeteckningar används av olika användare.
 
-* **Lägg märke till nätverket**: Nätverksprestanda är avgörande för prestandan i Experience Manager-datorprogrammet. Om du får ett långsammare svar på filöverföringar eller större åtgärder inaktiverar du de funktioner eller program som kan orsaka mycket nätverkstrafik.
+* **Lägg märke till nätverket**: Nätverksprestanda är avgörande för  [!DNL Experience Manager] datorprogrammets prestanda. Om du får ett långsammare svar på filöverföringar eller större åtgärder inaktiverar du de funktioner eller program som kan orsaka mycket nätverkstrafik.
 
 * **Användningsexempel som inte stöds för datorprogrammet**: Använd inte appen för Assets&#39; migrering (den kräver planering och andra verktyg). för krävande DAM-åtgärder (som att flytta stora mappar, stora överföringar, hitta filer med avancerade metadatasökningar), och som en synkroniseringsklient (designprinciper och användningsmönster skiljer sig från synkroniserade klienter som Microsoft OneDrive eller Adobe Creative Cloud desktop sync).
 
-* **Timeout**: För närvarande har skrivbordsprogrammet inte något konfigurerbart timeout-värde som kopplar från anslutningen mellan Experience Manager-servern och skrivbordsappen efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
+* **Timeout**: För närvarande har skrivbordsprogrammet inte något konfigurerbart timeout-värde som kopplar från anslutningen mellan  [!DNL Experience Manager] servern och skrivbordsappen efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
 
 ## Felsöka {#troubleshooting-prep}
 
@@ -119,7 +112,7 @@ Så här aktiverar du felsökningsläge i Windows:
 
 Utför följande steg:
 
-1. Starta programmet och anslut en Experience Manager-instans.
+1. Starta programmet och anslut en [!DNL Experience Manager]-instans.
 
 1. Öppna programmets inställningar genom att klicka på ellipserna i det övre högra hörnet och välja [!UICONTROL Preferences].
 
@@ -163,9 +156,9 @@ Om du inte kan se de resurser som du eller andra kreatörer har placerat i suppo
 
 * Filstorlek. Stora resurser tar längre tid att hämta och visa.
 
-* Enhetliga brev. Om du eller någon annan medarbetare placerade resurserna när du mappade Experience Manager DAM till en annan enhetsbeteckning visas inte de placerade resurserna.
+* Enhetliga brev. Om du eller någon annan medarbetare placerade resurserna när de mappade DAM-filen till en annan enhetsbeteckning visas inte de placerade resurserna.[!DNL Experience Manager]
 
-* Behörigheter. Kontakta Experience Manager-administratören om du har behörighet att hämta de placerade resurserna.
+* Behörigheter. Om du vill kontrollera om du har behörighet att hämta de placerade resurserna kontaktar du [!DNL Experience Manager]-administratören.
 
 ### Redigeringar av filer i skrivbordsappens användargränssnitt återspeglas inte direkt i [!DNL Adobe Experience Manager] {#changes-on-da-not-visible-on-aem}
 
@@ -173,7 +166,7 @@ Om du inte kan se de resurser som du eller andra kreatörer har placerat i suppo
 
 ### Problem vid uppgradering på macOS {#issues-when-upgrading-on-macos}
 
-Ibland kan problem uppstå när du uppgraderar datorprogrammet Experience Manager på macOS. Detta orsakas av att det inte går att läsa in nya versioner av datorprogrammet Experience Manager korrekt i en äldre systemmapp för Experience Manager. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
+Ibland kan problem uppstå när du uppgraderar [!DNL Experience Manager]-datorprogrammet på macOS. Detta orsakas av att det inte går att läsa in nya versioner av [!DNL Experience Manager]-skrivbordsappen korrekt i den äldre systemmappen för [!DNL Experience Manager]. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
 
 Innan du utför följande steg drar du `Adobe Experience Manager Desktop`-programmet från mappen macOS-program till Papperskorgen. Öppna sedan terminalen, kör följande kommando och ange ditt lösenord när du uppmanas till det.
 
@@ -188,7 +181,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ### Det går inte att överföra filer {#upload-fails}
 
-Om du använder datorprogrammet med Experience Manager 6.5.1 eller senare, uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Det åtgärdar ett filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
+Om du använder ett skrivbordsprogram med [!DNL Experience Manager] 6.5.1 eller senare uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Det åtgärdar ett filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
 
 ### [!DNL Experience Manager] anslutningsproblem för skrivbordsprogram  {#connection-issues}
 
@@ -256,9 +249,9 @@ Om du tittar på den URL-sekvens som läses in kan det hjälpa till att felsöka
 
 #### SSL-konfigurationsproblem {#ssl-config-v2}
 
-Biblioteken som Experience Manager datorprogram använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda datorprogrammet Experience Manager. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Installera ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
+Biblioteken som [!DNL Experience Manager]-datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda [!DNL Experience Manager]-skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Installera ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
-De bibliotek som används för HTTP-kommunikation i Experience Manager Desktop använder strikt SSL-tillämpning. Det kan alltså finnas instanser där SSL-anslutningar som lyckas via en webbläsare misslyckas med [!DNL Adobe Experience Manager]-skrivbordsappen. Detta är bra eftersom det uppmuntrar till korrekt konfigurering av SSL och ökar säkerheten, men det kan vara frustrerande när programmet inte kan ansluta.
+Biblioteken som [!DNL Experience Manager]-datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Det kan alltså finnas instanser där SSL-anslutningar som lyckas via en webbläsare misslyckas med [!DNL Adobe Experience Manager]-skrivbordsappen. Detta är bra eftersom det uppmuntrar till korrekt konfigurering av SSL och ökar säkerheten, men det kan vara frustrerande när programmet inte kan ansluta.
 
 I det här fallet rekommenderar vi att du använder ett verktyg för att analysera serverns SSL-certifikat och identifiera problem så att de kan korrigeras. Det finns webbplatser som inspekterar serverns certifikat när de tillhandahåller URL:en.
 
