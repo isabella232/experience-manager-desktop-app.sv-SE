@@ -1,8 +1,8 @@
 ---
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18cebce065f9b55259bf96d14cb50cf5bc6c8ec6
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Titta på följande video för att få en snabb översikt över hur du skapar pr
 
 ### Bidrag från anställda i Adobe
 
-Om du är anställd i Adobe och har ett bidrag begär vi att du använder organisationen `AdobeDocs` i företagsgruppen. Du kan bidra till den här offentliga databasen på GitHub.com, men det är enklare att bearbeta bidragen i företagets rapport. Se till att all information som är tillverkarspecifik eller ej har släppts endast behandlas i företagets rapport.
+Om du är anställd i Adobe och har ett bidrag begär vi att du använder organisationen `AdobeDocs` i företagsgruppen. Du kan bidra till den här offentliga databasen på GitHub.com, men det är enklare att bearbeta bidragen i företagets rapport. Se till att all information som är tillverkarspecifik eller ej har släppts endast behandlas i företagets rapport. Anställda i Adobe behöver inte skriva under CLA-avtalet.
 
 ## Om Adobe GitHub-redigeringsplattformen och Markdown
 
