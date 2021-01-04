@@ -1,11 +1,11 @@
 ---
-title: Använd Adobe Experience Manager datorprogram
-description: Lär dig hur du installerar och använder Adobe Experience Manager-datorprogrammet för att arbeta med Adobe Experience Manager DAM-resurser direkt från din Win- eller Mac-dator. Lär dig bästa praxis och felsökningsinformation.
+title: Använd [!DNL Adobe Experience Manager] datorprogrammet
+description: Använd [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM-resurser direkt från Win- eller Mac-datorn och använd i andra program.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 41625c59df00b82ceda8a566b35341bc51c2a30f
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '4028'
+source-wordcount: '3906'
 ht-degree: 0%
 
 ---
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # Använd [!DNL Adobe Experience Manager]-datorprogrammet {#use-aem-desktop-app-v2}
 
-Använd [!DNL Adobe Experience Manager]-datorprogrammet för att enkelt få tillgång till Adobe Experience Manager DAM-resurser på din lokala dator och använda dessa resurser i alla skrivbordsprogram. Du kan öppna resurserna i skrivbordsprogram och redigera resurserna lokalt - överföra ändringarna tillbaka till Experience Manager med versionskontroll och dela uppdateringarna med andra användare. Du kan också överföra nya filer och mapphierarkier till Experience Manager, skapa mappar och ta bort resurser och mappar från Experience Manager DAM.
+Använd [!DNL Adobe Experience Manager]-datorprogrammet för att enkelt få åtkomst till digitala resurser som lagras i [!DNL Adobe Experience Manager] DAM-databasen på din lokala dator och använda dessa resurser i alla skrivbordsprogram. Du kan öppna resurserna i skrivbordsprogram och redigera resurserna lokalt - överföra ändringarna tillbaka till [!DNL Experience Manager] med versionskontroll för att dela uppdateringarna med andra användare. Du kan också överföra nya filer och mapphierarkier till [!DNL Experience Manager], skapa mappar och ta bort resurser och mappar från [!DNL Experience Manager] DAM.
 
-Tack vare integreringen kan olika roller i organisationen hantera resurser centralt i Experience Manager Assets och komma åt resurserna på den lokala datorn i de program de skapats i i Windows eller Mac OS.
+Tack vare integreringen kan olika roller i organisationen hantera resurser centralt i [!DNL Experience Manager Assets] och komma åt resurserna på det lokala skrivbordet i de program som används i Windows eller Mac OS.
 
-När du öppnar programmet efter utloggning eller för första gången anger du URL-adressen till Experience Manager-servern i formatet `https://[aem-server-url]:[port]/`. Välj sedan alternativet [!UICONTROL Connect]. Ange autentiseringsuppgifter för att ansluta programmet till servern.
+När du öppnar programmet efter utloggning eller för första gången anger du URL-adressen till din [!DNL Experience Manager]-server i formatet `https://[aem-server-url]:[port]/`. Välj sedan alternativet [!UICONTROL Connect]. Ange autentiseringsuppgifter för att ansluta programmet till servern.
 
-De viktigaste uppgifterna du gör med datorprogrammet Experience Manager är:
+De viktigaste uppgifterna du gör med [!DNL Experience Manager]-datorprogrammet är:
 
-![Arbetsflöden och uppgifter du kan utföra med  [!DNL Experience Manager] datorprogramArbetsflöden och ](assets/aem_desktop_app_usecases_v2.png "uppgifter du kan utföra med Adobe Experience Manager desktop ")
-appLadda ned  [](assets/aem_desktop_app_usecases_print.pdf) den tryckfärdiga PDF-filen.
+![Arbetsflöden och uppgifter du kan utföra med  [!DNL Experience Manager] datorprogramArbetsflöden och uppgifter du kan utföra ](assets/aem_desktop_app_usecases_v2.png "med  [!DNL Adobe Experience Manager] datorprogramLadda ned ")
+  [](assets/aem_desktop_app_usecases_print.pdf) den tryckfärdiga PDF-filen.
 
 ## Så här fungerar skrivbordsappen {#how-app-works2}
 
@@ -30,35 +30,35 @@ Innan du börjar använda programmet bör du förstå [hur programmet fungerar](
 
 * **[!UICONTROL Desktop Actions]**: Från Assets-webbgränssnittet, från en webbläsare, kan du utforska resursplatserna eller checka ut och öppna resursen för redigering i ditt datorprogram. De här åtgärderna är tillgängliga från webbgränssnittet och använder skrivbordsappsfunktioner. Se [hur du aktiverar skrivbordsåtgärder](using.md#desktopactions-v2).
 
-* Filstatus är **[!UICONTROL Cloud Only]**: Sådana resurser hämtas inte på den lokala datorn och är endast tillgängliga på Experience Manager-servern.
+* Filstatus är **[!UICONTROL Cloud Only]**: Sådana resurser hämtas inte på den lokala datorn och är endast tillgängliga på [!DNL Experience Manager]-servern.
 
 * Filstatus är **[!UICONTROL Available locally]**: Resurserna hämtas och är tillgängliga på den lokala datorn i befintligt skick. Resurserna ändras inte.
 
-* Filstatus är **[!UICONTROL Edited locally]**: Sådana resurser ändras lokalt och ändringarna finns kvar på den överförda servern Experience Manager. När du har överfört filen ändras statusen till [!UICONTROL Available locally]. Se [redigera resurser](using.md#edit-assets-upload-updated-assets).
+* Filstatus är **[!UICONTROL Edited locally]**: Sådana resurser ändras lokalt och ändringarna finns kvar på den överförda servern [!DNL Experience Manager]. När du har överfört filen ändras statusen till [!UICONTROL Available locally]. Se [redigera resurser](using.md#edit-assets-upload-updated-assets).
 
 * Filstatus är **[!UICONTROL Editing conflict]**: Om du och andra användare ändrar en resurs samtidigt indikerar programmet att en redigeringskonflikt har inträffat. Programmet innehåller även alternativ för att behålla eller ignorera ändringarna. Se [hur du undviker redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
 
-* Filstatus är **[!UICONTROL Modified remotely]**: Programmet anger om en resurs som du har hämtat ändras på Experience Manager-servern. Programmet har också möjlighet att hämta den senaste versionen och uppdatera din lokala kopia. Se [hur du undviker redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
+* Filstatus är **[!UICONTROL Modified remotely]**: Programmet anger om en resurs som du har hämtat ändras på [!DNL Experience Manager]-servern. Programmet har också möjlighet att hämta den senaste versionen och uppdatera din lokala kopia. Se [hur du undviker redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts).
 
-* **[!UICONTROL Check-out]**: Om du redigerar en fil eller har för avsikt att redigera en fil, kan du växla status för att checka ut. En låsikon läggs till på resursen i webbgränssnittet för programmet och Experience Manager. Låsikonen anger för andra användare att de inte behöver redigera samma resurs samtidigt eftersom den leder till en redigeringskonflikt.
+* **[!UICONTROL Check-out]**: Om du redigerar en fil eller har för avsikt att redigera en fil, kan du växla status för att checka ut. En låsikon läggs till för resursen i appen och [!DNL Experience Manager] webbgränssnittet. Låsikonen anger för andra användare att de inte behöver redigera samma resurs samtidigt eftersom den leder till en redigeringskonflikt.
 
 * **[!UICONTROL Check-in]**: Markera resursen som säker så att andra användare kan redigera den utan att orsaka en redigeringskonflikt. När du överför dina ändringar tas låsikonen automatiskt bort. Om du växlar incheckningsstatus tas även låsikonen bort, men du rekommenderas att inte checka in manuellt utan att överföra ändringarna. Om du ångrar ändringarna växlar du incheckningen manuellt.
 
 * **[!UICONTROL Open]** åtgärd: Öppna bara resursen om du vill förhandsgranska den i det ursprungliga programmet. Du bör inte redigera resursen med den här åtgärden eftersom den inte checkar ut resursen och andra användare kan göra redigeringar som leder till redigeringskonflikter.
 
-* **[!UICONTROL Edit]** åtgärd: Använd funktionsmakrot för att ändra bilden. När du klickar på [!UICONTROL Edit]-åtgärden checkas resursen ut automatiskt och en låsikon läggs till på resursen. Om du inte vill redigera resursen klickar du på [!UICONTROL Toggle check-in] när du har klickat på Redigera. Om du vill ta bort, byta namn på eller flytta resurser i mapphierarkin i Experience Manager DAM använder du Experience Manager webbgränssnittsåtgärder och inte redigeringsåtgärden.
+* **[!UICONTROL Edit]** åtgärd: Använd funktionsmakrot för att ändra bilden. När du klickar på [!UICONTROL Edit]-åtgärden checkas resursen ut automatiskt och en låsikon läggs till på resursen. Om du inte vill redigera resursen klickar du på [!UICONTROL Toggle check-in] när du har klickat på Redigera. Om du vill ta bort, byta namn på eller flytta resurser i [!DNL Experience Manager] DAM-mapphierarkin använder du [!DNL Experience Manager]-webbgränssnittsåtgärderna och inte redigeringsåtgärden.
 
 * **[!UICONTROL Download]** åtgärd: Hämta resursen till din lokala dator. Du kan hämta resurserna nu och redigera dem senare. arbeta offline och ladda upp ändringarna senare. Resurserna hämtas i en cachemapp i filsystemet.
 
 * **[!UICONTROL Reveal File]** eller  **[!UICONTROL Reveal Folder]** åtgärd: När resurserna hämtas till en lokal cachemapp härmar programmet en lokal nätverksenhet och tillhandahåller en lokal sökväg för varje resurs. Om du vill veta sökvägen använder du lämpligt visningsalternativ i appen. Du måste utföra åtgärden Visa för att placera resurser i programmet Creative Cloud. Se [placera resurser](using.md#place-assets-in-native-documents).
 
-* **[!UICONTROL Open In Web]** åtgärd: Om du vill visa resursen i Experience Manager webbgränssnitt öppnar du den på webben. Du kan initiera fler arbetsflöden från Experience Manager-gränssnittet, som att uppdatera metadata eller resursidentifiering.
+* **[!UICONTROL Open In Web]** åtgärd: Om du vill visa resursen i  [!DNL Experience Manager] webbgränssnittet öppnar du den på webben. Du kan initiera fler arbetsflöden från [!DNL Experience Manager]-gränssnittet, som att uppdatera metadata eller resursidentifiering.
 
-* **[!UICONTROL Delete]** åtgärd: Ta bort resursen från DAM-databasen i Experience Manager. Åtgärden tar bort originalkopian av resursen på Experience Manager-servern. Om du bara vill ignorera ändringar i den lokala resursen läser du [ignorera ändringar](using.md#edit-assets-upload-updated-assets).
+* **[!UICONTROL Delete]** åtgärd: Ta bort resursen från  [!DNL Experience Manager] DAM-databasen. Åtgärden tar bort originalkopian av resursen på Experience Manager-servern. Om du bara vill ignorera ändringar i den lokala resursen läser du [ignorera ändringar](using.md#edit-assets-upload-updated-assets).
 
-* **[!UICONTROL Upload Changes]**: Skrivbordsappen överför bara den uppdaterade resursen när du uttryckligen överför den till Experience Manager-servern. När du sparar redigeringarna sparas ändringarna bara på den lokala datorn. När du överför en resurs checkas den automatiskt in och låsikonen tas bort. Se [redigera resurser](using.md#edit-assets-upload-updated-assets).
+* **[!UICONTROL Upload Changes]**: Skrivbordsappen överför bara den uppdaterade resursen när du uttryckligen överför den till  [!DNL Experience Manager] servern. När du sparar redigeringarna sparas ändringarna bara på den lokala datorn. När du överför en resurs checkas den automatiskt in och låsikonen tas bort. Se [redigera resurser](using.md#edit-assets-upload-updated-assets).
 
-## Aktivera skrivbordsåtgärder i Experience Manager webbgränssnitt {#desktopactions-v2}
+## Aktivera skrivbordsåtgärder i [!DNL Experience Manager]-webbgränssnittet {#desktopactions-v2}
 
 I Assets-användargränssnittet i en webbläsare kan du utforska resursplatserna eller checka ut och öppna resursen för redigering i datorprogrammet. Dessa alternativ kallas [!UICONTROL Desktop Actions] och är inte aktiverade som standard. Följ de här stegen för att aktivera den.
 
@@ -72,7 +72,7 @@ I Assets-användargränssnittet i en webbläsare kan du utforska resursplatserna
 
 ## Bläddra bland, söka efter och förhandsgranska resurser {#browse-search-preview-assets}
 
-Du kan bläddra till, söka efter och förhandsvisa de resurser som finns i Experience Manager-databasen, allt från datorprogrammet. Prova följande i appen:
+Du kan bläddra till, söka efter och förhandsvisa de resurser som finns i [!DNL Experience Manager]-databasen, allt inifrån skrivbordsprogrammet. Prova följande i appen:
 
 1. Bläddra till en mapp och se grundläggande information om resurserna som finns i mappen, tillsammans med små miniatyrbilder av alla resurser.
 
@@ -83,7 +83,7 @@ Du kan bläddra till, söka efter och förhandsvisa de resurser som finns i Expe
    ![Se en större förhandsvisning av en resurs och ](assets/large_preview_actions_da2.png "funktionsmakronSe en större förhandsvisning av en resurs och funktionsmakron")
 
 1. Klicka på **[!UICONTROL Open]** eller **[!UICONTROL Edit]** om du vill hämta filen lokalt och bara visa eller redigera den i det ursprungliga programmet.
-1. Sök med nyckelord för att hitta en relaterad resurs i Experience Manager-databasen. Använd `?` och `*` som jokertecken. Dessa jokertecken ersätter ett enda tecken eller flera tecken. Filtrera och sortera resultatet efter behov.
+1. Sök med nyckelord för att hitta en relaterad resurs i [!DNL Experience Manager]-databasen. Använd `?` och `*` som jokertecken. Dessa jokertecken ersätter ett enda tecken eller flera tecken. Filtrera och sortera resultatet efter behov.
 
    ![Exempelsökning med asterisk ](assets/search_wildcard_da2.png "jokerteckenExempelsökning med asterisk jokertecken")
 
@@ -95,7 +95,7 @@ Du kan bläddra till, söka efter och förhandsvisa de resurser som finns i Expe
 
 ## Hämta resurser {#download-assets}
 
-Du kan hämta resurserna på det lokala filsystemet. Programmet hämtar resurserna från Experience Manager-servern och sparar samma kopia i det lokala filsystemet.
+Du kan hämta resurserna på det lokala filsystemet. Programmet hämtar resurserna från [!DNL Experience Manager]-servern och sparar samma kopia i det lokala filsystemet.
 
 Klicka på ![Fler alternativikoner](assets/do-not-localize/more2_da2.png) för alternativ och klicka på ![ikonen Hämta](assets/do-not-localize/download_cloud_da2.png) för att hämta.
 
@@ -109,7 +109,7 @@ Hämtning av flera resurser kan leda till sämre prestanda om köstorleken är s
 
 ![Appen bekräftar hämtning av ett relativt stort antal ](assets/download_confirmation_da2.png "resurserAppen bekräftar hämtning av ett relativt stort antal resurser")
 
-Om en eller flera mappar har valts och hämtats hämtar programmet bara resurser som lagras direkt i mappen/mapparna i Experience Manager. Det hämtar inte resurser från undermappar automatiskt.
+Om en eller flera mappar är markerade och hämtade hämtar programmet bara resurser som lagras direkt i mappen/mapparna i [!DNL Experience Manager]. Det hämtar inte resurser från undermappar automatiskt.
 
 ## Öppna resurser på skrivbordet {#openondesktop-v2}
 
@@ -132,19 +132,19 @@ I vissa fall, till exempel när du monterar en resurs i ett internt dokument, ka
 
 ![Visa filåtgärd för en ](assets/revealfile_action_da2.png "resursFunktionen Visa fil för en resurs")
 
-Klicka på **[!UICONTROL Reveal File]** eller **[!UICONTROL Reveal Folder]** i en mapp för att öppna Utforskaren i Windows eller Finder i Mac med filen eller mappen förmarkerad på den lokala datorn. Alternativet är användbart om du t.ex. vill montera Experience Manager-filer i de program där det finns stöd för montering eller länkning av lokala filer. Mer information om hur du monterar filer i Adobe InDesign finns i [Montera bilder](https://helpx.adobe.com/indesign/using/placing-graphics.html).
+Klicka på **[!UICONTROL Reveal File]** eller **[!UICONTROL Reveal Folder]** i en mapp för att öppna Utforskaren i Windows eller Finder i Mac med filen eller mappen förmarkerad på den lokala datorn. Alternativet är användbart för att t.ex. placera [!DNL Experience Manager]-filerna i de ursprungliga programmen som har stöd för montering eller länkning av lokala filer. Mer information om hur du monterar filer i Adobe InDesign finns i [Montera bilder](https://helpx.adobe.com/indesign/using/placing-graphics.html).
 
-Åtgärden **[!UICONTROL Reveal File]** öppnar en lokal nätverksresurs som endast visar resurser som är tillgängliga lokalt, det vill säga resurser som har visats, hämtats eller öppnats/redigerats med appen. Den lokala nätverksresursen överför inga ändringar till Experience Manager. Om du vill överföra ändringarna ska du explicit använda **[!UICONTROL Upload Changes]** eller **[!UICONTROL Upload]**-åtgärder i appen.
+Åtgärden **[!UICONTROL Reveal File]** öppnar en lokal nätverksresurs som endast visar resurser som är tillgängliga lokalt, det vill säga resurser som har visats, hämtats eller öppnats/redigerats med appen. Den lokala nätverksresursen överför inga ändringar till [!DNL Experience Manager]. Om du vill överföra ändringarna ska du explicit använda **[!UICONTROL Upload Changes]** eller **[!UICONTROL Upload]**-åtgärder i appen.
 
 >[!NOTE]
 >
->För bakåtkompatibilitet med Experience Manager-datorprogrammet v1.x hanteras de filer som visas från en lokal nätverksresurs, endast lokalt tillgängliga filer visas. Skrivbordssökvägarna för de visade filerna är samma som sökvägarna som skapas i programmet v1.x.
+>För bakåtkompatibilitet med [!DNL Experience Manager]-datorprogrammet v1.x hanteras de filer som visas från en lokal nätverksresurs, endast lokalt tillgängliga filer visas. Skrivbordssökvägarna för de visade filerna är samma som sökvägarna som skapas i programmet v1.x.
 
 >[!CAUTION]
 >
 >Använd inte alternativet **[!UICONTROL Reveal File]** för att redigera resurser i inbyggda program. Använd i stället **[!UICONTROL Edit]**-åtgärderna. Mer information finns i [Avancerat arbetsflöde: samarbeta med samma filer och undvika redigeringskonflikter](#adv-workflow-collaborate-avoid-conflicts).
 
-## Redigera resurser och överföra uppdaterade resurser till Experience Manager {#edit-assets-upload-updated-assets}
+## Redigera resurser och överför uppdaterade resurser till [!DNL Experience Manager] {#edit-assets-upload-updated-assets}
 
 Öppna resurser för redigering när du vill göra ändringar och överföra de uppdaterade resurserna till AEExperience ManagerEM-servern. Om du vill undvika konflikter med redigeringar av andra användare använder du programmet för att starta en redigeringssession. Innan du börjar redigera bör du kontrollera att resursen inte har någon låsikon, det vill säga att en annan användare inte redigerar resursen.
 
@@ -155,7 +155,7 @@ Använd **[!UICONTROL Toggle Check-out]** för att låsa resursen för att förh
 * Du har börjat redigera en resurs utan att först checka ut den (till exempel genom att öppna den).
 * Du har för avsikt att börja redigera en resurs inom kort och vill inte att andra ska kunna redigera den.
 
-När du är klar med redigeringarna visas statusen **[!UICONTROL Edited Locally]** för de ändrade resurserna. Alla ändringar som sparas i resurserna är bara lokala tills du överför ändringarna till Experience Manager. Om du vill överföra en enskild resurs eller ett fåtal resurser klickar du på **[!UICONTROL Upload Changes]** bland alternativen för en resurs. En version av resursen skapas i Experience Manager. Med webbgränssnittet för [!DNL Assets] kan du se resurshistorik i vyn [Tidslinje](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html).
+När du är klar med redigeringarna visas statusen **[!UICONTROL Edited Locally]** för de ändrade resurserna. Alla ändringar som sparas i resurserna är bara lokala tills du överför ändringarna till [!DNL Experience Manager]. Om du vill överföra en enskild resurs eller ett fåtal resurser klickar du på **[!UICONTROL Upload Changes]** bland alternativen för en resurs. En version av resursen skapas i [!DNL Experience Manager]. Med webbgränssnittet för [!DNL Assets] kan du se resurshistorik i vyn [Tidslinje](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html).
 
 ![Alternativet Överför ändringar i ](assets/upload_changes_single1_da2.png "appenÖverför ändringar i appen")
 
@@ -165,13 +165,13 @@ Bästa tillvägagångssätt för samverkansbaserad redigering finns i [Avancerat
 
 I följande fall kanske du vill ignorera dina ändringar och redigeringar av den lokala resursen. Klicka på **[!UICONTROL Discard Changes]**.
 
-* Om du inte vill spara dina lokala ändringar i Experience Manager.
+* Om du inte vill spara dina lokala ändringar i [!DNL Experience Manager].
 * Börja göra ändringar i den ursprungliga resursen när du har sparat några ändringar.
 * Sluta redigera resursen eftersom den inte längre behövs.
 
 Om det behövs kan du växla utcheckning. Den uppdaterade resursen tas bort från den lokala cachemappen och hämtas igen när du redigerar eller öppnar den.
 
-## Överför och lägg till nya resurser i Experience Manager {#upload-and-add-new-assets-to-aem}
+## Överför och lägg till nya resurser i [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
 Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering i [!DNL Experience Manager]-databasen. Om du vill lägga till nytt innehåll i [!DNL Experience Manager] väljer du ![alternativet ](assets/do-not-localize/upload_to_cloud_da2.png) i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Du kan också dra filerna eller mapparna i programgränssnittet. Programmet börjar överföra resursen. Om överföringen tar längre tid visas en förloppsindikator längst ned i programmet. Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista över tillåtna tecken på [skapa mappar i [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
 
@@ -192,7 +192,7 @@ Du kan styra samtidighet för överföring (acceleration) i **[!UICONTROL Prefer
 
 >[!NOTE]
 >
->Om filerna inte kan överföras och du ansluter till Experience Manager 6.5.1 eller senare ska du läsa denna [felsökningsinformation](troubleshoot.md#upload-fails).
+>Om filerna inte kan överföras och om du ansluter till [!DNL Experience Manager] 6.5.1 eller senare ska du läsa denna [felsökningsinformation](troubleshoot.md#upload-fails).
 
 ## Arbeta med flera resurser {#work-with-multiple-assets}
 
@@ -220,23 +220,23 @@ Programmet tillhandahåller en vy med namnet **[!UICONTROL Edited locally]** som
 
 ### Överför resurser gruppvis {#bulk-upload-assets}
 
-Användare eller organisation, t.ex. fotografer och byråer, kan skapa olika lokala resurser i scenarier som fotografering, retuschering eller urval från större scener som gjorts utanför Experience Manager. De kan överföra de här stora lokala mapparna till [!DNL Assets] direkt från skrivbordsappen. Mapphierarkierna bevaras och alla kapslade undermappar och inkluderade resurser överförs. De överförda resurserna är omedelbart tillgängliga för andra användare på samma server för användning. Resurser överförs i bakgrunden, så åtgärden är inte kopplad till en webbläsarsession.
+Användare eller organisation, t.ex. fotografer eller byråer, kan skapa olika lokala resurser i scenarier som fotografering, retuschering eller urval från en större uppsättning som gjorts utanför [!DNL Experience Manager]. De kan överföra de här stora lokala mapparna till [!DNL Assets] direkt från skrivbordsappen. Mapphierarkierna bevaras och alla kapslade undermappar och inkluderade resurser överförs. De överförda resurserna är omedelbart tillgängliga för andra användare på samma server för användning. Resurser överförs i bakgrunden, så åtgärden är inte kopplad till en webbläsarsession.
 
-![Ladda upp flera lokala mappar från skrivbordet i Experience ](assets/upload_local_folders_da2.png "Manager gruppvis Överför flera lokala mappar från skrivbordet till Experience Manager")
+![Ladda upp flera lokala mappar från skrivbordet i  [!DNL Experience Manager]](assets/upload_local_folders_da2.png "grupp Överför flera lokala mappar från skrivbordet till Experience Manager")
 
 Om de förväntade ändringarna inte visas i programmet när du har överfört dem klickar du på ikonen Uppdatera ![Uppdatera](assets/do-not-localize/refresh.png).
 
 >[!NOTE]
 >
->Använd inte överföringsfunktionalitet för att migrera resurser över två Experience Manager-distributioner. Se i stället [migreringsguiden](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html).
+>Använd inte överföringsfunktionalitet för att migrera resurser över två [!DNL Experience Manager]-distributioner. Se i stället [migreringsguiden](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html).
 
 ### Lista över överförda tillgångar {#list-of-transferred-assets}
 
-Se [Överför resurser till Experience Manager](#upload-and-add-new-assets-to-aem) om du vill visa en lista över resurser som överförts under en given session.
+Om du vill visa en lista över resurser som överförts under en given session läser du i [Överför resurser till [!DNL Experience Manager]](#upload-and-add-new-assets-to-aem).
 
 ## Avancerat arbetsflöde: starta från webbgränssnittet [!DNL Assets] {#adv-workflow-start-from-aem-ui}
 
-Om det behövs startar du arbetsflödet från webbgränssnittet Resurser. Skrivbordsappen integreras med Experience Manager för att ta över när det efterfrågas med skrivbordsåtgärder.
+Om det behövs startar du arbetsflödet från webbgränssnittet Resurser. Skrivbordsappen integreras med [!DNL Experience Manager] för att ta över när det efterfrågas med Skrivbordsåtgärder.
 
 Ett särskilt exempel på hur du startar arbetsflödet från webbgränssnittet är tillgångsidentifiering. Omnissearch bar in Assets-användargränssnittet ger en omfattande och avancerad sökfunktion. Du kanske först vill hitta en resurs på webben och sedan starta arbetsflödet i programmet med [!UICONTROL Desktop Actions]. I vissa exempelfall kan du filtrera sökresultat med hjälp av ansikten, hitta en specifik resurs som licensierats från Adobe Stock eller anpassa den som implementerats av din organisation så att du kan identifiera den bättre i webbgränssnittet.
 
@@ -248,17 +248,17 @@ Funktionen för skrivbordsprogram används när du försöker utföra följande 
 
 De åtgärder på webbgränssnittet som är tillgängliga för en resurs som är utcheckad i programmet är till exempel [!UICONTROL Open], [!UICONTROL Reveal] och [!UICONTROL Check-in].
 
-![Skrivbordsåtgärder i webbgränssnittet i Experience Manager](assets/assets_web_actions_da2.png "Skrivbordsåtgärder i webbgränssnittet i Experience Manager")
+![Skrivbordsåtgärder i  [!DNL Experience Manager] webbgränssnittet](assets/assets_web_actions_da2.png "Skrivbordsåtgärder i Experience Manager webbgränssnitt")
 
 >[!NOTE]
 >
->Webbläsaren kan uppmana dig att tillåta att Adobe Experience Manager Desktop startas. Om du vill att appen ska kunna överföras utan avbrott från webbläsaren till appen markerar du kryssrutan så att appen alltid kan ta över.
+>Webbläsaren kan uppmana dig att tillåta att du startar skrivbordet [!DNL Adobe Experience Manager]. Om du vill att appen ska kunna överföras utan avbrott från webbläsaren till appen markerar du kryssrutan så att appen alltid kan ta över.
 
 Du kan inte hitta följande information eller arbetsflöde med webbgränssnittet. Använd skrivbordsappen eftersom webbgränssnittet inte kan spåra lokala ändringar och inte känner till följande:
 
 * Filer redigerade lokalt.
 * Filer som har en redigeringskonflikt och ett sätt att lösa den.
-* Överför lokala ändringar till Experience Manager.
+* Överför lokala ändringar till [!DNL Experience Manager].
 * Olika statusvärden för de lokalt tillgängliga filerna.
 
 Du kan tvärtom öppna resursen i webbgränssnittet från skrivbordsappen med åtgärden **[!UICONTROL Open In Web]**.
@@ -275,7 +275,7 @@ I samarbetsmiljöer kan flera användare arbeta med samma uppsättning resurser,
 
 ![Status för redigeringskonflikterStatus för ](assets/edits_conflicts_status_da2.png "redigeringskonflikter")
 
-Om en lokalt hämtad resurs uppdateras på Experience Manager-servern visas statusen **[!UICONTROL Modified remotely]** i appen. Du kan antingen ta bort din lokala kopia eller uppdatera den lokala kopian genom att klicka på [!UICONTROL Remove] eller [!UICONTROL Update]. Med länkar i dialogrutan kan du visa båda versionerna av resursen.
+Om en lokalt nedladdad resurs uppdateras på [!DNL Experience Manager]-servern visar programmet statusen **[!UICONTROL Modified remotely]**. Du kan antingen ta bort din lokala kopia eller uppdatera den lokala kopian genom att klicka på [!UICONTROL Remove] eller [!UICONTROL Update]. Med länkar i dialogrutan kan du visa båda versionerna av resursen.
 
 ![Alternativ för att lösa konflikten när resursen ](assets/modified_remotely_dialog_da2.png "ändras på fjärrbasisAlternativ för att lösa konflikten när resursen ändras på fjärrbasis")
 
@@ -285,9 +285,9 @@ Om en resurs som du redigerar lokalt också uppdateras på servern utan att du v
 
 ## Avancerat arbetsflöde: placera och länka resurser i InDesign-filen {#adv-workflow-place-assets-indesign}
 
-När du använder datorprogrammet Experience Manager för att öppna filer med länkade resurser hämtas resurserna i förväg och visas i de ursprungliga programmen. För att det här arbetsflödet ska fungera måste ditt inbyggda program ha stöd för placering av länkar till lokala resurser, och Experience Manager måste ha stöd för att lösa länkarna i de binära filerna till serversidans referenser.
+När du använder [!DNL Experience Manager]-datorprogrammet för att öppna filer med länkade resurser hämtas resurserna i förväg och visas i de ursprungliga programmen. För att det här arbetsflödet ska fungera måste ditt inbyggda program ha stöd för att placera länkar till lokala resurser och [!DNL Experience Manager] måste ha stöd för att lösa länkarna i de binära filerna till serversidans referenser.
 
-Skrivbordsappen Experience Manager har stöd för det här arbetsflödet med några utvalda Adobe Creative Cloud-program och -filformat - Adobe InDesign, Adobe Illustrator och Adobe Photoshop. Med arbetsflödet kan du arbeta effektivt med de Creative Cloud-filer som stöds. Om användare A placerar ett fåtal resurser i en InDesign-fil och checkar in dem i Experience Manager, ser användare B resurserna i InDesign-filen även om resurserna inte är en del av filen. Resurserna hämtas lokalt till dator med användare B.
+[!DNL Experience Manager] skrivbordsappen har stöd för det här arbetsflödet med några utvalda Adobe Creative Cloud-program och -filformat - Adobe InDesign, Adobe Illustrator och Adobe Photoshop. Med arbetsflödet kan du arbeta effektivt med de Creative Cloud-filer som stöds. Om användare A placerar några resurser i en InDesign-fil och checkar in dem i [!DNL Experience Manager] ser användare B resurserna i InDesign-filen även om resurserna inte är en del av filen. Resurserna hämtas lokalt till dator med användare B.
 
 >[!NOTE]
 >
@@ -297,16 +297,16 @@ Mer information om begränsningarna i det här arbetsflödet finns i [Systemkrav
 
 Så här provar du arbetsflödet med en bildresurs och InDesign:
 
-1. Håll en INDD-fil med monterade resurser i Experience Manager till hands. Mer information om hur du skapar en sådan INDD-fil finns i [Placera grafik](https://helpx.adobe.com/indesign/using/placing-graphics.html).
-1. I skrivbordsappen **[!UICONTROL Edit]** den INDD-fil som innehåller monterade resurser i Experience Manager.
+1. Håll en INDD-fil med monterade resurser i [!DNL Experience Manager] användbar. Mer information om hur du skapar en sådan INDD-fil finns i [Placera grafik](https://helpx.adobe.com/indesign/using/placing-graphics.html).
+1. I skrivbordsappen **[!UICONTROL Edit]** den INDD-fil som innehåller placerade resurser i [!DNL Experience Manager].
 1. Programmet hämtar båda, InDesign-filen och de länkade resurserna. När InDesign öppnar dokumentet är länkarna lösta, resurserna hämtas och resurserna visas i dokumentet InDesign.
 1. Om du vill montera en ny bild i InDesign-filen använder du åtgärden **[!UICONTROL Reveal File]** för resursen. Åtgärden hämtar resursen lokalt och öppnar den lokala nätverksresursplatsen i Utforskaren i Windows eller Finder i Mac.
 1. Placera den visade resursen i InDesign-dokumentet. Då skapas en länk i dokumentet.
-1. När du är klar med redigeringarna i InDesign-dokumentet sparar du det och överför det till Experience Manager med datorprogrammet.
+1. När du är klar med redigeringarna i InDesign-dokumentet sparar du det och överför det till [!DNL Experience Manager] med skrivbordsappen.
 
 ## Avancerat arbetsflöde: hämta resurserna lokalt {#adv-workflow-download-assets-locally}
 
-I många scenarier hämtas resurserna från Experience Manager-servern lokalt till filsystemet. Nedladdningarna förbrukar bandbredd och diskutrymme. Genom att känna till scenarierna kan du optimera väntetiden för nedladdningen.
+I många scenarier hämtas resurserna från [!DNL Experience Manager]-servern lokalt till filsystemet. Nedladdningarna förbrukar bandbredd och diskutrymme. Genom att känna till scenarierna kan du optimera väntetiden för nedladdningen.
 
 Du hämtar resurserna inifrån appen on-demand. Se [Hämta resurser](#download-assets).
 
@@ -314,6 +314,6 @@ När du använder åtgärden [!UICONTROL Open] för att öppna en resurs i ett s
 
 När du visar platsen för en resurs eller en mapp inifrån programmet hämtas resursen eller mappen först lokalt och öppnas sedan på datorn i den lokala nätverksresursen. Se [Öppna resurser](#openondesktop-v2).
 
-När du använder åtgärden [!UICONTROL Edit] för att redigera en resurs i ett systemspecifikt skrivbordsprogram hämtas resursen lokalt, om den inte redan är tillgänglig lokalt. Se [Redigera resurser och överföra uppdaterade resurser till Experience Manager](#edit-assets-upload-updated-assets).
+När du använder åtgärden [!UICONTROL Edit] för att redigera en resurs i ett systemspecifikt skrivbordsprogram hämtas resursen lokalt, om den inte redan är tillgänglig lokalt. Se [Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager]](#edit-assets-upload-updated-assets).
 
-Om programmet är installerat och tillåts att göra det, slutförs åtgärderna när du använder [!UICONTROL Desktop Actions] från Experience Manager webbgränssnitt. Programmet hämtar resursen först och slutför sedan åtgärden.
+Om programmet är installerat och tillåts att göra det, slutförs åtgärderna när du använder [!UICONTROL Desktop Actions] från [!DNL Experience Manager]-webbgränssnittet. Programmet hämtar resursen först och slutför sedan åtgärden.
