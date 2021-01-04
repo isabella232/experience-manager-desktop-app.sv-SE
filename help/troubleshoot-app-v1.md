@@ -1,27 +1,20 @@
 ---
-title: Felsök AEM version 1.x
-description: Felsök AEM version 1.x av skrivbordsappen för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
+title: Felsök [!DNL Adobe Experience Manager] datorprogrammet version 1.x
+description: Felsök [!DNL Adobe Experience Manager] datorprogramversion 1.x för att lösa enstaka problem i samband med installation, uppgradering och konfiguration.
 translation-type: tm+mt
-source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3366'
 ht-degree: 0%
 
 ---
 
 
-# Felsök AEM datorprogram v1.x {#troubleshoot-aem-desktop-app}
+# Felsök [!DNL Adobe Experience Manager]-skrivbordsappen v1.x {#troubleshoot-aem-desktop-app}
 
 Felsök AEM datorprogram för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 
-Adobe Experience Manager (AEM) innehåller verktyg som du kan använda för att mappa AEM Assets-databasen till en nätverksresurs på en stationär dator (SMB-resurs på Mac OS). Nätverksresursen är en operativsystemsteknik som gör att fjärrkällor kan hanteras som om de var en del av en dators lokala filsystem. När det gäller skrivbordsprogram är AEM DAM-databasstrukturen (Digital Asset Management) avsedd som fjärrfilskälla. I följande diagram beskrivs skrivbordsappens topologi:
+[!DNL Adobe Experience Manager] skrivbordsappen innehåller verktyg som hjälper dig att mappa AEM Assets-databasen som en nätverksresurs på skrivbordet (SMB-resurs på Mac OS). Nätverksresursen är en operativsystemsteknik som gör att fjärrkällor kan hanteras som om de var en del av en dators lokala filsystem. När det gäller skrivbordsprogram är AEM DAM-databasstrukturen (Digital Asset Management) avsedd som fjärrfilskälla. I följande diagram beskrivs skrivbordsappens topologi:
 
 ![skrivbordsappsdiagram](assets/aem-desktopapp-architecture.png)
 
@@ -70,7 +63,7 @@ AEM Desktop lämpar sig inte för intensiv bearbetning av filsystem, inklusive, 
 
 På grund av begränsningar i operativsystemet har Windows en filstorleksbegränsning på 4 294 967 295 byte (cirka 4,29 GB). Det beror på en registerinställning som definierar hur stor en fil på en nätverksresurs kan vara. Registerinställningens värde är ett DWORD med en maximal storlek som är lika med det refererade talet.
 
-Skrivbordsappen Experience Manager har inget konfigurerbart timeout-värde som kopplar från anslutningen mellan Experience Manager-servern och skrivbordsappen efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
+[!DNL Experience Manager] skrivbordsappen har inget konfigurerbart timeout-värde som kopplar från anslutningen mellan  [!DNL Experience Manager] servern och skrivbordsappen efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
 
 ## Cachelagring och kommunikation med AEM {#caching-and-communication-with-aem}
 
