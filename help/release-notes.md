@@ -1,36 +1,29 @@
 ---
-title: Versionsinformation för Adobe Experience Manager-datorprogram
-description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och nedladdningslänkar för Adobe Experience Manager-datorprogrammet.
-uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
-index: y
-internal: n
-snippet: y
+title: '[!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp'
+description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och hämtningslänkar för [!DNL Adobe Experience Manager] datorprogrammet.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 41625c59df00b82ceda8a566b35341bc51c2a30f
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1346'
 ht-degree: 0%
 
 ---
 
 
-# Versionsinformation för Adobe Experience Manager-datorprogrammet {#release-notes-v2}
+# [!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp  {#release-notes-v2}
 
-| Produkter | Adobe Experience Manager-datorprogram |
+| Produkter | [!DNL Adobe Experience Manager] datorprogram |
 |--- |--- |
 | Programversion (revision) | 2.1 (2.1.0.0) |
 | [!DNL Adobe Experience Manager]-versioner som stöds | [!DNL Experience Manager] som en  [!DNL Cloud Service];  [!DNL Experience Manager] 6.5;  [!DNL Experience Manager] 6.4;  [!DNL Experience Manager] 6.3 (med kompatibilitetspaket) |
 | Typ | Mindre release |
-| Releasedatum | 27 aug 2020 (Mac och Win) |
+| Releasedatum | 17 dec 2020 (Mac och Win) |
 | Hämta URL:er | [macOS 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg);  [Windows 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe);  [Windows 32-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
 
 ## Systemkrav och krav {#system-requirements-and-prerequisites-v2}
 
-Adobe Experience Manager-datorprogrammet är kompatibelt med följande operativsystem:
+[!DNL Adobe Experience Manager] skrivbordsappen är kompatibel med följande operativsystem:
 
 * Mac OS X 10.14 eller senare, med de senaste felkorrigeringarna.
 
@@ -40,7 +33,7 @@ Adobe Experience Manager-datorprogrammet är kompatibelt med följande operativs
 >
 >Windows 7 stöds inte längre av leverantören (https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
 
-Appen fungerar med följande Experience Manager-versioner, oavsett om de distribueras som en Cloud Service, på Adobe Managed Services (AMS) eller på plats:
+Appen fungerar med följande [!DNL Experience Manager]-versioner, oavsett om de distribueras som [!DNL Cloud Service], på Adobe Managed Services (AMS) eller lokalt:
 
 * [[!DNL Experience Manager] som en [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
 
@@ -53,29 +46,29 @@ Appen fungerar med följande Experience Manager-versioner, oavsett om de distrib
 >[!NOTE]
 >
 >Stöd för datorprogram för [!DNL Experience Manager] 6.3 är föråldrat. Adobe rekommenderar att du uppgraderar till en nyare version som stöds i [!DNL Adobe Experience Manager].
->[!DNL Experience Manager] 6.3.3.1 eller senare fungerar med skrivbordsappen efter installation av [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). Inget sådant paket är tillgängligt för Experience Manager 6.3 eftersom inga [servicepaket är planerade](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+>[!DNL Experience Manager] 6.3.3.1 eller senare fungerar med skrivbordsappen efter installation av [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). Inget sådant paket är tillgängligt för [!DNL Experience Manager] 6.3 eftersom inga [servicepaket är planerade](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
 
-Den version av programmet som du tänker installera på den lokala datorn kräver en specifik version av Adobe Experience Manager eller ytterligare komponenter på serversidan (Service Pack, hot fixes eller feature packs). Kontakta Adobe Experience Manager-administratören om du behöver hjälp.
+Den version av programmet som du tänker installera på den lokala datorn kräver en specifik [!DNL Adobe Experience Manager] serverversion/ytterligare serverkomponenter (Service Pack, hot fixes eller funktionspaket). Kontakta din [!DNL Experience Manager]-administratör om du behöver hjälp.
 
 ### Stöd för olika resurser och filtyper {#support-for-file-types}
 
-Programmet har stöd för resurser som lagras i Adobe Experience Manager och som representerar binära filer för de grundläggande åtgärderna. När du öppnar filer i det inbyggda skrivbordsprogrammet måste operativsystemet associera specifika filtyper som PNG eller JPG med specifika program som Mac Preview eller Adobe Photoshop.
+Programmet stöder resurser som lagras i [!DNL Experience Manager] som representerar binära filer för de grundläggande åtgärderna. När du öppnar filer i det inbyggda skrivbordsprogrammet måste operativsystemet associera specifika filtyper som PNG eller JPG med specifika program som Mac Preview eller Adobe Photoshop.
 
-Några filtyper har stöd för att placera länkade resurser i binärfilen. Programmet hämtar de länkade resurserna i förväg om resursen finns i Experience Manager-databasen när sådana binära filer öppnas med skrivbordsappen. Filtyper som stöds för närvarande är:
+Några filtyper har stöd för att placera länkade resurser i binärfilen. Programmet hämtar de länkade resurserna i förväg om resursen finns i [!DNL Experience Manager]-databasen när sådana binära filer öppnas med skrivbordsappen. Filtyper som stöds för närvarande är:
 
 * [!DNL Adobe InDesign] filer (INDD-format)
 * [!DNL Adobe Illustrator] filer (AI-format)
 * [!DNL Adobe Photoshop] filer (PS-format)
 
-Funktionen stöds i Adobe Creative Cloud 2018- och Adobe Creative Cloud 2019-versionerna av ovanstående program. Appen använder en heuristisk, bäst matchande metod för att mappa lokala skrivbordssökvägar för länkade resurser till URL:er på Experience Manager-servern. Den bygger på några antaganden:
+Funktionen stöds i versionerna [!DNL Adobe Creative Cloud] 2018 och [!DNL Adobe Creative Cloud] 2019 av ovanstående program. Appen använder en heuristisk, bäst matchande metod för att mappa de lokala skrivbordssökvägarna för länkade resurser till URL:er på [!DNL Experience Manager]-servern. Den bygger på några antaganden:
 
 * Sökvägar till monterade filer i det ursprungliga programmet använder en global skrivbordssökväg (placerad från den lokala nätverksresursen som visas med alternativet [!UICONTROL Reveal]).
 
 * Sökvägar lagras i filens XMP-post av det ursprungliga programmet.
 
-* Experience Manager har extraherat XMP med sökvägarna till resursens metadatapost.
+* [!DNL Experience Manager] har extraherat XMP med sökvägarna till resursens metadatapost.
 
-* Sökvägarna kan matchas mot resurser i Experience Manager, det vill säga de monterade filerna finns också i Experience Manager under en matchande sökväg.
+* Sökvägarna kan matchas mot resurser i [!DNL Experience Manager], d.v.s. de monterade filerna finns också i [!DNL Experience Manager] under en matchande sökväg.
 
 ## Nya funktioner och förbättringar {#whats-new-added}
 
@@ -111,27 +104,27 @@ Felkorrigeringarna och uppdateringarna är:
 
 * Tillåt alternativet att konfigurera katalogen `%Temp%` så att den matchar sökvägen `%APPDATA%`. <!-- CQ-4282665 -->
 
-* Tillåt användare att logga in på Experience Manager Author via Okta SAML-autentisering. <!-- CQ-4278134 -->
+* Tillåt användare att logga in på [!DNL Experience Manager] Author via Okta SAML-autentisering. <!-- CQ-4278134 -->
 
 ## Installationsanvisningar {#installation-instructions-v2}
 
-Mer information om hur du installerar och konfigurerar programmet finns i [Installera Experience Manager-datorprogrammet](install-upgrade.md).
+Mer information om hur du installerar och konfigurerar programmet finns i [Installera [!DNL Experience Manager] datorprogrammet](install-upgrade.md).
 
-Om du uppgraderar från ett tidigare Experience Manager-program måste du följa de bästa metoderna för övergångar som anges i [uppgraderingen från en tidigare version](install-upgrade.md#upgrade-from-previous-version).
+Om du uppgraderar från ett tidigare [!DNL Experience Manager]-skrivbordsprogram måste du följa de bästa metoderna för övergångar som listas i [uppgraderingen från en tidigare version](install-upgrade.md#upgrade-from-previous-version).
 
 ## Viktiga anteckningar om hur appen fungerar {#how-app-works}
 
 Det är viktigt att du förstår följande om programmet och hur det fungerar.
 
-* Programmet ger fullständig kontroll över åtgärder som kräver fullständig överföring av resurbinärfiler från och till Experience Manager (öppna, redigera, överföra ändringar och överföra resurser).
+* Programmet ger fullständig kontroll över åtgärder som kräver fullständig överföring av resurbinärfiler från och till [!DNL Experience Manager] (öppna, redigera, överföra ändringar och överföra resurser).
 
    * Om du vill arbeta med resursen på skrivbordet måste du uttryckligen öppna, redigera eller hämta till skrivbordet, antingen individuellt, i en mapp eller genom att markera flera.
 
-   * Om du vill få lokala ändringar av resurser överförda till Experience Manager måste du välja [!UICONTROL Upload Changes], antingen individuellt eller via flerval.
+   * Om du vill få lokala ändringar av resurser överförda till [!DNL Experience Manager] måste du välja [!UICONTROL Upload Changes], antingen individuellt eller via flerval.
 
-   * Programmet är inte en synkroniseringsklient som synkroniserar resurser på skrivbordet och Experience Manager.
+   * Programmet är inte en synkroniseringsklient som synkroniserar resurser på skrivbordet och [!DNL Experience Manager].
 
-   * Programmet tillhandahåller inte någon nätverksresurs som mappar Experience Manager-databasen som en virtuell mappstruktur.
+   * Programmet tillhandahåller inte någon nätverksresurs som mappar databasen [!DNL Experience Manager] som en virtuell mappstruktur.
 
 * Den lista över resurser som visas av programmet baseras på statusen för resurskatalogen. Filer som laddas ned lokalt och som sedan byter namn i de lokala filerna eller cachemappen visas eller hanteras inte av programmet.
 
@@ -143,7 +136,7 @@ Det är viktigt att du förstår följande om programmet och hur det fungerar.
 
 I följande diagram visas flödet av resurser och filer från molnet till det lokala filsystemet och vice versa, vilket initierats av användaråtgärder.
 
-![Flöde för resurser från Experience Manager-server till datorprogram via skrivbordsapp](assets/da20_flow_diagram.png)
+![Flöde för resurser från  [!DNL Experience Manager] server till datorprogram via skrivbordsapp](assets/da20_flow_diagram.png)
 
 ## Kända fel {#known-issues-v2}
 
@@ -157,13 +150,13 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 * När du har tillämpat och tagit bort filtret för att hitta alla lokalt redigerade resurser tar programmet inte användarna till sökresultaten eller mappvyn som användarna började med. Appen visar rotmappen för DAM-databasen.
 
-* Ibland slutar anslutningsskärmen att svara när du ansluter till en URL som inte har en Experience Manager-server igång. Avsluta programmet och starta det igen.
+* När du ansluter till en URL som inte har [!DNL Experience Manager]-server igång, svarar inte anslutningsskärmen. Avsluta programmet och starta det igen.
 
 **CRUD-problem (Skapa, Läs, Uppdatera och Ta bort):**
 
 * Programmet försöker ladda upp filer även med ogiltiga tecken, vilket kan orsaka överföringsfel på serversidan. <!-- CQ-4273652 -->
 
-* När du överför ändringar till en resurs med kommentarer lagras kommentarerna tillsammans med resursen i Experience Manager, men de visas inte som versionskommentarer. Problemet är löst i Experience Manager 6.4.5 och Experience Manager 6.5.1. Adobe rekommenderar starkt att du installerar de senaste servicepaketen. <!-- CQ-4268990 -->
+* När du överför ändringar till en resurs med kommentarer lagras kommentarerna med resursen i [!DNL Experience Manager], men de visas inte som versionskommentarer. Problemet åtgärdas i [!DNL Experience Manager] 6.4.5 och [!DNL Experience Manager] 6.5.1. Adobe rekommenderar att du installerar de senaste Service Pack-uppdateringarna. <!-- CQ-4268990 -->
 
 * Resursöverföringar kan inte avbrytas av användaren. Om du utlöste en oavsiktlig stor överföring avslutar du programmet och startar det igen. <!-- CQ-4278940 -->
 
@@ -173,9 +166,9 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager som Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
->* [Experience Manager som Cloud Service Assets-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
->* [Så här använder du datorprogrammet Experience Manager](using.md)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
+>* [Använda  [!DNL Experience Manager] datorprogrammet](using.md)
 >* [Installera och uppgradera datorprogrammet](install-upgrade.md)
 >* [Bästa praxis och felsökningstips](troubleshoot.md)
 
