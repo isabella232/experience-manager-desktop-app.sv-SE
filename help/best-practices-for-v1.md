@@ -1,10 +1,10 @@
 ---
-title: AEM praxis för datorprogram version 1.x
-description: Viktiga funktioner och rekommenderad användning av Adobe Experience Manager program version 1.x.
+title: '[!DNL Adobe Experience Manager] bästa praxis för datorprogram version 1.x'
+description: Viktiga funktioner och rekommenderad användning av [!DNL Adobe Experience Manager] datorprogrammet version 1.x.
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Översikt {#overview}
 
-Adobe Experience Manager (AEM)-datorprogrammet länkar din DAM-lösning (Digital Asset Management) till skrivbordet så att du kan öppna de filer som finns i det AEM webbgränssnittet direkt på skrivbordet. Om du sparar en resurs från skrivbordet överförs den till AEM på lämplig plats.
+[!DNL Adobe Experience Manager] datorprogrammet länkar din DAM-lösning (Digital Asset Management) till skrivbordet så att du kan öppna de filer som finns i AEM webbgränssnitt direkt på skrivbordet. Om du sparar en resurs från skrivbordet överförs den till AEM på lämplig plats.
 
 AEM program eliminerar risken att du uppdaterar felaktiga lokala kopior eller uppdaterar fel resurs i AEM. datorappens lättanvända arbetsflöde aktiveras med hjälp av nätverksdelningsteknik som finns i operativsystemen.
 
