@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp'
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och hämtningslänkar för [!DNL Adobe Experience Manager] datorprogrammet.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: b5292d9386432bd7c6ba5d7117dbc9fd9f014941
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 0%
 | [!DNL Adobe Experience Manager]-versioner som stöds | [!DNL Experience Manager] som en  [!DNL Cloud Service];  [!DNL Experience Manager] 6.5;  [!DNL Experience Manager] 6.4;  [!DNL Experience Manager] 6.3 (med kompatibilitetspaket) |
 | Typ | Mindre release |
 | Releasedatum | 17 dec 2020 (Mac och Win) |
-| Hämta URL:er | [macOS 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg);  [Windows 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe);  [Windows 32-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
+| Hämta URL:er för AEM 6.x | [macOS 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg);  [Windows 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe);  [Windows 32-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
+| Hämta URL:er för AEM som en [!DNL Cloud Service] | [macOS 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg);  [Windows 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe);  [Windows 32-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
 
 ## Systemkrav och krav {#system-requirements-and-prerequisites-v2}
 
