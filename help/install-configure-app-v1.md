@@ -1,16 +1,16 @@
 ---
-title: Installera och konfigurera [!DNL Experience Manager] datorprogramversion 1.x
-description: Installera och konfigurera [!DNL Experience Manager] desktop app version 1.x to work with [!DNL Assets] servrar och mappa resurserna som ska monteras som en enhet på skrivbordet.
+title: Installera och konfigurera datorprogrammet v1.10
+description: Installera och konfigurera [!DNL Experience Manager] desktop app version 1.10 to work with [!DNL Assets] servrar och mappa resurserna som ska monteras som en enhet på skrivbordet.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
 
 
-# Installera och konfigurera [!DNL Experience Manager]-datorprogrammet v1.x {#install-and-configure-aem-desktop-app}
+# Installera och konfigurera [!DNL Experience Manager]-datorprogrammet v1.10 {#install-and-configure-aem-desktop-app}
 
 Med [!DNL Experience Manager]-datorprogrammet är resurserna i [!DNL Experience Manager] enkelt tillgängliga på ditt lokala skrivbord och kan användas i alla skrivbordsprogram. Resurser kan enkelt visas i Finder eller Utforskaren i Windows, öppnas i skrivbordsprogram och ändras lokalt. Ändringarna sparas sedan i [!DNL Experience Manager] när du överför och en ny version skapas i databasen.
 
