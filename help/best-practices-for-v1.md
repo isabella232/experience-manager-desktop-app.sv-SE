@@ -1,16 +1,16 @@
 ---
-title: '[!DNL Adobe Experience Manager] bästa praxis för datorprogram version 1.x'
-description: Viktiga funktioner och rekommenderad användning av [!DNL Adobe Experience Manager] datorprogrammet version 1.x.
+title: Bästa praxis för datorprogram v1.10
+description: Viktiga funktioner och rekommenderad användning av [!DNL Adobe Experience Manager] datorprogrammet version 1.10.
 translation-type: tm+mt
-source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1674'
 ht-degree: 0%
 
 ---
 
 
-# AEM praxis för datorprogram v1.x {#aem-desktop-app-best-practices}
+# AEM v1.10 bästa praxis {#aem-desktop-app-best-practices}
 
 ## Översikt {#overview}
 
@@ -62,7 +62,7 @@ Viktiga funktioner i AEM program:
 
 * Behandla inte AEM datorprogram som en&quot;datorsynkroniseringsklient&quot; för AEM Assets. Den största fördelen med AEM datorprogram här är att det ger&quot;virtuell&quot; åtkomst till hela databasen, och program för datorsynkronisering synkroniserar vanligtvis bara resurser som tillhör en användare. AEM datorprogram erbjuder viss nivå av cachelagring och bakgrundsuppladdning. fungerar det fortfarande på ett helt annat sätt än vanliga&quot;Synkroniseringsprogram&quot;, till exempel Adobe Creative Cloud-datorprogram eller Microsoft OneDrive.
 
-* Använd inte nätverksenheter AEM skrivbordsappen för att spara resurser ofta. Alla sparåtgärder överförs till AEM Assets. Därför är det opraktiskt att utföra intensiva redigeringsåtgärder direkt i den monterade AEM Assets-databasen. När du redigerar en resurs direkt i den monterade databasen krymper resursens tidslinje med irrelevanta versioner och lägger till ytterligare omkostnader på servern.
+* Använd inte AEM nätverksenheter för skrivbordsappar för att spara resurser ofta. Alla sparåtgärder överförs till AEM Assets. Därför är det opraktiskt att utföra intensiva redigeringsåtgärder direkt i den monterade AEM Assets-databasen. När du redigerar en resurs direkt i den monterade databasen krymper resursens tidslinje med irrelevanta versioner och lägger till ytterligare omkostnader på servern.
 
 * Använd inte AEM datorprogram för att migrera stora mängder data från en AEM till en annan. Se [Migreringshandboken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html) för att planera och köra resursmigreringar. Datorprogrammet [stöder däremot massöverföring](use-app-v1.md#bulkupload) av ett stort antal resurser för första gången i [!DNL Adobe Experience Manager].
 
