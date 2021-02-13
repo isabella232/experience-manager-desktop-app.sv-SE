@@ -1,16 +1,16 @@
 ---
-title: Versionsinformation AEM datorprogrammet för version 1.x
-description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och nedladdningslänkar för AEM program version 1.x.
+title: Versionsinformation om datorprogrammet v1.10
+description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och nedladdningslänkar för AEM program version 1.10.
 translation-type: tm+mt
-source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '3904'
+source-wordcount: '3901'
 ht-degree: 0%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] versionsinformation för datorprogram v1.x  {#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] versionsinformation för datorprogram v1.10  {#aem-desktop-app-release-notes}
 
 För datorprogram v1.x är följande hämtningslänkar och AEM kompatibilitetsinformation.
 
@@ -44,7 +44,7 @@ Den version av AEM program du tänker installera på den lokala datorn kräver e
 
 Se [den detaljerade kompatibilitetsmatrisen](#compatibilitymatrix) i slutet av det här dokumentet för att utvärdera kraven för din konfiguration.
 
-## Nyheter i AEM program 1.10 {#what-s-new-in-aem-desktop-app}
+## Nyheter i datorprogrammet v1.10 {#what-s-new-in-aem-desktop-app}
 
 AEM datorprogram 1.10 fokuserar på att förbättra användarupplevelsen kring stora överföringar, information om bakgrundsåtgärder och optimerad upplevelse när resurser öppnas med länkade filer (som InDesign).
 
