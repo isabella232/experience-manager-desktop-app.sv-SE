@@ -1,10 +1,10 @@
 ---
-title: Felsök [!DNL Adobe Experience Manager] datorprogrammet version 1.x
-description: Felsök [!DNL Adobe Experience Manager] datorprogramversion 1.x för att lösa enstaka problem i samband med installation, uppgradering och konfiguration.
+title: Felsök skrivbordsappens version 1.10.
+description: Felsök [!DNL Adobe Experience Manager] datorprogramversion 1.10 för att lösa enstaka problem i samband med installation, uppgradering och konfiguration.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3364'
 ht-degree: 0%
 
 ---
