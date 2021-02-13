@@ -1,10 +1,10 @@
 ---
-title: Introduktion till [!DNL Adobe Experience Manager] datorprogrammet
+title: Introduktion till [!DNL Experience Manager] datorprogrammet
 description: Lär dig hur du använder [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] direkt från skrivbordet.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Tack vare en sådan integrering kan olika roller i organisationen hantera resurs
 
 >[!NOTE]
 >
->[!DNL Adobe Experience Manager] skrivbordsappen introducerades i version  [!DNL Adobe Experience Manager] 6.1 och kallades tidigare för  [!DNL Adobe Experience Manager Assets] tillbehörsappen. Hjälp om appversion 1.x finns i innehållsförteckningen i det vänstra sidofältet. Adobe rekommenderar att du uppgraderar till den senaste versionen, 2.
+>Appen introducerades i [!DNL Adobe Experience Manager] 6.1-versionen och kallades tidigare [!DNL Adobe Experience Manager Assets] Companion App. Om du vill ha hjälp med programversion 1.x läser du innehållsförteckningen i det vänstra sidofältet. Adobe rekommenderar att du uppgraderar till den senaste versionen.
 
 Dokumentationen för skrivbordsappen innehåller information om följande roller och användningsfall.
 
