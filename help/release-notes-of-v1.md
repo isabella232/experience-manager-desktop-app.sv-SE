@@ -2,9 +2,9 @@
 title: Versionsinformation AEM datorprogrammet för version 1.x
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och nedladdningslänkar för AEM program version 1.x.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3904'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ AEM datorprogram 1.10 fokuserar på att förbättra användarupplevelsen kring s
 
 **Meddelanden om uppdateringskonflikter**. När programmet upptäcker en konflikt när en resurs uppdateras visas ett meddelande så att användaren kan granska den utan att behöva övervaka statusfönstret. När programmet startas görs en sökning efter alla konflikter så att användaren kan lösa dem.
 
-**Bättre hantering av anslutningsförluster**. Massöverföringar pausas om en anslutning bryts och användaren kan återupptas senare. Det finns en knapp för att försöka överföra en enskild fil igen.
+**Bättre hantering av anslutningsförluster**. Massöverföringar pausas om en anslutning bryts och användaren kan återupptas senare. Det finns ett [!UICONTROL Retry]-alternativ tillgängligt för att försöka överföra en enskild fil igen.
 
 ## Installationsanvisningar {#installation-instructions}
 
@@ -163,7 +163,7 @@ AEM program 1.8.1 snabbspolning tillkom förbättringar när flera filer öppnas
 
    * definiera maximal cachestorlek innan ett meddelande skickas
 
-   * Cachestorleken kontrolleras endast vid start av skrivbordsappen och ett meddelande visas om den har nått den konfigurerade gränsen
+   * Cachestorleken kontrolleras endast vid start av skrivbordsappen och ett meddelande visas om den når den konfigurerade gränsen
 
    * rensningsknappen för cache är nu tillgänglig i det nya användargränssnittet
 
@@ -417,7 +417,7 @@ Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återst
 * Windows:
    * Filer med ADS (Alternate Data Streams) stöds endast fullt ut på NTFS. Om du kopierar sådana filer till WebDAV-resursen som tillhandahålls av skrivbordsappen visas ett varningsmeddelande om att filen har egenskaper som inte kan kopieras till den nya platsen. Detta är vanligtvis bra eftersom egenskaperna bara är relevanta för ett visst program på användarens skrivbord och inte har något att göra med det faktiska filinnehållet (CQ-103770) (Win)
    * skrivbordsappen i Windows måste installeras av användaren som ska använda den (CQ-4216389) (win)
-   * Appen kan krascha när du klickar på knappen Försök igen på en misslyckad överföring under vissa omständigheter efter att batchöverföringen har återupptagits när den kopplas från (CQ-4251884) (Win)
+   * Appen kan krascha när du väljer alternativet [!UICONTROL Retry] för en misslyckad överföring under vissa omständigheter efter återupptagen batchöverföring när den kopplas från (CQ-4251884) (Win)
 
 ## Användbara resurser {#helpful-resources}
 
