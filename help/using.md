@@ -1,9 +1,9 @@
 ---
-title: Använd [!DNL Adobe Experience Manager] datorprogrammet
+title: Använd [!DNL Experience Manager] datorprogrammet
 description: Använd [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM-resurser direkt från Win- eller Mac-datorn och använd i andra program.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 0%
@@ -279,7 +279,7 @@ Om en lokalt nedladdad resurs uppdateras på [!DNL Experience Manager]-servern v
 
 ![Alternativ för att lösa konflikten när resursen ](assets/modified_remotely_dialog_da2.png "ändras på fjärrbasisAlternativ för att lösa konflikten när resursen ändras på fjärrbasis")
 
-Om en resurs som du redigerar lokalt också uppdateras på servern utan att du vet om det, visar programmet statusen **[!UICONTROL Editing Conflict]**. Du kan behålla en uppsättning av ändringarna - antingen behålla dina uppdateringar (klicka på **[!UICONTROL Keep Mine]**) och ta bort den andra användarens redigering eller ta hänsyn till den andra användarens uppdateringar och ta bort din (**[!UICONTROL Overwrite Mine]**).
+Om en resurs som du redigerar lokalt också uppdateras på servern utan att du vet om det, visas statusen **[!UICONTROL Editing Conflict]** i appen. Du kan behålla en uppsättning av ändringarna - antingen behålla dina uppdateringar (klicka på **[!UICONTROL Keep Mine]**) och ta bort den andra användarens redigering eller ta hänsyn till den andra användarens uppdateringar och ta bort din (**[!UICONTROL Overwrite Mine]**).
 
 ![Alternativ för att lösa en ](assets/editing_conflict_dialog_da2.png "redigeringskonfliktAlternativ för att lösa en redigeringskonflikt")
 
