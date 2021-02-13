@@ -2,9 +2,9 @@
 title: '[!DNL Adobe Experience Manager] bästa praxis för datorprogram version 1.x'
 description: Viktiga funktioner och rekommenderad användning av [!DNL Adobe Experience Manager] datorprogrammet version 1.x.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Viktiga funktioner i AEM program:
 
 * **Åtkomst till resursen från skrivbordet**. I den monterade nätverksresursen innehåller en snabbmeny en [!UICONTROL More Info]-dialogruta (större förhandsgranskning, nyckelmetadata) och möjlighet att öppna en resurs i AEM.
 
-* **Överför stora, hierarkiska mappar i grupp**. Om du använder alternativet Skapa > Mappöverföring i AEM gränssnitt för att överföra resurser, överför AEM datorprogrammet den valda mapphierarkin till AEM i bakgrunden. Överföringsförloppet kan övervakas med ett dedikerat användargränssnitt i skrivbordsappen.
+* **Överför stora, hierarkiska mappar i grupp**. Om du använder alternativet Skapa > Mappöverföring i AEM gränssnitt för att överföra resurser, överförs den valda mapphierarkin AEM skrivbordsappen till AEM i bakgrunden. Överföringsförloppet kan övervakas med ett dedikerat användargränssnitt i skrivbordsappen.
 
 ## Felaktig användning AEM datorprogrammet {#inappropriate-use-of-aem-desktop-app}
 
@@ -62,7 +62,7 @@ Viktiga funktioner i AEM program:
 
 * Behandla inte AEM datorprogram som en&quot;datorsynkroniseringsklient&quot; för AEM Assets. Den största fördelen med AEM datorprogram här är att det ger&quot;virtuell&quot; åtkomst till hela databasen, och program för datorsynkronisering synkroniserar vanligtvis bara resurser som tillhör en användare. AEM datorprogram erbjuder viss nivå av cachelagring och bakgrundsuppladdning. fungerar det fortfarande på ett helt annat sätt än vanliga&quot;Synkroniseringsprogram&quot;, till exempel Adobe Creative Cloud-datorprogram eller Microsoft OneDrive.
 
-* Använd inte AEM nätverksenheter för skrivbordsappar för att spara resurser ofta. Alla sparåtgärder överförs till AEM Assets. Därför är det opraktiskt att utföra intensiva redigeringsåtgärder direkt i den monterade AEM Assets-databasen. När du redigerar en resurs direkt i den monterade databasen krymper resursens tidslinje med irrelevanta versioner och lägger till ytterligare omkostnader på servern.
+* Använd inte nätverksenheter AEM skrivbordsappen för att spara resurser ofta. Alla sparåtgärder överförs till AEM Assets. Därför är det opraktiskt att utföra intensiva redigeringsåtgärder direkt i den monterade AEM Assets-databasen. När du redigerar en resurs direkt i den monterade databasen krymper resursens tidslinje med irrelevanta versioner och lägger till ytterligare omkostnader på servern.
 
 * Använd inte AEM datorprogram för att migrera stora mängder data från en AEM till en annan. Se [Migreringshandboken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html) för att planera och köra resursmigreringar. Datorprogrammet [stöder däremot massöverföring](use-app-v1.md#bulkupload) av ett stort antal resurser för första gången i [!DNL Adobe Experience Manager].
 
@@ -128,7 +128,7 @@ Information om de effektivaste strategierna för AEM Assets nätverkskonfigurati
 
 >[!NOTE]
 >
->Om du vill inaktivera förhandsvisning av ikoner går du till Visa i Finder, väljer Visningsalternativ och avmarkerar sedan alternativet &quot;Förhandsvisa ikon&quot;. Det här fungerar bara för den aktuella mappen. Om du vill göra den till standard klickar du på knappen Använd som standard i samma fönster.
+>Om du vill inaktivera förhandsvisningar av ikoner går du till [!UICONTROL View], väljer [!UICONTROL View Options] och avmarkerar sedan alternativet [!UICONTROL Show icon preview] i Finder. Det här fungerar bara för den aktuella mappen. Om du vill göra den till standard klickar du på alternativet [!UICONTROL Use as default] i samma dialogruta.
 
 ### Optimerar serverprestanda {#optimizing-server-performance}
 
