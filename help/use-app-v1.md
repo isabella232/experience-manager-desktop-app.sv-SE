@@ -1,16 +1,16 @@
 ---
-title: Använd [!DNL Experience Manager] datorprogrammet version 1.x.
-description: Lär dig hur du använder Adobe Experience Manager-datorprogram version 1.x och optimerar ditt arbete med resurser på datorn.
+title: Använd [!DNL Experience Manager] datorprogrammet version 1.10.
+description: Lär dig hur du använder Adobe Experience Manager-datorprogram version 1.10 och optimerar ditt arbete med resurser på datorn.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2377'
 ht-degree: 0%
 
 ---
 
 
-# Använd [!DNL Experience Manager] skrivbordsapp v1.x {#use-aem-desktop-app-v1x}
+# Använd [!DNL Experience Manager] skrivbordsapp v1.10 {#use-aem-desktop-app-v1x}
 
 Med appen är resurserna i [!DNL Experience Manager] enkelt tillgängliga på din lokala dator och kan användas i alla datorprogram. Resurser kan enkelt visas i Finder eller Utforskaren i Windows, öppnas i skrivbordsprogram och ändras lokalt - ändringarna sparas tillbaka till [!DNL Experience Manager] med en ny version som skapas i databasen.
 
@@ -27,7 +27,7 @@ Information om olika rekommenderade åtgärder och inte finns i [metodtips för 
 
 >[!NOTE]
 >
->[!DNL Experience Manager] datorprogrammet introducerades i version  [!DNL Experience Manager] 6.1 och anropades  [!DNL Experience Manager Assets Companion App].
+>Skrivbordsprogrammet introducerades i [!DNL Experience Manager] 6.1-versionen och kallades [!DNL Experience Manager Assets Companion App].
 
 ## [!DNL Experience Manager] pekpunkter i datorprogrammet i det kreativa arbetsflödet  {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
@@ -85,7 +85,7 @@ Programmet har stöd för proxykonfiguration i Mac och Windows. Konfigurationen 
 >
 >Om du ändrar proxyinställningarna startar du om programmet så att ändringarna börjar gälla. Annars fortsätter programmet att använda den tidigare konfigurerade proxyservern.
 
-1. Starta [!DNL Experience Manager]-datorprogrammet. Om du vill mappa din [!DNL Experience Manager]-instans med programmet anger du din [!DNL Experience Manager]-server i formatet `https://[aem-server-url]:[port]`.
+1. Starta [!DNL Experience Manager]-datorprogrammet. Om du vill mappa din [!DNL Experience Manager]-instans med programmet anger du [!DNL Experience Manager]-servern i formatet `https://[aem-server-url]:[port]`.
 
    ![Autentisera på Mac och ange  [!DNL Experience Manager] server-URL](assets/aem_desktop_app_server_url.png)
 
