@@ -2,9 +2,9 @@
 title: Versionsinformation om datorprogrammet v1.10
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och nedladdningslänkar för AEM program version 1.10.
 translation-type: tm+mt
-source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
+source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3897'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ För datorprogram v1.x är följande hämtningslänkar och AEM kompatibilitetsin
 
 >[!NOTE]
 >
->Windows 7 stöds inte längre av leverantören (https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
+>Windows 7 stöds inte längre. Se [artikeln om EOL i Windows 7](https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
 
 Adobe rekommenderar starkt att du använder den senaste versionen av AEM för att få tillgång till de senaste funktionerna, de senaste felkorrigeringarna och bästa möjliga prestanda.
 
@@ -217,7 +217,7 @@ AEM program 1.8.1 snabbspolning tillkom förbättringar när flera filer öppnas
 
 ### Förbättringar som är tillgängliga sedan AEM datorprogram 1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
-* Dokumentation: Ny [metodtips för v1.x app](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html)-dokumentation.
+* Dokumentation: Ny [metodtips för v1.x app](/help/best-practices-for-v1.md)-dokumentation.
 
 * Förbättrad inloggningsprocess för AEM:
 
@@ -421,7 +421,7 @@ Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återst
 
 ## Användbara resurser {#helpful-resources}
 
-* [AEM](https://helpx.adobe.com/support/experience-manager/6-4.html)
+* [AEM](https://experienceleague.adobe.com/docs/)
 * [Använd AEM v1.x](use-app-v1.md)
 * [AEM praxis för datorprogram v1.x](best-practices-for-v1.md)
 
