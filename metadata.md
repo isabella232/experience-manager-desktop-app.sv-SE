@@ -1,20 +1,20 @@
 ---
 cloud: experience-cloud
 solution-title: Läs mer & Support
-solution-hub-url: https://helpx.adobe.com/support/experience-manager/6-5.html
+solution-hub-url: https://experienceleague.adobe.com/docs/
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Komma igång
-getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
-tutorials-title: Självstudiekurser
-tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
+tutorials-title: Tutorials
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
 mini-toc-levels: 1
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-desktop-app.sv-SE
 index: y
 translation-type: tm+mt
-source-git-commit: e9a59807d48ea2d8619d3b03255c4291fca85138
+source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 8%
+source-wordcount: '150'
+ht-degree: 5%
 
 ---
 
