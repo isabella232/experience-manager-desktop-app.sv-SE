@@ -1,9 +1,9 @@
 ---
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '721'
-ht-degree: 5%
+source-wordcount: '719'
+ht-degree: 4%
 
 ---
 # Riktlinjer för att bidra till [!DNL Adobe Experience Manager]-dokumentation
@@ -38,7 +38,7 @@ Undantag från den här regeln gäller versionsinformationen där kända problem
 
 Alla idéer du kan behöva förbättra [!DNL Experience Manager]-dokumentationen är välkomna som bidrag. Kommentarer, utgåvor och pull-begäranden är dock endast avsedda för *bidrag*. De är inte avsedda att användas för att besvara dina frågor om hur du använder [!DNL Experience Manager], implementerar ditt [!DNL Experience Manager]-projekt eller löser tekniska problem.
 
-Frågor om hur du använder [!DNL Experience Manager] eller tekniska fel som du kan ha gjort ska rapporteras via den normala supportprocessen via [Experience Cloud Enterprise Support-portalen](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) eller diskuteras i [Experience Manager-communityn](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
+Frågor om hur du använder [!DNL Experience Manager] eller tekniska fel som du kan ha gjort ska rapporteras via den normala supportprocessen via [[!DNL Experience Cloud] supportportalen](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) eller diskuteras i [Experience Manager-communityn](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
 ***[!DNL Experience Manager]Dokumentationsbidragen ersätter inte Adobe Customer*** Careoch eventuella bidrag som söker svar på supportrelaterade frågor kommer att refuseras.
 
@@ -46,7 +46,7 @@ Frågor om hur du använder [!DNL Experience Manager] eller tekniska fel som du 
 
 Om du skapar ett problem som kan föreslå förbättringar av dokumentationen måste du inkludera länkar till de sidor som påverkas. Om du skapar ett ärende genom att använda länken **Redigera den här sidan** på en dokumentationssida skapas ärendet automatiskt med en länk till sidan.
 
-Detta gäller inte för pull-begäranden eftersom pull-begäranden till sin natur refererar till den eller de berörda sidorna.
+Detta gäller inte för pull-begäranden eftersom pull-begäranden till sin natur refererar till de berörda sidorna.
 
 ## Riktlinjer för dokumentation
 
