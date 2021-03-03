@@ -2,9 +2,9 @@
 title: Använd [!DNL Experience Manager] datorprogrammet version 1.10.
 description: Lär dig hur du använder Adobe Experience Manager-datorprogram version 1.10 och optimerar ditt arbete med resurser på datorn.
 translation-type: tm+mt
-source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
+source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2373'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Om du vill använda [!DNL Experience Manager]-datorprogrammet kontrollerar du at
 
 Det kan vara nödvändigt att göra en detaljerad konfiguration beroende på ditt nätverk och dina systeminställningar. Mer information finns i [Installera och konfigurera [!DNL Experience Manager] datorprogrammet](install-configure-app-v1.md).
 
-1. Gå till [[!DNL Experience Manager] nedladdningssidan för skrivbordsappen](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html) och hämta den binära filen för ditt operativsystem.
+1. Gå till [[!DNL Experience Manager] nedladdningssidan för datorprogrammet v1.10](/help/release-notes-of-v1.md) och ladda ned den binära filen för ditt operativsystem.
 1. Starta den hämtade installationsfilen och följ instruktionerna på skärmen för att installera programmet.
 
    >[!NOTE]
@@ -123,6 +123,9 @@ För Adobe InDesign-filer (INDD) väljer du **[!UICONTROL Open]** på snabbmenyn
 >[!NOTE]
 >
 >I Windows förhindrar [standardinställningen för Windows 7](https://support.microsoft.com/en-us/kb/2668751) att [!DNL Experience Manager]-datorprogrammet hanterar resurser som är större än 50 MB.
+
+<!-- TBD: The above note is for Windows 7 which is not supported by the app anymore. Remove it later.
+-->
 
 >[!NOTE]
 >
