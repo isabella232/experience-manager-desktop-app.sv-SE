@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp'
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och hämtningslänkar för [!DNL Adobe Experience Manager] datorprogrammet.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b5292d9386432bd7c6ba5d7117dbc9fd9f014941
+source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Windows 7 stöds inte längre av leverantören (https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
+>Windows 7 stöds inte längre. Se [artikeln om EOL i Windows 7](https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
 
 Appen fungerar med följande [!DNL Experience Manager]-versioner, oavsett om de distribueras som [!DNL Cloud Service], på Adobe Managed Services (AMS) eller lokalt:
 
@@ -47,7 +47,7 @@ Appen fungerar med följande [!DNL Experience Manager]-versioner, oavsett om de 
 >[!NOTE]
 >
 >Stöd för datorprogram för [!DNL Experience Manager] 6.3 är föråldrat. Adobe rekommenderar att du uppgraderar till en nyare version som stöds i [!DNL Adobe Experience Manager].
->[!DNL Experience Manager] 6.3.3.1 eller senare fungerar med skrivbordsappen efter installation av [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). Inget sådant paket är tillgängligt för [!DNL Experience Manager] 6.3 eftersom inga [servicepaket är planerade](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+>[!DNL Experience Manager] 6.3.3.1 eller senare fungerar med skrivbordsappen efter installation av [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). Inget sådant paket är tillgängligt för [!DNL Experience Manager] 6.3 eftersom inga [servicepaket är planerade](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html).
 
 Den version av programmet som du tänker installera på den lokala datorn kräver en specifik [!DNL Adobe Experience Manager] serverversion/ytterligare serverkomponenter (Service Pack, hot fixes eller funktionspaket). Kontakta din [!DNL Experience Manager]-administratör om du behöver hjälp.
 
