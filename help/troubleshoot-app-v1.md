@@ -2,9 +2,9 @@
 title: Felsök skrivbordsappens version 1.10.
 description: Felsök [!DNL Adobe Experience Manager] datorprogramversion 1.10 för att lösa enstaka problem i samband med installation, uppgradering och konfiguration.
 translation-type: tm+mt
-source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
+source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
 workflow-type: tm+mt
-source-wordcount: '3364'
+source-wordcount: '3363'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Alla åtgärder cachelagras inte lokalt. Följande överförs direkt till AEM Se
 
 ## Enskilda åtgärder {#individual-operations}
 
-När du felsöker deloptimerade prestanda för enskilda användare ska du först granska [Begränsningar](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations). De följande avsnitten innehåller förslag på hur du kan förbättra prestandan för enskilda användare.
+När du felsöker suboptimerade prestanda för enskilda användare ska du först granska [appbegränsningarna](#limitations). De följande avsnitten innehåller förslag på hur du kan förbättra prestandan för de enskilda användarna.
 
 ## Bandbreddsrekommendationer {#bandwidth-recommendations}
 
@@ -99,9 +99,12 @@ Adobe rekommenderar att en enskild användares överföringshastighet är nästa
 
 ## Windows-specifika konfigurationer {#windows-specific-configurations}
 
-Om du kör AEM i Windows kan du konfigurera Windows för att förbättra WebDAV-klientens prestanda. Mer information finns på [https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570).
+Om du använder Experience Manager i Windows kan du konfigurera Windows för att förbättra WebDAV-klientens prestanda. Mer information finns på [https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570).
 
 I Windows 7 kan prestandan för WebDAV förbättras om IE-inställningarna ändras. Mer information finns i [Åtgärda långsamma WebDAV-prestanda i Windows 7](https://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/).
+
+<!-- TBD: The above performance tip is for Windows 7 which is not supported by the app anymore. Remove it later.
+-->
 
 ## Samtidiga åtgärder {#concurrent-operations}
 
