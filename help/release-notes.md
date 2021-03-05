@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp'
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och hämtningslänkar för [!DNL Adobe Experience Manager] datorprogrammet.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4288c77036ba992c37ceafc158e0503244a1e600
+source-git-commit: 784ffb2468d856589fbf29b10b965b3c3d919a2f
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 0%
@@ -12,8 +12,6 @@ ht-degree: 0%
 
 
 # [!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp  {#release-notes-v2}
-
-<!-- TBD: Update 6 links and 1 date below. -->
 
 Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.1.0) anges nedan. Releasedatum är 5 mars 2021. Det är en liten release med en förbättring.
 
@@ -72,7 +70,7 @@ Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
 **Uppdatering i app v2.1.1.0**
 
-* Med en avancerad inställning kan appen emulera beteendet v1.10 när mappar överförs. I v1.10 respekterar de nodnamn som skapas i databasen mellanslag och skiftlägen för de mappnamn som användaren anger. Standardbeteendet för v2.1 fortsätter att vara detsamma, d.v.s. ersätter flera mellanslag i mappnamn med ett bindestreck i databasens nodnamn och konverterar till gemena nodnamn. Se [appinställningarna](/help/install-upgrade.md#set-preferences).
+* Med en avancerad inställning kan appen emulera beteendet v1.10 när mappar överförs. I v1.10 respekterar nodnamnen som skapas i databasen mellanslag och skiftlägen för mappnamnen som tillhandahålls av användaren. Standardbeteendet för v2.1 fortsätter att vara detsamma, d.v.s. ersätter flera mellanslag i mappnamn med ett bindestreck i databasens nodnamn och konverterar till gemena nodnamn. Se [appinställningarna](/help/install-upgrade.md#set-preferences).
 
 **Uppdatering i app v2.1.0.0**
 
