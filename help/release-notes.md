@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp'
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och hämtningslänkar för [!DNL Adobe Experience Manager] datorprogrammet.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
+source-git-commit: 4288c77036ba992c37ceafc158e0503244a1e600
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1468'
 ht-degree: 0%
 
 ---
@@ -13,45 +13,40 @@ ht-degree: 0%
 
 # [!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp  {#release-notes-v2}
 
-| Produkter | [!DNL Adobe Experience Manager] datorprogram |
-|--- |--- |
-| Programversion (revision) | 2.1 (2.1.0.0) |
-| [!DNL Adobe Experience Manager]-versioner som stöds | [!DNL Experience Manager] som en  [!DNL Cloud Service];  [!DNL Experience Manager] 6.5;  [!DNL Experience Manager] 6.4;  [!DNL Experience Manager] 6.3 (med kompatibilitetspaket) |
-| Typ | Mindre release |
-| Releasedatum | 17 dec 2020 (Mac och Win) |
-| Hämta URL:er för AEM 6.x | [macOS 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg);  [Windows 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe);  [Windows 32-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
-| Hämta URL:er för AEM som en [!DNL Cloud Service] | [macOS 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg);  [Windows 64-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe);  [Windows 32-bitars](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
+<!-- TBD: Update 6 links and 1 date below. -->
 
-## Systemkrav och krav {#system-requirements-and-prerequisites-v2}
+Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.1.0) anges nedan. Releasedatum är 5 mars 2021. Det är en liten release med en förbättring.
 
-[!DNL Adobe Experience Manager] skrivbordsappen är kompatibel med följande operativsystem:
+De [!DNL Experience Manager]-versioner som stöds är:
 
-* Mac OS X 10.14 eller senare, med de senaste felkorrigeringarna.
+* [!DNL Experience Manager] som en  [!DNL Cloud Service]. Se [versionsinformation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
+* [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [Versionsinformation för Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html).
+* [!DNL Experience Manager] 6.4.4 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [Versionsinformation för Service Pack](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html).
+* [!DNL Experience Manager] 6.4.0-6.4.3 med  [kompatibilitetspaketet ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) installerat på Adobe Managed Services (AMS) eller On-Premise.
+* [!DNL Experience Manager] 6.3 (med kompatibilitetspaket)
+* [!DNL Experience Manager] 6.3.3.1 eller senare med  [kompatibilitetspaketet ](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) installerat. Datorprogrammet stöds inte för [!DNL Experience Manager] 6.3.3.0 eller tidigare versioner.
 
+[!DNL Adobe Experience Manager] datorprogrammet är tillgängligt för följande operativsystem:
+
+* macOS X 10.14 eller senare, med de senaste felkorrigeringarna.
 * Windows 10 med de senaste servicepaketen och felkorrigeringarna.
+
+Hämtnings-URL:erna för operativsystem som stöds är:
+
+| Operativsystem | [!DNL Experience Manager] som  [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
+|---|---|---|
+| macOS 64-bitars | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.1.0.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.1.0.dmg) |
+| Windows 64-bitars | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.1.0.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.1.0.exe) |
+| Windows 32-bitars | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.1.0.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.1.0.exe) |
 
 >[!NOTE]
 >
 >Windows 7 stöds inte längre. Se [artikeln om EOL i Windows 7](https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
 
-Appen fungerar med följande [!DNL Experience Manager]-versioner, oavsett om de distribueras som [!DNL Cloud Service], på Adobe Managed Services (AMS) eller lokalt:
+<!-- The version of the app you plan to install on your local machine requires a specific [!DNL Adobe Experience Manager] server version/additional server-side components (service packs, hot fixes, or feature packs). Contact your [!DNL Experience Manager] administrator for help.
+-->
 
-* [[!DNL Experience Manager] som en [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
-
-* [[!DNL Experience Manager] 6.5.0](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)  eller senare.
-
-* [[!DNL Experience Manager] 6.4.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) eller senare.
-
-* [!DNL Experience Manager] 6.4.0-6.4.3 med  [kompatibilitetspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support).
-
->[!NOTE]
->
->Stöd för datorprogram för [!DNL Experience Manager] 6.3 är föråldrat. Adobe rekommenderar att du uppgraderar till en nyare version som stöds i [!DNL Adobe Experience Manager].
->[!DNL Experience Manager] 6.3.3.1 eller senare fungerar med skrivbordsappen efter installation av [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). Inget sådant paket är tillgängligt för [!DNL Experience Manager] 6.3 eftersom inga [servicepaket är planerade](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html).
-
-Den version av programmet som du tänker installera på den lokala datorn kräver en specifik [!DNL Adobe Experience Manager] serverversion/ytterligare serverkomponenter (Service Pack, hot fixes eller funktionspaket). Kontakta din [!DNL Experience Manager]-administratör om du behöver hjälp.
-
-### Stöd för olika resurser och filtyper {#support-for-file-types}
+## Stöd för olika resurser och filtyper {#support-for-file-types}
 
 Programmet stöder resurser som lagras i [!DNL Experience Manager] som representerar binära filer för de grundläggande åtgärderna. När du öppnar filer i det inbyggda skrivbordsprogrammet måste operativsystemet associera specifika filtyper som PNG eller JPG med specifika program som Mac Preview eller Adobe Photoshop.
 
@@ -71,27 +66,31 @@ Funktionen stöds i versionerna [!DNL Adobe Creative Cloud] 2018 och [!DNL Adobe
 
 * Sökvägarna kan matchas mot resurser i [!DNL Experience Manager], d.v.s. de monterade filerna finns också i [!DNL Experience Manager] under en matchande sökväg.
 
-## Nya funktioner och förbättringar {#whats-new-added}
+## Nya funktioner, förbättringar och felkorrigeringar {#what-is-new}
 
 Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
-**Uppdateringar i app v2.1.0.0**
+**Uppdatering i app v2.1.1.0**
 
-* Om du vill överföra resurser kan användare nu dra filer eller mappar i programmets gränssnitt, direkt från Utforskaren i Windows eller Finder i Mac. Detta fungerar utöver det överföringsalternativ som tidigare fanns i programmet.
+* Med en avancerad inställning kan appen emulera beteendet v1.10 när mappar överförs. I v1.10 respekterar de nodnamn som skapas i databasen mellanslag och skiftlägen för de mappnamn som användaren anger. Standardbeteendet för v2.1 fortsätter att vara detsamma, d.v.s. ersätter flera mellanslag i mappnamn med ett bindestreck i databasens nodnamn och konverterar till gemena nodnamn. Se [appinställningarna](/help/install-upgrade.md#set-preferences).
 
-**Uppdateringar i app v2.0.3**
+**Uppdatering i app v2.1.0.0**
+
+* Om du vill överföra resurser kan användare nu dra filer eller mappar i programmets gränssnitt, direkt från Utforskaren i Windows eller Finder i Mac. Detta fungerar utöver det överföringsalternativ som tidigare fanns i programmet. <!-- CQ-4309527 -->
+
+**Uppdatering i app v2.0.3**
 
 Felet som har åtgärdats i den aktuella versionen är:
 
-* Ett inloggningsproblem som Windows-användare som försöker få åtkomst till DAM-databasen på instansen [!DNL Adobe Experience Manager] 6.5.5.0 har korrigerats med hjälp av programmet.
+* Korrigerade inloggningsproblemet för appanvändare i Windows som försöker få åtkomst till DAM-databasen på [!DNL Adobe Experience Manager] 6.5.5.0.
 
 **Uppdateringar i app v2.0.2**
 
 Felkorrigeringarna och uppdateringarna är:
 
-* Öka uppladdningsaccelerationen i [!UICONTROL Preferences] för att förbättra uppladdningsprestanda. När den här inställningen är aktiverad används fler lokala CPU-trådar och programmet är mer resurskrävande.
+* Uppladdningsaccelerationsinställningen är nu tillgänglig för att öka uppladdningsprestanda. När den här inställningen är aktiverad laddas programmet upp snabbare med fler lokala CPU-trådar och är mer resurskrävande.
 
-* Korrigerat problem med överföringar av resurser när filnamn eller sökvägar innehåller vissa GB18030-tecken. <!-- CQ-4283494 -->
+* Resursuppladdning när filnamn eller sökvägar som innehåller vissa GB18030-tecken är fasta. <!-- CQ-4283494 -->
 
 * Alternativet Sortera efter relevans är tillgängligt efter byte till en annan sorteringstyp i sökresultaten. <!-- CQ-4286874 -->
 
@@ -135,7 +134,7 @@ Det är viktigt att du förstår följande om programmet och hur det fungerar.
 
 * Den lokala nätverksresursen SMB (Mac) /WebDAV (Win) används när en Adobe Creative Cloud-app läser resursfilerna som är länkade/placerade i en systemspecifik fil i appen Creative Cloud.
 
-I följande diagram visas flödet av resurser och filer från molnet till det lokala filsystemet och vice versa, vilket initierats av användaråtgärder.
+I följande diagram visas flödet av resurser och filer från molnet till det lokala filsystemet och tvärtom, vilket initierats av användaråtgärder.
 
 ![Flöde för resurser från  [!DNL Experience Manager] server till datorprogram via skrivbordsapp](assets/da20_flow_diagram.png)
 
