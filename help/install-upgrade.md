@@ -2,9 +2,9 @@
 title: Installera och konfigurera skrivbordsprogram
 description: Installera och konfigurera [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servrar och hämta resurserna på det lokala filsystemet.
 translation-type: tm+mt
-source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
+source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Tack vare en sådan integrering kan olika roller i organisationen
 
 Om du vill använda [!DNL Experience Manager]-datorprogrammet
 
-* Kontrollera att din [!DNL Experience Manager]-version stöds av [!DNL Experience Manager]-datorprogrammet. Se [systemkraven](release-notes.md#system-requirements-and-prerequisites-v2) nedan.
+* Kontrollera att din [!DNL Experience Manager]-version stöds av [!DNL Experience Manager]-datorprogrammet. Se [systemkraven](release-notes.md).
 
 * Hämta och installera programmet. Se [installera datorprogrammet](#install-v2) nedan.
 
@@ -108,11 +108,15 @@ Om du vill ändra inställningarna klickar du på ![Fler alternativ-ikoner](asse
 
 * **[!UICONTROL Automatically download linked assets]**: Resurserna som placeras i de Creative Cloud-program som stöds hämtas automatiskt om du hämtar originalfilen.
 
-* **[!UICONTROL Maximum number of downloads]**: När du hämtar resurser för första gången (via Visa, Öppna, Redigera, Hämta eller liknande) hämtas resurserna endast om gruppen innehåller mindre än det här antalet. Standardvärdet är 50. Ändra inte om du är osäker. Om du ökar värdet kan det leda till längre väntetider och om du minskar värdet kanske du inte kan hämta nödvändiga resurser eller mappar på en gång.
+* **[!UICONTROL Maximum number of downloads]**:  ![varningsikon](assets/do-not-localize/caution-icon.png) Ändra med försiktighet. När du hämtar resurser för första gången (via Visa, Öppna, Redigera, Hämta eller liknande) hämtas resurserna endast om gruppen innehåller mindre än det här antalet. Standardvärdet är 50. Ändra inte om du är osäker. Om du ökar värdet kan det leda till längre väntetider och om du minskar värdet kanske du inte kan hämta nödvändiga resurser eller mappar på en gång.
 
-* **[!UICONTROL Upload Acceleration]**: När du överför resurser kan programmet använda samtidiga överföringar för att förbättra överföringshastigheten. Du kan öka samtidigheten för överföringen genom att flytta reglaget åt höger. Skjutreglaget längst till vänster betyder ingen samtidighet (enkeltrådad överföring), mittpositionen motsvarar 10 samtidiga trådar och maxgränsen längst till höger motsvarar 20 samtidiga trådar. En högre samtidighetsgräns kräver större resursförbrukning för den lokala datorns processor.
+* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**:  ![varningsikon](assets/do-not-localize/caution-icon.png) Ändra med försiktighet. Med den här inställningen kan appen emulera v1.10-appbeteendet när mappar överförs. I v1.10 respekterar nodnamnen som skapas i databasen mellanslag och skiftlägen för mappnamnen som tillhandahålls av användaren. I v2.1 i programmet konverteras emellertid de extra mellanrummen i mappnamnen till streck. Om du till exempel överför `New Folder` eller `new   folder` skapas samma nod i databasen om alternativet inte är markerat och standardbeteendet i v2.1 behålls. Om det här alternativet är markerat skapas olika noder i databasen för de två mapparna ovan, och de matchar beteendet för v1.10-appen.
 
-Om du vill uppdatera inställningarna som inte är tillgängliga loggar du ut från [!DNL Experience Manager]-servern. När du har uppdaterat inställningarna klickar du på ![Spara inställningar](assets/do-not-localize/save_preferences_da2.png) för att spara ändringarna.
+   Standardbeteendet för v2.1 fortsätter att vara detsamma, d.v.s. ersätter flera mellanslag i mappnamn med bindestreck i databasens nodnamn och konverterar till gemena nodnamn.
+
+* **[!UICONTROL Upload Acceleration]**:  ![varningsikon](assets/do-not-localize/caution-icon.png) Ändra med försiktighet. När du överför resurser kan programmet använda samtidiga överföringar för att förbättra överföringshastigheten. Du kan öka samtidigheten för överföringen genom att flytta reglaget åt höger. Skjutreglaget längst till vänster betyder ingen samtidighet (enkeltrådad överföring), mittpositionen motsvarar 10 samtidiga trådar och maxgränsen längst till höger motsvarar 20 samtidiga trådar. En högre samtidighetsgräns är mer resurskrävande.
+
+Om du vill uppdatera inställningarna som inte är tillgängliga loggar du ut från [!DNL Experience Manager]-servern och uppdaterar sedan. När du har uppdaterat inställningarna klickar du på ![Spara inställningar](assets/do-not-localize/save_preferences_da2.png).
 
 ![Inställningar och inställningar för skrivbordsprogram](assets/preferences_da2.png)
 
