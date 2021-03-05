@@ -3,7 +3,7 @@ title: Använd [!DNL Experience Manager] datorprogrammet
 description: Använd [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM-resurser direkt från Win- eller Mac-datorn och använd i andra program.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
+source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 0%
@@ -293,7 +293,7 @@ När du använder [!DNL Experience Manager]-datorprogrammet för att öppna file
 >
 >Skrivbordsappen kan mappas till valfri enhet i Windows. För mjuka åtgärder ska du dock inte ändra standardenhetsbokstaven. Om användare i samma organisation använder olika enhetsbokstäver kan de inte se resurser som placerats av andra. De placerade resurserna hämtas inte när sökvägen ändras. De placerade resurserna fortsätter att vara placerade i den binära filen (till exempel INDD) och tas inte bort.
 
-Mer information om begränsningarna i det här arbetsflödet finns i [Systemkrav och versioner som stöds](release-notes.md#system-requirements-and-prerequisites-v2).
+Mer information om begränsningarna i det här arbetsflödet finns i [systemkraven och versionerna som stöds](release-notes.md).
 
 Så här provar du arbetsflödet med en bildresurs och InDesign:
 
