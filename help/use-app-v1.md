@@ -1,10 +1,11 @@
 ---
 title: Använd [!DNL Experience Manager] datorprogrammet version 1.10.
 description: Lär dig hur du använder Adobe Experience Manager-datorprogram version 1.10 och optimerar ditt arbete med resurser på datorn.
+feature: Experience Manager-datorprogram, resurshantering
 translation-type: tm+mt
-source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
+source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2379'
 ht-degree: 0%
 
 ---
