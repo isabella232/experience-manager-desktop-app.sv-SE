@@ -5,16 +5,14 @@ audience: end-user
 user-guide-title: Handbok för Experience Manager-datorprogrammet
 breadcrumb-title: Handbok för skrivbordsprogram
 user-guide-description: Lär dig att använda datorprogrammet Experience Manager för att ansluta databaser och datorprogram för att ge snabbare åtkomst till resurser och smidiga arbetsflöden.
-solution-title: AEM Assets
-solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html
-tutorials-title: AEM Tutorials
-tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
+feature-set: Experience Manager Assets
+feature: Experience Manager-datorprogram
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
+source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 7%
+source-wordcount: '70'
+ht-degree: 5%
 
 ---
 
