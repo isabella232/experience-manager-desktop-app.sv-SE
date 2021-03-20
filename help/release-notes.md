@@ -4,7 +4,7 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: Experience Manager-datorprogram, versionsinformation
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
 **Uppdatering i app v2.1.1.0**
 
-* Med en avancerad inställning kan appen emulera beteendet v1.10 när mappar överförs. I v1.10 respekterar nodnamnen som skapas i databasen mellanslag och skiftlägen för mappnamnen som tillhandahålls av användaren. Standardbeteendet för v2.1 fortsätter att vara detsamma, d.v.s. ersätter flera mellanslag i mappnamn med ett bindestreck i databasens nodnamn och konverterar till gemena nodnamn. Se [appinställningarna](/help/install-upgrade.md#set-preferences).
+* Med en avancerad inställning kan appen emulera beteendet v1.10 när mappar överförs. I v1.10 gäller de nodnamn som skapas i databasen mellanslag och skiftlägen för de mappnamn som användaren anger. Standardbeteendet för v2.1 fortsätter att vara detsamma, d.v.s. ersätter flera mellanslag i mappnamn med ett bindestreck i databasens nodnamn och konverterar till gemena nodnamn. Se [appinställningarna](/help/install-upgrade.md#set-preferences).
 
 **Uppdatering i app v2.1.0.0**
 
