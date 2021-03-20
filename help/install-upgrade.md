@@ -3,7 +3,7 @@ title: Installera och konfigurera skrivbordsprogram
 description: Installera och konfigurera [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servrar och hämta resurserna på det lokala filsystemet.
 feature: Experience Manager-datorprogram, versionsinformation
 translation-type: tm+mt
-source-git-commit: f9d982d3039d04abf53e10b78e0e7a89e673ca04
+source-git-commit: 3804d684a3a7e78eda7692969f312ef023965ffd
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Om du använder v1.x av skrivbordsappen måste du förstå skillnaderna och likh
 
 >[!NOTE]
 >
->Två versioner av skrivbordsprogrammet kan inte finnas samtidigt på en dator. Avinstallera den andra versionen innan du installerar en version.
+>Två versioner av skrivbordsappen kan inte finnas samtidigt på en dator. Avinstallera den andra versionen innan du installerar en version.
 
 Följ dessa anvisningar om du vill uppgradera från en tidigare version av programmet:
 
