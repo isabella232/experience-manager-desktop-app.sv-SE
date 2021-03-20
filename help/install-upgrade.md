@@ -3,9 +3,9 @@ title: Installera och konfigurera skrivbordsprogram
 description: Installera och konfigurera [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servrar och hämta resurserna på det lokala filsystemet.
 feature: Experience Manager-datorprogram, versionsinformation
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: f9d982d3039d04abf53e10b78e0e7a89e673ca04
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,14 @@ Om du vill uppdatera inställningarna som inte är tillgängliga loggar du ut fr
 ![Inställningar och inställningar för skrivbordsprogram](assets/preferences_da2.png)
 
 *Bild: Inställningar för skrivbordsprogram.*
+
+### Proxystöd {#proxy-support}
+
+[!DNL Experience Manager] datorprogrammet använder systemets fördefinierade proxy för att ansluta till Internet via HTTPS. Appen kan bara ansluta med en nätverksproxy som inte kräver extra autentisering.
+
+Om du konfigurerar eller ändrar proxyserverinställningarna för Windows (Internetalternativ > LAN-inställningar) startar du om [!DNL Experience Manager]-datorprogrammet så att ändringarna börjar gälla. Proxykonfigurationen används när du startar skrivbordsprogrammet. Stäng och starta om programmet för att ändringarna ska börja gälla.
+
+Om din proxy kräver autentisering kan IT-teamet tillåta att URL:en för [!DNL Experience Manager Assets] i proxyserverinställningarna tillåter att programtrafiken passerar igenom.
 
 ## Avinstallera programmet {#uninstall-the-app}
 
