@@ -3,7 +3,7 @@ title: Installera och konfigurera skrivbordsprogram
 description: Installera och konfigurera [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servrar och hämta resurserna på det lokala filsystemet.
 feature: Experience Manager-datorprogram, versionsinformation
 translation-type: tm+mt
-source-git-commit: 3804d684a3a7e78eda7692969f312ef023965ffd
+source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 0%
@@ -111,7 +111,7 @@ Om du vill ändra inställningarna klickar du på ![Fler alternativ-ikoner](asse
 
 * **[!UICONTROL Maximum number of downloads]**:  ![varningsikon](assets/do-not-localize/caution-icon.png) Ändra med försiktighet. När du hämtar resurser för första gången (via Visa, Öppna, Redigera, Hämta eller liknande) hämtas resurserna endast om gruppen innehåller mindre än det här antalet. Standardvärdet är 50. Ändra inte om du är osäker. Om du ökar värdet kan det leda till längre väntetider och om du minskar värdet kanske du inte kan hämta nödvändiga resurser eller mappar på en gång.
 
-* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**:  ![varningsikon](assets/do-not-localize/caution-icon.png) Ändra med försiktighet. Med den här inställningen kan appen emulera v1.10-appbeteendet när mappar överförs. I v1.10 respekterar nodnamnen som skapas i databasen mellanslag och skiftlägen för mappnamnen som tillhandahålls av användaren. I v2.1 i programmet konverteras emellertid de extra mellanrummen i mappnamnen till streck. Om du till exempel överför `New Folder` eller `new   folder` skapas samma nod i databasen om alternativet inte är markerat och standardbeteendet i v2.1 behålls. Om det här alternativet är markerat skapas olika noder i databasen för de två mapparna ovan, och de matchar beteendet för v1.10-appen.
+* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**:  ![varningsikon](assets/do-not-localize/caution-icon.png) Ändra med försiktighet. Med den här inställningen kan appen emulera v1.10-appbeteendet när mappar överförs. I v1.10 gäller de nodnamn som skapas i databasen mellanslag och skiftlägen för de mappnamn som användaren anger. I v2.1 i programmet konverteras emellertid de extra mellanrummen i mappnamnen till streck. Om du till exempel överför `New Folder` eller `new   folder` skapas samma nod i databasen om alternativet inte är markerat och standardbeteendet i v2.1 behålls. Om det här alternativet är markerat skapas olika noder i databasen för de två mapparna ovan, och de matchar beteendet för v1.10-appen.
 
    Standardbeteendet för v2.1 fortsätter att vara detsamma, d.v.s. ersätter flera mellanslag i mappnamn med bindestreck i databasens nodnamn och konverterar till gemena nodnamn.
 
