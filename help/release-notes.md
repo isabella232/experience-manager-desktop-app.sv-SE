@@ -4,7 +4,7 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: Experience Manager-datorprogram, versionsinformation
 translation-type: tm+mt
-source-git-commit: e15dffa9b32dcbdbe5121b23847e9efe50b514b3
+source-git-commit: e8a299c7357faf2c19c11a56f2868f6679c15ac1
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp  {#release-notes-v2}
 
-Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.1.0) anges nedan. Releasedatum är 5 mars 2021. Det är en liten release med en förbättring.
+Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.2.0) anges nedan. Releasedatum är 26 mars 2021. Det är en liten release med en förbättring.
 
 **Versionerna [!DNL Experience Manager] som stöds** är:
 
