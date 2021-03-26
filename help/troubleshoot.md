@@ -2,9 +2,9 @@
 title: Bästa tillvägagångssätt för och felsökning [!DNL Adobe Experience Manager] datorprogram
 description: Följ bästa praxis och felsök för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 9d90bdcab79604e03d1ad3f30ed2aca2eb03e1c5
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2110'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ Cacheminnet rensas genom att programmets cachekatalog, som finns i programmets i
 
 Om du vill rensa cachen tar du bort den kodade katalogen [!DNL Adobe Experience Manager] Endpoint. Om du tar bort hela katalogen som anges i inställningarna rensas cachen för alla instanser som har använts av programmet.
 
-Att rensa cacheminnet för [!DNL Adobe Experience Manager]-skrivbordsappen är en preliminär felsökningsåtgärd som kan lösa flera problem. Rensa cacheminnet från appinställningarna. Se [ange inställningar](install-upgrade.md#set-preferences). Standardplatsen för cachemappen är:
+Att rensa cacheminnet för [!DNL Adobe Experience Manager]-datorprogrammet är en preliminär felsökningsåtgärd som kan lösa flera problem. Rensa cacheminnet från appinställningarna. Se [ange inställningar](install-upgrade.md#set-preferences). Standardplatsen för cachemappen är:
 
 ### Lär dig [!DNL Adobe Experience Manager]-versionen av skrivbordsappen {#know-app-version-v2}
 
@@ -202,7 +202,7 @@ Se [SAML-avsnittet](#da-connection-issue-with-saml-aem) för instruktioner om hu
 
 #### SAML-inloggningsautentiseringen fungerar inte {#da-connection-issue-with-saml-aem}
 
-Om [!DNL Experience Manager]-datorprogrammet inte ansluter till din SAML-aktiverade (SSO-enabled) [!DNL Adobe Experience Manager]-instans kan du felsöka i det här avsnittet. SSO-processer är olika, ibland komplexa, och programmets design gör sitt bästa för att hantera den här typen av anslutningar. Vissa inställningar kräver dock ytterligare felsökning.
+[!DNL Experience Manager] skrivbordsappen kan inte ansluta till din SSO-aktiverade (SAML)  [!DNL Adobe Experience Manager] distribution. Programmets design används för att anpassa variationerna och komplexiteten i SSO-anslutningar och processer. En installation kan dock kräva ytterligare felsökning.
 
 Ibland dirigeras SAML-processen inte tillbaka till den ursprungligen begärda sökvägen, eller så dirigeras den till en annan värd än den som är konfigurerad i [!DNL Adobe Experience Manager]-datorprogrammet. Så här kontrollerar du att så inte är fallet:
 
@@ -216,7 +216,7 @@ Ibland dirigeras SAML-processen inte tillbaka till den ursprungligen begärda s�
 
 **SAML-inloggningsprocessen fungerar korrekt enligt ovanstående steg, men användarna kan fortfarande inte logga in**
 
-Fönstret i [!DNL Adobe Experience Manager]-datorprogrammet som visar inloggningsprocessen är bara en webbläsare som visar målinstansens webbanvändargränssnitt:[!DNL Adobe Experience Manager]
+Fönstret i [!DNL Adobe Experience Manager]-datorprogrammet som visar inloggningsprocessen är helt enkelt en webbläsare som visar målinstansens webbanvändargränssnitt:[!DNL Adobe Experience Manager]
 
 * Mac-versionen använder en [WebView](https://developer.apple.com/documentation/webkit/webview).
 
