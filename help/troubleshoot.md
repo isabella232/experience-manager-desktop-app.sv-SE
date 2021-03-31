@@ -2,9 +2,9 @@
 title: Bästa tillvägagångssätt för och felsökning [!DNL Adobe Experience Manager] datorprogram
 description: Följ bästa praxis och felsök för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 translation-type: tm+mt
-source-git-commit: 9d90bdcab79604e03d1ad3f30ed2aca2eb03e1c5
+source-git-commit: a766855c0670e9f291b8020ee6ab7addc50689a4
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2175'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,16 @@ Så här aktiverar du felsökningsläge i Windows:
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
 
+### Lär dig [!DNL Adobe Experience Manager]-versionen av skrivbordsappen {#know-app-version-v2}
+
+Så här ser du versionsnumret:
+
+1. Starta programmet.
+
+1. Klicka på ellipserna i det övre högra hörnet, hovra över [!UICONTROL Help] och klicka sedan på [!UICONTROL About].
+
+   Versionsnumret visas på den här skärmen.
+
 ### Rensa cache {#clear-cache-v2}
 
 Utför följande steg:
@@ -138,17 +148,7 @@ Om du vill rensa cachen tar du bort den kodade katalogen [!DNL Adobe Experience 
 
 Att rensa cacheminnet för [!DNL Adobe Experience Manager]-datorprogrammet är en preliminär felsökningsåtgärd som kan lösa flera problem. Rensa cacheminnet från appinställningarna. Se [ange inställningar](install-upgrade.md#set-preferences). Standardplatsen för cachemappen är:
 
-### Lär dig [!DNL Adobe Experience Manager]-versionen av skrivbordsappen {#know-app-version-v2}
-
-Så här ser du versionsnumret:
-
-1. Starta programmet.
-
-1. Klicka på ellipserna i det övre högra hörnet, hovra över [!UICONTROL Help] och klicka sedan på [!UICONTROL About].
-
-   Versionsnumret visas på den här skärmen.
-
-### Kan inte se placerade resurser {#placed-assets-missing}
+## Kan inte se placerade resurser {#placed-assets-missing}
 
 Om du inte kan se de resurser som du eller andra kreatörer har placerat i supportfilerna (till exempel INDD-filer) ska du kontrollera följande:
 
@@ -179,11 +179,11 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-### Det går inte att överföra filer {#upload-fails}
+## Det går inte att överföra filer {#upload-fails}
 
 Om du använder ett skrivbordsprogram med [!DNL Experience Manager] 6.5.1 eller senare uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Det åtgärdar ett filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
 
-### [!DNL Experience Manager] anslutningsproblem för skrivbordsprogram  {#connection-issues}
+## [!DNL Experience Manager] anslutningsproblem för skrivbordsprogram  {#connection-issues}
 
 Om du har allmänna anslutningsproblem kan du få mer information om vad [!DNL Experience Manager]-datorprogrammet gör.
 
@@ -200,7 +200,7 @@ Om du har allmänna anslutningsproblem kan du få mer information om vad [!DNL E
 En majoritet av programmets begäranden finns i begärandeloggen. Men om det inte finns någon användbar information där kan det vara användbart att undersöka de förfrågningar som skickas av programmets inbäddade webbläsare.
 Se [SAML-avsnittet](#da-connection-issue-with-saml-aem) för instruktioner om hur du visar dessa begäranden.
 
-#### SAML-inloggningsautentiseringen fungerar inte {#da-connection-issue-with-saml-aem}
+### SAML-inloggningsautentiseringen fungerar inte {#da-connection-issue-with-saml-aem}
 
 [!DNL Experience Manager] skrivbordsappen kan inte ansluta till din SSO-aktiverade (SAML)  [!DNL Adobe Experience Manager] distribution. Programmets design används för att anpassa variationerna och komplexiteten i SSO-anslutningar och processer. En installation kan dock kräva ytterligare felsökning.
 
@@ -247,7 +247,7 @@ Om du vill felsöka ytterligare kan du visa de exakta URL:er som webbläsaren f�
 
 Om du tittar på den URL-sekvens som läses in kan det hjälpa till att felsöka i SAML:s slut för att avgöra vad som är fel.
 
-#### SSL-konfigurationsproblem {#ssl-config-v2}
+### SSL-konfigurationsproblem {#ssl-config-v2}
 
 Biblioteken som [!DNL Experience Manager]-datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda [!DNL Experience Manager]-skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Installera ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
@@ -284,7 +284,13 @@ Som en tillfällig åtgärd är det möjligt att inaktivera strikt SSL-tvång i 
 
 1. Spara filen och starta om [!DNL Adobe Experience Manager]-datorprogrammet.
 
-### Appen svarar inte {#unresponsive}
+### Inloggningsproblem vid växling till en annan server {#cannot-login-cookies-issue}
+
+När du har använt en [!DNL Experience Manager]-server och försöker ändra anslutningen till en annan server, kan inloggningsproblem uppstå. Det beror på att gamla cookies stör den nya autentiseringen. Ett alternativ på huvudmenyn till [!UICONTROL Clear Cookies] hjälper. Logga ut från den aktuella sessionen i appen och välj [!UICONTROL Clear Cookies] innan du fortsätter att ansluta.
+
+![Rensa cookies när du byter server](assets/main_menu_logout_da2.png)
+
+## Appen svarar inte {#unresponsive}
 
 I vissa fall kan programmet inte svara, bara visa en vit skärm eller visa ett fel längst ned i gränssnittet utan några alternativ i gränssnittet. Prova följande i den ordning du vill:
 
