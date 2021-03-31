@@ -4,9 +4,9 @@ description: Använd [!DNL Adobe Experience Manager] desktop app, to work with [
 mini-toc-levels: 1
 feature: Experience Manager-datorprogram, resurshantering
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: d345a0f0ac6826cf623f6e8bbbcc132481ea557c
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: '3907'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,17 @@ Innan du börjar använda programmet bör du förstå [hur programmet fungerar](
 
 ## Aktivera skrivbordsåtgärder i [!DNL Experience Manager]-webbgränssnittet {#desktopactions-v2}
 
-I Assets-användargränssnittet i en webbläsare kan du utforska resursplatserna eller checka ut och öppna resursen för redigering i datorprogrammet. Dessa alternativ kallas [!UICONTROL Desktop Actions] och är inte aktiverade som standard. Följ de här stegen för att aktivera den.
+I [!DNL Assets]-användargränssnittet i en webbläsare kan du utforska resursplatserna eller checka ut och öppna resursen för redigering i skrivbordsprogrammet. Dessa alternativ kallas [!UICONTROL Desktop Actions] och är inte aktiverade som standard. Följ de här stegen för att aktivera den.
 
-1. Klicka/tryck på ikonen **[!UICONTROL User]** i verktygsfältet i resurskonsolen.
-1. Klicka/tryck på **[!UICONTROL My Preferences]** för att visa dialogrutan **[!UICONTROL Preferences]**.
-1. Välj **[!UICONTROL Show Desktop Actions For Assets]** i dialogrutan Användarinställningar. Klicka/tryck på **[!UICONTROL Accept]**.
+1. Klicka på ikonen **[!UICONTROL User]** i verktygsfältet i [!DNL Assets]-konsolen.
+1. Klicka på **[!UICONTROL My Preferences]** för att visa dialogrutan **[!UICONTROL Preferences]**.
 
-   ![Markera Visa skrivbordsåtgärder för resurser för att aktivera skrivbordsåtgärder](assets/enable_desktop_actions.png)
+1. Välj **[!UICONTROL Show Desktop Actions For Assets]** i dialogrutan Användarinställningar. Klicka på **[!UICONTROL Accept]**.
 
-   Markera [!UICONTROL Show Desktop Actions For Assets] om du vill aktivera skrivbordsåtgärder
+
+   ![Markera Visa skrivbordsåtgärder för resurser om du vill aktivera skrivbordsåtgärder](assets/enable_desktop_actions.png)
+
+   *Bild: Välj  [!UICONTROL Show Desktop Actions For Assets] om du vill aktivera skrivbordsåtgärder.*
 
 ## Bläddra bland, söka efter och förhandsgranska resurser {#browse-search-preview-assets}
 
