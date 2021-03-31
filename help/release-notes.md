@@ -4,9 +4,9 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: Experience Manager-datorprogram, versionsinformation
 translation-type: tm+mt
-source-git-commit: e8a299c7357faf2c19c11a56f2868f6679c15ac1
+source-git-commit: 861f2e8994ae7eb9b35c78036479fe47dc793cf3
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
 **Uppdatering i app v2.1.2.0**
 
-* Ett nytt alternativ för [!UICONTROL Clear Cookies] läggs till på programmets huvudmeny. Det hjälper vid potentiella inloggningsproblem, t.ex. vid byte av anslutning från en server till en annan.
+* Ett nytt alternativ för [!UICONTROL Clear Cookies] läggs till på programmets huvudmeny. Det hjälper vid potentiella inloggningsproblem, t.ex. vid byte av anslutning från en server till en annan. Se [rensa cookies innan du ansluter](/help/troubleshoot.md#cannot-login-cookies-issue).
 
 **Uppdatering i app v2.1.1.0**
 
