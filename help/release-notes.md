@@ -2,15 +2,15 @@
 title: '[!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp'
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och hämtningslänkar för [!DNL Adobe Experience Manager] datorprogrammet.
 mini-toc-levels: 1
-feature: Experience Manager-datorprogram, versionsinformation
+feature: datorprogram,versionsinformation
+exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
 translation-type: tm+mt
-source-git-commit: 861f2e8994ae7eb9b35c78036479fe47dc793cf3
+source-git-commit: 4616934e8923693106401da008e2510310d0742a
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1510'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp  {#release-notes-v2}
 
