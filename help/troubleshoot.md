@@ -1,14 +1,14 @@
 ---
 title: Bästa tillvägagångssätt för och felsökning [!DNL Adobe Experience Manager] datorprogram
 description: Följ bästa praxis och felsök för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
+exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
 translation-type: tm+mt
-source-git-commit: a766855c0670e9f291b8020ee6ab7addc50689a4
+source-git-commit: b893ad24d360ed382cab50771413219ea7bda09e
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2261'
 ht-degree: 0%
 
 ---
-
 
 # Felsök [!DNL Adobe Experience Manager]-datorprogrammet {#troubleshoot-v2}
 
@@ -298,6 +298,13 @@ I vissa fall kan programmet inte svara, bara visa en vit skärm eller visa ett f
 * Avsluta programmet och öppna det igen.
 
 I båda metoderna startar programmet i rotmappen DAM.
+
+## Dölj utgångna resurser {#hide-expired-assets}
+
+När du bläddrar bland resurser i användargränssnittet [!DNL Experience Manager] visas inte de utgångna resurserna. Administratörer kan göra följande konfiguration för att förhindra att resurser som har gått ut visas, söks och hämtas när de bläddrar bland resurser från skrivbordsappen och Asset Link. Konfigurationen fungerar för alla användare, oavsett administratörsbehörighet.
+
+* [Konfiguration i Experience Manager 6.5 för att dölja utgångna resurser](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api).
+* [Konfiguration i Experience Manager som en Cloud Service för att dölja utgångna resurser](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api).
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
