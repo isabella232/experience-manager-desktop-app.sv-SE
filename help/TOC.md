@@ -5,14 +5,14 @@ audience: end-user
 user-guide-title: Handbok för Experience Manager-datorprogrammet
 breadcrumb-title: Handbok för skrivbordsprogram
 user-guide-description: Lär dig att använda datorprogrammet Experience Manager för att ansluta databaser och datorprogram för att ge snabbare åtkomst till resurser och smidiga arbetsflöden.
-feature-set: Experience Manager Assets
-feature: Experience Manager-datorprogram
-role: Affärsledare, administratör
+feature-set: Experience Manager Assets,Experience Manager
+feature: Skrivbordsapp
+role: Business Practitioner, Administrator
 translation-type: tm+mt
-source-git-commit: fd29c31e8a353ce6f827f58c58c5ecc36f3c71af
+source-git-commit: 4616934e8923693106401da008e2510310d0742a
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 5%
+source-wordcount: '65'
+ht-degree: 6%
 
 ---
 
