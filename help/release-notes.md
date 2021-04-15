@@ -5,9 +5,9 @@ mini-toc-levels: 1
 feature: datorprogram,versionsinformation
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
 translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1523'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.2.0
 
 [!DNL Adobe Experience Manager] datorprogrammet är tillgängligt för följande  **operativsystem**:
 
-* macOS X 10.14 eller senare, med de senaste felkorrigeringarna.
+* macOS X 10.14 eller senare, med de senaste felkorrigeringarna. [Mac-datorer med Apple ](https://support.apple.com/en-us/HT211814) siliconare stöds inte ännu.
 * Windows 10 med de senaste servicepaketen och felkorrigeringarna.
 
 Hämtnings-URL:erna **för operativsystem som stöds är:**
