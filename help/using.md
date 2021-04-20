@@ -2,7 +2,7 @@
 title: Använd [!DNL Experience Manager] datorprogrammet
 description: Använd [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM-resurser direkt från Win- eller Mac-datorn och använd i andra program.
 mini-toc-levels: 1
-feature: datorprogram,Resurshantering
+feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
 translation-type: tm+mt
 source-git-commit: 4616934e8923693106401da008e2510310d0742a
