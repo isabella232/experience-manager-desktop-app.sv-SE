@@ -2,12 +2,11 @@
 title: '[!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp'
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och hämtningslänkar för [!DNL Adobe Experience Manager] datorprogrammet.
 mini-toc-levels: 1
-feature: Desktop App,Release Information
+feature: datorprogram,versionsinformation
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-translation-type: tm+mt
-source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
+source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -79,7 +78,7 @@ Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
 **Uppdatering i app v2.1.0.0**
 
-* Om du vill överföra resurser kan användare nu dra filer eller mappar i programmets gränssnitt, direkt från Utforskaren i Windows eller Finder i Mac. Detta fungerar utöver det överföringsalternativ som tidigare fanns i programmet. <!-- CQ-4309527 -->
+* Om du vill överföra resurser kan användare nu dra filer eller mappar i programmets gränssnitt, direkt från Utforskaren i Windows eller Finder i Mac. Detta fungerar utöver det överföringsalternativ som är tillgängligt i programmet. Se [ladda upp resurser](/help/using.md#upload-and-add-new-assets-to-aem) <!-- CQ-4309527 -->
 
 **Uppdatering i app v2.0.3**
 
@@ -171,7 +170,7 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 >
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
->* [Använda  [!DNL Experience Manager] datorprogrammet](using.md)
->* [Installera och uppgradera datorprogrammet](install-upgrade.md)
->* [Bästa praxis och felsökningstips](troubleshoot.md)
+>* [Använda [!DNL Experience Manager] datorprogrammet](using.md)
+* [Installera och uppgradera datorprogrammet](install-upgrade.md)
+* [Bästa praxis och felsökningstips](troubleshoot.md)
 
