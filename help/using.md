@@ -4,9 +4,9 @@ description: Använd [!DNL Adobe Experience Manager] desktop app, to work with [
 mini-toc-levels: 1
 feature: datorprogram,Resurshantering
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
+source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
 workflow-type: tm+mt
-source-wordcount: '3923'
+source-wordcount: '3999'
 ht-degree: 0%
 
 ---
@@ -175,9 +175,19 @@ Om det behövs kan du växla utcheckning. Den uppdaterade resursen tas bort frå
 
 ## Överför och lägg till nya resurser i [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
-Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering i [!DNL Experience Manager]-databasen. Om du vill lägga till nytt innehåll i [!DNL Experience Manager] väljer du ![alternativet ](assets/do-not-localize/upload_to_cloud_da2.png) i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Du kan också överföra resurser genom att dra filerna eller mapparna i programgränssnittet. I Windows överförs resurserna till mappen om du drar resurser till en mapp i appen.
+Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering i [!DNL Experience Manager]-databasen. Om du vill lägga till nytt innehåll i [!DNL Experience Manager] väljer du ![alternativet ](assets/do-not-localize/upload_to_cloud_da2.png) i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Du kan också överföra resurser genom att dra filerna eller mapparna i programgränssnittet. I Windows överförs resurserna till mappen om du drar resurser till en mapp i appen. Om det tar längre tid att överföra visas en förloppsindikator.
 
-Om överföringen tar längre tid att överföra visas en förloppsindikator längst ned i programmet. Använd inte blanksteg eller ogiltiga tecken när du skapar eller överför mappar. Se en lista över tillåtna tecken på [skapa mappar i [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
+När du namnger filer och mappar ska du inte använda följande (blankstegsavgränsad lista med) tecken:
+
+* i filnamn `\\`.
+
+   Tecknen `# % { } ? & . / : [ | ] *` ersätts med bindestreck i nodnamn som skapats i [!DNL Adobe Experience Manager]; men blanksteg och hölje behålls.
+
+* i mappnamn `\\ \t &`.
+
+   Blanksteg och tecknen `% ; # , + ? ^ { } " . / : [ ] | *` i mappnamn ersätts med bindestreck i mappsökvägar i nodnamn som skapats i [!DNL Adobe Experience Manager]. Versalerna konverteras också till gemener i mappsökvägar.
+
+Om [!UICONTROL Use legacy conventions when creating nodes for assets and folders] är aktiverat i [!UICONTROL Preferences] emulerar programmet beteendet v1.10 när mappar överförs. I v1.10 gäller de nodnamn som skapas i databasen mellanslag och skiftlägen för de mappnamn som användaren anger. Mer information finns i [appinställningar](/help/install-upgrade.md#set-preferences).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
