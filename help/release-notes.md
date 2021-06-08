@@ -4,16 +4,16 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: datorprogram,versionsinformation
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
+source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1649'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp  {#release-notes-v2}
 
-Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.2.0) anges nedan. Releasedatum är 26 mars 2021. Det är en liten release med en förbättring.
+Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.3.1) visas nedan. Releasedatum är 8 juni 2021.
 
 **Versionerna [!DNL Experience Manager] som stöds** är:
 
@@ -33,9 +33,9 @@ Hämtnings-URL:erna **för operativsystem som stöds är:**
 
 | Operativsystem | [!DNL Experience Manager] som  [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
-| macOS 64-bitars | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.2.0.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.2.0.dmg) |
-| Windows 64-bitars | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.2.0.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.2.0.exe) |
-| Windows 32-bitars | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.2.0.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.2.0.exe) |
+| macOS 64-bitars | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.1.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.1.dmg) |
+| Windows 64-bitars | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.1.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.3.1.exe) |
+| Windows 32-bitars | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) |
 
 >[!NOTE]
 >
@@ -68,6 +68,16 @@ Funktionen stöds i versionerna [!DNL Adobe Creative Cloud] 2018 och [!DNL Adobe
 
 Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
+**Uppdateringar i app v2.1.3.1**
+
+* Ett alternativ läggs till som (om det här alternativet är markerat) gör att programmet kan överföra mappar och filer så att deras nodnamn som skapats i [!DNL Adobe Experience Manager] är desamma som de lokala fil- och mappnamnen.
+
+   Det här beteendet liknar standardbeteendet i version 1 av datorprogrammet. Om alternativet inte är aktiverat i den aktuella versionen ersätts blanksteg och tecknen `% ; # , + ? ^ { } "` i mappnamn med bindestreck i mappsökvägar. Versaler konverteras också till gemener i mappsökvägar. I filnamn ersätts dock tecknen `# % { } ? &` med bindestreck; men blanksteg och hölje behålls. Mer information finns i [appinställningar](/help/install-upgrade.md#set-preferences) och [Överför och lägg till nya resurser](/help/using.md#upload-and-add-new-assets-to-aem).
+
+Felet som har åtgärdats i den aktuella versionen är:
+
+* Överförings- och nedladdningshastigheterna för mediefiler har förbättrats, även med stora mediefiler. Korrigerade ett problem där resursöverföringar med [!DNL desktop app] misslyckades i allt större utsträckning när stora filer överfördes.
+
 **Uppdatering i app v2.1.2.0**
 
 * Ett nytt alternativ för [!UICONTROL Clear Cookies] läggs till på programmets huvudmeny. Det hjälper vid potentiella inloggningsproblem, t.ex. vid byte av anslutning från en server till en annan. Se [rensa cookies innan du ansluter](/help/troubleshoot.md#cannot-login-cookies-issue).
@@ -82,7 +92,7 @@ Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
 **Uppdatering i app v2.0.3**
 
-Felet som har åtgärdats i den aktuella versionen är:
+Felet som åtgärdas i den här versionen är:
 
 * Korrigerade inloggningsproblemet för appanvändare i Windows som försöker få åtkomst till DAM-databasen på [!DNL Adobe Experience Manager] 6.5.5.0.
 
@@ -155,8 +165,6 @@ I följande diagram visas flödet av resurser och filer från molnet till det lo
 * När du ansluter till en URL som inte har [!DNL Experience Manager]-server igång, svarar inte anslutningsskärmen. Avsluta programmet och starta det igen.
 
 **CRUD-problem (Skapa, Läs, Uppdatera och Ta bort):**
-
-* Programmet försöker ladda upp filer även med ogiltiga tecken, vilket kan orsaka överföringsfel på serversidan. <!-- CQ-4273652 -->
 
 * När du överför ändringar till en resurs med kommentarer lagras kommentarerna med resursen i [!DNL Experience Manager], men de visas inte som versionskommentarer. Problemet åtgärdas i [!DNL Experience Manager] 6.4.5 och [!DNL Experience Manager] 6.5.1. Adobe rekommenderar att du installerar de senaste Service Pack-uppdateringarna. <!-- CQ-4268990 -->
 
