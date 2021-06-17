@@ -4,7 +4,7 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: datorprogram,versionsinformation
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
+source-git-commit: d642a33c8e8c2f771a6f996a76167b7f6e42c1ce
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 0%
@@ -70,10 +70,6 @@ Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
 **Uppdateringar i app v2.1.3.1**
 
-* Ett alternativ läggs till som (om det här alternativet är markerat) gör att programmet kan överföra mappar och filer så att deras nodnamn som skapats i [!DNL Adobe Experience Manager] är desamma som de lokala fil- och mappnamnen.
-
-   Det här beteendet liknar standardbeteendet i version 1 av datorprogrammet. Om alternativet inte är aktiverat i den aktuella versionen ersätts blanksteg och tecknen `% ; # , + ? ^ { } "` i mappnamn med bindestreck i mappsökvägar. Versaler konverteras också till gemener i mappsökvägar. I filnamn ersätts dock tecknen `# % { } ? &` med bindestreck; men blanksteg och hölje behålls. Mer information finns i [appinställningar](/help/install-upgrade.md#set-preferences) och [Överför och lägg till nya resurser](/help/using.md#upload-and-add-new-assets-to-aem).
-
 Felet som har åtgärdats i den aktuella versionen är:
 
 * Överförings- och nedladdningshastigheterna för mediefiler har förbättrats, även med stora mediefiler. Korrigerade ett problem där resursöverföringar med [!DNL desktop app] misslyckades i allt större utsträckning när stora filer överfördes.
@@ -81,6 +77,10 @@ Felet som har åtgärdats i den aktuella versionen är:
 **Uppdatering i app v2.1.2.0**
 
 * Ett nytt alternativ för [!UICONTROL Clear Cookies] läggs till på programmets huvudmeny. Det hjälper vid potentiella inloggningsproblem, t.ex. vid byte av anslutning från en server till en annan. Se [rensa cookies innan du ansluter](/help/troubleshoot.md#cannot-login-cookies-issue).
+
+* Ett alternativ läggs till som (om det här alternativet är markerat) gör att programmet kan överföra mappar och filer så att deras nodnamn som skapats i [!DNL Adobe Experience Manager] är desamma som de lokala fil- och mappnamnen.
+
+   Det här beteendet liknar standardbeteendet i version 1 av datorprogrammet. Om alternativet inte är aktiverat i den aktuella versionen ersätts blanksteg och tecknen `% ; # , + ? ^ { } "` i mappnamn med bindestreck i mappsökvägar. Versaler konverteras också till gemener i mappsökvägar. I filnamn ersätts dock tecknen `# % { } ? &` med bindestreck; men blanksteg och hölje behålls. Mer information finns i [appinställningar](/help/install-upgrade.md#set-preferences) och [Överför och lägg till nya resurser](/help/using.md#upload-and-add-new-assets-to-aem).
 
 **Uppdatering i app v2.1.1.0**
 
