@@ -4,9 +4,9 @@ description: Använd [!DNL Adobe Experience Manager] desktop app, to work with [
 mini-toc-levels: 1
 feature: datorprogram,Resurshantering
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
+source-git-commit: 7c413be995ef087fab75114d65e87f6936c8e021
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4054'
 ht-degree: 0%
 
 ---
@@ -177,18 +177,6 @@ Om det behövs kan du växla utcheckning. Den uppdaterade resursen tas bort frå
 
 Användare kan lägga till nya resurser i DAM-databasen. Du kan till exempel vara fotograf eller entreprenör på en byrå som vill lägga till ett stort antal foton från en fotografering i [!DNL Experience Manager]-databasen. Om du vill lägga till nytt innehåll i [!DNL Experience Manager] väljer du ![alternativet ](assets/do-not-localize/upload_to_cloud_da2.png) i appens övre fält. Bläddra till resursfilerna i det lokala filsystemet och klicka på **[!UICONTROL Select]**. Du kan också överföra resurser genom att dra filerna eller mapparna i programgränssnittet. I Windows överförs resurserna till mappen om du drar resurser till en mapp i appen. Om det tar längre tid att överföra visas en förloppsindikator.
 
-När du namnger filer och mappar ska du inte använda följande (blankstegsavgränsad lista med) tecken:
-
-* i filnamn `\\`.
-
-   Tecknen `# % { } ? & . / : [ | ] *` ersätts med bindestreck i nodnamn som skapats i [!DNL Adobe Experience Manager]; men blanksteg och hölje behålls.
-
-* i mappnamn `\\ \t &`.
-
-   Blanksteg och tecknen `% ; # , + ? ^ { } " . / : [ ] | *` i mappnamn ersätts med bindestreck i mappsökvägar i nodnamn som skapats i [!DNL Adobe Experience Manager]. Versalerna konverteras också till gemener i mappsökvägar.
-
-Om [!UICONTROL Use legacy conventions when creating nodes for assets and folders] är aktiverat i [!UICONTROL Preferences] emulerar programmet beteendet v1.10 när mappar överförs. I v1.10 gäller de nodnamn som skapas i databasen mellanslag och skiftlägen för de mappnamn som användaren anger. Mer information finns i [appinställningar](/help/install-upgrade.md#set-preferences).
-
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
 
@@ -204,9 +192,76 @@ Du kan styra samtidighet för överföring (acceleration) i **[!UICONTROL Prefer
 >
 >Överföringslistan är inte beständig och är inte tillgänglig om du avslutar programmet och öppnar det igen.
 
+### Hantera specialtecken i resursnamn {#special-characters-in-filename}
+
+I det äldre programmet bevarade de nodnamn som skapades i databasen utrymmet och skiftläget för mappnamnen som användaren angett. Aktivera [!UICONTROL Use legacy conventions when creating nodes for assets and folders] i [!UICONTROL Preferences] för att det aktuella programmet ska emulera reglerna för nodnamngivning i v1.10-appen. Se [appinställningar](/help/install-upgrade.md#set-preferences). Den här äldre inställningen är inaktiverad som standard.
+
 >[!NOTE]
 >
->Om filerna inte kan överföras och om du ansluter till [!DNL Experience Manager] 6.5.1 eller senare ska du läsa denna [felsökningsinformation](troubleshoot.md#upload-fails).
+>Programmet ändrar bara nodnamnen i databasen med följande namnkonventioner. Appen behåller resursens `Title` i befintligt skick.
+
+<!-- TBD: Do NOT use this table.
+
+| Where do characters occur | Characters | Legacy preference | Renaming convention | Example |
+|---|---|---|---|---|
+| In file name extension | `.` | Enabled or disabled | Retained as is | NA |
+| File or folder name | `. / : [ ] | *` | Enabled or disabled | Replaced with a `-` (hyphen) | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| Folder name | `% ; # , + ? ^ { } "` | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | `% # ? { } &` | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | Whitespaces | Enabled or disabled | Retained as is | NA |
+| Folder name | Whitespaces | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | Uppercase characters | Disabled | Retained as is | tbd |
+| Folder name | Uppercase characters | Disabled | Replaced with a `-` (hyphen) | tbd |
+-->
+
+| Characters ‡ | Äldre inställning i appen | Vid förekomst i filnamn | Vid förekomst i mappnamn | Exempel |
+|---|---|---|---|---|
+| `. / : [ ] | *` | Aktiverad eller inaktiverad | Ersatt med `-` (bindestreck). Ett `.` (punkt) i filnamnstillägget behålls som det är. | Ersatt med `-` (bindestreck). | `myimage.jpg` förblir som den är och  `my.image.jpg` ändras till  `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` och blanksteg | ![avmarkera ](assets/do-not-localize/deselect-icon.png) ikonInaktiverad | Blanksteg bevaras | Ersatt med `-` (bindestreck). | `My Folder.` ändringar i  `my-folder-`. |
+| `# % { } ? & .` | ![avmarkera ](assets/do-not-localize/deselect-icon.png) ikonInaktiverad | Ersatt med `-` (bindestreck). | NA. | `#My New File.` ändringar i  `-My New File-`. |
+| Versaler | ![avmarkera ](assets/do-not-localize/deselect-icon.png) ikonInaktiverad | Läsningen behålls som den är. | Ändrad till gemener. | `My New Folder` ändringar i  `my-new-folder`. |
+| Versaler | ![markering markerad ](assets/do-not-localize/selection-checked-icon.png) ikonAktiverad | Läsningen behålls som den är. | Läsningen behålls som den är. | NA. |
+
+‡ Teckenlistan är en blankstegsavgränsad lista.
+
+<!-- TBD: Check if the following is to be included in the footnote.
+
+Do not use &#92;&#92; in the names of files and &#92;&#116; &#38; in the names of folders. 
+-->
+
+
+<!-- TBD: Securing the below presentation of the same content in a comment.
+
+**File names**
+
+| Characters | Replaced by |
+|---|---|
+| &#35; &#37; &#123; &#63; &#125; &#38; &#46; &#47; &#58; &#91; &#124; &#93; &#42; | hyphen (-) |
+| whitespaces | whitespaces are retained |
+| capital case | casing is retained |
+
+>[!CAUTION]
+>
+>Avoid using &#92;&#92; in file names.
+
+**Folder names**
+
+| Characters | Replaced by |
+|---|---|
+| Characters | Replaced by |
+| &#37; &#59; &#35; &#44; &#43; &#63; &#94; &#123; &#123; &#34; &#46; &#47; &#59; &#91; &#93; &#124; &#42; | hyphen (-) |
+| whitespaces | hyphen (-) |
+| capital case | lower case |
+
+>[!CAUTION]
+>
+>Avoid using &#92;&#92; &#92;&#116; &#38; in folder names.
+
+>[!NOTE]
+>
+>If you enable [!UICONTROL Use legacy conventions when creating nodes for assets and folders] in app [!UICONTROL Preferences], then the app emulates v1.10 app behavior when uploading folders. In v1.10, the node names created in the repository respect spaces and casing of the folder names provided by the user. For more information, see [app Preferences](/help/install-upgrade.md#set-preferences).
+
+-->
 
 ## Arbeta med flera resurser {#work-with-multiple-assets}
 
