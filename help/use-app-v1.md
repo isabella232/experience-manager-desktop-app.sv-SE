@@ -1,12 +1,11 @@
 ---
 title: Använd [!DNL Experience Manager] datorprogrammet version 1.10.
 description: Lär dig hur du använder Adobe Experience Manager-datorprogram version 1.10 och optimerar ditt arbete med resurser på datorn.
-feature: Desktop App,Asset Management
+feature: datorprogram,Resurshantering
 exl-id: 2fdc1c8d-b822-4cca-ad06-bd875a00aa6d
-translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: dcd29d0bbb32004d970d334c256e659f4a4c39e1
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2371'
 ht-degree: 0%
 
 ---
@@ -19,7 +18,7 @@ Tack vare en sådan integrering kan olika roller i organisationen hantera medief
 
 De viktigaste uppgifterna du gör med [!DNL Experience Manager]-datorprogrammet v1 är:
 
-1. [Anslut till  [!DNL Experience Manager] en server](#installandconnect)
+1. [Anslut till en [!DNL Experience Manager] server](#installandconnect)
 1. [Öppna resurser direkt på skrivbordet](#openondesktop)
 1. [Redigera och checka ut resurser från datorn](#workonassets)
 1. [Överför resurser och mappar i grupp](#bulkupload)
@@ -30,7 +29,7 @@ Information om olika rekommenderade åtgärder och inte finns i [metodtips för 
 >
 >Skrivbordsprogrammet introducerades i [!DNL Experience Manager] 6.1-versionen och kallades [!DNL Experience Manager Assets Companion App].
 
-## [!DNL Experience Manager] pekpunkter i datorprogrammet i det kreativa arbetsflödet  {#aem-desktop-app-touch-points-in-the-creative-workflow}
+## [!DNL Experience Manager] pekpunkter i datorprogrammet i det kreativa arbetsflödet {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
 [!DNL Experience Manager] skrivbordsappen, tillsammans med  [!DNL Assets], integreras i ditt kreativa arbetsflöde och erbjuder följande kontaktytor.
 
@@ -38,7 +37,7 @@ Information om olika rekommenderade åtgärder och inte finns i [metodtips för 
 
 [!DNL Experience Manager] pekpunkter i datorprogrammet i det kreativa arbetsflödet
 
-## Installera och anslut appen till [!DNL Experience Manager]-servern {#installandconnect}
+## Installera och ansluta programmet till [!DNL Experience Manager]-servern {#installandconnect}
 
 Innan du kan börja skapa eller redigera de kreativa resurserna måste du ansluta datorprogrammet till [!DNL Assets]-servern för att hämta och överföra resurser i databasen. Utför följande uppgifter:
 
@@ -103,13 +102,13 @@ I Assets-användargränssnittet kan du utforska resursplatserna eller checka ut 
 
    ![[!DNL Experience Manager] gränssnitt med användarinställningar](assets/aem_ui_user_preferences.png)
 
-1. Välj **[!UICONTROL Show Desktop Actions For Assets]** i dialogrutan Användarinställningar. Klicka på **[!UICONTROL Accept]**.
+1. I dialogrutan [!UICONTROL User Preferences] väljer du **[!UICONTROL Show Desktop Actions For Assets]** och klickar sedan på **[!UICONTROL Accept]**.
 
    ![Markera  [!UICONTROL Show Desktop Actions For Assets] för att aktivera skrivbordsåtgärder](assets/enable_desktop_actions.png)
 
-   *Bild: Markera Visa skrivbordsåtgärder för resurser för att aktivera skrivbordsåtgärder.*
+   *Bild: Markera  [!UICONTROL Show Desktop Actions For Assets] om du vill aktivera skrivbordsåtgärder.*
 
-## Få åtkomst till och öppna resurser på skrivbordet {#openondesktop}
+## Få åtkomst till och öppna resurser på datorn {#openondesktop}
 
 När du klickar på **Öppna** för att öppna en resurs på den lokala datorn hämtar programmet resursen till dess interna cache. Programmet startar det inbyggda skrivbordsprogrammet som är associerat med filtypen för den hämtade resursen.
 
@@ -232,7 +231,7 @@ Resurserna överförs till [!DNL Experience Manager]-servern. Du kan också kont
 
 En resurs överförs automatiskt till [!DNL Experience Manager] efter att eventuella ändringar har sparats lokalt. Incheckningen gör resursen tillgänglig för andra [!DNL Experience Manager]-användare för redigering.
 
-### Överför resurser och mappar gruppvis till [!DNL Experience Manager]-servern {#bulkupload}
+### Massöverföra resurser och mappar till [!DNL Experience Manager]-servern {#bulkupload}
 
 Med [!DNL Experience Manager]-skrivbordsappen kan du överföra en hel mapp som innehåller resurser från den lokala filkatalogen till [!DNL Assets]. På så sätt överförs alla resurser i mappen gruppvis i stället för att behöva överföra dem en åt gången.
 
@@ -256,5 +255,5 @@ Du kan också välja filer/mappar som du vill överföra till [!DNL Experience M
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Experience Manager] Felsökning av datorprogram](troubleshoot-app-v1.md)
+>* [Felsök [!DNL Experience Manager] datorprogram](troubleshoot-app-v1.md)
 
