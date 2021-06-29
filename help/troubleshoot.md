@@ -2,15 +2,14 @@
 title: Bästa tillvägagångssätt för och felsökning [!DNL Adobe Experience Manager] datorprogram
 description: Följ bästa praxis och felsök för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-translation-type: tm+mt
-source-git-commit: b893ad24d360ed382cab50771413219ea7bda09e
+source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
 workflow-type: tm+mt
-source-wordcount: '2261'
+source-wordcount: '2260'
 ht-degree: 0%
 
 ---
 
-# Felsök [!DNL Adobe Experience Manager]-datorprogrammet {#troubleshoot-v2}
+# Felsöka [!DNL Adobe Experience Manager]-datorprogrammet {#troubleshoot-v2}
 
 [!DNL Adobe Experience Manager] datorprogrammet ansluter till en  [!DNL Experience Manager] distributionsdatabas för DAM (Digital Asset Management). Appen hämtar databasinformation och sökresultat på din dator, hämtar och överför filer och mappar och innehåller funktioner för att hantera konflikter med Assets-användargränssnittet.
 
@@ -179,11 +178,11 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-## Det går inte att överföra filer {#upload-fails}
+## Kan inte överföra filer {#upload-fails}
 
 Om du använder ett skrivbordsprogram med [!DNL Experience Manager] 6.5.1 eller senare uppgraderar du S3- eller Azure-anslutningen till version 1.10.4 eller senare. Det åtgärdar ett filöverföringsfel relaterat till [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Se [installationsanvisningar](install-upgrade.md#install-v2).
 
-## [!DNL Experience Manager] anslutningsproblem för skrivbordsprogram  {#connection-issues}
+## [!DNL Experience Manager] anslutningsproblem för skrivbordsprogram {#connection-issues}
 
 Om du har allmänna anslutningsproblem kan du få mer information om vad [!DNL Experience Manager]-datorprogrammet gör.
 
@@ -200,7 +199,7 @@ Om du har allmänna anslutningsproblem kan du få mer information om vad [!DNL E
 En majoritet av programmets begäranden finns i begärandeloggen. Men om det inte finns någon användbar information där kan det vara användbart att undersöka de förfrågningar som skickas av programmets inbäddade webbläsare.
 Se [SAML-avsnittet](#da-connection-issue-with-saml-aem) för instruktioner om hur du visar dessa begäranden.
 
-### SAML-inloggningsautentiseringen fungerar inte {#da-connection-issue-with-saml-aem}
+### SAML-inloggningsautentisering fungerar inte {#da-connection-issue-with-saml-aem}
 
 [!DNL Experience Manager] skrivbordsappen kan inte ansluta till din SSO-aktiverade (SAML)  [!DNL Adobe Experience Manager] distribution. Programmets design används för att anpassa variationerna och komplexiteten i SSO-anslutningar och processer. En installation kan dock kräva ytterligare felsökning.
 
@@ -327,5 +326,5 @@ Create Jira ticket with the following information:
 >[!MORELIKETHIS]
 >
 >* [Kända fel](release-notes.md#known-issues-v2)
->* [Undvik redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts)
+* [Undvik redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts)
 
