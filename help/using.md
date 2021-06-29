@@ -4,9 +4,9 @@ description: Använd [!DNL Adobe Experience Manager] desktop app, to work with [
 mini-toc-levels: 1
 feature: datorprogram,Resurshantering
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 7c413be995ef087fab75114d65e87f6936c8e021
+source-git-commit: dcd29d0bbb32004d970d334c256e659f4a4c39e1
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4053'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De viktigaste uppgifterna du gör med [!DNL Experience Manager]-datorprogrammet 
 ![Arbetsflöden och uppgifter du kan utföra med  [!DNL Experience Manager] datorprogramArbetsflöden och uppgifter du kan utföra ](assets/aem_desktop_app_usecases_v2.png "med  [!DNL Adobe Experience Manager] datorprogramLadda ned ")
   [](assets/aem_desktop_app_usecases_print.pdf) den tryckfärdiga PDF-filen.
 
-## Så här fungerar skrivbordsappen {#how-app-works2}
+## Så fungerar skrivbordsappen {#how-app-works2}
 
 Innan du börjar använda programmet bör du förstå [hur programmet fungerar](release-notes.md#how-app-works). Bekanta dig också med följande termer:
 
@@ -65,7 +65,7 @@ I [!DNL Assets]-användargränssnittet i en webbläsare kan du utforska resurspl
 1. Klicka på ikonen **[!UICONTROL User]** i verktygsfältet i [!DNL Assets]-konsolen.
 1. Klicka på **[!UICONTROL My Preferences]** för att visa dialogrutan **[!UICONTROL Preferences]**.
 
-1. Välj **[!UICONTROL Show Desktop Actions For Assets]** i dialogrutan Användarinställningar. Klicka på **[!UICONTROL Accept]**.
+1. I dialogrutan [!UICONTROL User Preferences] väljer du **[!UICONTROL Show Desktop Actions For Assets]** och klickar sedan på **[!UICONTROL Accept]**.
 
 
    ![Markera Visa skrivbordsåtgärder för resurser om du vill aktivera skrivbordsåtgärder](assets/enable_desktop_actions.png)
@@ -113,7 +113,7 @@ Hämtning av flera resurser kan leda till sämre prestanda om köstorleken är s
 
 Om en eller flera mappar är markerade och hämtade hämtar programmet bara resurser som lagras direkt i mappen/mapparna i [!DNL Experience Manager]. Det hämtar inte resurser från undermappar automatiskt.
 
-## Öppna resurser på skrivbordet {#openondesktop-v2}
+## Öppna resurser på datorn {#openondesktop-v2}
 
 Du kan öppna fjärrresurserna för visning i det ursprungliga programmet. Resurserna hämtas till en lokal mapp och startas i det program som är associerat med filformatet. Du kan ändra det inbyggda programmet så att det öppnar specifika filtyper (tillägg) i Mac eller Windows.
 
@@ -128,7 +128,7 @@ Klicka på **[!UICONTROL Open]** på resursmenyn. Resursen hämtas lokalt och ö
 
 Om du vill öppna den lokala hämtningsmappen för en resurs klickar du på ![Fler åtgärder-ikonen](assets/do-not-localize/more2_da2.png) och klickar på ![Visa-ikonen](assets/do-not-localize/reveal_action2_da2.png) **[!UICONTROL Reveal File]**-åtgärden.
 
-## Använd eller placera resurser i ursprungliga dokument {#place-assets-in-native-documents}
+## Använd eller placera resurser i ursprungsdokument {#place-assets-in-native-documents}
 
 I vissa fall, till exempel när du monterar en resurs i ett internt dokument, kan du få åtkomst till en fil i Utforskaren i Windows eller Finder i Mac. Använd ![Visa-ikonen](assets/do-not-localize/reveal_action2_da2.png) **[!UICONTROL Reveal File]** om du vill gå till filsystemplatsen för den lokalt hämtade filen.
 
@@ -146,7 +146,7 @@ Klicka på **[!UICONTROL Reveal File]** eller **[!UICONTROL Reveal Folder]** i e
 >
 >Använd inte alternativet **[!UICONTROL Reveal File]** för att redigera resurser i inbyggda program. Använd i stället **[!UICONTROL Edit]**-åtgärderna. Mer information finns i [Avancerat arbetsflöde: samarbeta med samma filer och undvika redigeringskonflikter](#adv-workflow-collaborate-avoid-conflicts).
 
-## Redigera resurser och överför uppdaterade resurser till [!DNL Experience Manager] {#edit-assets-upload-updated-assets}
+## Redigera resurser och överföra uppdaterade resurser till [!DNL Experience Manager] {#edit-assets-upload-updated-assets}
 
 Öppna resurser för redigering när du vill göra ändringar och överföra de uppdaterade resurserna till AEExperience ManagerEM-servern. Om du vill undvika konflikter med redigeringar av andra användare använder du programmet för att starta en redigeringssession. Innan du börjar redigera bör du kontrollera att resursen inte har någon låsikon, det vill säga att en annan användare inte redigerar resursen.
 
@@ -271,7 +271,7 @@ Användare kan enkelt arbeta med och hantera flera resurser med åtgärder som a
 
 När du arbetar med mappar som innehåller många resurser bläddrar du för att visa fler resurser. Om du vill rulla med tangentbordet trycker du på Tabb några gånger för att markera resursen längst upp. Observera den markerade resursen för att veta när den är markerad. Använd nu nedåtpilen för att förflytta dig i resurslistan.
 
-### Snabbåtgärder för markerade resurser {#quick-actions-for-selected-assets}
+### Snabbåtgärder för valda resurser {#quick-actions-for-selected-assets}
 
 Klicka på miniatyrbilden för några resurser för att markera resurserna. Om du vill markera alla resurser klickar du i kryssrutan i appens övre fält. Den uppsättning åtgärder som gäller för alla markerade resurser tillsammans visas i ett verktygsfält längst ned i programmet.
 
@@ -281,7 +281,7 @@ Klicka på miniatyrbilden för några resurser för att markera resurserna. Om d
 
 Vilka åtgärder som är tillgängliga i verktygsfältet längst ned beror på statusen för de valda filerna. Om du till exempel bara väljer **[!UICONTROL Edited Locally]**-filer visas ikonen **[!UICONTROL Upload Changes]**. Om du väljer en blandning av **[!UICONTROL Edited locally]** och **[!UICONTROL Cloud only]** är åtgärden **[!UICONTROL Upload Changes]** inte tillgänglig.
 
-### Sök efter alla redigerade bilder {#find-all-edited-images}
+### Söka efter alla redigerade bilder {#find-all-edited-images}
 
 Programmet tillhandahåller en vy med namnet **[!UICONTROL Edited locally]** som ger dig snabb åtkomst till alla filer som du hämtade lokalt (via [!UICONTROL Open] eller [!UICONTROL Edit]-åtgärder) och sedan ändrade. Med appen kan du välja alla lokalt redigerade resurser och överföra ändringarna med några klick. I den här vyn visas även lokalt redigerade resurser som har en redigeringskonflikt.
 
@@ -352,7 +352,7 @@ Om en resurs som du redigerar lokalt också uppdateras på servern utan att du v
 
 ![Alternativ för att lösa en ](assets/editing_conflict_dialog_da2.png "redigeringskonfliktAlternativ för att lösa en redigeringskonflikt")
 
-## Avancerat arbetsflöde: placera och länka resurser i InDesign-filen {#adv-workflow-place-assets-indesign}
+## Avancerat arbetsflöde: montera och länka resurser i filen InDesign {#adv-workflow-place-assets-indesign}
 
 När du använder [!DNL Experience Manager]-datorprogrammet för att öppna filer med länkade resurser hämtas resurserna i förväg och visas i de ursprungliga programmen. För att det här arbetsflödet ska fungera måste ditt inbyggda program ha stöd för att placera länkar till lokala resurser och [!DNL Experience Manager] måste ha stöd för att lösa länkarna i de binära filerna till serversidans referenser.
 
