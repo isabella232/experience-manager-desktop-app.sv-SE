@@ -1,17 +1,16 @@
 ---
 title: Introduktion till [!DNL Experience Manager] datorprogrammet
 description: Lär dig hur du använder [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] direkt från skrivbordet.
-role: Business Practitioner, Administrator, Leader
-translation-type: tm+mt
-source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
+role: User, Admin, Leader
+exl-id: 5da36ac5-ab5b-4f8d-b446-ebe2360ec464
+source-git-commit: b661fedb6e33599921d39c0597c7d9f8e576798b
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] översikt över datorprogram  {#overview-v2}
+# [!DNL Adobe Experience Manager] översikt över datorprogram {#overview-v2}
 
 Adobe erbjuder sammankopplade arbetsflöden i alla sina lösningar för att ge produktivitet på nästa nivå för företagsanvändare och kreatörer. Skrivbordsappen [!DNL Adobe Experience Manager] ansluter databaser och skrivbordsprogram, inklusive Adobe och tredjepartsprogram, för att ge snabbare åtkomst till resurser och smidiga arbetsflöden. Denna tidsbesparing och en minskad insats förbättrar effektiviteten för användare som arbetar med resurser från [!DNL Adobe Experience Manager] i sina arbetsflöden på datorn.
 
