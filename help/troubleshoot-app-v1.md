@@ -1,16 +1,15 @@
 ---
 title: Felsök skrivbordsappens version 1.10.
 description: Felsök [!DNL Adobe Experience Manager] datorprogramversion 1.10 för att lösa enstaka problem i samband med installation, uppgradering och konfiguration.
-translation-type: tm+mt
-source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
+exl-id: 1e1409c2-bf5e-4e2d-a5aa-3dd74166862c
+source-git-commit: 32aff5d66f2cb67ab4bb440d7ace747a5cf1dd26
 workflow-type: tm+mt
-source-wordcount: '3363'
+source-wordcount: '3350'
 ht-degree: 0%
 
 ---
 
-
-# Felsök [!DNL Adobe Experience Manager]-skrivbordsappen v1.x {#troubleshoot-aem-desktop-app}
+# Felsök [!DNL Adobe Experience Manager]-datorprogrammet v1.x {#troubleshoot-aem-desktop-app}
 
 Felsök AEM datorprogram för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 
@@ -20,7 +19,7 @@ Felsök AEM datorprogram för att lösa tillfälliga problem som rör installati
 
 Med den här arkitekturen fångar skrivbordsappen upp filsystemanrop (öppna, stänga, läsa, skriva osv.) till den monterade nätverksresursen och översätter dem till interna AEM HTTP-anrop till AEM. Filerna cachelagras lokalt. Mer information finns i [Använd AEM datorprogram v1.x](use-app-v1.md).
 
-## Översikt över komponenten AEM skrivbordsappen {#desktop-app-component-overview}
+## Översikt över komponenten AEM datorprogram {#desktop-app-component-overview}
 
 datorprogrammet innehåller följande komponenter:
 
@@ -87,7 +86,7 @@ Alla åtgärder cachelagras inte lokalt. Följande överförs direkt till AEM Se
 * Åtgärder för mappar, till exempel skapa, ta bort och så vidare
 * Mappöverföringsfunktionen som introducerades i version 1.4 överför en lokal mapphierarki utan att cachelagra filerna lokalt
 
-## Enskilda åtgärder {#individual-operations}
+## Individuella operationer {#individual-operations}
 
 När du felsöker suboptimerade prestanda för enskilda användare ska du först granska [appbegränsningarna](#limitations). De följande avsnitten innehåller förslag på hur du kan förbättra prestandan för de enskilda användarna.
 
@@ -122,7 +121,7 @@ Du bör ta hänsyn till ytterligare faktorer när flera användare försöker ar
 * Om det finns en dispatcher före AEM
 * Aktuell inläsning på AEM
 
-## Ytterligare AEM konfigurationer {#additional-aem-configurations}
+## Ytterligare AEM {#additional-aem-configurations}
 
 Om WebDAV-/SMB-prestanda försämras drastiskt när flera användare arbetar samtidigt kan du konfigurera några saker i AEM, vilket kan förbättra prestandan.
 
@@ -130,7 +129,7 @@ Om WebDAV-/SMB-prestanda försämras drastiskt när flera användare arbetar sam
 
 Du kan förbättra prestandan AEM sidan genom att aktivera tillfälliga arbetsflöden för DAM Update Asset-arbetsflödet. Om du aktiverar tillfälliga arbetsflöden minskas den processorkraft som krävs för att uppdatera resurser när de skapas eller ändras i AEM.
 
-1. Navigera till `/miscadmin` i den AEM instansen som ska konfigureras (till exempel `http://[Server]:[Port]/miscadmin`).
+1. Navigera till `/miscadmin` i Experience Manager-instansen (`https://[aem_server]:[port]/miscadmin`).
 1. Expandera **Verktyg** > **Arbetsflöde** > **Modeller** > **dam** i navigeringsträdet.
 1. Dubbelklicka på **DAM Update Asset**.
 1. Gå till fliken **Sida** på den flytande verktygspanelen och klicka sedan på **Sidegenskaper**.
@@ -140,9 +139,9 @@ Du kan förbättra prestandan AEM sidan genom att aktivera tillfälliga arbetsfl
 
 En annan metod för att förbättra AEM prestanda är att konfigurera värdet för det maximala antalet parallella jobb för jobbet Beviljit Transient Workflow Queue. Det rekommenderade värdet är ungefär hälften av antalet processorer som är tillgängliga på servern. Så här justerar du värdet:
 
-1. Navigera till */system/console/configMgr* i den AEM instans som ska konfigureras (till exempel `http://[aem_server]:[port]/system/console/configMgr`).
-1. Sök efter **QueueConfiguration** och klicka för att öppna varje jobb tills du hittar jobbet **Bevilja tillfällig arbetsflödeskö**. Klicka på Redigera bredvid den.
-1. Ändra värdet **Maximalt antal parallella jobb** och klicka på **Spara**.
+1. Navigera till `/system/console/configMgr` i den AEM instansen som ska konfigureras (till exempel `https://[aem_server]:[port]/system/console/configMgr`).
+1. Sök efter `QueueConfiguration` och klicka för att öppna varje jobb tills du hittar jobbet **Bevilja tillfällig arbetsflödeskö** och klicka på **Redigera**.
+1. Ändra `Maximum Parallel Jobs`-värdet och klicka på **Spara**.
 
 ## AWS-konfiguration {#aws-configuration}
 
@@ -213,7 +212,7 @@ AEM försöker synkronisera en given fil tre gånger. Om filen inte kan synkroni
 
 Det enklaste sättet att åtgärda detta är att öppna filen som är i konflikt och spara den igen. Det tvingar AEM att försöka synkronisera ytterligare tre gånger. Om filen fortfarande inte kan synkroniseras finns mer hjälp i avsnitten nedan.
 
-## Rensar AEM skrivbordscache {#clearing-aem-desktop-cache}
+## Rensar AEM Skrivbordscache {#clearing-aem-desktop-cache}
 
 Att radera AEM Skrivbordscache är en preliminär felsökningsåtgärd som kan lösa flera AEM problem med skrivbordet.
 
@@ -263,19 +262,19 @@ I så fall kan det hända att innehållet inte ändras när du stänger och öpp
 
 Oavsett hur filen fungerar ändras den inte när du checkar in den. Även om en annan version av filen visas synkroniseras inte ändringarna till AEM.
 
-## Felsökning av problem med att flytta filer {#troubleshooting-problems-around-moving-files}
+## Felsöka problem med att flytta filer {#troubleshooting-problems-around-moving-files}
 
 Server-API:t kräver att ytterligare rubriker, X-Destination, X-Depth och X-Overwrite, skickas för att flytt- och kopieringsåtgärderna ska fungera. Avsändaren skickar inte dessa huvuden som standard, vilket gör att dessa åtgärder misslyckas. Mer information finns i [Ansluta till AEM bakom en Dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
 
-## Felsökning AEM anslutningsproblem med skrivbordet {#troubleshooting-aem-desktop-connection-issues}
+## Felsökning AEM anslutningsproblem med stationära datorer {#troubleshooting-aem-desktop-connection-issues}
 
-### SAML-omdirigeringsproblem {#saml-redirect-issue}
+### Omdirigeringsproblem för SAML {#saml-redirect-issue}
 
 Den vanligaste orsaken till problem med AEM Skrivbord som ansluter till en SAML-AEM (SSO-enabled) är att SAML-processen inte dirigerar tillbaka till den ursprungligen begärda sökvägen. Alternativt kan anslutningen omdirigeras till en värd som inte konfigurerats i AEM skrivbord. Så här verifierar du inloggningsprocessen:
 
 1. Öppna en webbläsare.
 1. Ange URL:en `/content/dam.json` i adressfältet.
-1. Ersätt URL:en med AEM, till exempel `http://localhost:4502/content/dam.json`.
+1. Ersätt URL:en med AEM, till exempel `https://localhost:4502/content/dam.json`.
 1. Logga in på AEM.
 1. När du har loggat in kontrollerar du webbläsarens aktuella adress i adressfältet. Den ska matcha den URL som du ursprungligen angav.
 1. Kontrollera att allt före `/content/dam.json` matchar AEM som konfigurerats i AEM Desktop.
