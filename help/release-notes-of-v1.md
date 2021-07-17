@@ -1,16 +1,15 @@
 ---
 title: Versionsinformation om datorprogrammet v1.10
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och nedladdningslänkar för AEM program version 1.10.
-translation-type: tm+mt
-source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
+exl-id: 886864e0-016a-4a17-b3ba-4b18a514214a
+source-git-commit: 32aff5d66f2cb67ab4bb440d7ace747a5cf1dd26
 workflow-type: tm+mt
-source-wordcount: '3897'
+source-wordcount: '3898'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] versionsinformation för datorprogram v1.10  {#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] versionsinformation för datorprogram v1.10 {#aem-desktop-app-release-notes}
 
 För datorprogram v1.x är följande hämtningslänkar och AEM kompatibilitetsinformation.
 
@@ -84,7 +83,7 @@ Den här versionen utökar och ersätter de tidigare versionerna av [!DNL Experi
 
 * **Version 1.3**: prestandaförbättringar och stabilitet när det gäller att komma åt filer och spara ändringar i AEM, särskilt från Creative Cloud-program som InDesign, Illustrator eller Photoshop. Det syftade till att ge användarna en mer lokal skrivbordsliknande upplevelse när de arbetade med filer, samtidigt som de hanterade nätverksdataöverföringsåtgärder i bakgrunden.
 
-### Förbättringar är tillgängliga sedan AEM datorprogram 1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
+### Förbättringar har gjorts sedan AEM datorprogram 1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
 [!DNL Adobe Experience Manager] skrivbordsapp 1.9.1 var en korrigeringsrelease som åtgärdar några viktiga kundproblem kring utcheckning av resurser och kopiering av filer från nätverksresurs till en lokal katalog.
 
@@ -183,7 +182,7 @@ AEM program 1.8.1 snabbspolning tillkom förbättringar när flera filer öppnas
 
    * (Win) Filen kan nu synkroniseras efter återställning till en tidigare version från AEM Assets UI (CQ-4216411).
 
-### Förbättringar som är tillgängliga sedan AEM datorprogrammet 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
+### Förbättringar som är tillgängliga sedan AEM datorprogram 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
 * Stabilitet:
 
@@ -259,7 +258,7 @@ AEM program 1.8.1 snabbspolning tillkom förbättringar när flera filer öppnas
 
    * Dra och släpp-filer genererar fel vid överföring till AEM (CQ-4217006).
 
-### Förbättringar som är tillgängliga sedan AEM datorprogrammet 1.5 {#Enhancements-Available-Since-AEM-Desktop-App-15}
+### Förbättringar som är tillgängliga sedan AEM datorprogram 1.5 {#Enhancements-Available-Since-AEM-Desktop-App-15}
 
 **Version 1.5.1.5 för Mac OS X:** Versionen 1.5.1.5 ger följande fördelar:
 
@@ -344,7 +343,7 @@ Båda dessa fall förväntas och är biverkningar av arkitekturen&quot;fördröj
 * Bättre hantering av skrivbordsprogram där mellanliggande filåtgärder används för att spara en fil (delvis sparade och tillfälliga filer), vilket gör att tidslinjen för AEM kan visa korrekt information om version och överföring av resurser.
 * Dialogrutan visas för att spåra status för bakgrundsuppladdningsuppgifter.
 
-## Lista över ändringar {#list-of-changes}
+## Ändringslista {#list-of-changes}
 
 ### Monteringspunkt på Mac {#mount-point-on-mac}
 
@@ -397,7 +396,7 @@ Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återst
 ## Kända fel {#known-issues}
 
 * Allmänt:
-   * Server-URL:er krävs för att peka mot servern utan sökväg (t.ex. `http://server`, `https://server`, `http://server:port` eller `https://server:port`). Kontextsökvägar och andra undermappar än /content/dam stöds inte (CQ-89343, CQ-87272)
+   * Server-URL:er krävs för att peka mot servern utan sökväg (till exempel `http://server`, `https://server`, `http://server:port` eller `https://server:port`). Kontextsökvägar och andra undermappar än /content/dam stöds inte (CQ-89343, CQ-87272)
 * Filnamn/lokalisering:
    * Fil- och mappnamn med reserverade tecken hanteras inte korrekt. Se till att använda fil- och mappnamn som uppfyller AEM (CQ-93361, CQ-93308, CQ-89276, CQ-4217183)
    * I vissa program, som Adobe Illustrator, kan filer med namn som inte stöds i AEM skapas. Du kan till exempel lägga till `Converted` efter konvertering av en fil, vilket gör att den inte kan överföras (CQ-4216985)
