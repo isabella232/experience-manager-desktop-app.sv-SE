@@ -1,12 +1,11 @@
 ---
 title: Installera och konfigurera skrivbordsprogram
 description: Installera och konfigurera [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servrar och hämta resurserna på det lokala filsystemet.
-feature: Desktop App,Release Information
+feature: datorprogram,versionsinformation
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -61,7 +60,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
 1. Om du uppgraderar från en annan version av programmet kan du läsa [uppgradera skrivbordsprogrammet](#upgrade-from-previous-version).
 
-1. Hoppa över det här steget om du använder [!DNL Experience Manager] som [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 eller senare eller [!DNL Experience Manager] 6.5.0 eller senare. Kontrollera att din [!DNL Experience Manager]-konfiguration uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med pakethanteraren [!DNL Experience Manager] som en [!DNL Experience Manager]-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. Hoppa över det här steget om du använder [!DNL Experience Manager] som [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 eller senare eller [!DNL Experience Manager] 6.5.0 eller senare. Kontrollera att din [!DNL Experience Manager]-konfiguration uppfyller kompatibilitetskraven som anges i [versionsinformationen](release-notes.md). Om det behövs hämtar du det tillämpliga [kompatibilitetspaketet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) och installerar det med pakethanteraren [!DNL Experience Manager] som en [!DNL Experience Manager]-administratör. Information om hur du installerar ett paket finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Kör installationsprogrammets binärfil och följ instruktionerna på skärmen.
 
@@ -123,7 +122,7 @@ Om du vill uppdatera inställningarna som inte är tillgängliga loggar du ut fr
 
 *Bild: Inställningar för skrivbordsprogram.*
 
-### Proxystöd {#proxy-support}
+### Stöd för proxy {#proxy-support}
 
 [!DNL Experience Manager] datorprogrammet använder systemets fördefinierade proxy för att ansluta till Internet via HTTPS. Appen kan bara ansluta med en nätverksproxy som inte kräver extra autentisering.
 
@@ -131,7 +130,7 @@ Om du konfigurerar eller ändrar proxyserverinställningarna för Windows (Inter
 
 Om din proxy kräver autentisering kan IT-teamet tillåta att URL:en för [!DNL Experience Manager Assets] i proxyserverinställningarna tillåter att programtrafiken passerar igenom.
 
-## Avinstallera programmet {#uninstall-the-app}
+## Avinstallera appen {#uninstall-the-app}
 
 Så här avinstallerar du programmet i Windows:
 
