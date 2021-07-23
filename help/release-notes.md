@@ -4,9 +4,9 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: datorprogram,versionsinformation
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: d83f04fb4757bb8025489da7866d36a51ddfe374
+source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.3.2
 * [!DNL Experience Manager] 6.4.4 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [Versionsinformation för Service Pack](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html).
 * [!DNL Experience Manager] 6.4.0-6.4.3 med  [kompatibilitetspaketet ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) installerat på Adobe Managed Services (AMS) eller On-Premise.
 * [!DNL Experience Manager] 6.3 (med kompatibilitetspaket)
-* [!DNL Experience Manager] 6.3.3.1 eller senare med  [kompatibilitetspaketet ](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) installerat. Datorprogrammet stöds inte för [!DNL Experience Manager] 6.3.3.0 eller tidigare versioner.
+* [!DNL Experience Manager] 6.3.3.1 eller senare med  [kompatibilitetspaketet ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) installerat. Datorprogrammet stöds inte för [!DNL Experience Manager] 6.3.3.0 eller tidigare versioner.
 
 [!DNL Adobe Experience Manager] datorprogrammet är tillgängligt för följande  **operativsystem**:
 
