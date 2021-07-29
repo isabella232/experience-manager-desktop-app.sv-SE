@@ -4,16 +4,16 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: datorprogram,versionsinformation
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
+source-git-commit: a7a504d80891d68a0895dcf12d5b3734d7a584ec
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1681'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp {#release-notes-v2}
 
-Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.3.2) anges nedan. Releasedatum är 19 juli 2021.
+Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.3.3) visas nedan. Releasedatum är 29 juli 2021.
 
 **Versionerna [!DNL Experience Manager] som stöds** är:
 
@@ -33,8 +33,8 @@ Hämtnings-URL:erna **för operativsystem som stöds är:**
 
 | Operativsystem | [!DNL Experience Manager] som  [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
-| macOS (v2.1.3.2) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) |
-| Windows 64-bitars (v2.1.3.2) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.2.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.3.2.exe) |
+| macOS (v2.1.3.3) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.3.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.3.dmg) |
+| Windows 64-bitars (v2.1.3.3) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.3.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.3.exe) |
 | Windows 32-bitars (v2.1.3.1) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) |
 
 >[!NOTE]
@@ -68,13 +68,17 @@ Funktionen stöds i versionerna [!DNL Adobe Creative Cloud] 2018 och [!DNL Adobe
 
 Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
-**Uppdateringar i app v2.1.3.2**
+**Uppdateringar i app v2.1.3.3**
 
 Den nya versionen av programmet innehåller en felkorrigering.
 
+**Uppdateringar i app v2.1.3.2**
+
+Den här programversionen innehöll en felkorrigering.
+
 **Uppdateringar i app v2.1.3.1**
 
-Felet som har åtgärdats i den aktuella versionen är:
+Felet som åtgärdas i den här versionen är:
 
 * Överförings- och nedladdningshastigheterna för mediefiler har förbättrats, även med stora mediefiler. Den här versionen åtgärdade ett problem där resursöverföringar med [!DNL desktop app] ibland misslyckades när mycket stora filer överfördes.
 
