@@ -1,7 +1,6 @@
 ---
-source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
-translation-type: tm+mt
 source-wordcount: '719'
 ht-degree: 4%
 
@@ -40,7 +39,7 @@ Alla idéer du kan behöva förbättra [!DNL Experience Manager]-dokumentationen
 
 Frågor om hur du använder [!DNL Experience Manager] eller tekniska fel som du kan ha gjort ska rapporteras via den normala supportprocessen via [[!DNL Experience Cloud] supportportalen](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) eller diskuteras i [Experience Manager-communityn](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
-***[!DNL Experience Manager]Dokumentationsbidragen ersätter inte Adobe Customer*** Careoch eventuella bidrag som söker svar på supportrelaterade frågor kommer att refuseras.
+***[!DNL Experience Manager]Dokumentationsbidragen ersätter inte Adobe Customer*** Support och eventuella bidrag som söker svar på supportrelaterade frågor kommer att refuseras.
 
 ### Bidragen ska tydligt hänvisa till berörda dokumentationssidor.
 
@@ -64,7 +63,7 @@ Genom att följa dessa riktlinjer blir det enklare att granska ditt bidrag och d
 
 Kom ihåg att läsare av [!DNL Experience Manager]-dokumentation finns i hela världen och inte kan förväntas vara inbyggda eller flytande engelska högtalare. Undvik kollokvialism och håll språket så tydligt och enkelt som möjligt.
 
-#### Följ Microsoft-formathandboken
+#### Följ Microsoft formathandbok
 
 [Microsoft Manual of ](https://docs.microsoft.com/en-us/style-guide/welcome/) Style är en kostnadsfri handbok för dokumentationsformat som fokuserar på programvarudokumentation och - [!DNL Experience Manager] dokumentation. Handboken följer den när det är möjligt.
 

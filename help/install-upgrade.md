@@ -1,18 +1,18 @@
 ---
 title: Installera och konfigurera skrivbordsprogram
 description: Installera och konfigurera [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] servrar och hämta resurserna på det lokala filsystemet.
-feature: datorprogram,versionsinformation
+feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
 
 # Installera [!DNL Adobe Experience Manager]-datorprogrammet {#install-app-v2}
 
-Med [!DNL Adobe Experience Manager]-datorprogrammet är resurserna i [!DNL Experience Manager] enkelt tillgängliga på ditt lokala skrivbord och kan användas i alla datorprogram. Resurser kan förhandsgranskas, öppnas i datorprogram som skapats i Mac Finder eller Utforskaren i Windows för montering i andra dokument och ändras lokalt. Ändringarna sparas sedan i [!DNL Experience Manager] när du överför och en ny version skapas i databasen.
+Med [!DNL Adobe Experience Manager]-datorprogrammet är resurserna i [!DNL Experience Manager] enkelt tillgängliga på ditt lokala skrivbord och kan användas i alla datorprogram. Resurser kan förhandsgranskas, öppnas i skrivbordsprogram, visas i Mac Finder eller Utforskaren i Windows för montering i andra dokument och ändras lokalt. Ändringarna sparas sedan i [!DNL Experience Manager] när du överför och en ny version skapas i databasen.
 
 Tack vare en sådan integrering kan olika roller i organisationen
 
@@ -48,7 +48,7 @@ Följ dessa anvisningar om du vill uppgradera från en tidigare version av progr
 
 1. Starta om datorn.
 
-1. [Ladda ](release-notes.md) ned och  [](#install-v2) installera det senaste programmet. Följ instruktionerna nedan.
+1. [](release-notes.md) Hämta och  [](#install-v2) installera det senaste programmet. Följ instruktionerna nedan.
 
 ## Installera {#install-v2}
 
@@ -88,7 +88,7 @@ Följ de här stegen för att installera skrivbordsappen. Avinstallera alla befi
 
 1. ([!DNL Experience Manager] 6.5.1 eller senare) Om du använder datorprogrammet med [!DNL Experience Manager] 6.5.1 eller senare, uppgraderar du S3- eller Azure-kopplingen till version 1.10.4 eller senare. Se [Azure-koppling](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) eller [S3-anslutning](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
 
-   Om du är Adobe Managed Services-kund (AMS) kontaktar du Adobe kundtjänst.
+   Om du är Adobe Managed Services-kund (AMS) kontaktar du Adobe kundsupport.
 
 ## Ange inställningar {#set-preferences}
 

@@ -2,7 +2,7 @@
 title: Bästa tillvägagångssätt för och felsökning [!DNL Adobe Experience Manager] datorprogram
 description: Följ bästa praxis och felsök för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
 source-wordcount: '2260'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Följ följande metodtips för att förebygga vissa vanliga problem och felsökn
 
 ## Felsöka {#troubleshooting-prep}
 
-Om du vill felsöka problem med skrivbordsprogram bör du känna till följande information. Dessutom får du hjälp att förmedla problemen bättre till Adobe kundtjänst om du väljer att söka support.
+Om du vill felsöka problem med skrivbordsprogram bör du känna till följande information. Ni får också möjlighet att bättre informera Adobe kundsupport om ni väljer att söka support.
 
 ### Plats för loggfiler {#check-log-files-v2}
 
@@ -47,13 +47,13 @@ Om du vill felsöka problem med skrivbordsprogram bör du känna till följande 
 
 I Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
-Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+På Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
 
 Om det inte går att överföra vissa filer läser du i `backend.log`-filen för att identifiera misslyckade överföringar när du överför många resurser.
 
 >[!NOTE]
 >
->När du arbetar med kundtjänst på Adobe på en supportförfrågan eller ett supportärende kan du bli ombedd att dela loggfilerna för att hjälpa kundtjänstteamet att förstå problemet. Arkivera hela `Logs`-mappen och dela den med kundtjänst.
+>När du arbetar med Adobe kundsupport på en supportförfrågan eller ett supportärende kan du bli ombedd att dela loggfilerna för att hjälpa kundsupportteamet att förstå problemet. Arkivera hela `Logs`-mappen och dela den med kundsupportkontakten.
 
 ### Ändra detaljnivå i loggfiler {#level-of-details-in-log}
 
@@ -163,11 +163,11 @@ Om du inte kan se de resurser som du eller andra kreatörer har placerat i suppo
 
 [!DNL Adobe Experience Manager] när alla redigeringar av en fil är slutförda. Beroende på storleken och komplexiteten hos en fil tar det lång tid att överföra den nya versionen av en fil tillbaka till [!DNL Adobe Experience Manager]. Programdesignen kräver att så många gånger som en fil överförs fram och tillbaka ska minimeras, i stället för att gissa när redigeringarna är klara och överförs automatiskt. Vi rekommenderar att användaren initierar överföringen av filen tillbaka till [!DNL Adobe Experience Manager] genom att välja att överföra en fils ändringar.
 
-### Problem vid uppgradering på macOS {#issues-when-upgrading-on-macos}
+### Problem vid uppgradering till macOS {#issues-when-upgrading-on-macos}
 
 Ibland kan problem uppstå när du uppgraderar [!DNL Experience Manager]-datorprogrammet på macOS. Detta orsakas av att det inte går att läsa in nya versioner av [!DNL Experience Manager]-skrivbordsappen korrekt i den äldre systemmappen för [!DNL Experience Manager]. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
 
-Innan du utför följande steg drar du `Adobe Experience Manager Desktop`-programmet från mappen macOS-program till Papperskorgen. Öppna sedan terminalen, kör följande kommando och ange ditt lösenord när du uppmanas till det.
+Innan du utför följande steg drar du `Adobe Experience Manager Desktop`-programmet från macOS-programmappen till papperskorgen. Öppna sedan terminalen, kör följande kommando och ange ditt lösenord när du uppmanas till det.
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
@@ -217,7 +217,7 @@ Ibland dirigeras SAML-processen inte tillbaka till den ursprungligen begärda s�
 
 Fönstret i [!DNL Adobe Experience Manager]-datorprogrammet som visar inloggningsprocessen är helt enkelt en webbläsare som visar målinstansens webbanvändargränssnitt:[!DNL Adobe Experience Manager]
 
-* Mac-versionen använder en [WebView](https://developer.apple.com/documentation/webkit/webview).
+* I Mac-versionen används en [WebView](https://developer.apple.com/documentation/webkit/webview).
 
 * I Windows-versionen används Chromium-baserad [CefSharp](https://cefsharp.github.io/).
 
@@ -258,7 +258,7 @@ Som en tillfällig åtgärd är det möjligt att inaktivera strikt SSL-tvång i 
 
 1. Använd valfri redigerare för att redigera programmets JavaScript-konfigurationsfil, som finns (som standard) på följande platser (beroende på operativsystem):
 
-   Mac: `/Applications/Adobe Experience Manager Desktop.app/Contents/Resources/javascript/lib-smb/config.json`
+   På Mac: `/Applications/Adobe Experience Manager Desktop.app/Contents/Resources/javascript/lib-smb/config.json`
 
    I Windows: `C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop\javascript\config.json`
 
@@ -303,7 +303,7 @@ I båda metoderna startar programmet i rotmappen DAM.
 När du bläddrar bland resurser i användargränssnittet [!DNL Experience Manager] visas inte de utgångna resurserna. Administratörer kan göra följande konfiguration för att förhindra att resurser som har gått ut visas, söks och hämtas när de bläddrar bland resurser från skrivbordsappen och Asset Link. Konfigurationen fungerar för alla användare, oavsett administratörsbehörighet.
 
 * [Konfiguration i Experience Manager 6.5 för att dölja utgångna resurser](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api).
-* [Konfiguration i Experience Manager som en Cloud Service för att dölja utgångna resurser](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api).
+* [Konfiguration i Experience Manager as a Cloud Service för att dölja utgångna resurser](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api).
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
@@ -326,5 +326,5 @@ Create Jira ticket with the following information:
 >[!MORELIKETHIS]
 >
 >* [Kända fel](release-notes.md#known-issues-v2)
-* [Undvik redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts)
+>* [Undvik redigeringskonflikter](using.md#adv-workflow-collaborate-avoid-conflicts)
 
