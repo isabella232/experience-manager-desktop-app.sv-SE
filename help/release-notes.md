@@ -4,16 +4,16 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 9b7cb9c7114c1518f9b6c2e4c9ed9771f4a1716d
+source-git-commit: 88d74bb9bff7ec5d454600d383f27dcd5dbbe775
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1711'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp {#release-notes-v2}
 
-Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.3.4) visas nedan. Releasedatum är 4 november 2021.
+Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.4.0) anges nedan. Releasedatum är 16 december 2021.
 
 The **stöds [!DNL Experience Manager] versioner** är:
 
@@ -64,6 +64,10 @@ Funktionen stöds med [!DNL Adobe Creative Cloud] 2018 och [!DNL Adobe Creative 
 ## Nya funktioner, förbättringar och felkorrigeringar {#what-is-new}
 
 Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
+
+**Uppdateringar i app v2.1.4.0**
+
+Den nya versionen av programmet innehåller en felkorrigering.
 
 **Uppdateringar i app v2.1.3.4**
 
