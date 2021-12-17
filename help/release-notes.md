@@ -4,9 +4,9 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 88d74bb9bff7ec5d454600d383f27dcd5dbbe775
+source-git-commit: c0a429a965d117ccd2db231c1b68f97616a3c384
 workflow-type: tm+mt
-source-wordcount: '1711'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
 
 **Uppdateringar i app v2.1.4.0**
 
-Den nya versionen av programmet innehåller en felkorrigering.
+Den nya versionen av programmet innehåller felkorrigeringar.
 
 **Uppdateringar i app v2.1.3.4**
 
