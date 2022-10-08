@@ -1,19 +1,25 @@
 ---
-title: '"[!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp"'
+title: "[!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp"
 description: Versionsinformation, förbättringar, nya funktioner, kompatibilitet och nedladdningslänkar för [!DNL Adobe Experience Manager] datorprogram.
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 34803cd261c88f6fbe8aa283c057518217a1785e
+source-git-commit: 1167ca53c603b94b298f702d6cbb3231e318e4cd
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2201'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp {#release-notes-v2}
 
-Versionsinformationen för den senaste versionen av datorprogrammet 2.1 (2.1.5.0) anges nedan. Releasedatum är 14 juni 2022.
+Versionsinformationen för den senaste versionen av datorprogrammet 2.2.0 finns nedan. Releasedatum är 7 oktober 2022.
+
+Den senaste versionen av datorprogrammet innehåller följande förbättringar:
+
+* Stöd för Apple Silicon (M1).
+
+* Möjlighet att komma ihåg anslutningssträngen när du loggar in på skrivbordsappen.
 
 The **stöds [!DNL Experience Manager] versioner** är:
 
@@ -33,6 +39,9 @@ The **hämta URL:er** för operativsystem som stöds:
 
 | Operativsystem | [!DNL Experience Manager] som [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
+| macOS (v2.2.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-2.2.0.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-2.2.0.dmg) |
+| macOS Apple Silicon (M1) (v2.2.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-2.2.0.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-2.2.0.dmg) |
+| Windows 64-bitars (v2.2.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-2.2.0.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-2.2.0.exe) |
 | macOS (v2.1.5.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.5.0.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.5.0.dmg) |
 | Windows 64-bitars (v2.1.5.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.5.0.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.5.0.exe) |
 | Windows 32-bitars (v2.1.5.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.5.0.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.5.0.exe) |
@@ -61,7 +70,7 @@ Funktionen stöds med [!DNL Adobe Creative Cloud] 2018 och [!DNL Adobe Creative 
 
 * Sökvägar till monterade filer i det ursprungliga programmet använder en global skrivbordssökväg (placerad från den lokala nätverksresursen som visas med [!UICONTROL Reveal] ).
 
-* Sökvägar lagras i filens XMP-post av det ursprungliga programmet.
+* Sökvägar lagras i filens XMP av det inbyggda programmet.
 
 * [!DNL Experience Manager] har extraherat XMP med sökvägarna till resursens metadatapost.
 

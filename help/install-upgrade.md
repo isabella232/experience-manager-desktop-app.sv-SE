@@ -3,9 +3,9 @@ title: Installera och konfigurera skrivbordsprogram
 description: Installera och konfigurera [!DNL Adobe Experience Manager] datorprogram att arbeta med [!DNL Adobe Experience Manager Assets] -servrar och hämta resurserna i det lokala filsystemet.
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 7b884d89c34a6e45f49d4cacb0f5d537dc769742
+source-git-commit: 5b5970cec02d4a605bd7d826d1daa71fe228b0d9
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,8 @@ Följ de här stegen för att installera skrivbordsprogrammet. Avinstallera alla
    ![Anslutningsskärmen för skrivbordsprogrammet till serveradressen för indata](assets/connect_da2.png)
 
    *Bild: Anslutningsskärmen till inmatningsserveradressen.*
+
+   Välj **[!UICONTROL Remember Connection]** för att undvika att ange anslutningsinformation varje gång du loggar in på datorprogrammet.
 
    >[!CAUTION]
    >
