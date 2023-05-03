@@ -4,9 +4,9 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: caedeb988f1a2f4666a1ec73db390452914caf4d
+source-git-commit: 7d6de46583b0a9dd19d920f8c47a825e060b97fc
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,6 @@ The **stöds [!DNL Experience Manager] versioner** är:
 
 * [!DNL Experience Manager] som [!DNL Cloud Service]. Se [versionsinformation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
 * [!DNL Experience Manager] 6.5.0 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [Versionsinformation för Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html).
-* [!DNL Experience Manager] 6.4.4 eller senare, på Adobe Managed Services (AMS) eller On-Premise. Se [Versionsinformation för Service Pack](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html).
-* [!DNL Experience Manager] 6.4.0 - 6.4.3 med [kompatibilitetspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) installeras på Adobe Managed Services (AMS) eller On-Premise.
-* [!DNL Experience Manager] 6.3 (med kompatibilitetspaket)
-* [!DNL Experience Manager] 6.3.3.1 eller senare med [kompatibilitetspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) installerade. Skrivbordsappen stöds inte för [!DNL Experience Manager] 6.3.3.0 eller tidigare versioner.
 
 [!DNL Adobe Experience Manager] datorprogrammet är tillgängligt för följande **operativsystem**:
 
