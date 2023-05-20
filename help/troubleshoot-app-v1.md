@@ -1,6 +1,6 @@
 ---
 title: Felsök skrivbordsappens version 1.10.
-description: Felsök [!DNL Adobe Experience Manager] datorprogramversion 1.10 för att lösa enstaka problem i samband med installation, uppgradering och konfiguration.
+description: Felsökning [!DNL Adobe Experience Manager] version 1.10 av datorprogrammet för att lösa tillfälliga problem i samband med installation, uppgradering och konfiguration.
 exl-id: 1e1409c2-bf5e-4e2d-a5aa-3dd74166862c
 source-git-commit: 2ae49374b362921a5a82fc2e040064b4e573b8c1
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 1%
 
 ---
 
-# Felsök [!DNL Adobe Experience Manager]-datorprogrammet v1.x {#troubleshoot-aem-desktop-app}
+# Felsökning [!DNL Adobe Experience Manager] datorprogram v1.x {#troubleshoot-aem-desktop-app}
 
 Felsök AEM datorprogram för att lösa tillfälliga problem som rör installation, uppgradering, konfiguration och så vidare.
 
@@ -17,15 +17,15 @@ Felsök AEM datorprogram för att lösa tillfälliga problem som rör installati
 
 ![skrivbordsappsdiagram](assets/aem-desktopapp-architecture.png)
 
-Med den här arkitekturen fångar skrivbordsappen upp filsystemanrop (öppna, stänga, läsa, skriva osv.) till den monterade nätverksresursen och översätter dem till interna AEM HTTP-anrop till AEM. Filerna cachelagras lokalt. Mer information finns i [Använd AEM datorprogram v1.x](use-app-v1.md).
+Med den här arkitekturen fångar skrivbordsappen upp filsystemanrop (öppna, stänga, läsa, skriva osv.) till den monterade nätverksresursen och översätter dem till interna AEM HTTP-anrop till AEM. Filerna cachelagras lokalt. Mer information finns i [Använd AEM v1.x](use-app-v1.md).
 
 ## Översikt över komponenten AEM datorprogram {#desktop-app-component-overview}
 
 datorprogrammet innehåller följande komponenter:
 
 * **Skrivbordsprogrammet**: Programmet monterar eller avmonterar DAM som ett fjärrfilsystem och översätter filsystemanrop mellan den lokalt monterade nätverksresursen och den AEM fjärrinstans som det ansluter till.
-* **WebDAV/SMB-klient** för operativsystem: Hanterar kommunikation mellan Utforskaren/Finder i Windows och skrivbordsprogrammet. Om en fil hämtas, skapas, ändras, tas bort, flyttas eller kopieras, kommunicerar operativsystemets (OS) WebDAV/SMB-klient den här åtgärden med skrivbordsprogrammet. Efter att ha tagit emot kommunikationen översätter skrivbordsappen det till inbyggda AEM fjärr-API-anrop. Om en användare till exempel skapar en fil i den monterade katalogen, initierar WebDAV/SMB-klienten en begäran som skrivbordsappen översätter till en HTTP-begäran som skapar filen i DAM. WebDAV/SMB-klienten är en inbyggd komponent i operativsystemet. Den är inte på något sätt kopplad till datorprogrammet, AEM eller Adobe.
-* **Adobe Experience Manager-instans**: Ger åtkomst till resurser som lagras i AEM Assets DAM-databasen. Dessutom utför programmet åtgärder som begärts av skrivbordsappen för de lokala skrivbordsprogrammen som interagerar med den monterade nätverksresursen. AEM ska köra AEM version 6.1 eller senare. AEM instanser som kör tidigare AEM kan kräva extra funktionspaket och snabbkorrigeringar för att bli fullt fungerande.
+* **WebDAV/SMB-klient för operativsystem**: Hanterar kommunikation mellan Utforskaren/Finder i Windows och skrivbordsprogrammet. Om en fil hämtas, skapas, ändras, tas bort, flyttas eller kopieras, kommunicerar operativsystemets (OS) WebDAV/SMB-klient den här åtgärden med skrivbordsprogrammet. Efter att ha tagit emot kommunikationen översätter skrivbordsappen det till inbyggda AEM fjärr-API-anrop. Om en användare till exempel skapar en fil i den monterade katalogen, initierar WebDAV/SMB-klienten en begäran som skrivbordsappen översätter till en HTTP-begäran som skapar filen i DAM. WebDAV/SMB-klienten är en inbyggd komponent i operativsystemet. Den är inte på något sätt kopplad till datorprogrammet, AEM eller Adobe.
+* **Adobe Experience Manager, instans**: Ger åtkomst till resurser som lagras i AEM Assets DAM-databasen. Dessutom utför programmet åtgärder som begärts av skrivbordsappen för de lokala skrivbordsprogrammen som interagerar med den monterade nätverksresursen. AEM ska köra AEM version 6.1 eller senare. AEM instanser som kör tidigare AEM kan kräva extra funktionspaket och snabbkorrigeringar för att bli fullt fungerande.
 
 ## Användningsexempel för AEM datorprogram {#intended-use-cases-for-aem-desktop-app}
 
@@ -62,13 +62,13 @@ AEM Desktop lämpar sig inte för intensiv bearbetning av filsystem, inklusive, 
 
 På grund av begränsningar i operativsystemet har Windows en filstorleksbegränsning på 4 294 967 295 byte (cirka 4,29 GB). Det beror på en registerinställning som definierar hur stor en fil på en nätverksresurs kan vara. Registerinställningens värde är ett DWORD med en maximal storlek som är lika med det refererade talet.
 
-[!DNL Experience Manager] skrivbordsappen har inget konfigurerbart timeout-värde som kopplar från anslutningen mellan  [!DNL Experience Manager] servern och skrivbordsappen efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
+[!DNL Experience Manager] skrivbordsappen har inget konfigurerbart timeout-värde som kopplar från anslutningen mellan [!DNL Experience Manager] efter ett fast tidsintervall. När du överför stora resurser, och anslutningen får timeout efter en stund, försöker programmet överföra resursen några gånger genom att öka tidsgränsen för överföring. Det finns inget rekommenderat sätt att ändra standardinställningarna för timeout.
 
 ## Cachelagring och kommunikation med AEM {#caching-and-communication-with-aem}
 
 AEM datorprogram har funktioner för intern cachelagring och bakgrundsuppladdning för att förbättra slutanvändarens upplevelse. När du sparar en stor fil sparas den först lokalt så att du kan fortsätta arbeta. Efter en stund (för närvarande 30 sekunder) skickas filen sedan till AEM i bakgrunden.
 
-Till skillnad från Creative Cloud Desktop eller andra filsynkroniseringslösningar, som Microsoft One Drive, är AEM inte en fullständig klient för synkronisering av stationära datorer. Orsaken till detta är att det ger tillgång till hela AEM Assets-databasen, som kan vara mycket stor (hundratals gigabyte eller terabyte) för en fullständig synkronisering.
+Till skillnad från Creative Cloud Desktop eller andra filsynkroniseringslösningar, som Microsoft One Drive, är AEM inte en fullständig skrivbordssynkroniseringsklient. Orsaken till detta är att det ger tillgång till hela AEM Assets-databasen, som kan vara mycket stor (hundratals gigabyte eller terabyte) för en fullständig synkronisering.
 
 Cachelagring ger möjlighet att begränsa nätverks-/lagringskostnaderna till endast en delmängd av resurserna som är relevanta för användaren.
 
@@ -88,7 +88,7 @@ Alla åtgärder cachelagras inte lokalt. Följande överförs direkt till AEM Se
 
 ## Individuella operationer {#individual-operations}
 
-När du felsöker suboptimerade prestanda för enskilda användare ska du först granska [appbegränsningarna](#limitations). De följande avsnitten innehåller förslag på hur du kan förbättra prestandan för de enskilda användarna.
+Vid felsökning av deloptimerade prestanda för enskilda användare ska du först granska [appbegränsningarna](#limitations). De följande avsnitten innehåller förslag på hur du kan förbättra prestandan för de enskilda användarna.
 
 ## Bandbreddsrekommendationer {#bandwidth-recommendations}
 
@@ -131,17 +131,17 @@ Du kan förbättra prestandan AEM sidan genom att aktivera tillfälliga arbetsfl
 
 1. Navigera till `/miscadmin` i Experience Manager-instansen (`https://[aem_server]:[port]/miscadmin`).
 1. Expandera **Verktyg** > **Arbetsflöde** > **Modeller** > **dam** i navigeringsträdet.
-1. Dubbelklicka på **DAM Update Asset**.
-1. Gå till fliken **Sida** på den flytande verktygspanelen och klicka sedan på **Sidegenskaper**.
-1. Markera kryssrutan **Transient Workflow** och klicka på **OK**.
+1. Dubbelklicka **DAM-uppdateringsresurs**.
+1. Växla från den flytande verktygspanelen till **Sida** och sedan klicka **Sidegenskaper**.
+1. Välj **Övergående arbetsflöde** och klicka **OK**.
 
 ### Justera kön för transient Granite-arbetsflöde {#adjust-granite-transient-workflow-queue}
 
 En annan metod för att förbättra AEM prestanda är att konfigurera värdet för det maximala antalet parallella jobb för jobbet Beviljit Transient Workflow Queue. Det rekommenderade värdet är ungefär hälften av antalet processorer som är tillgängliga på servern. Så här justerar du värdet:
 
 1. Navigera till `/system/console/configMgr` i den AEM instansen som ska konfigureras (till exempel `https://[aem_server]:[port]/system/console/configMgr`).
-1. Sök efter `QueueConfiguration` och klicka för att öppna varje jobb tills du hittar jobbet **Bevilja tillfällig arbetsflödeskö** och klicka på **Redigera**.
-1. Ändra `Maximum Parallel Jobs`-värdet och klicka på **Spara**.
+1. Sök efter `QueueConfiguration`och klicka för att öppna varje jobb tills du hittar **Bevilja tillfällig arbetsflödeskö** och klicka på **Redigera**.
+1. Ändra `Maximum Parallel Jobs` och klicka **Spara**.
 
 ## AWS-konfiguration {#aws-configuration}
 
@@ -171,7 +171,7 @@ Det verkar som om det går att ta bort en fil eftersom den försvinner från fil
 
 Om du ersätter en fil visas ingen varning eller ett fel, men om du markerar resursen i AEM visas att den inte ändras. Uppdatera eller kontrollera resursen i AEM för att bekräfta att den inte ändras.
 
-## Felsöka problem med ikoner för skrivbordsprogram (Mac OS X) {#troubleshooting-desktop-app-icon-issues-mac-os-x}
+## Felsöka problem med ikoner för datorprogram (Mac OS X) {#troubleshooting-desktop-app-icon-issues-mac-os-x}
 
 När du har installerat skrivbordsprogrammet visas menyikonen på menyraden. Om ikonen inte visas utför du följande steg för att lösa problemet:
 
@@ -217,13 +217,13 @@ Det enklaste sättet att åtgärda detta är att öppna filen som är i konflikt
 Att radera AEM Skrivbordscache är en preliminär felsökningsåtgärd som kan lösa flera AEM problem med skrivbordet.
 
 Du kan rensa cacheminnet genom att ta bort programmets cachekatalog på följande platser.
-I Windows: `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
+I Windows `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
-I Mac: `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
+I Mac `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
-Platsen kan dock ändras beroende på AEM datorns konfigurerade AEM. Värdet är en kodad version av mål-URL:en. Om programmet till exempel har `http://localhost:4502` som mål är katalognamnet `http%3A%2F%2Flocalhost%3A4502%2F`.
+Platsen kan dock ändras beroende på AEM datorns konfigurerade AEM. Värdet är en kodad version av mål-URL:en. Om programmet till exempel har som mål `http://localhost:4502`, är katalognamnet `http%3A%2F%2Flocalhost%3A4502%2F`.
 
-Ta bort katalogen &lt;Encoded AEM Endpoint> om du vill rensa cacheminnet.
+Om du vill rensa cachen tar du bort &lt;encoded aem=&quot;&quot; endpoint=&quot;&quot;> katalog.
 
 >[!NOTE]
 >
@@ -237,13 +237,13 @@ Ta bort katalogen &lt;Encoded AEM Endpoint> om du vill rensa cacheminnet.
 
 Du använder samma procedur för att kontrollera vilken version AEM har för både Windows och Mac OS.
 
-Klicka på ikonen AEM Skrivbord och välj sedan **Om**. Versionsnumret visas på skärmen.
+Klicka på ikonen AEM skrivbordet och välj **Om**. Versionsnumret visas på skärmen.
 
 ## Uppgraderar AEM på macOS {#upgrading-aem-desktop-app-on-macos}
 
 Ibland kan problem uppstå när du uppgraderar AEM datorprogram på macOS. Detta beror på att det inte går att läsa in nya versioner av AEM som de är i AEM för datorprogrammet. Följande mappar och filer kan tas bort manuellt för att åtgärda problemet.
 
-Innan du utför stegen nedan drar du programmet Adobe Experience Manager Desktop från mappen macOS Applications till Papperskorgen. Öppna sedan terminalen och kör följande kommando för att ange ditt lösenord när du uppmanas till det.
+Innan du utför stegen nedan drar du Adobe Experience Manager Desktop-programmet från mappen macOS Applications till Papperskorgen. Öppna sedan terminalen och kör följande kommando för att ange ditt lösenord när du uppmanas till det.
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
@@ -273,15 +273,15 @@ Server-API:t kräver att ytterligare rubriker, X-Destination, X-Depth och X-Over
 Den vanligaste orsaken till problem med AEM Skrivbord som ansluter till en SAML-AEM (SSO-enabled) är att SAML-processen inte dirigerar tillbaka till den ursprungligen begärda sökvägen. Alternativt kan anslutningen omdirigeras till en värd som inte konfigurerats i AEM skrivbord. Så här verifierar du inloggningsprocessen:
 
 1. Öppna en webbläsare.
-1. Ange URL:en `/content/dam.json` i adressfältet.
+1. Ange URL-adressen i adressfältet `/content/dam.json`.
 1. Ersätt URL:en med AEM, till exempel `https://localhost:4502/content/dam.json`.
 1. Logga in på AEM.
 1. När du har loggat in kontrollerar du webbläsarens aktuella adress i adressfältet. Den ska matcha den URL som du ursprungligen angav.
-1. Kontrollera att allt före `/content/dam.json` matchar AEM som konfigurerats i AEM Desktop.
+1. Verifiera att allt före `/content/dam.json` matchar AEM som konfigurerats AEM Skrivbord.
 
 ### SSL-konfigurationsproblem {#ssl-configuration-issue}
 
-De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas AEM skrivbordsappen. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Installera ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
+De bibliotek som AEM datorprogrammet använder för HTTP-kommunikation använder strikt SSL-kontroll. Ibland kan en anslutning fungera med en webbläsare, men misslyckas med att använda AEM datorprogram. Installera det saknade mellanliggande certifikatet i Apache om du vill konfigurera SSL korrekt. Se [Installera ett mellanliggande CA-certifikat i Apache](https://access.redhat.com/solutions/43575).
 
 ## Använda AEM Desktop med dispatcher {#using-aem-desktop-with-dispatcher}
 

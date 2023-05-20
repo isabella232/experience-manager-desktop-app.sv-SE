@@ -4,7 +4,7 @@ description: Viktiga funktioner och rekommenderad användning av [!DNL Adobe Exp
 exl-id: 5de06b33-c05c-47eb-b884-408b6f9afc94
 source-git-commit: 7a7236c36f615e97e9d040e6139368a931eb579e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1676'
 ht-degree: 0%
 
 ---

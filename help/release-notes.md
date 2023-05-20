@@ -6,7 +6,7 @@ feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
 source-git-commit: 7d6de46583b0a9dd19d920f8c47a825e060b97fc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2437'
 ht-degree: 0%
 
 ---

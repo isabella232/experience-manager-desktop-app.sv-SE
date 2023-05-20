@@ -15,10 +15,10 @@ För datorprogram v1.x är följande hämtningslänkar och AEM kompatibilitetsin
 
 | Produkter | [!DNL Adobe Experience Manager] datorprogram |
 |--- |--- |
-| Version | 1.10 (1.10.0.6 för Mac och 1.10.0.3 för Windows) |
+| Version | 1.10 (1.10.0.6 i Mac och 1.10.0.3 i Windows) |
 | Typ | Mindre release |
-| Date | 1.10.0.6 (Mac): 15 april 2020; 1.10.0.3 (Win): 31 augusti 2018 |
-| Hämta URL:er | [Mac OS X 64 bitar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-1.10.0.6.dmg);  [Windows 32 bitar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-1.10.0.3.exe);  [Windows 64 bitar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-1.10.0.3.exe) |
+| Datum | 1.10.0.6 (Mac): 15 april 2020; 1.10.0.3 (Win): 31 augusti 2018 |
+| Hämta URL:er | [Mac OS X 64 bitar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-1.10.0.6.dmg); [Windows 32 bitar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-1.10.0.3.exe); [Windows 64 bitar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-1.10.0.3.exe) |
 | Kompatibilitet | AEM 6.5.x; AEM 6.4.x; AEM 6.3 SP2, AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
@@ -41,7 +41,7 @@ Adobe rekommenderar starkt att du använder den senaste versionen av AEM för at
 
 Den version av AEM program du tänker installera på den lokala datorn kräver en specifik AEM serverversion/ytterligare komponenter på serversidan (Service Pack, hot fixes eller feature packs). Kontrollera att AEM är korrekt konfigurerad innan du ansluter till den för första gången. Kontakta AEM om du behöver hjälp.
 
-Se [den detaljerade kompatibilitetsmatrisen](#compatibilitymatrix) i slutet av det här dokumentet för att utvärdera kraven för din konfiguration.
+Se [detaljerad kompatibilitetsmatris](#compatibilitymatrix) i slutet av det här dokumentet för att utvärdera kraven för din konfiguration.
 
 ## Nyheter i datorprogrammet v1.10 {#what-s-new-in-aem-desktop-app}
 
@@ -49,29 +49,29 @@ AEM datorprogram 1.10 fokuserar på att förbättra användarupplevelsen kring s
 
 >[!NOTE]
 >
->Om du använder macOS 10.15.4 eller senare ska du använda minst version 1.10.0.6 av programmet. Den här korrigeringsversionen uppfyller [Apple-notarization requirements](https://developer.apple.com/news/?id=04102019a).
+>Om du använder macOS 10.15.4 eller senare ska du använda minst version 1.10.0.6 av programmet. Den här korrigeringsversionen överensstämmer med [Krav för Apple-notarius publicus](https://developer.apple.com/news/?id=04102019a).
 
 **Lokal redigering/utcheckning**: Automatiska överföringar av ändringar som sparats till resurser kan inaktiveras i statusfönstret. På så sätt kan användaren fortsätta arbeta med filer och spara ändringar och sedan, när de är klara, bestämma sig för att överföra alla ändringar.
 
-**Förenklat statusfönster** för tillgångar. Statusfönstret förenklades. Fliken [!UICONTROL Uploads] visar nu både enskilda resurser samt mapp- och bulköverföringar. Fliken Överföringar i grupp har tagits bort.
+**Fönstret Förenklad resursstatus**. Statusfönstret förenklades. The [!UICONTROL Uploads] visas nu både enskilda resurser och mapp- och bulköverföringar. Fliken Överföringar i grupp har tagits bort.
 
-**Programikon för att indikera massöverföring**. Programikonen indikerar att en massöverföring pågår genom att visa ett &quot;överföringsöverlägg&quot;.
+**Programikon för att indikera massöverföringar**. Programikonen indikerar att en massöverföring pågår genom att visa ett &quot;överföringsöverlägg&quot;.
 
 **Meddelanden om uppdateringskonflikter**. När programmet upptäcker en konflikt när en resurs uppdateras visas ett meddelande så att användaren kan granska den utan att behöva övervaka statusfönstret. När programmet startas görs en sökning efter alla konflikter så att användaren kan lösa dem.
 
-**Bättre hantering av anslutningsförluster**. Massöverföringar pausas om en anslutning bryts och användaren kan återupptas senare. Det finns ett [!UICONTROL Retry]-alternativ tillgängligt för att försöka överföra en enskild fil igen.
+**Bättre hantering av anslutningsförluster**. Massöverföringar pausas om en anslutning bryts och användaren kan återupptas senare. A [!UICONTROL Retry] kan du göra om en misslyckad överföring av en enskild fil.
 
 ## Installationsanvisningar {#installation-instructions}
 
-Detaljerade instruktioner finns i [Installera och konfigurera AEM datorprogram](install-configure-app-v1.md).
+Detaljerade anvisningar finns i [Installera och konfigurera AEM datorprogram](install-configure-app-v1.md).
 
 ## Förbättringar i tidigare versioner {#enhancements-in-the-previous-versions}
 
-Den här versionen utökar och ersätter de tidigare versionerna av [!DNL Experience Manager]-skrivbordsappen som innehåller följande viktiga förbättringar:
+Den här versionen utökar och ersätter tidigare versioner av [!DNL Experience Manager] skrivbordsappen, som innehåller följande viktiga förbättringar:
 
 * **Version 1.9/1.9.1**: återuppta överföringar, förbättrat statusfönster, programikoner som anger status för programmet/anslutningen, förhämtning av länkade resurser för InDesign-filer.
 
-* **Version 1.8**: bättre kontroll över cachestorleken för användaren, förbättrad inloggningsupplevelse för SAML/SSO i Windows, stöd för .pac-nätverksproxy i Mac samt kundrapporterade problem.
+* **Version 1.8**: bättre kontroll över cachestorleken för användaren, förbättrad inloggningsupplevelse för SAML/SSO i Windows, stöd för .pac-nätverksproxy i Mac samt problem som rapporterats av kunden.
 
 * **Version 1.7**: förbättrad stabilitet och cachelagringslogik, bättre stöd för nätverksproxy och möjlighet att rensa interna filer efter avinstallation.
 
@@ -93,11 +93,11 @@ Den här versionen utökar och ersätter de tidigare versionerna av [!DNL Experi
 
 AEM program 1.9 fokuserar på att förbättra användarupplevelsen kring stora överföringar, information om bakgrundsåtgärder och optimerad upplevelse när resurser öppnas med länkade filer (som InDesign).
 
-**Återuppta**
-uppladdningarFör uppladdningar, särskilt runt stora filer, finns det ett alternativ för att pausa/återuppta dem i det nya fönstret Resursstatus.
+**Återuppladdningsbara överföringar**
+För överföringar, särskilt runt stora filer, finns det ett alternativ för att pausa/återuppta dem i det nya fönstret Resursstatus.
 
-**Förbättrat**
-fönster ResursstatusEtt förbättrat fönster med resursstatus innehåller följande information om resurser.
+**Förbättrat fönster för resursstatus**
+Ett förbättrat statusfönster för resurser innehåller följande information om resurser.
 
 [!UICONTROL Changes]
 
@@ -127,13 +127,13 @@ fönster ResursstatusEtt förbättrat fönster med resursstatus innehåller föl
 
 * Sidfoten visar det totala antalet nedladdade filer och den genomsnittliga överföringshastigheten.
 
-* Om en användare väljer att öppna eller redigera flera filer från webbgränssnittet [!DNL Experience Manager Assets] grupperas de tillsammans. Exempel: myasset.jpeg och ytterligare fyra filer.
+* Om en användare väljer att öppna eller redigera flera filer från [!DNL Experience Manager Assets] Webbgränssnittet kommer att grupperas tillsammans. Exempel: myasset.jpeg och ytterligare fyra filer.
 
-* När du hämtar InDesign-dokument, inklusive länkade resurser som lagras i AEM Assets, hämtas alla länkade resurser först, innan du öppnar [!UICONTROL Adobe InDesign]-dokumentet och visar hämtningen av länkade resurser. Exempel: 5 av 24.
+* När du hämtar InDesign-dokument, inklusive länkade resurser som lagras i AEM Assets, hämtas alla länkade resurser först av datorprogrammet innan du öppnar [!UICONTROL Adobe InDesign] dokumentera och ange hämtningen av länkade resurser. Exempel: 5 av 24.
 
 [!UICONTROL Bulk Uploads]
 
-Om du överför stora mapphierarkier via [!UICONTROL Create] > [!UICONTROL Upload Folder] i AEM webbgränssnitt eller kopierar och väljer Klistra in resurser i Finder eller Utforskaren på snabbmenyn för skrivbordsappen, aktiveras användningen av den här dialogrutan.
+Överföra stora mapphierarkier via [!UICONTROL Create] > [!UICONTROL Upload Folder] i AEM webbgränssnitt eller kopiering och om du väljer Klistra in resurser i Finder eller Utforskaren på snabbmenyn för skrivbordsappen, aktiveras användningen av den här dialogrutan.
 
 * Visar pågående överföringar, inklusive en förloppsindikator och namnet på filen som överförs för närvarande.
 
@@ -162,7 +162,7 @@ AEM program 1.8.1 snabbspolning tillkom förbättringar när flera filer öppnas
 
    * definiera maximal cachestorlek innan ett meddelande skickas
 
-   * Cachestorleken kontrolleras endast vid start av skrivbordsappen och ett meddelande visas om den når den konfigurerade gränsen
+   * Cachestorleken kontrolleras endast vid start av skrivbordsappen och ett meddelande visas om den har nått den konfigurerade gränsen
 
    * rensningsknappen för cache är nu tillgänglig i det nya användargränssnittet
 
@@ -206,7 +206,7 @@ AEM program 1.8.1 snabbspolning tillkom förbättringar när flera filer öppnas
 
    * (Win) Avinstallation av rengöringsmedel (CQ-4220906).
 
-   * [Windows 32 ] bitInstaller kan inte installera Microsoft .NET Framework v. 4.5 (CQ-4218084).
+   * [Windows 32-bitars] Det gick inte att installera Microsoft .NET Framework v. 4.5 (CQ-4218084).
 
    * (Mac) Manuellt skript för att ta bort skrivbordsappfiler helt (CQ-4216489).
 
@@ -216,7 +216,7 @@ AEM program 1.8.1 snabbspolning tillkom förbättringar när flera filer öppnas
 
 ### Förbättringar som är tillgängliga sedan AEM datorprogram 1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
-* Dokumentation: Ny [metodtips för v1.x app](/help/best-practices-for-v1.md)-dokumentation.
+* Dokumentation: Nytt [Metodtips för v1.x-appen](/help/best-practices-for-v1.md) dokumentation.
 
 * Förbättrad inloggningsprocess för AEM:
 
@@ -260,7 +260,7 @@ AEM program 1.8.1 snabbspolning tillkom förbättringar när flera filer öppnas
 
 ### Förbättringar som är tillgängliga sedan AEM datorprogram 1.5 {#Enhancements-Available-Since-AEM-Desktop-App-15}
 
-**Version 1.5.1.5 för Mac OS X:** Versionen 1.5.1.5 ger följande fördelar:
+**Version 1.5.1.5 för Mac OS X:** Version 1.5.1.5 ger följande fördelar:
 
 * Nya funktioner och förbättringar: Lägg till funktionen Kopiera/Klistra in i Finder-integreringen för att möjliggöra direkt överföring från skrivbordet till AEM (CQ-4208158).
 
@@ -290,7 +290,7 @@ Det här beteendet är detsamma för resurser på den lokala hårddisken och res
 
 Båda dessa fall förväntas och är biverkningar av arkitekturen&quot;fördröjd synkronisering&quot; i AEM Desktop.
 
-**Version 1.5.0.x för Mac OS X och Windows:** Den här versionen av AEM ger följande fördelar:
+**Version 1.5.0.x för Mac OS X och Windows:** Den här versionen AEM datorprogrammet har följande fördelar:
 
 * Bättre stabilitet och motståndskraft mot nätverksproblem.
 
@@ -347,9 +347,9 @@ Båda dessa fall förväntas och är biverkningar av arkitekturen&quot;fördröj
 
 ### Monteringspunkt på Mac {#mount-point-on-mac}
 
-Sedan MacOS 10.12 (Sierra) har Apple ändrat behörigheterna för mappen /Volumes som används för att montera nätverksenheter och enheter till mer restriktiva. Det krävs administratörsbehörighet för att skapa en ny monteringspunkt. Problemet har åtgärdats i Mac OS 10.12.5.
+Sedan MacOS 10.12 (Sierra) har Apple ändrat behörigheterna för mappen /Volumes som används för att montera nätverksenheter och enheter till mer restriktiva. Det krävs administratörsbehörighet för att skapa en ny monteringspunkt. Problemet har åtgärdats i MacOS 10.12.5.
 
-Eftersom AEM datorprogrammet ska köras för användare som inte har administratörsbehörighet på den lokala datorn ändrades monteringspunkten för AEM Assets-databasen i 1.4 och 1.5 till en DAM-undermapp i användarens lokala mapp på MacOS (CQ-104183).
+Eftersom AEM datorprogram ska köras för användare som inte har administratörsbehörighet på den lokala datorn ändrades monteringspunkten för AEM Assets-databasen i 1.4 och 1.5 till en DAM-undermapp i användarens lokala mapp på MacOS (CQ-104183).
 
 Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återställs den här ändringen i 1.5.1. Detta gör det även möjligt att dela InDesign-dokument som har placerat AEM resurser mellan MacOS-användare.
 
@@ -365,7 +365,7 @@ Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återst
 
 >[!NOTE]
 >
->I Mac OS X resulterar ändringen av det lokala nätverksenhetsprotokollet från WebDAV till SMB1 i en annan lokal sökväg till samma resurs i databasen. Detta kan påverka länkar till filer som har placerats i Adobe Creative Cloud-program via kommandot Montera. Mer information finns i [Använd AEM-datorprogrammet](use-app-v1.md).
+>I Mac OS X resulterar ändringen av det lokala nätverksenhetsprotokollet från WebDAV till SMB1 i en annan lokal sökväg till samma resurs i databasen. Detta kan påverka länkar till filer som har placerats i Adobe Creative Cloud-program via kommandot Montera. Se [Använd AEM](use-app-v1.md) för mer information.
 
 ### Filhantering (sedan 1.3) {#file-handling-since}
 
@@ -373,7 +373,7 @@ Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återst
 * Filer som har checkats ut av andra användare är skrivskyddade.
 * Filerna sparas på en nätverksenhet som monterats via skrivbordsappen i två faser.
 * I den första fasen sparas en fil lokalt. På så sätt behöver användaren som sparar filen inte vänta tills filen har överförts helt till AEM och kan återuppta arbetet så fort filen har sparats.
-* I den andra fasen överför skrivbordsappen en uppdaterad fil till AEM efter en fördefinierad fördröjning (till exempel 30s). Den här åtgärden utförs i bakgrunden. Använd alternativet **Visa status för filsynkronisering i bakgrunden** för att visa status för överföringen.
+* I den andra fasen överför skrivbordsappen en uppdaterad fil till AEM efter en fördefinierad fördröjning (till exempel 30s). Den här åtgärden utförs i bakgrunden. Använd **Visa synkroniseringsstatus för bakgrundsfil** för att visa överföringsåtgärdens status.
 
 ## Viktiga meddelanden {#important-notices}
 
@@ -391,15 +391,15 @@ Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återst
 
 **Rensa cacheminnet vid anslutning till en ny AEM.** Om skrivbordsprogrammet ansluter till en annan AEM med samma URL, rensas inte cachen automatiskt. Rensa cacheminnet manuellt för att säkerställa korrekta åtgärder. Observera att detta vanligtvis sker vid testning, när AEM installationer kan ersättas när de körs på samma URL (CQ-4216982)
 
-**Använd certifikatsignerade SSL-certifikat.** Observera att AEM datorprogram inte har stöd för självsignerade SSL-certifikat vid anslutning till AEM via en säker HTTPS-anslutning. Ett CA-signerat certifikat krävs på servern för sådana anslutningar. (CQ-87941)
+**Använd CA-signerade SSL-certifikat.** Observera att AEM datorprogram inte har stöd för självsignerade SSL-certifikat vid anslutning till AEM via en säker HTTPS-anslutning. Ett CA-signerat certifikat krävs på servern för sådana anslutningar. (CQ-87941)
 
 ## Kända fel {#known-issues}
 
 * Allmänt:
-   * Server-URL:er krävs för att peka mot servern utan sökväg (till exempel `http://server`, `https://server`, `http://server:port` eller `https://server:port`). Kontextsökvägar och andra undermappar än /content/dam stöds inte (CQ-89343, CQ-87272)
+   * Server-URL:er krävs för att peka mot servern utan sökväg (till exempel: `http://server`, `https://server`, `http://server:port`, eller `https://server:port`). Kontextsökvägar och andra undermappar än /content/dam stöds inte (CQ-89343, CQ-87272)
 * Filnamn/lokalisering:
    * Fil- och mappnamn med reserverade tecken hanteras inte korrekt. Se till att använda fil- och mappnamn som uppfyller AEM (CQ-93361, CQ-93308, CQ-89276, CQ-4217183)
-   * I vissa program, som Adobe Illustrator, kan filer med namn som inte stöds i AEM skapas. Du kan till exempel lägga till `Converted` efter konvertering av en fil, vilket gör att den inte kan överföras (CQ-4216985)
+   * I vissa program, som Adobe Illustrator, kan filer med namn som inte stöds i AEM skapas. Lägg till exempel till `Converted` efter konvertering av en fil, vilket medför att den inte kan överföras (CQ-4216985)
    * Resurser med internationella namn kan visas och försvinna med några sekunder
 * Checka in och Checka ut:
    * En resurs som har checkats ut av en användare kan inte öppnas för en annan användare, antingen genom åtgärden Öppna från Touch-gränssnittet eller direkt på skrivbordet. I vissa program kan det rapporteras som låst, men det kan också vara skadat eller till och med låst när programmet öppnas. (CQ-4199234)
@@ -408,7 +408,7 @@ Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återst
    * Statusen utcheckad och skrivskyddad rapporteras separat i Finder. Detta resulterar i två låsikoner när en användare checkar ut en resurs (CQ-89507)
 * Integrering med Finder:
    * När du drar/släpper stora filer kan det hända att Finder gör timeout medan filer överförs i bakgrunden. Detta resulterar i en `Error - 36`. Du kan lösa problemet genom att dra/släppa eller öppna resursen igen (CQ-4219628)
-   * Manuell mappinläsning fungerar inte alltid. Tillfällig lösning:  vänta   30-tal för att mappen ska uppdateras automatiskt. (CQ-97389)
+   * Manuell mappinläsning fungerar inte alltid. Tillfällig lösning: vänta i 30 sekunder på att mappen uppdateras automatiskt. (CQ-97389)
    * Mer resursinformation... begränsas till val av enstaka filer (CQ-89542, CQ-87656)
    * Öppna i AEM Assets... begränsas till enstaka fil- och mappval (CQ-83382)
    * Ett fel uppstod vid namnbyte av resurser som inte har något tillägg (CQ-4218971)
@@ -416,7 +416,7 @@ Eftersom mappen /Volumes inte längre kräver administratörsbehörighet återst
 * Windows:
    * Filer med ADS (Alternate Data Streams) stöds endast fullt ut på NTFS. Om du kopierar sådana filer till WebDAV-resursen som tillhandahålls av skrivbordsappen visas ett varningsmeddelande om att filen har egenskaper som inte kan kopieras till den nya platsen. Detta är vanligtvis bra eftersom egenskaperna bara är relevanta för ett visst program på användarens skrivbord och inte har något att göra med det faktiska filinnehållet (CQ-103770) (Win)
    * skrivbordsappen i Windows måste installeras av användaren som ska använda den (CQ-4216389) (win)
-   * Appen kan krascha när du väljer alternativet [!UICONTROL Retry] för en misslyckad överföring under vissa omständigheter efter återupptagen batchöverföring när den kopplas från (CQ-4251884) (Win)
+   * Appen kan krascha när du väljer [!UICONTROL Retry] alternativ för misslyckad överföring under vissa omständigheter efter återupptagen batchöverföring vid frånkoppling (CQ-4251884) (Win)
 
 ## Användbara resurser {#helpful-resources}
 
