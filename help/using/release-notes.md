@@ -4,20 +4,23 @@ description: Versionsinformation, förbättringar, nya funktioner, kompatibilite
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: df5283f6bef6adbb007bf93c6dabb3b12e430f58
+source-git-commit: 0f366e07b9d220cf04286b24e4bb45ce0b385e5c
 workflow-type: tm+mt
-source-wordcount: '2437'
+source-wordcount: '2624'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Experience Manager] versionsinformation för skrivbordsapp {#release-notes-v2}
 
-Versionsinformationen för den senaste versionen av datorprogrammet 2.2.2 anges nedan. Releasedatum är 9 mars 2023.
+Versionsinformationen för den senaste versionen av datorprogrammet 2.3.0 finns nedan. Releasedatum är 14 juli 2023.
 
-Den senaste versionen av skrivbordsappen innehåller följande felkorrigeringar:
+Den senaste versionen av skrivbordsappen innehåller följande felkorrigeringar och förbättringar:
 
-* [Endast Windows] datorprogrammet visar en tom skärm när versionerna 2.2.0 och 2.2.1 har installerats.
+* Stöd för IMS-inloggning har lagts till. Med IMS-integrering kan skrivbordsappen utföra automatisk uppdatering av åtkomsttoken, vilket gör att användaren kan vara inloggad i upp till 14 dagar.
+
+* Förbättrat stöd för företagsproxies och webbfiltrering.
+
 
 The **stöds [!DNL Experience Manager] versioner** är:
 
@@ -33,6 +36,9 @@ The **hämta URL:er** för operativsystem som stöds:
 
 | Operativsystem | [!DNL Experience Manager] som [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
+| macOS (v2.3.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-2.3.0.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-2.3.0.dmg) |
+| macOS Apple Silicon (M1) (v2.3.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-2.3.0.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-2.3.0.dmg) |
+| Windows 64-bitars (v2.3.0) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-2.3.0.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-2.3.0.exe) |
 | macOS (v2.2.2) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-2.2.2.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-2.2.2.dmg) |
 | macOS Apple Silicon (M1) (v2.2.2) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-2.2.2.dmg) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-2.2.2.dmg) |
 | Windows 64-bitars (v2.2.2) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-2.2.2.exe) | [Hämta länk](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-2.2.2.exe) |
@@ -79,6 +85,10 @@ Funktionen stöds med [!DNL Adobe Creative Cloud] 2018 och [!DNL Adobe Creative 
 ## Nya funktioner, förbättringar och felkorrigeringar {#what-is-new}
 
 Mer information finns i [Nyheter i v2.0](introduction.md#whats-new-v2).
+
+**Uppdateringar i app v2.2.2**
+
+* [Endast Windows] datorprogrammet visar en tom skärm när versionerna 2.2.0 och 2.2.1 har installerats.
 
 **Uppdateringar i app v2.2.1**
 
