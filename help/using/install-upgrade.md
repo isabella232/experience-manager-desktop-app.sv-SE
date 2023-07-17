@@ -3,9 +3,9 @@ title: Installera och konfigurera skrivbordsprogram
 description: Installera och konfigurera [!DNL Adobe Experience Manager] datorprogram att arbeta med [!DNL Adobe Experience Manager Assets] -servrar och hämta resurserna i det lokala filsystemet.
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: e51547496b03ac42d13e7bee5e2e3d20e520d0ad
+source-git-commit: 2382f615ae3a8b9c076d4037e1644233a2363677
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1482'
 ht-degree: 0%
 
 ---
