@@ -3,9 +3,9 @@ title: Installera och konfigurera skrivbordsprogram
 description: Installera och konfigurera [!DNL Adobe Experience Manager] datorprogram att arbeta med [!DNL Adobe Experience Manager Assets] -servrar och hämta resurserna i det lokala filsystemet.
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 0f366e07b9d220cf04286b24e4bb45ce0b385e5c
+source-git-commit: e51547496b03ac42d13e7bee5e2e3d20e520d0ad
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Följ de här stegen för att installera skrivbordsprogrammet. Avinstallera alla
    >
    >Kontrollera att det inte finns några inledande eller avslutande blanksteg före eller efter adressen till [!DNL Experience Manager] server. Annars kan programmet inte ansluta till [!DNL Experience Manager] server.
 
-1. Klicka **[!UICONTROL I want to connect a different way]** och klicka **[!UICONTROL Adobe login]** om du vill logga in på Experience Manager Assets-servern med hjälp av Adobe Identity Management Service (IMS). Med IMS-inloggning kan skrivbordsappen utföra automatisk uppdatering av åtkomsttoken, så att användaren kan vara inloggad i upp till 14 dagar. Klicka **[!UICONTROL Direct login]** för att logga in på [!DNL Experience Manager] server som använder inloggningsuppgifterna.
+1. [Valfritt] Klicka **[!UICONTROL I want to connect a different way]** och klicka **[!UICONTROL Adobe login]** om du vill logga in på Experience Manager Assets-servern med hjälp av Adobe Identity Management Service (IMS). Med IMS-inloggning kan skrivbordsappen utföra automatisk uppdatering av åtkomsttoken, så att användaren kan vara inloggad i upp till 14 dagar. Klicka **[!UICONTROL Direct login]** för att utföra standardinloggningen på [!DNL Experience Manager] server med användarens inloggningsuppgifter.
 
    ![Adobe-inloggning](assets/adobe-login.png)
 
