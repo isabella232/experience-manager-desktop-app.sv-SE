@@ -4,9 +4,9 @@ description: Använd [!DNL Adobe Experience Manager] datorprogram, att arbeta me
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 98e99ee48d835cea0098c4acfe49f6b247ccf658
+source-git-commit: 1139b3359042a134d86900e3b7b7f03d8d920cdc
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4032'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Du kan bläddra till, söka efter och förhandsvisa de resurser som finns i [!DN
 
 >[!NOTE]
 >
->Resurserna visas i programmet genom att sökvillkoren matchas i flera metadatafält, inte bara objektets namn eller filnamn.
+>Resurserna visas i programmet genom att sökvillkoren matchas i flera metadatafält, inte bara resursens namn eller filnamn.
 
 ## Hämta resurser {#download-assets}
 
@@ -217,7 +217,7 @@ I det äldre programmet bevarade de nodnamn som skapades i databasen utrymmet oc
 
 | Characters ‡ | Äldre inställning i appen | Vid förekomst i filnamn | Vid förekomst i mappnamn | Exempel |
 |---|---|---|---|---|
-| `. / : [ ] | *` | Aktiverad eller inaktiverad | Ersatt med `-` (bindestreck) A `.` (punkt) i filnamnstillägget behålls som det är. | Ersatt med `-` (bindestreck) | `myimage.jpg` förblir som och `my.image.jpg` ändringar i `my-image.jpg`. |
+| `. / : [ ] \| *` | Aktiverad eller inaktiverad | Ersatt med `-` (bindestreck) A `.` (punkt) i filnamnstillägget behålls som det är. | Ersatt med `-` (bindestreck) | `myimage.jpg` förblir som och `my.image.jpg` ändringar i `my-image.jpg`. |
 | `% ; # , + ? ^ { } "` och blanksteg | ![avmarkera ikon](assets/do-not-localize/deselect-icon.png) Handikappade | Blanksteg behålls | Ersatt med `-` (bindestreck) | `My Folder.` ändringar i `my-folder-`. |
 | `# % { } ? & .` | ![avmarkera ikon](assets/do-not-localize/deselect-icon.png) Handikappade | Ersatt med `-` (bindestreck) | NA. | `#My New File.` ändringar i `-My New File-`. |
 | Versaler | ![avmarkera ikon](assets/do-not-localize/deselect-icon.png) Handikappade | Läsningen behålls som den är. | Ändrad till gemener. | `My New Folder` ändringar i `my-new-folder`. |
