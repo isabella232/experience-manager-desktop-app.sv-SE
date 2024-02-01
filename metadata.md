@@ -5,10 +5,11 @@ type: Documentation
 mini-toc-levels: 1
 git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.sv-SE
 index: y
-source-git-commit: fd29c31e8a353ce6f827f58c58c5ecc36f3c71af
+recommendations: noDisplay
+source-git-commit: 55b50485e965a7d94d3f5a1296fec16b0ad1eba9
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 4%
+source-wordcount: '132'
+ht-degree: 0%
 
 ---
 
